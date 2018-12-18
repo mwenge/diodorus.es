@@ -1,0 +1,2943 @@
+<!DOCTYPE html>
+<!-- Text provided by Perseus Digital Library. Original version available for viewing and download at http://www.perseus.tufts.edu/hopper/. -->
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+<style>
+  .masthead {
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0px 1px 0.5px 0px rgba(194, 191, 201, 0.92);
+  }
+  .line {
+    margin-left: 10%;
+    margin-right: 10%;
+    user-select: none;
+  }
+  .speaker {
+    position: absolute;
+    left: 2px;
+  }
+  .line-number {
+    position: absolute;
+    right: 0;
+  }
+  .title {
+    text-transform: uppercase;
+    font-size: 8vw;
+  }
+  span {
+    font-style: italic;
+  }
+  #transCount {
+    position: absolute;
+    right: 0;
+    font-size: 3vw;
+  }
+  .translation {
+    font-size: 5vw;
+  }
+</style>
+<script>
+  var translations = [];
+  var current = 0;
+  var forceDisplayOfTitleOnScroll = false;
+  function showNextOnMasthead(evt) {
+    current++;
+    if (current > translations.length - 1) {
+      current = 0;
+    }
+    var translation = translations[current];
+    var innerHTML = "<span class=\"translation\"><span style='font-weight: bold'>" + translation[0] + ",</span> " + translation[1] + "</span>";
+    masthead.innerHTML = innerHTML;
+    if (translations.length > 1) {
+        var transCount = document.createElement("span");
+        transCount.id = 'transCount';
+        transCount.textContent = (current + 1) + "/" + translations.length;
+        masthead.appendChild(transCount);
+    }
+    if (typeof updateMasthead.timeoutID === 'number') {
+      window.clearTimeout(updateMasthead.timeoutID);
+    }
+    updateMasthead.timeoutID = window.setTimeout(showTitle, 5000);
+  }
+  function updateMasthead(evt, translationsForWord) {
+    translations = translationsForWord;
+    var translation = translations[0]
+    var innerHTML = "<span class=\"translation\"><span style='font-weight: bold'>" + translation[0] + ",</span> " + translation[1] + "</span>";
+    masthead.innerHTML = innerHTML;
+
+    if (translations.length > 1) {
+        var transCount = document.createElement("span");
+        transCount.id = 'transCount';
+        transCount.textContent = "1/" + translations.length;
+        masthead.appendChild(transCount);
+    }
+
+    if (typeof updateMasthead.timeoutID === 'number') {
+      window.clearTimeout(updateMasthead.timeoutID);
+    }
+    updateMasthead.timeoutID = window.setTimeout(showTitle, 5000);
+  }
+
+  function showTitle() {
+    if ((typeof showTitle.current == "undefined") || (showTitle.current == (titleElements.length - 1))) {
+      showTitle.current = 0;
+    } else {
+      showTitle.current++;
+    }
+
+    var titleToShow = titleElements[showTitle.current];
+    var innerHTML = "<span class=\"title\">" + titleToShow + "</span>";
+    masthead.innerHTML = innerHTML;
+  }
+</script>
+<body>
+<script>
+  var titleElements = ["Sophocles", "Ichneutae"];
+  document.body.onload = showTitle;
+</script>
+<div class="masthead" id="masthead" ontouchstart="showNextOnMasthead(event)"></div>
+<br><br><br>
+<span class="line">
+	<span class='speaker'>)α.</span>
+	<span ontouchstart="updateMasthead(event, ])">]κιο[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">]πειτα[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">] </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">]γ[ </span>
+	<span class='line-number'>5</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">]ω[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[πᾶσιν </span>
+	<span ontouchstart="updateMasthead(event, [['θέω', 'to run'], ['θεός', 'God']])">θεοῖς </span>
+	<span ontouchstart="updateMasthead(event, [['καί', 'and']])">καὶ </span>
+	<span ontouchstart="updateMasthead(event, ])">πᾶσι]ν </span>
+	<span ontouchstart="updateMasthead(event, [['ἀγγέλλω', 'to bear a message']])">ἀγγέλλω </span>
+	<span ontouchstart="updateMasthead(event, ])">[β]ροτο[ῖς </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[καὶ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ </span>
+	<span ontouchstart="updateMasthead(event, ])">ἀ]πόπροθεν· </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">ον[ </span>
+	<span class='line-number'>10</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">τα[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[μός]χους </span>
+	<span ontouchstart="updateMasthead(event, ])">[τε </span>
+	<span ontouchstart="updateMasthead(event, [['καί', 'and']])">καὶ </span>
+	<span ontouchstart="updateMasthead(event, [['ναός', 'the dwelling of a god, a temple'], ['ναῦς', 'a ship'], ['νέος', 'young, youthful'], ['νέω', 'to swim; to spin; to heap, pile, heap up; next year.'], ['νέω1', 'to swim; to spin; to heap, pile, heap up; next year.'], ['νέω2', 'to swim; to spin; to heap, pile, heap up; next year.'], ['νέω3', 'to swim; to spin; to heap, pile, heap up; next year.'], ['νεάω', 'to plough up anew'], ['νεάζω', 'to be young'], ['νεόω', 'to renovate, renew'], ['νεώς', 'a temple']])">νέων </span>
+	<span ontouchstart="updateMasthead(event, ])">νόμευμ]α </span>
+	<span ontouchstart="updateMasthead(event, ])">πορτίδων </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ἅπα]ντα </span>
+	<span ontouchstart="updateMasthead(event, ])">φρ[οῦδα </span>
+	<span ontouchstart="updateMasthead(event, [['καί', 'and']])">καὶ </span>
+	<span ontouchstart="updateMasthead(event, ])">μάτη]ν </span>
+	<span ontouchstart="updateMasthead(event, [['ἰχνοσκοπέω', 'to examine the track']])">ἰχνοσκοπῶ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[λαθ]ραῖ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">ἰόν[τα </span>
+	<span ontouchstart="updateMasthead(event, [['τῆλε', 'at a distance, far off, far away']])">τῆλε </span>
+	<span ontouchstart="updateMasthead(event, ])">βου]στάθμου </span>
+	<span ontouchstart="updateMasthead(event, [['κάπη', 'a crib'], ['κάπτω', 'to gulp down']])">κάπης </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ἀφα]νῶς </span>
+	<span ontouchstart="updateMasthead(event, ])">τέχνα[ισιν· </span>
+	<span ontouchstart="updateMasthead(event, [['ὅς', 'this, that;'], ['ὡς', 'thus, as, so that, since']])">ὡς </span>
+	<span ontouchstart="updateMasthead(event, ])">ἐ]γὼ </span>
+	<span ontouchstart="updateMasthead(event, [['οὐ', '\N; why no, âcertainly not; for not; for in no manner; \N; I suppose not; no truly; no truly, nay verily; not surely, not verily; nevertheless, notwithstanding, yet, still; not however; not; nowhere; not; never yet at any time']])">οὐκ </span>
+	<span ontouchstart="updateMasthead(event, [['ἄν1', '; \N'], ['ἄν2', '; \N'], ['ἀνά', 'up, upon'], ['ἐάν', 'if haply']])">ἂν </span>
+	<span ontouchstart="updateMasthead(event, [['οἴομαι', 'to suppose, think, deem, imagine']])">ᾠόμην </span>
+	<span class='line-number'>15</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[οὔτ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">ἂ]ν </span>
+	<span ontouchstart="updateMasthead(event, [['θέα', 'a seeing, looking at, view'], ['θέω', 'to run'], ['θεά', 'a goddess'], ['θεός', 'God']])">θεῶν </span>
+	<span ontouchstart="updateMasthead(event, ])">τιν[’ </span>
+	<span ontouchstart="updateMasthead(event, [['οὔτε', 'and not'], ['οὔτι', 'not, I suppose . . , surely you do not mean that . .'], ['οὔτις', 'no one'], ['οὐτάω', 'to wound, hurt, hit'], ['οὐτάζω', 'to wound']])">οὔτ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">ἐφημ]έρων </span>
+	<span ontouchstart="updateMasthead(event, [['βρότος', 'blood that has run from a wound, gore'], ['βροτός', 'a mortal man']])">βροτῶν </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[δρᾶς]αι </span>
+	<span ontouchstart="updateMasthead(event, [['ὅδε', 'this']])">τόδ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">ἔργ[ον </span>
+	<span ontouchstart="updateMasthead(event, ])">ὧδερσθβ; </span>
+	<span ontouchstart="updateMasthead(event, [['πρός', 'motion from']])">πρὸς </span>
+	<span ontouchstart="updateMasthead(event, [['τόλμα', 'courage, to undertake'], ['τολμάω', 'to undertake, take heart']])">τόλμαν </span>
+	<span ontouchstart="updateMasthead(event, [['πίπτω', 'to fall, fall down']])">πεσεῖν. </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ταῦτ]’ </span>
+	<span ontouchstart="updateMasthead(event, [['οὖν', 'really, at all events']])">οὖν </span>
+	<span ontouchstart="updateMasthead(event, [['ἐπεί', 'after that, after (postquam), since, when (quum)'], ['ἐπείπερ', 'seeing that']])">ἐπείπερ </span>
+	<span ontouchstart="updateMasthead(event, ])">[ἔμα]θον </span>
+	<span ontouchstart="updateMasthead(event, [['ἐκπλήσσω', 'to strike out of, drive away from']])">ἐκπλαγεὶς </span>
+	<span ontouchstart="updateMasthead(event, [['ὄκνος', 'shrinking, hesitation, unreadiness, sluggishness']])">ὄκνῳ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[στείχ]ῶ, </span>
+	<span ontouchstart="updateMasthead(event, [['ματεύω', 'to seek, search']])">ματεύω, </span>
+	<span ontouchstart="updateMasthead(event, [['παντελής', 'all-complete, absolute, complete, entire']])">παντελὲς </span>
+	<span ontouchstart="updateMasthead(event, [['κήρυγμα', 'that which is cried by a herald, a proclamation, public notice']])">κήρυγμ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἔχω', 'to have'], ['χόω', 'to throw']])">ἔχων </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[θεοῖ]ς </span>
+	<span ontouchstart="updateMasthead(event, [['βρότος', 'blood that has run from a wound, gore'], ['βροτός', 'a mortal man']])">βροτοῖς </span>
+	<span ontouchstart="updateMasthead(event, [['τε', 'and; acc. and abl. of tu; tu or te; see tu']])">τε </span>
+	<span ontouchstart="updateMasthead(event, [['μηδείς', 'and not one']])">μηδέν’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἀγνοέω', 'not to perceive']])">ἀγνοεῖν </span>
+	<span ontouchstart="updateMasthead(event, [['ὅδε', 'this']])">τάδε. </span>
+	<span class='line-number'>20</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ἀκολο]υθίᾳ </span>
+	<span ontouchstart="updateMasthead(event, [['γάρ', 'for']])">γὰρ </span>
+	<span ontouchstart="updateMasthead(event, [['ἐμμαίνομαι', 'to be mad at'], ['ἐμμανής', 'in madness, frantic, raving']])">ἐμμανὴς </span>
+	<span ontouchstart="updateMasthead(event, [['κυνηγέτης', 'a hunter, huntsman'], ['κυνηγετέω', 'to hunt']])">κυνηγετῶ· </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[Θρᾳκ]ῶν </span>
+	<span ontouchstart="updateMasthead(event, [['δέ', 'but']])">δ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">ἐπῆλθ[ο]ν </span>
+	<span ontouchstart="updateMasthead(event, ])">φ[ῦ]λα </span>
+	<span ontouchstart="updateMasthead(event, ])">τ[οῦ] </span>
+	<span ontouchstart="updateMasthead(event, [['πᾶς', 'all, the whole']])">παντὸς </span>
+	<span ontouchstart="updateMasthead(event, ])">στρατ[οῦ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ἀλλ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">οὔ]τις[ </span>
+</span><br>
+<span class="line">
+	<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ς', 'The twelfth letter of the alphabet;']])">ς </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['λ', 'The twenty-third letter of the alphabet;']])">λ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ις', 'he, she, it, the one mentioned']])">ις </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[τ]ὰ </span>
+	<span ontouchstart="updateMasthead(event, ])">Θεσσαλῶν </span>
+	<span ontouchstart="updateMasthead(event, ])">[τ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἔγκαρπος', 'containing fruit']])">ἔγκαρπα </span>
+	<span ontouchstart="updateMasthead(event, [['μέτειμι2', 'sum; to go between'], ['μεθίημι', 'to let go, let loose, release'], ['πεδίον', 'a plain'], ['πεδιάς', 'flat, level'], ['πεδιεύς', '\N']])">πεδί’ </span>
+	<span ontouchstart="updateMasthead(event, ])">ἐ]πεσσύθ[ην </span>
+	<span class='line-number'>30</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">Βοιωτίας </span>
+	<span ontouchstart="updateMasthead(event, [['τε', 'and; acc. and abl. of tu; tu or te; see tu']])">τε </span>
+	<span ontouchstart="updateMasthead(event, ])">γ[ῆς </span>
+	<span ontouchstart="updateMasthead(event, ])">πολυκτήτου]ς </span>
+	<span ontouchstart="updateMasthead(event, ])">[πό]λ]εις, </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ἔπει]τα </span>
+	<span ontouchstart="updateMasthead(event, ])">δ’[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">
+ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ς', 'The twelfth letter of the alphabet;']])">ς </span>
+	<span ontouchstart="updateMasthead(event, ])">Δωρικο[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ </span>
+	<span class='line-number'>35</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ὡς </span>
+	<span ontouchstart="updateMasthead(event, [['εἴτε', '\N'], ['εἰμί', 'I have']])">εἴτε </span>
+	<span ontouchstart="updateMasthead(event, ])">ποι]μὴν </span>
+	<span ontouchstart="updateMasthead(event, [['εἴτε', '\N'], ['εἶμι', 'to go'], ['εἶτα', 'then, next'], ['εἰμί', 'I have']])">εἴτ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">ἀγρωστή[ρων </span>
+	<span ontouchstart="updateMasthead(event, [['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τις </span>
+	<span ontouchstart="updateMasthead(event, [['εἰμί', 'I have'], ['ἤ1', 'or; \N'], ['ἤ2', 'or; \N'], ['ἦ', 'in truth, truly, verily, of a surety'], ['ἠμί', 'I say']])">ἢ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[μαριλοκαυ]τῶν </span>
+	<span ontouchstart="updateMasthead(event, [['ἐν', 'in, among. c. dat.'], ['εἰμί', 'I have'], ['εἰς', 'into, to c. acc.']])">ἐν </span>
+	<span ontouchstart="updateMasthead(event, [['λόγος', 'the word']])">λόγῳ </span>
+	<span ontouchstart="updateMasthead(event, ])">παρ[ίσταται </span>
+	<span class='line-number'>40</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ἢ </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the']])">τῶν </span>
+	<span ontouchstart="updateMasthead(event, ])">ὀρ]είων </span>
+	<span ontouchstart="updateMasthead(event, ])">νυμφογεννή[του </span>
+	<span ontouchstart="updateMasthead(event, [['γένος', 'race, stock, family']])">γένους </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[θηρῶ]ν </span>
+	<span ontouchstart="updateMasthead(event, [['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τίς </span>
+	<span ontouchstart="updateMasthead(event, [['εἰμί', 'I have']])">ἐστι, </span>
+	<span ontouchstart="updateMasthead(event, [['πᾶς', 'all, the whole']])">πᾶσιν </span>
+	<span ontouchstart="updateMasthead(event, ])">ἀγγέλ[λω </span>
+	<span ontouchstart="updateMasthead(event, [['ὅδε', 'this']])">τάδε, </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[τὸν </span>
+	<span ontouchstart="updateMasthead(event, ])">φ]ῶρα </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the']])">τῶν </span>
+	<span ontouchstart="updateMasthead(event, ])">Παιῶνος </span>
+	<span ontouchstart="updateMasthead(event, [['ὅστις', 'any one who, anything which']])">ὅστις </span>
+	<span ontouchstart="updateMasthead(event, ])">ἂ[ν </span>
+	<span ontouchstart="updateMasthead(event, [['λάπτω', 'to lap with the tongue'], ['λαβή', 'the part intended for grasping, a handle, haft'], ['λαμβάνω', 'to take']])">λάβῃ, </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[τῷδ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">α]ὐτόχρημα </span>
+	<span ontouchstart="updateMasthead(event, [['μισθός', 'wages, pay, hire']])">μισθός </span>
+	<span ontouchstart="updateMasthead(event, [['ἔσθω', 'to eat'], ['ἔστε', 'up to the time that, until'], ['εἰμί', 'I have']])">ἐσθ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the'], ['ὅς', 'this, that;']])">ὁ </span>
+	<span ontouchstart="updateMasthead(event, ])">κε[ίμενος. </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Σι.</span>
+	<span ontouchstart="updateMasthead(event, ])">[ὦ </span>
+	<span ontouchstart="updateMasthead(event, ])">Φοῖβε,] </span>
+	<span ontouchstart="updateMasthead(event, [['σεύω', 'to put in quick motion: to drive, hunt, chase away'], ['σός', 'thy, thine, of thee'], ['σοῦ', 'shoo! shoo!']])">σοῦ </span>
+	<span ontouchstart="updateMasthead(event, ])">φώνημαθ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ὅς', 'this, that;'], ['ὡς', 'thus, as, so that, since']])">ὡς </span>
+	<span ontouchstart="updateMasthead(event, [['ἐπικλύω', '\N']])">ἐπέκλυον </span>
+	<span class='line-number'>45</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[βοῶ]ντος </span>
+	<span ontouchstart="updateMasthead(event, [['ὄρθιος', 'straight up, going upwards, steep, uphill']])">ὀρθίοισι </span>
+	<span ontouchstart="updateMasthead(event, [['σύν', 'along with, in company with, together with'], ['ὗς', 'the wild swine']])">σὺν </span>
+	<span ontouchstart="updateMasthead(event, ])">κηρύγμας[ι, </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ς]πουδῇ </span>
+	<span ontouchstart="updateMasthead(event, [['ὅδε', 'this']])">τάδ’, </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the'], ['ὅς', 'this, that;']])">ἣ </span>
+	<span ontouchstart="updateMasthead(event, [['πάρειμι1', 'sum; ibo']])">πάρεστι </span>
+	<span ontouchstart="updateMasthead(event, [['πρεσβύτης', '\N']])">πρεσβύτῃ </span>
+	<span ontouchstart="updateMasthead(event, ])">[μαθών </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ς]οί, </span>
+	<span ontouchstart="updateMasthead(event, ])">Φοῖβ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">Ἄπολλον, </span>
+	<span ontouchstart="updateMasthead(event, [['προσφιλής', 'dear, beloved']])">προσφιλὴς </span>
+	<span ontouchstart="updateMasthead(event, ])">εὐε[ργέτης </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ἐθέλω', 'to will, wish, purpose']])">θέλων </span>
+	<span ontouchstart="updateMasthead(event, [['γίγνομαι', 'gi-geno']])">γενέσθαι </span>
+	<span ontouchstart="updateMasthead(event, [['ὅδε', 'this']])">τῷδ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἐπισεύω', 'to put in motion against, set upon']])">ἐπεσσύθην </span>
+	<span ontouchstart="updateMasthead(event, ])">δρ[ό]μ[ῳ, </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ἄν1', '; \N'], ['ἄν2', '; \N'], ['ἀνά', 'up, upon'], ['ἐάν', 'if haply']])">ἄν </span>
+	<span ontouchstart="updateMasthead(event, [['πῶς', 'in a certain way; how? in what way'], ['πως', 'in any way, at all, by any means']])">πως </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the']])">τὸ </span>
+	<span ontouchstart="updateMasthead(event, [['χρῆμα', 'a thing that one uses']])">χρῆμα </span>
+	<span ontouchstart="updateMasthead(event, [['οὗτος', 'this']])">τοῦτό </span>
+	<span ontouchstart="updateMasthead(event, [['σός', 'thy, thine, of thee']])">σοι </span>
+	<span ontouchstart="updateMasthead(event, ])">κυνηγ[έ]σω. </span>
+	<span class='line-number'>50</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">τ[ὸ]τ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">αγγε[λό]ς </span>
+	<span ontouchstart="updateMasthead(event, [['ἐγώ', 'ego']])">μοι </span>
+	<span ontouchstart="updateMasthead(event, [['κεῖμαι', 'to be laid']])">κείμενον </span>
+	<span ontouchstart="updateMasthead(event, ])">χρ[υ]σο[ν </span>
+	<span ontouchstart="updateMasthead(event, ])">ς]τέφε </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">μά[λι]στ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">ἐπ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['παῖς', 'a child']])">παῖδας </span>
+	<span ontouchstart="updateMasthead(event, [['δέ', 'but']])">δ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">εμ[οὺ]ς </span>
+	<span ontouchstart="updateMasthead(event, [['ὄσσε', 'the two eyes']])">ὄσσοισι </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>)α.</span>
+	<span ontouchstart="updateMasthead(event, ])">[ </span>
+	<span class='line-number'>55</span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Σι.</span>
+	<span ontouchstart="updateMasthead(event, ])">τα[ς </span>
+	<span ontouchstart="updateMasthead(event, [['βοῦς', 'cow']])">βοῦς </span>
+	<span ontouchstart="updateMasthead(event, [['ἀπάγω', 'to lead away, carry off']])">ἀπάξω </span>
+	<span ontouchstart="updateMasthead(event, ])">ς]οι· </span>
+	<span ontouchstart="updateMasthead(event, [['συ', 'thou, you.']])">σὺ </span>
+	<span ontouchstart="updateMasthead(event, [['δέ', 'but']])">δ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἔμπεδος', 'in the ground, firm-set, steadfast'], ['ἐμπεδόω', 'to fix in the earth']])">ἐμπέδου </span>
+	<span ontouchstart="updateMasthead(event, ])">[δόσι]ν. </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>)α.</span>
+	<span ontouchstart="updateMasthead(event, ])">[ἕξει </span>
+	<span ontouchstart="updateMasthead(event, [['σφεῖς', 'long'], ['σφός', 'their, their own, belonging to them']])">σφ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the'], ['ὅς', 'this, that;']])">ὁ </span>
+	<span ontouchstart="updateMasthead(event, [['γε', 'at least, at any rate']])">γ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">εὑ]ρὼν </span>
+	<span ontouchstart="updateMasthead(event, ])">ὅστι[ς] </span>
+	<span ontouchstart="updateMasthead(event, ])">ἔ[ς]θ’· </span>
+	<span ontouchstart="updateMasthead(event, ])">ἑτ[οῖμ]α </span>
+	<span ontouchstart="updateMasthead(event, ])">δ[έ. </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Σι.</span>
+	<span ontouchstart="updateMasthead(event, ])">[ </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>)α.</span>
+	<span ontouchstart="updateMasthead(event, ])">[ </span>
+</span><br>
+<span class="line">
+	<span class="line">
+	<span class='speaker'>)α.</span>
+	<span ontouchstart="updateMasthead(event, ])">α[ </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Σι.</span>
+	<span ontouchstart="updateMasthead(event, [['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τί </span>
+	<span ontouchstart="updateMasthead(event, [['οὗτος', 'this']])">τοῦτο; </span>
+	<span ontouchstart="updateMasthead(event, ])">πο[ι </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>)α.</span>
+	<span ontouchstart="updateMasthead(event, [['ἐλεύθερος', 'free']])">ἐλεύθερος </span>
+	<span ontouchstart="updateMasthead(event, [['συ', 'thou, you.']])">σὺ </span>
+	<span ontouchstart="updateMasthead(event, ])">[πᾶν </span>
+	<span ontouchstart="updateMasthead(event, [['τε', 'and; acc. and abl. of tu; tu or te; see tu']])">τε </span>
+	<span ontouchstart="updateMasthead(event, [['γένος', 'race, stock, family']])">γένος </span>
+	<span ontouchstart="updateMasthead(event, [['εἰμί', 'I have']])">ἔσται </span>
+	<span ontouchstart="updateMasthead(event, ])">τέκν]ων.
+ </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Χο.</span>
+	<span ontouchstart="updateMasthead(event, [['εἶμι', 'to go'], ['εὐθύς', 'straight, direct; straight'], ['ἴτης', '\N'], ['ἰθύς', 'straight, direct; a straight course'], ['ἰτός', 'ibo']])">ἴθ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἄγε', 'come! come on! well!'], ['ἄγω', 'to lead'], ['ἀγός', 'a leader, chief']])">ἄγε </span>
+	<span ontouchstart="updateMasthead(event, ])">δ[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['πούς', 'a foot']])">πόδα </span>
+	<span ontouchstart="updateMasthead(event, ])">βά[σιν </span>
+	<span ontouchstart="updateMasthead(event, [['τε', 'and; acc. and abl. of tu; tu or te; see tu']])">τε </span>
+	<span class='line-number'>65</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">ἀπαπαπ[αῖ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['εἰμί', 'I have'], ['ὦ', 'O! oh!']])">ὢ </span>
+	<span ontouchstart="updateMasthead(event, [['εἰμί', 'I have'], ['ὦ', 'O! oh!']])">ὤ, </span>
+	<span ontouchstart="updateMasthead(event, [['σός', 'thy, thine, of thee']])">σέ </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the'], ['τοι', 'let me tell you, surely, verily']])">τοι </span>
+	<span ontouchstart="updateMasthead(event, ])">[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">ἔπιθι </span>
+	<span ontouchstart="updateMasthead(event, ])">κλωπ[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ὑπόνομος', 'underground']])">ὑπόνομα </span>
+	<span ontouchstart="updateMasthead(event, ])">κ[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['διανύω', 'to bring quite to an end, accomplish, finish']])">διανύτων </span>
+	<span ontouchstart="updateMasthead(event, ])">ό[ </span>
+	<span class='line-number'>70</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['πατρικός', 'derived from one's fathers, paternal, hereditary']])">πατρικὰν </span>
+	<span ontouchstart="updateMasthead(event, ])">γῆρ[υν </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['πῶς', 'in a certain way; how? in what way'], ['πως', 'in any way, at all, by any means']])">πῶς </span>
+	<span ontouchstart="updateMasthead(event, [['παῖς', 'a child'], ['πη', 'in some way, somehow'], ['πῆ', 'in what way? how?']])">πᾷ </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the'], ['τίς', 'who? which?']])">τὰ </span>
+	<span ontouchstart="updateMasthead(event, ])">λάθρι[α </span>
+	<span ontouchstart="updateMasthead(event, [['νύχιος', 'nightly']])">νύχια </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['κλέμμα', 'a theft']])">κλέμματα </span>
+	<span ontouchstart="updateMasthead(event, ])">ποσσὶ[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['εἰ', 'whether.'], ['εἶμι', 'to go'], ['εἰμί', 'I have']])">εἴ </span>
+	<span ontouchstart="updateMasthead(event, [['πῶς', 'in a certain way; how? in what way'], ['πως', 'in any way, at all, by any means']])">πως, </span>
+	<span ontouchstart="updateMasthead(event, [['ἄν1', '; \N'], ['ἄν2', '; \N'], ['ἀνά', 'up, upon'], ['ἐάν', 'if haply']])">ἂν </span>
+	<span ontouchstart="updateMasthead(event, [['τύχος', '\N'], ['τυγχάνω', 'to hit']])">τύχω, </span>
+	<span ontouchstart="updateMasthead(event, ])">πο[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['πατήρ', 'a father'], ['πατρίς', 'of one's fathers']])">πατρί </span>
+	<span ontouchstart="updateMasthead(event, [['τε', 'and; acc. and abl. of tu; tu or te; see tu']])">τ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἐλεύθερος', 'free']])">ἐλεύθερον </span>
+	<span ontouchstart="updateMasthead(event, ])">β[ </span>
+	<span class='line-number'>75</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">ξυνάμα </span>
+	<span ontouchstart="updateMasthead(event, [['θεός', 'God']])">θεὸς </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the'], ['ὅς', 'this, that;']])">ὁ </span>
+	<span ontouchstart="updateMasthead(event, [['φίλος', 'loved, beloved, dear']])">φίλος </span>
+	<span ontouchstart="updateMasthead(event, [['ἄνετος', 'relaxed, slack, loose'], ['ἄνω1', 'to accomplish, achieve, finish; up, upwards'], ['ἀνετάζω', 'to examine closely'], ['ἀνίημι', 'to send up']])">ἀνέτω </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['πόνος', 'work']])">πόνους, </span>
+	<span ontouchstart="updateMasthead(event, [['προφαίνω', 'to bring forth, bring to light, shew forth, manifest, display']])">προφήνας </span>
+	<span ontouchstart="updateMasthead(event, [['ἀρίζηλος', 'conspicuous, very distinct']])">ἀρίζηλα </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['χρύσεος', 'golden, of gold, decked'], ['χρυσός', 'gold'], ['χρυσόω', 'to make golden, gild']])">χρυσοῦ </span>
+	<span ontouchstart="updateMasthead(event, ])">παραδείγματα.
+ </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Σι.</span>
+	<span ontouchstart="updateMasthead(event, [['θεός', 'God']])">θεὸς </span>
+	<span ontouchstart="updateMasthead(event, ])">Τύχη </span>
+	<span ontouchstart="updateMasthead(event, ])">[κ]αὶ </span>
+	<span ontouchstart="updateMasthead(event, [['δαίμων', 'to divide']])">δαῖμον </span>
+	<span ontouchstart="updateMasthead(event, ])">ἰθυντήριε, </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">τυχ[ε]ῖν </span>
+	<span ontouchstart="updateMasthead(event, [['ἐγώ', 'ego']])">με </span>
+	<span ontouchstart="updateMasthead(event, [['πρᾶγος', 'state-affairs']])">πράγους </span>
+	<span ontouchstart="updateMasthead(event, [['ἕ', 'sui.'], ['ἵημι', 'to set a going, put in motion'], ['ὅς', 'this, that;'], ['οὗ', 'where']])">οὗ </span>
+	<span ontouchstart="updateMasthead(event, [['δράμημα', 'a running, course, a race']])">δράμημ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἐπείγω', 'to press down, weigh down']])">ἐπείγεται, </span>
+	<span class='line-number'>80</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['λεία', 'booty, plunder'], ['λεῖος', 'smooth, plain, not embroidered']])">λείαν </span>
+	<span ontouchstart="updateMasthead(event, [['ἄγρα', 'a catching, hunting']])">ἄγραν </span>
+	<span ontouchstart="updateMasthead(event, [['συλάω', 'to strip off']])">σύλησιν </span>
+	<span ontouchstart="updateMasthead(event, ])">ἐκκυνηγέσαι </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">Φ[ο]ίβου </span>
+	<span ontouchstart="updateMasthead(event, ])">κλ[ο]παίας </span>
+	<span ontouchstart="updateMasthead(event, [['βοῦς', 'cow']])">βοῦς </span>
+	<span ontouchstart="updateMasthead(event, ])">ἀπεστερημένο[υ. </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[τ]ῶν </span>
+	<span ontouchstart="updateMasthead(event, [['εἰ', 'whether.'], ['εἶμι', 'to go'], ['εἰμί', 'I have']])">εἴ </span>
+	<span ontouchstart="updateMasthead(event, [['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τις </span>
+	<span ontouchstart="updateMasthead(event, [['ὀπτήρ', 'one who looks']])">ὀπτήρ </span>
+	<span ontouchstart="updateMasthead(event, ])">ἐστι[ν] </span>
+	<span ontouchstart="updateMasthead(event, [['εἰμί', 'I have'], ['ἤ1', 'or; \N'], ['ἤ2', 'or; \N'], ['ἦ', 'in truth, truly, verily, of a surety'], ['ἠμί', 'I say']])">ἢ </span>
+	<span ontouchstart="updateMasthead(event, [['κατήκους', 'listening']])">κατήκοος, </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ἐ]μοί </span>
+	<span ontouchstart="updateMasthead(event, [['τε', 'and; acc. and abl. of tu; tu or te; see tu']])">τ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">[ἂ]ν </span>
+	<span ontouchstart="updateMasthead(event, ])">[ε]ἴη </span>
+	<span ontouchstart="updateMasthead(event, ])">προσφιλὴ[ς] </span>
+	<span ontouchstart="updateMasthead(event, [['φράζω', 'to point out, shew, indicate']])">φράσας </span>
+	<span ontouchstart="updateMasthead(event, [['ὅδε', 'this']])">τόδε </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[Φοίβῳ </span>
+	<span ontouchstart="updateMasthead(event, ])">τ]’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἄναξ', 'a lord, master']])">ἄνακτι </span>
+	<span ontouchstart="updateMasthead(event, [['συντελέω', 'to bring quite to an end, complete, accomplish'], ['συντελής', 'joining in payment, a contributor']])">συντελὴς </span>
+	<span ontouchstart="updateMasthead(event, ])">εὐεργ[έ]της. </span>
+	<span class='line-number'>85</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">μήνυ[τρα </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Χο.</span>
+	<span ontouchstart="updateMasthead(event, [['εἶμι', 'to go'], ['εἰμί', 'I have'], ['ἴον', 'the violet'], ['ἰάομαι', 'to heal, cure'], ['ἰός', 'an arrow; rust'], ['ἰώ', 'oh!']])">ἰὼ </span>
+	<span ontouchstart="updateMasthead(event, ])">ς[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">ϋηο[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['δέ', 'but']])">δ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">οὐδ[ </span>
+	<span class='line-number'>90</span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Σι.</span>
+	<span ontouchstart="updateMasthead(event, [['φημί', 'to declare, make known']])">φησίν </span>
+	<span ontouchstart="updateMasthead(event, [['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τις; </span>
+	<span ontouchstart="updateMasthead(event, ])">ἢ[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ἔοικα', 'it seemed good']])">ἔοικεν </span>
+	<span ontouchstart="updateMasthead(event, [['ἤδη', 'nunc'], ['ἦδος', 'delight, enjoyment, pleasure']])">ἤδη </span>
+	<span ontouchstart="updateMasthead(event, ])">κ[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ἄγε', 'come! come on! well!'], ['ἄγη', 'wonder, awe, amazement'], ['ἄγω', 'to lead'], ['ἀγή', 'a fragment, piece, splinter'], ['ἀγός', 'a leader, chief']])">ἄγ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἐάω', 'to let, suffer, allow, permit'], ['εἶα', 'on! up! away!']])">εἷα </span>
+	<span ontouchstart="updateMasthead(event, [['δέω1', 'to bind, tie, fetter; to lack, miss, stand in need of'], ['δέω2', 'to bind, tie, fetter; to lack, miss, stand in need of'], ['δεῖ', 'to bind'], ['δή', 'exactness']])">δὴ </span>
+	<span ontouchstart="updateMasthead(event, [['πᾶς', 'all, the whole']])">πᾶς </span>
+	<span ontouchstart="updateMasthead(event, ])">ς[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ῥινηλάτης', 'one who tracks by scent'], ['ῥινηλατέω', 'to track by scent']])">ῥινηλατῶν </span>
+	<span ontouchstart="updateMasthead(event, ])">ὀσμ[αῖσι </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['αὔρα', 'air in motion, a breeze']])">αὔρας </span>
+	<span ontouchstart="updateMasthead(event, [['ἐάν', 'if haply'], ['ἐάω', 'to let, suffer, allow, permit']])">ἐάν </span>
+	<span ontouchstart="updateMasthead(event, [['πη', 'in some way, somehow'], ['πῆ', 'in what way? how?']])">πῃ </span>
+	<span ontouchstart="updateMasthead(event, ])">πρ[ </span>
+	<span class='line-number'>95</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['διπλόος', 'twofold, double'], ['διπλόω', 'to double']])">διπλοῦς </span>
+	<span ontouchstart="updateMasthead(event, ])">ὀκλάζω[ν </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">ὕποσμος </span>
+	<span ontouchstart="updateMasthead(event, [['ἐν', 'in, among. c. dat.'], ['εἰμί', 'I have'], ['εἰς', 'into, to c. acc.']])">ἐν </span>
+	<span ontouchstart="updateMasthead(event, [['χράω1', 'to fall upon, attack, assail; to furnish what is needful'], ['χράω2', 'to fall upon, attack, assail; to furnish what is needful'], ['χραύω', 'to scrape, graze, wound slightly'], ['χρώς', 'the surface of the body, the skin']])">χρῷ </span>
+	<span ontouchstart="updateMasthead(event, ])">[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['οὕτως', 'hic']])">οὕτως </span>
+	<span ontouchstart="updateMasthead(event, [['ἔρευνα', 'inquiry, search'], ['ἐρευνάω', 'to seek']])">ἔρευναν </span>
+	<span ontouchstart="updateMasthead(event, [['καί', 'and']])">καὶ </span>
+	<span ontouchstart="updateMasthead(event, ])">π[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ἅπας', 'quite all, the whole']])">ἅπαντα </span>
+	<span ontouchstart="updateMasthead(event, [['χρήστης', 'a creditor, usurer, dun'], ['χρηστός', 'useful, good of its kind, serviceable']])">χρηστὰ </span>
+	<span ontouchstart="updateMasthead(event, ])">κα[ὶ </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>(η.</span>
+	<span ontouchstart="updateMasthead(event, [['θεός', 'God']])">θεὸς </span>
+	<span ontouchstart="updateMasthead(event, [['θεός', 'God']])">θεὸς </span>
+	<span ontouchstart="updateMasthead(event, [['θεός', 'God']])">θεὸς </span>
+	<span ontouchstart="updateMasthead(event, [['θεός', 'God']])">θεός· </span>
+	<span ontouchstart="updateMasthead(event, [['ἔα', 'ha! oho!'], ['ἐάω', 'to let, suffer, allow, permit'], ['εἰμί', 'I have']])">ἔα </span>
+	<span ontouchstart="updateMasthead(event, ])">[ἔα· </span>
+	<span class='line-number'>100</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ἔχω', 'to have']])">ἔχειν </span>
+	<span ontouchstart="updateMasthead(event, [['ἔοικα', 'it seemed good']])">ἔοιγμεν· </span>
+	<span ontouchstart="updateMasthead(event, [['ἴσχω', 'to hold, check, curb, keep back, restrain']])">ἴσχε, </span>
+	<span ontouchstart="updateMasthead(event, [['μή', 'not']])">μὴ </span>
+	<span ontouchstart="updateMasthead(event, ])">συρ </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>(η.</span>
+	<span ontouchstart="updateMasthead(event, [['οὗτος', 'this']])">ταῦτ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἔστε', 'up to the time that, until'], ['εἰμί', 'I have']])">ἔστ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἐκεῖνος', 'the person there, that person']])">ἐκεῖνα· </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the']])">τῶν </span>
+	<span ontouchstart="updateMasthead(event, [['βάζω', 'to speak, say'], ['βόειος', 'of an ox'], ['βοάω', 'to cry aloud, to shout'], ['βοή', 'a loud cry, shout'], ['βοῦς', 'cow']])">βοῶν </span>
+	<span ontouchstart="updateMasthead(event, ])">τ[ὰ] </span>
+	<span ontouchstart="updateMasthead(event, [['σῆμα', 'a sign, mark, token']])">σήματα. </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>(η.</span>
+	<span ontouchstart="updateMasthead(event, ])">σίγ[α]· </span>
+	<span ontouchstart="updateMasthead(event, [['θεός', 'God']])">θεός </span>
+	<span ontouchstart="updateMasthead(event, [['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τις </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the']])">τὴν </span>
+	<span ontouchstart="updateMasthead(event, ])">ἀποι[κία]ν </span>
+	<span ontouchstart="updateMasthead(event, [['ἄγνυμι', 'to break, shiver'], ['ἄγος', 'any matter of religious awe'], ['ἄγω', 'to lead']])">ἄγει. </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>(η.</span>
+	<span ontouchstart="updateMasthead(event, [['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τί </span>
+	<span ontouchstart="updateMasthead(event, [['δράω', 'to do']])">δρῶμεν, </span>
+	<span ontouchstart="updateMasthead(event, [['εἰμί', 'I have'], ['ὦ', 'O! oh!']])">ὦ </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the'], ['τᾶν', 'sir, my good friend']])">τᾶν; </span>
+	<span ontouchstart="updateMasthead(event, [['εἰμί', 'I have'], ['ἤ1', 'or; \N'], ['ἤ2', 'or; \N'], ['ἦ', 'in truth, truly, verily, of a surety'], ['ἠμί', 'I say']])">ἦ </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the']])">τὸ </span>
+	<span ontouchstart="updateMasthead(event, [['δέον', 'that which is binding, needful, right, proper'], ['δέω1', 'to bind, tie, fetter; to lack, miss, stand in need of'], ['δέω2', 'to bind, tie, fetter; to lack, miss, stand in need of'], ['δεῖ', 'to bind']])">δέον </span>
+	<span ontouchstart="updateMasthead(event, ])">[ἐξ]ήνομεν; </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>(η.</span>
+	<span ontouchstart="updateMasthead(event, [['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τί; </span>
+	<span ontouchstart="updateMasthead(event, ])">τοῖς[ι] </span>
+	<span ontouchstart="updateMasthead(event, [['οὗτος', 'this'], ['ταύτῃ', 'in this way.']])">ταύτῃ </span>
+	<span ontouchstart="updateMasthead(event, [['πῶς', 'in a certain way; how? in what way'], ['πως', 'in any way, at all, by any means']])">πῶς </span>
+	<span ontouchstart="updateMasthead(event, [['δοκέω', 'videor mihi, to think, suppose, imagine, expect']])">δοκεῖ; </span>
+	<span class='line-number'>105</span>
+</span><br>
+<span class="line">
+	<span class='speaker'>(η.</span>
+	<span ontouchstart="updateMasthead(event, [['δοκέω', 'videor mihi, to think, suppose, imagine, expect']])">δοκεῖ </span>
+	<span ontouchstart="updateMasthead(event, [['πάνυ', 'altogether, entirely']])">πάνυ. </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['σαφής', 'clear, plain, distinct, manifest']])">σαφῆ </span>
+	<span ontouchstart="updateMasthead(event, ])">[γ]ὰρ </span>
+	<span ontouchstart="updateMasthead(event, [['αὖθι', 'on the spot, here, there'], ['αὖτε', 'again'], ['αὐτός', 'self']])">αὔθ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἕκαστος', 'every, every one, each, each one']])">ἕκαστα </span>
+	<span ontouchstart="updateMasthead(event, [['σημαίνω', 'to shew by a sign, indicate, make known, point out']])">σημαίνει </span>
+	<span ontouchstart="updateMasthead(event, [['ὅδε', 'this']])">τάδε. </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>(η.</span>
+	<span ontouchstart="updateMasthead(event, [['εἶδον', 'to see'], ['ἰδού', 'lo! behold! see there!']])">ἰδοὺ </span>
+	<span ontouchstart="updateMasthead(event, [['εἶδον', 'to see'], ['ἰδού', 'lo! behold! see there!']])">ἰδού· </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['καί', 'and']])">καὶ </span>
+	<span ontouchstart="updateMasthead(event, [['ἐπίσημον', 'any distinguishing mark, a device'], ['ἐπίσημος', 'having a mark on']])">τοὐπίσημον </span>
+	<span ontouchstart="updateMasthead(event, [['αὐτός', 'self']])">αὐτὸ </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the']])">τῶν </span>
+	<span ontouchstart="updateMasthead(event, [['ὅπλον', 'a tool, implement'], ['ὁπλέω', 'to make ready'], ['ὁπλή', 'a hoof, the solid hoof']])">ὁπλῶν </span>
+	<span ontouchstart="updateMasthead(event, ])">πάλι[ν. </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>(η.</span>
+	<span ontouchstart="updateMasthead(event, [['ἀθρέω', 'to look at, gaze at, observe, perceive']])">ἄθρει </span>
+	<span ontouchstart="updateMasthead(event, [['μάλα', 'very, very much, exceedingly'], ['μάλη', 'the arm-pit'], ['μαλός', 'white'], ['μῆλον2', 'a sheep; tree-fruit']])">μάλα. </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['αὖτε', 'again'], ['αὐτός', 'self']])">αὔτ’ </span>
+	<span ontouchstart="updateMasthead(event, [['εἰμί', 'I have']])">ἐστι </span>
+	<span ontouchstart="updateMasthead(event, [['οὗτος', 'this']])">τοῦτο </span>
+	<span ontouchstart="updateMasthead(event, [['μέτρον', 'that by which anything is measured']])">μέτρον </span>
+	<span ontouchstart="updateMasthead(event, ])">[ἐ]κμε </span>
+	<span class='line-number'>110</span>
+</span><br>
+<span class="line">
+	<span class='speaker'>(η.</span>
+	<span ontouchstart="updateMasthead(event, ])">χ[ώ]ρει </span>
+	<span ontouchstart="updateMasthead(event, [['δρόμος', 'a course, running, race']])">δρόμῳ </span>
+	<span ontouchstart="updateMasthead(event, [['καί', 'and']])">καὶ </span>
+	<span ontouchstart="updateMasthead(event, ])">τα[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">οπ[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">ῥοίβδημ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἐάν', 'if haply'], ['ἐάω', 'to let, suffer, allow, permit']])">ἐάν </span>
+	<span ontouchstart="updateMasthead(event, [['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τι </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the']])">τῶν </span>
+	<span ontouchstart="updateMasthead(event, ])">[βοῶν </span>
+	<span ontouchstart="updateMasthead(event, ])">δ]ῑ </span>
+	<span ontouchstart="updateMasthead(event, [['οὖς', 'auris, the ear']])">οὖς </span>
+	<span ontouchstart="updateMasthead(event, ])">[λάβῃ </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>(η.</span>
+	<span ontouchstart="updateMasthead(event, [['οὐ', '\N; why no, âcertainly not; for not; for in no manner; \N; I suppose not; no truly; no truly, nay verily; not surely, not verily; nevertheless, notwithstanding, yet, still; not however; not; nowhere; not; never yet at any time']])">οὐκ </span>
+	<span ontouchstart="updateMasthead(event, [['εἰσακούω', 'to hearken']])">εἰσακούω </span>
+	<span ontouchstart="updateMasthead(event, [['πω', 'up to this time, yet'], ['πῶ', 'where?']])">πω </span>
+	<span ontouchstart="updateMasthead(event, ])">[τορῶ]ς </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the'], ['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τοῦ </span>
+	<span ontouchstart="updateMasthead(event, ])">φθ[έγ]ματος. </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ἄλλος', 'alius, another, one besides'], ['ἀλλά', 'otherwise, but'], ['ἀναλάζομαι', 'to take again']])">ἀλλ’ </span>
+	<span ontouchstart="updateMasthead(event, [['αὐτός', 'self']])">αὐτὰ </span>
+	<span ontouchstart="updateMasthead(event, [['μείς', 'a month'], ['μήν', 'now verily, full surely']])">μὴν </span>
+	<span ontouchstart="updateMasthead(event, ])">ἴχ[νη </span>
+	<span ontouchstart="updateMasthead(event, ])">τε] </span>
+	<span ontouchstart="updateMasthead(event, [['ἵημι', 'to set a going, put in motion'], ['ὁ', 'the'], ['ὅς', 'this, that;']])">χὠ </span>
+	<span ontouchstart="updateMasthead(event, [['στίβος', 'a trodden way, track, path']])">στίβος </span>
+	<span ontouchstart="updateMasthead(event, [['ὅδε', 'this']])">τάδε </span>
+	<span class='line-number'>115</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ἐκεῖνος', 'the person there, that person'], ['κενός', 'empty'], ['κενόω', 'to empty out, drain']])">κείνων </span>
+	<span ontouchstart="updateMasthead(event, [['ἐναργής', 'visible, palpable, in bodily shape']])">ἐναργῆ </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the']])">τῶν </span>
+	<span ontouchstart="updateMasthead(event, ])">β[ο]ῶν </span>
+	<span ontouchstart="updateMasthead(event, [['μανθάνω', 'to learn']])">μαθεῖν </span>
+	<span ontouchstart="updateMasthead(event, [['παρά', 'from the side of, c. gen., beside, alongside of, c. dat., to the side of, motion alongside of, c. acc.'], ['πηρός', 'disabled in a limb, maimed']])">πάρα. </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>(η.</span>
+	<span ontouchstart="updateMasthead(event, [['ἔα', 'ha! oho!'], ['ἐάω', 'to let, suffer, allow, permit'], ['εἰμί', 'I have']])">ἔα </span>
+	<span ontouchstart="updateMasthead(event, [['μάλα', 'very, very much, exceedingly'], ['μάλη', 'the arm-pit'], ['μαλός', 'white'], ['μῆλον2', 'a sheep; tree-fruit']])">μάλα· </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">παλινστραφῆ </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the'], ['τοι', 'let me tell you, surely, verily']])">τοι </span>
+	<span ontouchstart="updateMasthead(event, [['νάω', 'to flow'], ['ναί', 'yea, verily'], ['ναῦς', 'a ship']])">ναὶ </span>
+	<span ontouchstart="updateMasthead(event, [['μά', 'in affirmation'], ['μᾶ', '\N']])">μὰ </span>
+	<span ontouchstart="updateMasthead(event, ])">Δία </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the'], ['τίς', 'who? which?']])">τὰ </span>
+	<span ontouchstart="updateMasthead(event, [['βῆμα', 'a step, pace, stride']])">βήματα </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['εἶμι', 'to go'], ['εἰμί', 'I have'], ['εἰς', 'into, to c. acc.']])">εἰς </span>
+	<span ontouchstart="updateMasthead(event, [['ἔμπαλιν', 'backwards, back']])">τοὔμπαλιν </span>
+	<span ontouchstart="updateMasthead(event, [['δέρκομαι', 'to see clearly, see']])">δέδορκεν </span>
+	<span ontouchstart="updateMasthead(event, ])">αὐ· </span>
+	<span ontouchstart="updateMasthead(event, [['ὅδε', 'this']])">τάδ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">εἴσιδε. </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τί </span>
+	<span ontouchstart="updateMasthead(event, [['εἰμί', 'I have']])">ἐστὶ </span>
+	<span ontouchstart="updateMasthead(event, [['οὗτος', 'this']])">τουτί; </span>
+	<span ontouchstart="updateMasthead(event, [['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τίς </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the'], ['ὅς', 'this, that;']])">ὁ </span>
+	<span ontouchstart="updateMasthead(event, [['τροχός', 'anything that runs round']])">τρόχος </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the'], ['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τοῦ </span>
+	<span ontouchstart="updateMasthead(event, ])">τάγματ[ος; </span>
+	<span class='line-number'>120</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['εἶμι', 'to go'], ['εἰμί', 'I have'], ['εἰς', 'into, to c. acc.']])">εἰς </span>
+	<span ontouchstart="updateMasthead(event, [['ἐφίζω', 'to set upon'], ['ὀπίσω', 'backwards'], ['πιπίσκω', 'to give to drink']])">τοὐπίσω </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the'], ['τίς', 'who? which?']])">τὰ </span>
+	<span ontouchstart="updateMasthead(event, [['πρόσθεν', 'before'], ['προστίθημι', 'to put to']])">πρόσθεν </span>
+	<span ontouchstart="updateMasthead(event, [['ἀλλάσσω', 'to make other than it is, to change, alter']])">ἤλλακται, </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the'], ['τίς', 'who? which?']])">τὰ </span>
+	<span ontouchstart="updateMasthead(event, [['δέ', 'but']])">δ’ </span>
+	<span ontouchstart="updateMasthead(event, [['αὖ', 'again, anew, afresh, once more; bow wow']])">αὖ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ἐναντίος', 'opposite']])">ἐναντί’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἀλλήλων', 'of one another, to one another, one another']])">ἀλλήλοισι </span>
+	<span ontouchstart="updateMasthead(event, ])">συμπ[επλεγ]μένα· </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['δεῖνα', 'such an one, a certain one'], ['δεινός', 'fearful, terrible, dread, dire']])">δεινὸς </span>
+	<span ontouchstart="updateMasthead(event, ])">κυκησμὸς </span>
+	<span ontouchstart="updateMasthead(event, ])">εἶχ[ε </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the']])">τὸν </span>
+	<span ontouchstart="updateMasthead(event, ])">βοη]λάτην.
+ </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Σι.</span>
+	<span ontouchstart="updateMasthead(event, [['τίνω', 'to pay a price'], ['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τίν’ </span>
+	<span ontouchstart="updateMasthead(event, [['αὖ', 'again, anew, afresh, once more; bow wow']])">αὖ </span>
+	<span ontouchstart="updateMasthead(event, [['τέχνη', 'art, skill, craft in work, cunning of hand']])">τέχνην </span>
+	<span ontouchstart="updateMasthead(event, [['συ', 'thou, you.']])">σὺ </span>
+	<span ontouchstart="updateMasthead(event, ])">τήν[δ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἆρα', 'particle introducing a question'], ['ἀρά', 'a prayer'], ['ἀράομαι', 'to pray to'], ['ἀρίς', 'a carpenter's tool, an auger'], ['ἀρόω', 'to plough'], ['αἴρω', 'to take up, raise, lift up']])">ἄρ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">ἐξ]ῆυρες, </span>
+	<span ontouchstart="updateMasthead(event, [['τίνω', 'to pay a price'], ['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τίν’ </span>
+	<span ontouchstart="updateMasthead(event, [['αὖ', 'again, anew, afresh, once more; bow wow']])">αὖ, </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['πρόσπαιος', 'striking upon']])">πρόσπαιον </span>
+	<span ontouchstart="updateMasthead(event, [['ὧδε', 'in this wise, so, thus']])">ὧδε </span>
+	<span ontouchstart="updateMasthead(event, ])">κεκλιμ[ένον] </span>
+	<span ontouchstart="updateMasthead(event, [['κυνηγετέω', 'to hunt']])">κυνηγετεῖν </span>
+	<span class='line-number'>125</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['πρός', 'motion from']])">πρὸς </span>
+	<span ontouchstart="updateMasthead(event, [['γῆ', 'earth']])">γῇ; </span>
+	<span ontouchstart="updateMasthead(event, [['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τίς </span>
+	<span ontouchstart="updateMasthead(event, [['ὑμός', 'your']])">ὑμῶν </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the'], ['ὅς', 'this, that;']])">ὁ </span>
+	<span ontouchstart="updateMasthead(event, [['τρόπος', 'a turn, direction, course, way'], ['τροπός', 'a twisted leathern thong']])">τρόπος; </span>
+	<span ontouchstart="updateMasthead(event, [['οὐ', '\N; why no, âcertainly not; for not; for in no manner; \N; I suppose not; no truly; no truly, nay verily; not surely, not verily; nevertheless, notwithstanding, yet, still; not however; not; nowhere; not; never yet at any time']])">οὐχὶ </span>
+	<span ontouchstart="updateMasthead(event, [['μανθάνω', 'to learn']])">μανθάνω· </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ἐ]χῖνος </span>
+	<span ontouchstart="updateMasthead(event, [['ὅς', 'this, that;'], ['ὡς', 'thus, as, so that, since']])">ὥς </span>
+	<span ontouchstart="updateMasthead(event, [['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τις </span>
+	<span ontouchstart="updateMasthead(event, [['ἐν', 'in, among. c. dat.'], ['εἰμί', 'I have'], ['εἰς', 'into, to c. acc.']])">ἐν </span>
+	<span ontouchstart="updateMasthead(event, [['λόχμη', 'a thicket, coppice, copse']])">λόχμῃ </span>
+	<span ontouchstart="updateMasthead(event, [['κεῖμαι', 'to be laid']])">κεῖσαι </span>
+	<span ontouchstart="updateMasthead(event, [['πέσος', '\N'], ['πίπτω', 'to fall, fall down']])">πεσών, </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ἤ] </span>
+	<span ontouchstart="updateMasthead(event, [['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τις </span>
+	<span ontouchstart="updateMasthead(event, [['πίθηκος', 'an ape, monkey']])">πίθηκος </span>
+	<span ontouchstart="updateMasthead(event, ])">κύβδα </span>
+	<span ontouchstart="updateMasthead(event, [['θυμαίνω', 'to be wroth, angry']])">θυμαίνεις </span>
+	<span ontouchstart="updateMasthead(event, [['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τινί. </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[τ]ί </span>
+	<span ontouchstart="updateMasthead(event, [['οὗτος', 'this']])">ταῦτα; </span>
+	<span ontouchstart="updateMasthead(event, [['πού', 'anywhere, somewhere'], ['ποῦ', 'quis']])">ποῦ </span>
+	<span ontouchstart="updateMasthead(event, [['γῆ', 'earth']])">γῆς </span>
+	<span ontouchstart="updateMasthead(event, [['μανθάνω', 'to learn']])">ἐμάθετ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἐν', 'in, among. c. dat.'], ['εἰμί', 'I have'], ['εἰς', 'into, to c. acc.']])">ἐν </span>
+	<span ontouchstart="updateMasthead(event, ])">πο[ί]ῳ </span>
+	<span ontouchstart="updateMasthead(event, [['τόπος', 'a place'], ['τοπάζω', 'to aim at, guess']])">τόπῳ; </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">ς[η]μήνατ’, </span>
+	<span ontouchstart="updateMasthead(event, [['οὐ', '\N; why no, âcertainly not; for not; for in no manner; \N; I suppose not; no truly; no truly, nay verily; not surely, not verily; nevertheless, notwithstanding, yet, still; not however; not; nowhere; not; never yet at any time']])">οὐ </span>
+	<span ontouchstart="updateMasthead(event, [['γάρ', 'for']])">γὰρ </span>
+	<span ontouchstart="updateMasthead(event, [['ἴδρις', 'experienced, knowing, skilful']])">ἴδρις </span>
+	<span ontouchstart="updateMasthead(event, [['εἶμι', 'to go'], ['εἰμί', 'I have']])">εἰμὶ </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the'], ['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τοῦ </span>
+	<span ontouchstart="updateMasthead(event, [['τρόπος', 'a turn, direction, course, way'], ['τροπέω', 'to turn'], ['τροπός', 'a twisted leathern thong'], ['τροπόω', 'to furnish the oar with its thong']])">τρόπου. </span>
+	<span class='line-number'>130</span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Χο.</span>
+	<span ontouchstart="updateMasthead(event, ])">ὕ </span>
+	<span ontouchstart="updateMasthead(event, ])">[ὗ] </span>
+	<span ontouchstart="updateMasthead(event, ])">ὕ </span>
+	<span ontouchstart="updateMasthead(event, ])">ὗ. </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Σι.</span>
+	<span ontouchstart="updateMasthead(event, ])">τ[ί </span>
+	<span ontouchstart="updateMasthead(event, [['οὗτος', 'this']])">τοῦτ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">ἰύζεις;] </span>
+	<span ontouchstart="updateMasthead(event, [['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τίνα </span>
+	<span ontouchstart="updateMasthead(event, [['φόβη', 'a lock'], ['φοβέω', 'to put to flight']])">φοβῇ; </span>
+	<span ontouchstart="updateMasthead(event, [['τίνω', 'to pay a price'], ['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τίν’ </span>
+	<span ontouchstart="updateMasthead(event, [['εἰσοράω', 'to look into, look upon, view, behold']])">εἰσορᾷς; </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">τ[ί </span>
+	<span ontouchstart="updateMasthead(event, [['δέμω', 'to build'], ['δεῖμα', 'fear, affright'], ['δειμός', 'fear, terror']])">δεῖμ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">ὄπωπ]ας; </span>
+	<span ontouchstart="updateMasthead(event, [['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τί </span>
+	<span ontouchstart="updateMasthead(event, [['πότε', 'when? at what time?'], ['πότος', 'drinking, a drinking-bout, carousal'], ['ποτέ', 'at some time'], ['ποτός', 'drunk, fit for drinking']])">ποτε </span>
+	<span ontouchstart="updateMasthead(event, [['Βακχεύω', 'to keep the feast of Bacchus, celebrate his mysteries']])">βακχεύεις </span>
+	<span ontouchstart="updateMasthead(event, [['ἔχω', 'to have'], ['χόω', 'to throw']])">ἔχων; </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">α[γχοῦ </span>
+	<span ontouchstart="updateMasthead(event, [['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τις </span>
+	<span ontouchstart="updateMasthead(event, ])">ἤχε]ι </span>
+	<span ontouchstart="updateMasthead(event, ])">κέρχνος· </span>
+	<span ontouchstart="updateMasthead(event, ])">ἱμείρει[ς] </span>
+	<span ontouchstart="updateMasthead(event, [['μανθάνω', 'to learn']])">μαθεῖν </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">τ[ίς </span>
+	<span ontouchstart="updateMasthead(event, [['ἐάν', 'if haply'], ['εἰμί', 'I have'], ['ἤν', 'see! see there! lo!'], ['ἠμί', 'I say']])">ἦν; </span>
+	<span ontouchstart="updateMasthead(event, [['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τί </span>
+	<span ontouchstart="updateMasthead(event, ])">σιγ]ᾶτ’, </span>
+	<span ontouchstart="updateMasthead(event, [['εἰμί', 'I have'], ['ὦ', 'O! oh!']])">ὦ </span>
+	<span ontouchstart="updateMasthead(event, ])">πρ[ὸ </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the'], ['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τοῦ </span>
+	<span ontouchstart="updateMasthead(event, ])">λαλίστ]ατοι; </span>
+	<span class='line-number'>135</span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Χο.</span>
+	<span ontouchstart="updateMasthead(event, ])">ς[ίγα </span>
+	<span ontouchstart="updateMasthead(event, [['μέν', 'on the one hand, on the other hand']])">μὲν </span>
+	<span ontouchstart="updateMasthead(event, ])">οὖν.] </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Σι.</span>
+	<span ontouchstart="updateMasthead(event, ])">τ[ίν’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἔστε', 'up to the time that, until'], ['εἰμί', 'I have']])">ἔστ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">ἐκεῖθε]ν </span>
+	<span ontouchstart="updateMasthead(event, ])">ἁπονος[φίζ]εις </span>
+	<span ontouchstart="updateMasthead(event, [['ἔχω', 'to have'], ['χόω', 'to throw']])">ἔχων; </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Χο.</span>
+	<span ontouchstart="updateMasthead(event, ])">ἄ[κουε </span>
+	<span ontouchstart="updateMasthead(event, ])">δή.
+ </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Σι.</span>
+	<span ontouchstart="updateMasthead(event, [['κάλως', 'a reefing rope, reef'], ['καλός', 'beautiful, beauteous, fair']])">καλῶς </span>
+	<span ontouchstart="updateMasthead(event, ])">ἀκούς[ω </span>
+	<span ontouchstart="updateMasthead(event, ])">μηδεν]ὸς </span>
+	<span ontouchstart="updateMasthead(event, [['φωνέω', 'to produce a sound'], ['φωνή', 'a sound, tone']])">φωνὴν </span>
+	<span ontouchstart="updateMasthead(event, [['κλύω', 'to hear']])">κλύων; </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Χο.</span>
+	<span ontouchstart="updateMasthead(event, [['ἐγώ', 'ego'], ['ἐμέω', 'to vomit, throw up'], ['ἐμός', 'mine']])">ἐμοὶ </span>
+	<span ontouchstart="updateMasthead(event, [['πείθω', 'to prevail upon, win over, persuade'], ['πίθος', 'a wine-jar']])">πιθοῦ. </span>
+	<span class='line-number'>140</span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Σι.</span>
+	<span ontouchstart="updateMasthead(event, ])">ἐμ[ὸν] </span>
+	<span ontouchstart="updateMasthead(event, ])">δίω[γμά </span>
+	<span ontouchstart="updateMasthead(event, [['γε', 'at least, at any rate']])">γ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">οὐδα]μῶς </span>
+	<span ontouchstart="updateMasthead(event, [['ὀνίνημι', 'to profit, benefit, help, assist']])">ὀνήσετε. </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Χο.</span>
+	<span ontouchstart="updateMasthead(event, [['ἀκούω', 'to hear']])">ἄκουσον </span>
+	<span ontouchstart="updateMasthead(event, [['αὖ', 'again, anew, afresh, once more; bow wow']])">αὖ </span>
+	<span ontouchstart="updateMasthead(event, ])">τ[ο]ῦ </span>
+	<span ontouchstart="updateMasthead(event, ])">χρ[ήμα]τ[ο]ς </span>
+	<span ontouchstart="updateMasthead(event, [['χρόνος', 'time']])">χρόνον </span>
+	<span ontouchstart="updateMasthead(event, [['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τινά, </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ο]ἵῳ </span>
+	<span ontouchstart="updateMasthead(event, ])">’κπ[λ]αγέντες </span>
+	<span ontouchstart="updateMasthead(event, ])">ἐν[θάδ’] </span>
+	<span ontouchstart="updateMasthead(event, [['ξενίζω', 'to receive']])">ἐξενίσμεθα </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ψόφος', 'any inarticulate sound, a sound, noise']])">ψόφῳ, </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the']])">τὸν </span>
+	<span ontouchstart="updateMasthead(event, ])">οὐδε[ὶ]ς </span>
+	<span ontouchstart="updateMasthead(event, ])">π[ώπο]τ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἀκούω', 'to hear']])">ἤκουσεν </span>
+	<span ontouchstart="updateMasthead(event, ])">βροτῶν.
+ </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Σι.</span>
+	<span ontouchstart="updateMasthead(event, [['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τί </span>
+	<span ontouchstart="updateMasthead(event, [['ἐγώ', 'ego']])">μοι </span>
+	<span ontouchstart="updateMasthead(event, ])">ψ[ό]φον; </span>
+	<span ontouchstart="updateMasthead(event, ])">φοβ[εῖσθε] </span>
+	<span ontouchstart="updateMasthead(event, ])">κα[ὶ] </span>
+	<span ontouchstart="updateMasthead(event, [['δειμαίνω', 'to be afraid, in a fright']])">δειμαίνετε, </span>
+	<span class='line-number'>145</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['μάλθα', 'a mixture of wax and pitch']])">μάλθης </span>
+	<span ontouchstart="updateMasthead(event, [['ἄναγνος', 'impure, unclean, unholy, defiled']])">ἄναγνα </span>
+	<span ontouchstart="updateMasthead(event, ])">σώ[μα]τ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἐκμάσσω', 'to wipe off, wipe away']])">ἐκμεμαγμένα </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['κακός', 'bad']])">κάκιστα </span>
+	<span ontouchstart="updateMasthead(event, [['θήρ', 'a wild beast, beast of prey'], ['θήρα', 'a hunting of wild beasts, the chase'], ['θηράω', 'to hunt'], ['θηρίον', 'a wild animal, beast']])">θηρῶν </span>
+	<span ontouchstart="updateMasthead(event, ])">ὀντ[ες, </span>
+	<span ontouchstart="updateMasthead(event, ])">ἐ]ν </span>
+	<span ontouchstart="updateMasthead(event, ])">[π]άσῃ </span>
+	<span ontouchstart="updateMasthead(event, [['σκιά', 'a shadow'], ['σκιάω', 'to overshadow'], ['σκιάζω', 'to overshadow, shade']])">σκιᾷ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['φόβος', 'flight']])">φόβον </span>
+	<span ontouchstart="updateMasthead(event, [['βλέπω', 'to see, have the power of sight']])">βλέποντες, </span>
+	<span ontouchstart="updateMasthead(event, ])">πάν[τα] </span>
+	<span ontouchstart="updateMasthead(event, [['δειματόω', 'to frighten']])">δειματούμενοι, </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ἀνευρίσκω', 'to find out, make out, discover']])">ἄνευρα </span>
+	<span ontouchstart="updateMasthead(event, [['ἀκόμιστος', 'untended']])">κἀκόμιστα </span>
+	<span ontouchstart="updateMasthead(event, ])">κἀνε[λε]ύθερα </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['διακονέω', 'to minister, serve, do service']])">διακονοῦντες, </span>
+	<span ontouchstart="updateMasthead(event, [['σῶμα', 'the body']])">σώματ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">εἰ[ς]ιδ[ε]ῖν </span>
+	<span ontouchstart="updateMasthead(event, [['μόνος', 'alone, left alone, forsaken solitary']])">μόνον </span>
+	<span class='line-number'>150</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">κα[ὶ </span>
+	<span ontouchstart="updateMasthead(event, ])">γ]λῶσσα </span>
+	<span ontouchstart="updateMasthead(event, ])">κα[ὶ] </span>
+	<span ontouchstart="updateMasthead(event, ])">φάλητες. </span>
+	<span ontouchstart="updateMasthead(event, [['εἰ', 'whether.'], ['εἶμι', 'to go'], ['εἰμί', 'I have']])">εἰ </span>
+	<span ontouchstart="updateMasthead(event, [['δέ', 'but']])">δέ </span>
+	<span ontouchstart="updateMasthead(event, [['πού', 'anywhere, somewhere'], ['ποῦ', 'quis']])">που </span>
+	<span ontouchstart="updateMasthead(event, [['δέω1', 'to bind, tie, fetter; to lack, miss, stand in need of'], ['δέω2', 'to bind, tie, fetter; to lack, miss, stand in need of'], ['δεῖ', 'to bind']])">δέῃ, </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['πιστός', 'liquid medicines; to be trusted'], ['πιστόω', 'to make trustworthy']])">πιστοὶ </span>
+	<span ontouchstart="updateMasthead(event, [['λόγος', 'the word']])">λόγοισιν </span>
+	<span ontouchstart="updateMasthead(event, [['εἰμί', 'I have']])">ὄντες </span>
+	<span ontouchstart="updateMasthead(event, [['ἔργον', 'work']])">ἔργα </span>
+	<span ontouchstart="updateMasthead(event, [['φεύγω', 'to flee, take flight, run away']])">φεύγετε. </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">τοιοῦ[δ]ε </span>
+	<span ontouchstart="updateMasthead(event, [['πατήρ', 'a father']])">πατρός, </span>
+	<span ontouchstart="updateMasthead(event, [['εἰμί', 'I have'], ['ὦ', 'O! oh!']])">ὦ </span>
+	<span ontouchstart="updateMasthead(event, [['κακός', 'bad']])">κάκιστα </span>
+	<span ontouchstart="updateMasthead(event, [['θηράω', 'to hunt'], ['θηρίον', 'a wild animal, beast'], ['θηριόω', 'to make into a wild beast.']])">θηρίων, </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ἕ', 'sui.'], ['ἵημι', 'to set a going, put in motion'], ['ὅς', 'this, that;'], ['οὗ', 'where']])">οὗ </span>
+	<span ontouchstart="updateMasthead(event, [['πολύς', 'many']])">πόλλ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἐπί', 'on, upon with gen., dat., and acc.']])">ἐφ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἅπτω', 'to fasten, bind fast'], ['ἥβη', 'manhood, youthful prime, youth'], ['ἡβάω', 'to be at man's estate, to be in the prime of youth'], ['ἡβός', '\N']])">ἥβης </span>
+	<span ontouchstart="updateMasthead(event, [['μνῆμα', 'a memorial, remembrance, record']])">μνήματ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἀνδρεία', 'manliness, manhood, manly spirit'], ['ἀνδρεῖος', 'of']])">ἀνδρείας </span>
+	<span ontouchstart="updateMasthead(event, [['ὑπό', 'from under, by, c. gen. under, c. dat., towards c. acc.']])">ὕπο </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">κ[ε]ῖται </span>
+	<span ontouchstart="updateMasthead(event, [['Πάρος', 'Paros'], ['παρά', 'from the side of, c. gen., beside, alongside of, c. dat., to the side of, motion alongside of, c. acc.'], ['πηρός', 'disabled in a limb, maimed']])">παρ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἔοικα', 'it seemed good'], ['οἶκος', 'a house, abode, dwelling'], ['οἰκέω', 'to inhabit, occupy']])">οἴκοις </span>
+	<span ontouchstart="updateMasthead(event, [['νυμφίδιος', 'of a bride, bridal']])">νυμφικοῖς </span>
+	<span ontouchstart="updateMasthead(event, [['ἀσκέω', 'to work curiously, form by art, fashion']])">ἠσκημένα, </span>
+	<span class='line-number'>155</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['οὐ', '\N; why no, âcertainly not; for not; for in no manner; \N; I suppose not; no truly; no truly, nay verily; not surely, not verily; nevertheless, notwithstanding, yet, still; not however; not; nowhere; not; never yet at any time']])">οὐκ </span>
+	<span ontouchstart="updateMasthead(event, [['εἶμι', 'to go'], ['εἰμί', 'I have'], ['εἰς', 'into, to c. acc.']])">εἰς </span>
+	<span ontouchstart="updateMasthead(event, [['φεύγω', 'to flee, take flight, run away'], ['φυγή', 'flight']])">φυγὴν </span>
+	<span ontouchstart="updateMasthead(event, [['κλίνω', 'to make to bend, slope']])">κλίνοντος, </span>
+	<span ontouchstart="updateMasthead(event, [['οὐ', '\N; why no, âcertainly not; for not; for in no manner; \N; I suppose not; no truly; no truly, nay verily; not surely, not verily; nevertheless, notwithstanding, yet, still; not however; not; nowhere; not; never yet at any time']])">οὐ </span>
+	<span ontouchstart="updateMasthead(event, ])">δουλ[ο]υμένου, </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['οὐδέ', 'but not'], ['οὐδός', 'a threshold; a way']])">οὐδὲ </span>
+	<span ontouchstart="updateMasthead(event, [['ψόφος', 'any inarticulate sound, a sound, noise'], ['ψοφέω', 'to make an inarticulate noise, to sound, make a noise']])">ψόφοισι </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the']])">τῶν </span>
+	<span ontouchstart="updateMasthead(event, ])">ὀρειτρόφων </span>
+	<span ontouchstart="updateMasthead(event, [['βοτόν', 'a beast']])">βοτῶν </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[π]τήσσοντος, </span>
+	<span ontouchstart="updateMasthead(event, [['ἄλλος', 'alius, another, one besides'], ['ἀλλά', 'otherwise, but'], ['ἀναλάζομαι', 'to take again']])">ἀλλ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">α[κ]μαῖσιν </span>
+	<span ontouchstart="updateMasthead(event, ])">ἐξει[ρ]γασμένου </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ἃ] </span>
+	<span ontouchstart="updateMasthead(event, [['νῦν', 'now, even now; now at this very time']])">νῦν </span>
+	<span ontouchstart="updateMasthead(event, [['ὑφή', 'a web'], ['ὑπό', 'from under, by, c. gen. under, c. dat., towards c. acc.']])">ὑφ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ὑμός', 'your']])">ὑμῶν </span>
+	<span ontouchstart="updateMasthead(event, ])">λάμ[πρ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">ὑ]πορρυπαίνεται </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ψ]όφῳ </span>
+	<span ontouchstart="updateMasthead(event, [['νεώρης', 'new, fresh, late']])">νεώρει </span>
+	<span ontouchstart="updateMasthead(event, ])">κόλακ[ι] </span>
+	<span ontouchstart="updateMasthead(event, ])">ποιμένων </span>
+	<span ontouchstart="updateMasthead(event, ])">π[ο]θέν, </span>
+	<span class='line-number'>160</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ὃν] </span>
+	<span ontouchstart="updateMasthead(event, [['δέω1', 'to bind, tie, fetter; to lack, miss, stand in need of'], ['δέω2', 'to bind, tie, fetter; to lack, miss, stand in need of'], ['δεῖ', 'to bind'], ['δή', 'exactness']])">δὴ </span>
+	<span ontouchstart="updateMasthead(event, [['φοβέω', 'to put to flight']])">φοβεῖσθε </span>
+	<span ontouchstart="updateMasthead(event, [['παῖς', 'a child']])">παῖδες </span>
+	<span ontouchstart="updateMasthead(event, [['ὅς', 'this, that;'], ['ὡς', 'thus, as, so that, since']])">ὣς </span>
+	<span ontouchstart="updateMasthead(event, [['πρίν', 'comparative']])">πρὶν </span>
+	<span ontouchstart="updateMasthead(event, ])">εἰσιδεῖν, </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['πλοῦτος', 'wealth, riches; \N']])">πλοῦτον </span>
+	<span ontouchstart="updateMasthead(event, [['δέ', 'but']])">δὲ </span>
+	<span ontouchstart="updateMasthead(event, ])">χ[ρ]υσόφαντον </span>
+	<span ontouchstart="updateMasthead(event, [['ἐξαφίημι', 'to send forth, discharge']])">ἐξαφίετε, </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ὅς', 'this, that;']])">ὃν </span>
+	<span ontouchstart="updateMasthead(event, ])">Φοῖβος </span>
+	<span ontouchstart="updateMasthead(event, ])">ὑμῖν </span>
+	<span ontouchstart="updateMasthead(event, [['εἶπον', 'to speak, say']])">εἶπε </span>
+	<span ontouchstart="updateMasthead(event, ])">κ[ἀ]νεδέξατο, </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['καί', 'and']])">καὶ </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the']])">τὴν </span>
+	<span ontouchstart="updateMasthead(event, [['ἐλευθέρωσις', 'a setting free'], ['ἐλευθερόω', 'to free, set free']])">ἐλευθέρωσιν </span>
+	<span ontouchstart="updateMasthead(event, [['ὅς', 'this, that;']])">ἣν </span>
+	<span ontouchstart="updateMasthead(event, ])">κατῄνεσεν
+ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">ὑμῖν </span>
+	<span ontouchstart="updateMasthead(event, [['τε', 'and; acc. and abl. of tu; tu or te; see tu']])">τε </span>
+	<span ontouchstart="updateMasthead(event, [['ἁμός', 'our, ours; as, when'], ['ἁμοῦ', 'somewhere or other'], ['ἐγώ', 'ego'], ['ἐμέω', 'to vomit, throw up'], ['ἐμός', 'mine'], ['ἡμός', '\N']])">κἀμοί· </span>
+	<span ontouchstart="updateMasthead(event, [['οὗτος', 'this']])">ταῦτ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἀφίημι', 'to send forth, discharge']])">ἀφέντες </span>
+	<span ontouchstart="updateMasthead(event, [['εὕδω', 'to sleep, lie down to sleep']])">εὕδετε. </span>
+	<span class='line-number'>165</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['εἰ', 'whether.'], ['εἶμι', 'to go'], ['εἰμί', 'I have']])">εἰ </span>
+	<span ontouchstart="updateMasthead(event, [['μή', 'not']])">μὴ </span>
+	<span ontouchstart="updateMasthead(event, ])">’νανοστήσαντες </span>
+	<span ontouchstart="updateMasthead(event, ])">ἐξιχνεύσε[τε </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ὁ', 'the']])">τὰς </span>
+	<span ontouchstart="updateMasthead(event, [['βοῦς', 'cow']])">βοῦς </span>
+	<span ontouchstart="updateMasthead(event, [['ὅπη', 'by which way']])">ὅπῃ </span>
+	<span ontouchstart="updateMasthead(event, [['βαίνω', 'to walk, step']])">βεβᾶσι </span>
+	<span ontouchstart="updateMasthead(event, [['καί', 'and']])">καὶ </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the']])">τὸν </span>
+	<span ontouchstart="updateMasthead(event, ])">βουκόλο[ν, </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['κλαίω', 'to weep, lament, wail']])">κλαίοντες </span>
+	<span ontouchstart="updateMasthead(event, [['αὐτός', 'self']])">αὐτῇ </span>
+	<span ontouchstart="updateMasthead(event, [['δειλία', 'cowardice'], ['δειλιάω', 'to be afraid']])">δειλίᾳ </span>
+	<span ontouchstart="updateMasthead(event, ])">ψοφή[ς]ετε. </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Χο.</span>
+	<span ontouchstart="updateMasthead(event, [['πατήρ', 'a father']])">πάτερ, </span>
+	<span ontouchstart="updateMasthead(event, [['πάρειμι1', 'sum; ibo'], ['πηρός', 'disabled in a limb, maimed']])">παρὼν </span>
+	<span ontouchstart="updateMasthead(event, [['αὐτός', 'self']])">αὐτός </span>
+	<span ontouchstart="updateMasthead(event, [['ἐγώ', 'ego']])">με </span>
+	<span ontouchstart="updateMasthead(event, ])">συμποδηγέτε[ι, </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ἵνα', 'in that place, there']])">ἵν’ </span>
+	<span ontouchstart="updateMasthead(event, [['εὖ', 'well']])">εὖ </span>
+	<span ontouchstart="updateMasthead(event, [['κάτοιδα', 'to know well, understand']])">κατείδῃς </span>
+	<span ontouchstart="updateMasthead(event, [['εἰ', 'whether.'], ['εἶμι', 'to go'], ['εἰμί', 'I have']])">εἴ </span>
+	<span ontouchstart="updateMasthead(event, [['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τίς </span>
+	<span ontouchstart="updateMasthead(event, [['εἰμί', 'I have']])">ἐστι </span>
+	<span ontouchstart="updateMasthead(event, [['δειλία', 'cowardice'], ['δειλιάω', 'to be afraid']])">δειλία· </span>
+	<span class='line-number'>170</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">γνώση[ι] </span>
+	<span ontouchstart="updateMasthead(event, [['γάρ', 'for']])">γὰρ </span>
+	<span ontouchstart="updateMasthead(event, [['αὐτός', 'self']])">αὐτός, </span>
+	<span ontouchstart="updateMasthead(event, [['ἄν1', '; \N'], ['ἄν2', '; \N'], ['ἀνά', 'up, upon'], ['ἐάν', 'if haply']])">ἂν </span>
+	<span ontouchstart="updateMasthead(event, [['πάρειμι1', 'sum; ibo'], ['παρηίς', '\N'], ['παρίημι', 'to let drop beside'], ['πείρω', 'to pierce quite through, fix'], ['πηρός', 'disabled in a limb, maimed']])">παρῇς, </span>
+	<span ontouchstart="updateMasthead(event, [['οὐδείς', 'and not one']])">οὐδὲν </span>
+	<span ontouchstart="updateMasthead(event, ])">λέγω[ν. </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Σι.</span>
+	<span ontouchstart="updateMasthead(event, [['ἐγώ', 'ego']])">ἐγὼ </span>
+	<span ontouchstart="updateMasthead(event, ])">πα[ρ]ὼν </span>
+	<span ontouchstart="updateMasthead(event, [['αὐτός', 'self']])">αὐτός </span>
+	<span ontouchstart="updateMasthead(event, [['σός', 'thy, thine, of thee']])">σε </span>
+	<span ontouchstart="updateMasthead(event, [['προσβιβάζω', 'to make to approach, bring nearer']])">προσβιβῶ </span>
+	<span ontouchstart="updateMasthead(event, [['λόγος', 'the word']])">λόγῳ, </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">κυνορτικὸν </span>
+	<span ontouchstart="updateMasthead(event, [['σύριγμα', 'the sound of a pipe']])">σύριγμα </span>
+	<span ontouchstart="updateMasthead(event, ])">διακαλούμεν[ος. </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ἄλλος', 'alius, another, one besides'], ['ἀλλά', 'otherwise, but'], ['ἀναλάζομαι', 'to take again']])">ἀλλ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἕ', 'sui.'], ['ἕννυμι', 'to put clothes on'], ['ἕζομαι', 'to seat oneself, sit'], ['ἵημι', 'to set a going, put in motion']])">εἷ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">[ἐ]φίστω </span>
+	<span ontouchstart="updateMasthead(event, [['τριζυγής', 'three yoked, three in union']])">τριζύγης </span>
+	<span ontouchstart="updateMasthead(event, ])">οἵμου </span>
+	<span ontouchstart="updateMasthead(event, [['βάσις', 'a stepping, step'], ['βάζω', 'to speak, say'], ['βαίνω', 'to walk, step']])">βάσιν· </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ἐγώ', 'ego']])">ἐγὼ </span>
+	<span ontouchstart="updateMasthead(event, [['δέ', 'but']])">δ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἐν', 'in, among. c. dat.'], ['εἰμί', 'I have'], ['εἰς', 'into, to c. acc.']])">ἐν </span>
+	<span ontouchstart="updateMasthead(event, ])">[ἔ]ργοις </span>
+	<span ontouchstart="updateMasthead(event, [['παραμένω', 'to stay beside']])">παρμένων </span>
+	<span ontouchstart="updateMasthead(event, [['σός', 'thy, thine, of thee']])">σ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">ἀπευθυνῶ.
+ </span>
+	<span class='line-number'>175</span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Χο.</span>
+	<span ontouchstart="updateMasthead(event, ])">ὗ </span>
+	<span ontouchstart="updateMasthead(event, ])">ὗ </span>
+	<span ontouchstart="updateMasthead(event, ])">ὗ, </span>
+	<span ontouchstart="updateMasthead(event, [['ψ', '\N']])">ψ </span>
+	<span ontouchstart="updateMasthead(event, [['ψ', '\N']])">ψ, </span>
+	<span ontouchstart="updateMasthead(event, [['ἆ', 'ah!']])">ἆ </span>
+	<span ontouchstart="updateMasthead(event, [['ἆ', 'ah!']])">ἆ. </span>
+	<span ontouchstart="updateMasthead(event, [['λέγω1', 'to lay asleep, lull to sleep; to gather, pick up; to say, speak'], ['λέγω2', 'to lay asleep, lull to sleep; to gather, pick up; to say, speak'], ['λέγω3', 'to lay asleep, lull to sleep; to gather, pick up; to say, speak']])">λέγ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the'], ['ὅς', 'this, that;']])">ὅ </span>
+	<span ontouchstart="updateMasthead(event, [['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τι </span>
+	<span ontouchstart="updateMasthead(event, [['πονέω', 'to work hard, do work, suffer toil']])">πονεῖς. </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τί </span>
+	<span ontouchstart="updateMasthead(event, [['μάτη', 'a folly, a fault'], ['μάτην', 'in vain, idly, fruitlessly'], ['ματάω', 'to be idle, to dally, loiter, linger'], ['ματέω', '\N']])">μάτην </span>
+	<span ontouchstart="updateMasthead(event, ])">ὑπέκλαγες, </span>
+	<span ontouchstart="updateMasthead(event, ])">ὑπέκριγες </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ὑπό', 'from under, by, c. gen. under, c. dat., towards c. acc.']])">ὑπό </span>
+	<span ontouchstart="updateMasthead(event, [['ἐγώ', 'ego'], ['ἐγώγε', '\N']])">μ’ </span>
+	<span ontouchstart="updateMasthead(event, [['εἶδον', 'to see']])">ἴδες; </span>
+	<span ontouchstart="updateMasthead(event, [['ἔχω', 'to have'], ['ἐχέτης', 'a man of substance']])">ἔχεται </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ἐν', 'in, among. c. dat.'], ['εἰμί', 'I have'], ['εἰς', 'into, to c. acc.']])">ἐν </span>
+	<span ontouchstart="updateMasthead(event, [['πρότερος', 'prae.']])">πρώτῳ </span>
+	<span ontouchstart="updateMasthead(event, [['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τίς </span>
+	<span ontouchstart="updateMasthead(event, [['ὅδε', 'this'], ['ὁδός', 'a threshold; a way, path, track, road, highway']])">ὅδε </span>
+	<span ontouchstart="updateMasthead(event, ])">τροπ[ῳ; </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ἔχις', 'an adder, viper'], ['ἔχω', 'to have'], ['χέω', 'to pour']])">ἔχει. </span>
+	<span ontouchstart="updateMasthead(event, [['ἔρχομαι', 'to come']])">ἐλήλυθεν, </span>
+	<span ontouchstart="updateMasthead(event, ])">ἐλήλ[υθεν. </span>
+	<span class='line-number'>180</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ἐμός', 'mine']])">ἐμὸς </span>
+	<span ontouchstart="updateMasthead(event, [['εἰ', 'whether.'], ['εἶμι', 'to go'], ['εἰμί', 'I have']])">εἶ, </span>
+	<span ontouchstart="updateMasthead(event, [['ἀνάγω', 'to lead up'], ['ἀνηγέομαι', 'to tell as in a narrative, relate, recount']])">ἀνάγου. </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['δεῦτε', 'hither! come on! come here!']])">δεῦτ’ </span>
+	<span ontouchstart="updateMasthead(event, [['εἰμί', 'I have'], ['ὦ', 'O! oh!']])">ὤ, </span>
+	<span ontouchstart="updateMasthead(event, [['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τίς </span>
+	<span ontouchstart="updateMasthead(event, [['ὅδε', 'this'], ['ὁδός', 'a threshold; a way, path, track, road, highway']])">ὅδε </span>
+	<span ontouchstart="updateMasthead(event, ])">[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ὁ', 'the'], ['ὅς', 'this, that;']])">ὁ </span>
+	<span ontouchstart="updateMasthead(event, ])">δράκις, </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the'], ['ὅς', 'this, that;']])">ὁ </span>
+	<span ontouchstart="updateMasthead(event, ])">γράπις, </span>
+	<span ontouchstart="updateMasthead(event, ])">[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[Ο]ὐρίας </span>
+	<span ontouchstart="updateMasthead(event, ])">Οὐρίας, </span>
+	<span ontouchstart="updateMasthead(event, ])">αδ[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['παραβαίνω', 'to go by the side of']])">παρέβης· </span>
+	<span ontouchstart="updateMasthead(event, ])">μεθυ[ </span>
+	<span class='line-number'>185</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ὁ', 'the'], ['ὅς', 'this, that;']])">ὅ </span>
+	<span ontouchstart="updateMasthead(event, [['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τι </span>
+	<span ontouchstart="updateMasthead(event, [['πότε', 'when? at what time?'], ['πότος', 'drinking, a drinking-bout, carousal'], ['ποτέ', 'at some time'], ['ποτός', 'drunk, fit for drinking']])">ποτε </span>
+	<span ontouchstart="updateMasthead(event, ])">φερε[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ἔποχον', 'the saddle-cloth, housing'], ['ἔποχος', 'mounted upon']])">ἔποχον </span>
+	<span ontouchstart="updateMasthead(event, [['ἔχις', 'an adder, viper'], ['ἔχω', 'to have'], ['χέω', 'to pour']])">ἔχει </span>
+	<span ontouchstart="updateMasthead(event, ])">τι[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['στίβος', 'a trodden way, track, path']])">στίβος </span>
+	<span ontouchstart="updateMasthead(event, ])">ὁδενες[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['στράτιος', 'warlike']])">στράτιος, </span>
+	<span ontouchstart="updateMasthead(event, ])">στράτ[ιος </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['δεῦρο', 'hither']])">δεῦρ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">ἕπου· </span>
+	<span ontouchstart="updateMasthead(event, ])">τ[ </span>
+	<span class='line-number'>190</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ἐν', 'in, among. c. dat.']])">ἔνι </span>
+	<span ontouchstart="updateMasthead(event, ])">β[ο]ῦς </span>
+	<span ontouchstart="updateMasthead(event, [['ἐν', 'in, among. c. dat.']])">ἔνι </span>
+	<span ontouchstart="updateMasthead(event, ])">πονο[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['μή', 'not']])">μὴ </span>
+	<span ontouchstart="updateMasthead(event, [['μέθη', 'strong drink'], ['μέθημαι', 'to sit among'], ['μεθίημι', 'to let go, let loose, release']])">μεθῇ </span>
+	<span ontouchstart="updateMasthead(event, ])">κρ[ο]κι </span>
+	<span ontouchstart="updateMasthead(event, ])">[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['συ', 'thou, you.']])">σὺ </span>
+	<span ontouchstart="updateMasthead(event, [['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τί </span>
+	<span ontouchstart="updateMasthead(event, ])">καλ[ὸ]ν </span>
+	<span ontouchstart="updateMasthead(event, ])">ἐπιδ[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ὅδε', 'this'], ['ὁδός', 'a threshold; a way, path, track, road, highway']])">ὅδε </span>
+	<span ontouchstart="updateMasthead(event, [['γε', 'at least, at any rate']])">γ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἀγαθός', 'good']])">ἀγαθὸς </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the'], ['ὅς', 'this, that;']])">ὁ </span>
+	<span ontouchstart="updateMasthead(event, ])">τρε[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['κατά', 'down, downwards, with gen. or acc.']])">κατὰ </span>
+	<span ontouchstart="updateMasthead(event, [['νόμος', 'anything assigned, a usage, custom, law, ordinance'], ['νομός', 'a feeding-place']])">νόμον </span>
+	<span ontouchstart="updateMasthead(event, ])">ἕπετα[ι </span>
+	<span class='line-number'>195</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ἐφέπω', 'to go after, follow, pursue']])">ἐφέπου, </span>
+	<span ontouchstart="updateMasthead(event, [['ἐφέπω', 'to go after, follow, pursue']])">ἐφέπου </span>
+	<span ontouchstart="updateMasthead(event, ])">μ[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">ὀπποποῖ· </span>
+	<span ontouchstart="updateMasthead(event, [['ἆ', 'ah!']])">ἆ </span>
+	<span ontouchstart="updateMasthead(event, [['μιαρός', 'stained']])">μιαρέ, </span>
+	<span ontouchstart="updateMasthead(event, ])">γε[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['εἰμί', 'I have'], ['ἤ1', 'or; \N'], ['ἤ2', 'or; \N'], ['ἦ', 'in truth, truly, verily, of a surety'], ['ἠμί', 'I say']])">ἦ </span>
+	<span ontouchstart="updateMasthead(event, [['τάχα', 'quickly, presently, forthwith'], ['ταχύς', 'quick, swift, fleet'], ['τήκω', 'to melt, melt down']])">τάχ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ὁπόταν', 'whensoever']])">ὁπόταν </span>
+	<span ontouchstart="updateMasthead(event, ])">ἀπίη[ις </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ἀπελεύθερος', 'an emancipated slave, a freedman']])">ἀπελεύθερος </span>
+	<span ontouchstart="updateMasthead(event, [['εἰμί', 'I have'], ['οὖν', 'really, at all events']])">ὢν </span>
+	<span ontouchstart="updateMasthead(event, ])">ολ </span>
+	<span ontouchstart="updateMasthead(event, ])">[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ἄλλος', 'alius, another, one besides'], ['ἀλλά', 'otherwise, but']])">ἀλλὰ </span>
+	<span ontouchstart="updateMasthead(event, [['μή', 'not']])">μὴ </span>
+	<span ontouchstart="updateMasthead(event, ])">παραπλακ[ </span>
+	<span class='line-number'>200</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">ἔπ[ι]θ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">[ἔ]πεχ’ </span>
+	<span ontouchstart="updateMasthead(event, [['εἴσειμι', 'to go into']])">εἴσιθ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">ἴθι[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">τ[ὸ] </span>
+	<span ontouchstart="updateMasthead(event, [['δέ', 'but']])">δὲ </span>
+	<span ontouchstart="updateMasthead(event, [['πλάγιος', 'placed sideways, slanting, aslant']])">πλάγιον </span>
+	<span ontouchstart="updateMasthead(event, ])">ἔχομ[εν
+ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['πατήρ', 'a father']])">πάτερ, </span>
+	<span ontouchstart="updateMasthead(event, [['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τί </span>
+	<span ontouchstart="updateMasthead(event, [['σιγάω', 'to be silent'], ['σιγάζω', 'to bid'], ['σιγή', 'silence']])">σιγᾷς; </span>
+	<span ontouchstart="updateMasthead(event, [['μῶν', 'but surely not? is it so?']])">μῶν </span>
+	<span ontouchstart="updateMasthead(event, ])">ἀληθ[ὲς </span>
+	<span ontouchstart="updateMasthead(event, [['εἶπον', 'to speak, say']])">εἴπομεν; </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">οὐ[κ </span>
+	<span ontouchstart="updateMasthead(event, ])">ε]ἰσακο[ύε]ις; </span>
+	<span ontouchstart="updateMasthead(event, [['εἰμί', 'I have'], ['ἤ1', 'or; \N'], ['ἤ2', 'or; \N'], ['ἦ', 'in truth, truly, verily, of a surety'], ['ἠμί', 'I say']])">ἦ </span>
+	<span ontouchstart="updateMasthead(event, ])">κεκώφη[σαι, </span>
+	<span ontouchstart="updateMasthead(event, [['ψόφος', 'any inarticulate sound, a sound, noise']])">ψόφον; </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Σι.</span>
+	<span ontouchstart="updateMasthead(event, ])">σί[γα·] </span>
+	<span ontouchstart="updateMasthead(event, [['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τί </span>
+	<span ontouchstart="updateMasthead(event, [['εἰμί', 'I have']])">ἔστιν; </span>
+	<span class='line-number'>205</span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Χο.</span>
+	<span ontouchstart="updateMasthead(event, [['οὐ', '\N; why no, âcertainly not; for not; for in no manner; \N; I suppose not; no truly; no truly, nay verily; not surely, not verily; nevertheless, notwithstanding, yet, still; not however; not; nowhere; not; never yet at any time']])">οὐ </span>
+	<span ontouchstart="updateMasthead(event, [['μένω', 'to stay at home, stay where one is, not stir']])">μενῶ. </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Σι.</span>
+	<span ontouchstart="updateMasthead(event, [['μένω', 'to stay at home, stay where one is, not stir']])">μέν’, </span>
+	<span ontouchstart="updateMasthead(event, ])">ε[ἰ] </span>
+	<span ontouchstart="updateMasthead(event, [['δύναμαι', 'to be able, capable, strong enough'], ['δύω2', 'to strip off']])"><δύνᾳ.> </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Χο.</span>
+	<span ontouchstart="updateMasthead(event, [['οὐ', '\N; why no, âcertainly not; for not; for in no manner; \N; I suppose not; no truly; no truly, nay verily; not surely, not verily; nevertheless, notwithstanding, yet, still; not however; not; nowhere; not; never yet at any time']])">οὐκ </span>
+	<span ontouchstart="updateMasthead(event, [['εἰμί', 'I have']])">ἔστιν. </span>
+	<span ontouchstart="updateMasthead(event, [['ἄλλος', 'alius, another, one besides'], ['ἀλλά', 'otherwise, but'], ['ἀναλάζομαι', 'to take again']])">ἀλλ’ </span>
+	<span ontouchstart="updateMasthead(event, [['αὐτός', 'self']])">αὐτὸς </span>
+	<span ontouchstart="updateMasthead(event, [['συ', 'thou, you.']])">σὺ </span>
+	<span ontouchstart="updateMasthead(event, ])">ταῦθ[’ </span>
+	<span ontouchstart="updateMasthead(event, [['ὅπη', 'by which way']])">ὅπῃ </span>
+	<span ontouchstart="updateMasthead(event, ])">θέλεις] </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ζητέω', 'to seek, seek for']])">ζήτει </span>
+	<span ontouchstart="updateMasthead(event, [['τε', 'and; acc. and abl. of tu; tu or te; see tu']])">τε </span>
+	<span ontouchstart="updateMasthead(event, [['ἐξιχνεύω', 'to trace out']])">κἀξίχνευε </span>
+	<span ontouchstart="updateMasthead(event, [['καί', 'and']])">καὶ </span>
+	<span ontouchstart="updateMasthead(event, ])">πλού[τει </span>
+	<span ontouchstart="updateMasthead(event, [['λαβή', 'the part intended for grasping, a handle, haft'], ['λαμβάνω', 'to take']])">λαβὼν </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ὁ', 'the']])">τὰς </span>
+	<span ontouchstart="updateMasthead(event, [['βοῦς', 'cow']])">βοῦς </span>
+	<span ontouchstart="updateMasthead(event, [['τε', 'and; acc. and abl. of tu; tu or te; see tu']])">τε </span>
+	<span ontouchstart="updateMasthead(event, ])">κα[ὶ] </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the']])">τὸν </span>
+	<span ontouchstart="updateMasthead(event, [['χρυσός', 'gold']])">χρυσὸν </span>
+	<span ontouchstart="updateMasthead(event, ])">[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['μή', 'not']])">μὴ </span>
+	<span ontouchstart="updateMasthead(event, ])">πλεῖστ[ον] </span>
+	<span ontouchstart="updateMasthead(event, [['ἔτι', 'yet, as yet, still']])">ἔτι </span>
+	<span ontouchstart="updateMasthead(event, ])">ς[ </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Σι.</span>
+	<span ontouchstart="updateMasthead(event, [['ἄλλος', 'alius, another, one besides'], ['ἀλλά', 'otherwise, but'], ['ἀναλάζομαι', 'to take again']])">ἀλλ’ </span>
+	<span ontouchstart="updateMasthead(event, [['οὐ', '\N; why no, âcertainly not; for not; for in no manner; \N; I suppose not; no truly; no truly, nay verily; not surely, not verily; nevertheless, notwithstanding, yet, still; not however; not; nowhere; not; never yet at any time']])">οὔ </span>
+	<span ontouchstart="updateMasthead(event, [['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τι </span>
+	<span ontouchstart="updateMasthead(event, ])">μ[ή </span>
+	<span ontouchstart="updateMasthead(event, ])">σοί] </span>
+	<span ontouchstart="updateMasthead(event, ])">μ[’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἐκλείπω', 'to leave out, omit, pass over']])">ἐκλιπεῖν </span>
+	<span ontouchstart="updateMasthead(event, ])">ἐφήσομαι] </span>
+	<span class='line-number'>210</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['οὐδέ', 'but not'], ['οὐδός', 'a threshold; a way']])">οὐδ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">ἐξυπελθ[εῖ]ν </span>
+	<span ontouchstart="updateMasthead(event, ])">τ[οῦ </span>
+	<span ontouchstart="updateMasthead(event, [['πόνος', 'work'], ['πονέω', 'to work hard, do work, suffer toil']])">πόνου </span>
+	<span ontouchstart="updateMasthead(event, [['πρίν', 'comparative']])">πρίν </span>
+	<span ontouchstart="updateMasthead(event, [['γε', 'at least, at any rate']])">γ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἄν1', '; \N'], ['ἄν2', '; \N'], ['ἀνά', 'up, upon'], ['ἐάν', 'if haply']])">ἂν </span>
+	<span ontouchstart="updateMasthead(event, ])">σα]φῶς </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['οἶδα', 'to know']])">εἰδῶμεν </span>
+	<span ontouchstart="updateMasthead(event, ])">ὅν[τιν’] </span>
+	<span ontouchstart="updateMasthead(event, ])">ἔ[νδον </span>
+	<span ontouchstart="updateMasthead(event, [['ἡδύς', 'sweet'], ['ὅδε', 'this']])">ἥδ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἔχις', 'an adder, viper'], ['ἔχω', 'to have'], ['χέω', 'to pour']])">ἔχει </span>
+	<span ontouchstart="updateMasthead(event, ])">στέγη.] </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Χο.</span>
+	<span ontouchstart="updateMasthead(event, ])">ἶὼ </span>
+	<span ontouchstart="updateMasthead(event, ])">γ[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">φθέγ[μα </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ </span>
+	<span class='line-number'>215</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">θο[ν </span>
+	<span ontouchstart="updateMasthead(event, ])">δ]όμοισιν </span>
+	<span ontouchstart="updateMasthead(event, [['ὀλβίζω', 'to make happy']])">ὀλβίσῃς. </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ὁ', 'the'], ['ὅς', 'this, that;']])">ὁ </span>
+	<span ontouchstart="updateMasthead(event, ])">[δ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">ο]ὐ </span>
+	<span ontouchstart="updateMasthead(event, ])">φαν[εῖτ]αι </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the'], ['τίς', 'who? which?']])">τοῖσιν. </span>
+	<span ontouchstart="updateMasthead(event, [['ἄλλος', 'alius, another, one besides'], ['ἀλλά', 'otherwise, but'], ['ἀναλάζομαι', 'to take again']])">ἀλλ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἐγώ', 'ego']])">ἐγὼ </span>
+	<span ontouchstart="updateMasthead(event, [['τάχα', 'quickly, presently, forthwith'], ['τάχος', 'swiftness, speed, fleetness, velocity'], ['ταχύς', 'quick, swift, fleet']])">τάχα </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">φ[έρ]ων </span>
+	<span ontouchstart="updateMasthead(event, ])">κτύ[π]ον </span>
+	<span ontouchstart="updateMasthead(event, ])">πέδορτον </span>
+	<span ontouchstart="updateMasthead(event, [['ἐξαναγκάζω', 'to force']])">ἐξαναγκάσω </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">π[η]δήμασιν </span>
+	<span ontouchstart="updateMasthead(event, [['κραιπνός', 'rapid, rushing']])">κραιπνοῖσι </span>
+	<span ontouchstart="updateMasthead(event, [['καί', 'and']])">καὶ </span>
+	<span ontouchstart="updateMasthead(event, [['λάκτισμα', 'a trampling on']])">λακτίσμασιν </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">ὥ[ς]τ’ </span>
+	<span ontouchstart="updateMasthead(event, [['εἰσακούω', 'to hearken']])">εἰσακοῦσαι </span>
+	<span ontouchstart="updateMasthead(event, [['εἰ', 'whether.'], ['εἶμι', 'to go'], ['εἰμί', 'I have']])">κεἰ </span>
+	<span ontouchstart="updateMasthead(event, [['λίαν', 'very, exceedingly']])">λίαν </span>
+	<span ontouchstart="updateMasthead(event, [['κωφός', 'blunt, dull, obtuse']])">κωφός </span>
+	<span ontouchstart="updateMasthead(event, [['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τις </span>
+	<span ontouchstart="updateMasthead(event, ])">ᾖ.
+ </span>
+	<span class='line-number'>220</span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Κυ.</span>
+	<span ontouchstart="updateMasthead(event, [['θήρ', 'a wild beast, beast of prey']])">θῆρες, </span>
+	<span ontouchstart="updateMasthead(event, [['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τί </span>
+	<span ontouchstart="updateMasthead(event, ])">[τό]νδε </span>
+	<span ontouchstart="updateMasthead(event, [['χλοερός', '\N'], ['χλωρός', 'greenish-yellow']])">χλοερὸν </span>
+	<span ontouchstart="updateMasthead(event, [['ὑλώδης', 'woody, wooded']])">ὑλώδη </span>
+	<span ontouchstart="updateMasthead(event, [['πάγος', 'that which is fixed'], ['πᾶγος', '\N']])">πάγον </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">ἔν[θ]ηρον </span>
+	<span ontouchstart="updateMasthead(event, [['ὁρμάω', 'to set in motion, urge'], ['ὁρμέω', 'to be moored, lie at anchor']])">ὡρμήθητε </span>
+	<span ontouchstart="updateMasthead(event, [['σύν', 'along with, in company with, together with'], ['ὗς', 'the wild swine']])">σὺν </span>
+	<span ontouchstart="updateMasthead(event, [['πολύς', 'many']])">πολλῇ </span>
+	<span ontouchstart="updateMasthead(event, [['βόειος', 'of an ox'], ['βοάω', 'to cry aloud, to shout'], ['βοείη', 'an ox-hide, ox-hide shield'], ['βοεύς', 'a rope of ox-hide'], ['βοή', 'a loud cry, shout']])">βοῇ; </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τίς </span>
+	<span ontouchstart="updateMasthead(event, [['ὅδε', 'this']])">ἥδε </span>
+	<span ontouchstart="updateMasthead(event, [['τέχνη', 'art, skill, craft in work, cunning of hand']])">τέχνη; </span>
+	<span ontouchstart="updateMasthead(event, [['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τίς </span>
+	<span ontouchstart="updateMasthead(event, [['μετάστασις', 'a removing, removal']])">μετάστασις </span>
+	<span ontouchstart="updateMasthead(event, [['πόνος', 'work'], ['πονέω', 'to work hard, do work, suffer toil']])">πόνων, </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ὅς', 'this, that;']])">οὓς </span>
+	<span ontouchstart="updateMasthead(event, [['πρόσθεν', 'before'], ['προστίθημι', 'to put to']])">πρόσθεν </span>
+	<span ontouchstart="updateMasthead(event, [['ἔχω', 'to have']])">εἶχες </span>
+	<span ontouchstart="updateMasthead(event, [['δεσπότης', 'a master, lord, the master of the house'], ['δεσποτέω', 'to be despotically ruled']])">δεσπότῃ </span>
+	<span ontouchstart="updateMasthead(event, [['χάρις', 'Grace']])">χάριν </span>
+	<span ontouchstart="updateMasthead(event, [['φέρω', 'to bear']])">φέρων, </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">ὑμεῖν </span>
+	<span ontouchstart="updateMasthead(event, [['ὅς', 'this, that;']])">ὃς </span>
+	<span ontouchstart="updateMasthead(event, [['ἀεί', 'always, for ever']])">αἰεὶ </span>
+	<span ontouchstart="updateMasthead(event, ])">νεβρίνῃ </span>
+	<span ontouchstart="updateMasthead(event, ])">καθημμέν[ο]ς </span>
+	<span class='line-number'>225</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['δορά', 'a skin, hide']])">δορᾷ </span>
+	<span ontouchstart="updateMasthead(event, ])">χερ[ο]ῖν </span>
+	<span ontouchstart="updateMasthead(event, [['τε', 'and; acc. and abl. of tu; tu or te; see tu']])">τε </span>
+	<span ontouchstart="updateMasthead(event, ])">θύρς[ο]ν </span>
+	<span ontouchstart="updateMasthead(event, ])">εὐπαλῆ </span>
+	<span ontouchstart="updateMasthead(event, [['φέρω', 'to bear']])">φέρων </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ὄπισθεν', 'behind, at the back']])">ὄπισθεν </span>
+	<span ontouchstart="updateMasthead(event, ])">εὐίαζετ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἀμφί', 'on both sides']])">ἀμφὶ </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the']])">τὸν </span>
+	<span ontouchstart="updateMasthead(event, [['θέω', 'to run'], ['θεός', 'God']])">θεὸν </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['σύν', 'along with, in company with, together with'], ['ὗς', 'the wild swine']])">σὺν </span>
+	<span ontouchstart="updateMasthead(event, [['ἔγγονος', 'a grandson, granddaughter']])">ἐγγόνοις </span>
+	<span ontouchstart="updateMasthead(event, [['νύμφη', 'a young wife, bride']])">νύμφαισι </span>
+	<span ontouchstart="updateMasthead(event, [['καί', 'and']])">καὶ </span>
+	<span ontouchstart="updateMasthead(event, [['παῖς', 'a child']])">π<αί>δων </span>
+	<span ontouchstart="updateMasthead(event, [['ὄχλος', 'a moving crowd, a throng, mob']])">ὄχλῳ; </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['νῦν', 'now, even now; now at this very time']])">νῦν </span>
+	<span ontouchstart="updateMasthead(event, [['δέ', 'but']])">δ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἀγνοέω', 'not to perceive']])">ἀγνοῶ </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the']])">τὸ </span>
+	<span ontouchstart="updateMasthead(event, [['χρῆμα', 'a thing that one uses']])">χρῆμα· </span>
+	<span ontouchstart="updateMasthead(event, [['ποι', 'somewhither'], ['ποῖ', 'whether?']])">ποῖ </span>
+	<span ontouchstart="updateMasthead(event, [['στροφή', 'a turning']])">στροφαὶ </span>
+	<span ontouchstart="updateMasthead(event, [['ναός', 'the dwelling of a god, a temple'], ['ναῦς', 'a ship'], ['νέος', 'young, youthful'], ['νέω', 'to swim; to spin; to heap, pile, heap up; next year.'], ['νέω1', 'to swim; to spin; to heap, pile, heap up; next year.'], ['νέω2', 'to swim; to spin; to heap, pile, heap up; next year.'], ['νέω3', 'to swim; to spin; to heap, pile, heap up; next year.'], ['νεάω', 'to plough up anew'], ['νεάζω', 'to be young'], ['νεόω', 'to renovate, renew'], ['νεώς', 'a temple']])">νέων </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['μανία', 'madness, frenzy'], ['μῆνις', 'wrath, anger'], ['μηνίω', 'to be wroth with']])">μανιῶν </span>
+	<span ontouchstart="updateMasthead(event, [['στρέφω', 'to turn about']])">στρέφουσι; </span>
+	<span ontouchstart="updateMasthead(event, [['θαῦμα', 'whatever one regards with wonder, a wonder, marvel'], ['θαυμάζω', 'to wonder, marvel, be astonied']])">θαῦμα </span>
+	<span ontouchstart="updateMasthead(event, [['γάρ', 'for']])">γὰρ </span>
+	<span ontouchstart="updateMasthead(event, ])">κατέκλ[υ]ον </span>
+	<span class='line-number'>230</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ὁμός', 'one and the same, common, joint'], ['ὁμόω', 'to unite'], ['ὁμοῦ', 'at the same place, together']])">ὁμοῦ </span>
+	<span ontouchstart="updateMasthead(event, [['πρέπω', 'to be clearly seen, to be conspicuous']])">πρέπον </span>
+	<span ontouchstart="updateMasthead(event, ])">κέλευμά </span>
+	<span ontouchstart="updateMasthead(event, [['πῶς', 'in a certain way; how? in what way'], ['πως', 'in any way, at all, by any means']])">πως </span>
+	<span ontouchstart="updateMasthead(event, ])">κυνηγετ[ῶ]ν </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ἐγγύς', 'near, nigh, at hand']])">ἐγγὺς </span>
+	<span ontouchstart="updateMasthead(event, [['βλώσκω', 'to go']])">μολόντων </span>
+	<span ontouchstart="updateMasthead(event, [['θήρ', 'a wild beast, beast of prey'], ['θηρίον', 'a wild animal, beast']])">θηρὸς </span>
+	<span ontouchstart="updateMasthead(event, ])">εὐναί[ου] </span>
+	<span ontouchstart="updateMasthead(event, ])">τρο[φ]ῆς, </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ὁμός', 'one and the same, common, joint'], ['ὁμόω', 'to unite'], ['ὁμοῦ', 'at the same place, together']])">ὁμοῦ </span>
+	<span ontouchstart="updateMasthead(event, [['δέ', 'but']])">δ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἄν1', '; \N'], ['ἄν2', '; \N'], ['ἀνά', 'up, upon'], ['ἐάν', 'if haply']])">ἂν </span>
+	<span ontouchstart="updateMasthead(event, ])">αὖτι[ς </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['γλῶσσα', 'the tongue']])">γλώσσης </span>
+	<span ontouchstart="updateMasthead(event, ])">ἐτεινε[τ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">ε]ἰς </span>
+	<span ontouchstart="updateMasthead(event, [['κλοπή', 'theft']])">κλοπὴν </span>
+	<span ontouchstart="updateMasthead(event, ])">[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['αὖθις', 'back, back again']])">αὖτις </span>
+	<span ontouchstart="updateMasthead(event, [['δέ', 'but']])">δ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">α[ </span>
+	<span class='line-number'>235</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">κηρυκ[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['καί', 'and']])">καὶ </span>
+	<span ontouchstart="updateMasthead(event, ])">τ[α]ῦτ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἀφίημι', 'to send forth, discharge']])">ἀφεῖσα </span>
+	<span ontouchstart="updateMasthead(event, [['σύν', 'along with, in company with, together with'], ['ὗς', 'the wild swine']])">σὺν </span>
+	<span ontouchstart="updateMasthead(event, [['πούς', 'a foot']])">ποδῶν </span>
+	<span ontouchstart="updateMasthead(event, ])">λακ[τίσμασι </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[κ]ληδὼν </span>
+	<span ontouchstart="updateMasthead(event, [['ὁμός', 'one and the same, common, joint'], ['ὁμόω', 'to unite'], ['ὁμοῦ', 'at the same place, together']])">ὁμοῦ </span>
+	<span ontouchstart="updateMasthead(event, ])">πάμφυρ[τ]’ </span>
+	<span ontouchstart="updateMasthead(event, ])">ἐγειτν[ία </span>
+	<span ontouchstart="updateMasthead(event, ])">στέγῃ] </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[καὶ] </span>
+	<span ontouchstart="updateMasthead(event, [['οὗτος', 'this']])">ταῦτ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἄν1', '; \N'], ['ἄν2', '; \N'], ['ἀνά', 'up, upon'], ['ἐάν', 'if haply']])">ἂν </span>
+	<span ontouchstart="updateMasthead(event, [['ἄλλος', 'alius, another, one besides'], ['ἄλλως', 'in another way']])">ἄλλως </span>
+	<span ontouchstart="updateMasthead(event, [['εἰμί', 'I have'], ['ἤ1', 'or; \N'], ['ἤ2', 'or; \N'], ['ἦ', 'in truth, truly, verily, of a surety'], ['ἠμί', 'I say']])">ἢ </span>
+	<span ontouchstart="updateMasthead(event, ])">κλ[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[φων]ῶν </span>
+	<span ontouchstart="updateMasthead(event, ])">ἀκο[ύ]σασ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ὧδε', 'in this wise, so, thus']])">ὧδε </span>
+	<span ontouchstart="updateMasthead(event, ])">παραπεπαισμέν[ων </span>
+	<span class='line-number'>240</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">φ& </span>
+	<span ontouchstart="updateMasthead(event, ])">λσθβ; </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">νο[ς </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Χο.</span>
+	<span ontouchstart="updateMasthead(event, [['νύμφη', 'a young wife, bride']])">νύμφη </span>
+	<span ontouchstart="updateMasthead(event, [['βαθύζωνος', 'deep-girded']])">βαθύζωνε </span>
+	<span ontouchstart="updateMasthead(event, ])">π[αῦσαι </span>
+	<span ontouchstart="updateMasthead(event, [['χόλος', 'gall, bile'], ['χολάω', 'to be full of black bile, to be melancholy mad'], ['χολόω', 'to make angry, provoke, anger']])">χόλου </span>
+	<span ontouchstart="updateMasthead(event, ])">] </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ὅδε', 'this']])">τοῦδ’, </span>
+	<span ontouchstart="updateMasthead(event, [['οὔτε', 'and not']])">οὔτε </span>
+	<span ontouchstart="updateMasthead(event, [['γάρ', 'for']])">γὰρ </span>
+	<span ontouchstart="updateMasthead(event, [['νεῖκος', 'a quarrel, wrangle, strife']])">νεῖκος </span>
+	<span ontouchstart="updateMasthead(event, ])">ἥ[κει </span>
+	<span ontouchstart="updateMasthead(event, [['σός', 'thy, thine, of thee']])">σέ </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the'], ['τοι', 'let me tell you, surely, verily']])">τοι </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">δᾴ[ο]υ </span>
+	<span ontouchstart="updateMasthead(event, [['μάχη', 'battle, fight, combat']])">μάχας </span>
+	<span ontouchstart="updateMasthead(event, [['οὐδέ', 'but not'], ['οὐδός', 'a threshold; a way']])">οὐδ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">ἀξενό[ς </span>
+	<span ontouchstart="updateMasthead(event, [['πού', 'anywhere, somewhere'], ['ποῦ', 'quis']])">που </span>
+	<span ontouchstart="updateMasthead(event, ])">σέθεν </span>
+	<span class='line-number'>245</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">γλ[ῶ]σσαν </span>
+	<span ontouchstart="updateMasthead(event, ])">μάταιός </span>
+	<span ontouchstart="updateMasthead(event, ])">τ[’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἄπαις', 'childless'], ['ἀπό', 'from, away from. c. gen.']])">ἀφ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἐγώ', 'ego'], ['ἥμων', 'a thrower, darter, slinger'], ['ἡμός', '\N']])">ἡμῶν </span>
+	<span ontouchstart="updateMasthead(event, [['θιγγάνω', 'to touch, handle']])">θίγοι. </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['μή', 'not']])">μή </span>
+	<span ontouchstart="updateMasthead(event, [['ἐγώ', 'ego']])">με </span>
+	<span ontouchstart="updateMasthead(event, [['μή', 'not']])">μὴ </span>
+	<span ontouchstart="updateMasthead(event, ])">προψαλ[άξῃς </span>
+	<span ontouchstart="updateMasthead(event, [['κακός', 'bad'], ['κακόω', 'to treat ill, maltreat, afflict, distress']])">κακοῖς, </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ἄλλος', 'alius, another, one besides'], ['ἀλλά', 'otherwise, but'], ['ἀναλάζομαι', 'to take again']])">ἀλλ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">[εὐ]πετῶς </span>
+	<span ontouchstart="updateMasthead(event, [['ἐγώ', 'ego']])">μοι </span>
+	<span ontouchstart="updateMasthead(event, ])">πρ[όφανον </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the']])">τὸ </span>
+	<span ontouchstart="updateMasthead(event, ])">πρᾶγ‐ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ἐγώ', 'ego'], ['ἐγώγε', '\N']])">μ’, </span>
+	<span ontouchstart="updateMasthead(event, [['ἐν', 'in, among. c. dat.'], ['εἰμί', 'I have'], ['εἰς', 'into, to c. acc.']])">ἐν </span>
+	<span ontouchstart="updateMasthead(event, ])">[τ]όποις </span>
+	<span ontouchstart="updateMasthead(event, ])">τοῖς[δε </span>
+	<span ontouchstart="updateMasthead(event, [['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τίς </span>
+	<span ontouchstart="updateMasthead(event, [['ἔνερθε', 'from beneath, up from below'], ['νέρθε', '\N']])">νέρθε </span>
+	<span ontouchstart="updateMasthead(event, [['γῆ', 'earth']])">γᾶς </span>
+	<span ontouchstart="updateMasthead(event, [['ὧδε', 'in this wise, so, thus']])">ὧδ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἄγαμαι', 'to wonder, be astonished'], ['ἄγη', 'wonder, awe, amazement'], ['ἄγος', 'any matter of religious awe'], ['ἀγή', 'a fragment, piece, splinter']])">ἀγα‐ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">στῶς </span>
+	<span ontouchstart="updateMasthead(event, [['γηρύω', 'to sing']])">ἐγάρυσε </span>
+	<span ontouchstart="updateMasthead(event, [['θέσπις', 'having words from God, inspired']])">θέσπιν </span>
+	<span ontouchstart="updateMasthead(event, ])">αὐδά[ν.
+ </span>
+	<span class='line-number'>250</span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Κυ.</span>
+	<span ontouchstart="updateMasthead(event, [['οὗτος', 'this']])">ταῦτ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἔστε', 'up to the time that, until'], ['εἰμί', 'I have']])">ἔστ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἐκεῖνος', 'the person there, that person'], ['κενόω', 'to empty out, drain']])">ἐκείνων </span>
+	<span ontouchstart="updateMasthead(event, [['νῦν', 'now, even now; now at this very time']])">νῦν </span>
+	<span ontouchstart="updateMasthead(event, ])">[ </span>
+	<span ontouchstart="updateMasthead(event, [['τρόπος', 'a turn, direction, course, way'], ['τροπέω', 'to turn'], ['τροπή', 'a turn, turning'], ['τροπός', 'a twisted leathern thong'], ['τροπόω', 'to furnish the oar with its thong']])">τρόπων </span>
+	<span ontouchstart="updateMasthead(event, [['πέπων', 'cooked by the sun, ripe, mellow']])">πεπαίτερα, </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['καί', 'and']])">καὶ </span>
+	<span ontouchstart="updateMasthead(event, [['ὅδε', 'this']])">τοῖσδε </span>
+	<span ontouchstart="updateMasthead(event, [['θήρ', 'a wild beast, beast of prey'], ['θήρα', 'a hunting of wild beasts, the chase'], ['θηράω', 'to hunt'], ['θηρίον', 'a wild animal, beast']])">θηρῶν </span>
+	<span ontouchstart="updateMasthead(event, ])">ἐκπύ[θοιο </span>
+	<span ontouchstart="updateMasthead(event, [['μᾶλλον', '\N'], ['μαλλός', 'a lock of wool, wool']])">μᾶλλον </span>
+	<span ontouchstart="updateMasthead(event, [['ἄν1', '; \N'], ['ἄν2', '; \N'], ['ἀνά', 'up, upon'], ['ἐάν', 'if haply']])">ἂν </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">ἀλκασμάτων </span>
+	<span ontouchstart="updateMasthead(event, ])">δ[ειλῆ]ς </span>
+	<span ontouchstart="updateMasthead(event, ])">[τε </span>
+	<span ontouchstart="updateMasthead(event, [['πειρατήριον', 'ordeal']])">πειρατηρίων </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['νύμφη', 'a young wife, bride']])">νύμφης· </span>
+	<span ontouchstart="updateMasthead(event, [['ἐγώ', 'ego'], ['ἐμέω', 'to vomit, throw up'], ['ἐμός', 'mine']])">ἐμοὶ </span>
+	<span ontouchstart="updateMasthead(event, ])">γὰ[ρ </span>
+	<span ontouchstart="updateMasthead(event, ])">οὐ]κ </span>
+	<span ontouchstart="updateMasthead(event, ])">[ἀρεστόν </span>
+	<span ontouchstart="updateMasthead(event, [['ἔστε', 'up to the time that, until'], ['εἰμί', 'I have']])">ἐστ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἔρις', 'strife, quarrel, debate, contention']])">ἔριν </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">ὀρθοψάλακτον </span>
+	<span ontouchstart="updateMasthead(event, [['εἰμί', 'I have']])">εν </span>
+	<span ontouchstart="updateMasthead(event, ])">[λ]όγο[ις]ιν </span>
+	<span ontouchstart="updateMasthead(event, ])">[ἱστάναι. </span>
+	<span class='line-number'>255</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ἄλλος', 'alius, another, one besides'], ['ἀλλά', 'otherwise, but'], ['ἀναλάζομαι', 'to take again']])">ἀλλ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἥσυχος', 'still, quiet, at rest, at ease, at leisure']])">ἥσυχος </span>
+	<span ontouchstart="updateMasthead(event, [['προφαίνω', 'to bring forth, bring to light, shew forth, manifest, display']])">πρόφαινε </span>
+	<span ontouchstart="updateMasthead(event, [['καί', 'and']])">καὶ </span>
+	<span ontouchstart="updateMasthead(event, ])">μ[ή]νυ[έ </span>
+	<span ontouchstart="updateMasthead(event, [['ἐγώ', 'ego']])">μοι </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ὅστις', 'any one who, anything which']])">ὅτου </span>
+	<span ontouchstart="updateMasthead(event, [['μάλιστα', '\N']])">μάλιστα </span>
+	<span ontouchstart="updateMasthead(event, [['πρᾶγμα', 'that which has been done, a deed, act']])">πράγματος </span>
+	<span ontouchstart="updateMasthead(event, [['χρεία', 'use, advantage, service']])">χρείαν </span>
+	<span ontouchstart="updateMasthead(event, [['ἔχις', 'an adder, viper'], ['ἔχω', 'to have'], ['χέω', 'to pour']])">ἔχεις. </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Χο.</span>
+	<span ontouchstart="updateMasthead(event, [['τόπος', 'a place'], ['τοπάζω', 'to aim at, guess']])">τόπων </span>
+	<span ontouchstart="updateMasthead(event, [['ἄνασσα', 'a queen, lady, mistress']])">ἄνασσα </span>
+	<span ontouchstart="updateMasthead(event, ])">τῶν[δ]ε, </span>
+	<span ontouchstart="updateMasthead(event, ])">Κυλλήνης </span>
+	<span ontouchstart="updateMasthead(event, [['σθένος', 'strength, might']])">σθένος, </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ὅστις', 'any one who, anything which']])">ὅτου </span>
+	<span ontouchstart="updateMasthead(event, [['μέν', 'on the one hand, on the other hand']])">μὲν </span>
+	<span ontouchstart="updateMasthead(event, [['οὕνεκα', 'on which account, wherefore']])">οὕνεκ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">ἦλθ[ο]ν, </span>
+	<span ontouchstart="updateMasthead(event, [['ὕστερος', 'latter, last']])">ὕστερον </span>
+	<span ontouchstart="updateMasthead(event, [['φράζω', 'to point out, shew, indicate']])">φράσω· </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ὁ', 'the']])">τὸ </span>
+	<span ontouchstart="updateMasthead(event, [['φθέγμα', 'the sound of the voice, a voice']])">φθέγμα </span>
+	<span ontouchstart="updateMasthead(event, [['δέ', 'but']])">δ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἐγώ', 'ego']])">ἡμῖν </span>
+	<span ontouchstart="updateMasthead(event, ])">τοῦ[θ’] </span>
+	<span ontouchstart="updateMasthead(event, [['ὅσπερ', 'the very man who, the very thing which']])">ὅπερ </span>
+	<span ontouchstart="updateMasthead(event, [['φωνέω', 'to produce a sound']])">φωνεῖ </span>
+	<span ontouchstart="updateMasthead(event, [['φράζω', 'to point out, shew, indicate']])">φράσον </span>
+	<span class='line-number'>260</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['καί', 'and']])">καὶ </span>
+	<span ontouchstart="updateMasthead(event, [['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τίς </span>
+	<span ontouchstart="updateMasthead(event, [['πότε', 'when? at what time?'], ['πότης', 'a drinker, tippler, toper'], ['πότος', 'drinking, a drinking-bout, carousal'], ['ποτάομαι', 'to fly about'], ['ποτέ', 'at some time'], ['ποτή', 'flight'], ['ποτός', 'drunk, fit for drinking'], ['πρός', 'motion from']])">ποτ’ </span>
+	<span ontouchstart="updateMasthead(event, [['αὐτός', 'self']])">αὐτῷ </span>
+	<span ontouchstart="updateMasthead(event, ])">δι[α]χαράσσεται </span>
+	<span ontouchstart="updateMasthead(event, [['βρότος', 'blood that has run from a wound, gore'], ['βροτός', 'a mortal man']])">βροτῶν. </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Κυ.</span>
+	<span ontouchstart="updateMasthead(event, [['ὑμός', 'your']])">ὑμᾶς </span>
+	<span ontouchstart="updateMasthead(event, [['μέν', 'on the one hand, on the other hand']])">μὲν </span>
+	<span ontouchstart="updateMasthead(event, [['αὐτός', 'self']])">αὐτοὺς </span>
+	<span ontouchstart="updateMasthead(event, [['χράω1', 'to fall upon, attack, assail; to furnish what is needful'], ['χράω2', 'to fall upon, attack, assail; to furnish what is needful'], ['χραύω', 'to scrape, graze, wound slightly'], ['χρή', 'it is fated, necessary'], ['χρῆ', 'need, necessity']])">χρὴ </span>
+	<span ontouchstart="updateMasthead(event, [['ὅδε', 'this']])">τάδ’ </span>
+	<span ontouchstart="updateMasthead(event, [['οἶδα', 'to know']])">εἰδέναι </span>
+	<span ontouchstart="updateMasthead(event, [['σαφής', 'clear, plain, distinct, manifest']])">σαφῶς </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ὅς', 'this, that;'], ['ὡς', 'thus, as, so that, since']])">ὡς </span>
+	<span ontouchstart="updateMasthead(event, [['εἰ', 'whether.'], ['εἶμι', 'to go'], ['εἰμί', 'I have']])">εἰ </span>
+	<span ontouchstart="updateMasthead(event, [['φαίνω', 'to bring to light, make to appear']])">φανεῖτε </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the']])">τὸν </span>
+	<span ontouchstart="updateMasthead(event, ])">λ[ό]γον </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the']])">τὸν </span>
+	<span ontouchstart="updateMasthead(event, [['ἐξ', '\N'], ['ἐκ', 'from out of']])">ἐξ </span>
+	<span ontouchstart="updateMasthead(event, [['ἐγώ', 'ego'], ['ἐμέω', 'to vomit, throw up'], ['ἐμός', 'mine']])">ἐμοῦ, </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['αὐτός', 'self']])">αὐτοῖσιν </span>
+	<span ontouchstart="updateMasthead(event, ])">ὑμῖ[ν </span>
+	<span ontouchstart="updateMasthead(event, ])">ζ]ημία </span>
+	<span ontouchstart="updateMasthead(event, [['πορίζω', 'to carry: to bring about, to furnish, provide, supply, procure, cause']])">πορίζεται· </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['καί', 'and']])">καὶ </span>
+	<span ontouchstart="updateMasthead(event, [['γάρ', 'for']])">γὰρ </span>
+	<span ontouchstart="updateMasthead(event, ])">κέκρυπτ[αι] </span>
+	<span ontouchstart="updateMasthead(event, [['ἔργνυμι', 'to confine'], ['ἔργον', 'work']])">τοὖργον </span>
+	<span ontouchstart="updateMasthead(event, [['ἐν', 'in, among. c. dat.'], ['εἰμί', 'I have'], ['εἰς', 'into, to c. acc.']])">ἐν </span>
+	<span ontouchstart="updateMasthead(event, ])">[θ]ε[ῶ]ν </span>
+	<span ontouchstart="updateMasthead(event, [['ἕδρα', 'a sitting-place'], ['ἑδράζω', 'to make to sit, place']])">ἕδραις, </span>
+	<span class='line-number'>265</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">Ἥραν </span>
+	<span ontouchstart="updateMasthead(event, [['ὅπως', 'as, in such manner as']])">ὅπως </span>
+	<span ontouchstart="updateMasthead(event, ])">μ[ὴ </span>
+	<span ontouchstart="updateMasthead(event, ])">πύ]στ[ι]ς </span>
+	<span ontouchstart="updateMasthead(event, ])">ἵξετα[ι] </span>
+	<span ontouchstart="updateMasthead(event, [['λόγος', 'the word']])">λόγου. </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">Ζ[εὺ]ς </span>
+	<span ontouchstart="updateMasthead(event, ])">γ[ὰρ] </span>
+	<span ontouchstart="updateMasthead(event, ])">κρυφ[αίαν </span>
+	<span ontouchstart="updateMasthead(event, [['εἰς', 'into, to c. acc.']])">ἐς </span>
+	<span ontouchstart="updateMasthead(event, ])">στέ]γην </span>
+	<span ontouchstart="updateMasthead(event, ])">Ἀτλαντίδος </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ </span>
+	<span class='line-number'>270</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[κατὰ </span>
+	<span ontouchstart="updateMasthead(event, ])">σπέ]ος </span>
+	<span ontouchstart="updateMasthead(event, [['δέ', 'but']])">δὲ </span>
+	<span ontouchstart="updateMasthead(event, [['παῖς', 'a child']])">παῖδ’ </span>
+	<span ontouchstart="updateMasthead(event, [['φιτύω', 'to sow, plant, beget, call into being']])">ἐφίτυσεν </span>
+	<span ontouchstart="updateMasthead(event, [['μόνος', 'alone, left alone, forsaken solitary']])">μόνον· </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[τοῦτον </span>
+	<span ontouchstart="updateMasthead(event, ])">δὲ] </span>
+	<span ontouchstart="updateMasthead(event, [['χείρ', 'the hand']])">χερσὶ </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the']])">ταῖς </span>
+	<span ontouchstart="updateMasthead(event, [['ἐμός', 'mine']])">ἐμαῖς </span>
+	<span ontouchstart="updateMasthead(event, [['ἐγώ', 'ego']])">ἐγὼ </span>
+	<span ontouchstart="updateMasthead(event, [['τρέφω', 'to thicken']])">τρέφω· </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[μητρὸς </span>
+	<span ontouchstart="updateMasthead(event, ])">γ]ὰρ </span>
+	<span ontouchstart="updateMasthead(event, [['ἰσχύς', 'strength']])">ἰσχὺς </span>
+	<span ontouchstart="updateMasthead(event, [['ἐν', 'in, among. c. dat.'], ['εἰμί', 'I have'], ['εἰς', 'into, to c. acc.']])">ἐν </span>
+	<span ontouchstart="updateMasthead(event, [['νόσος', 'sickness, disease, malady']])">νόσῳ </span>
+	<span ontouchstart="updateMasthead(event, [['χειμάζω', 'to pass the winter']])">χειμάζεται· </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[κἀδεστ]ὰ </span>
+	<span ontouchstart="updateMasthead(event, [['καί', 'and']])">καὶ </span>
+	<span ontouchstart="updateMasthead(event, [['ποτής', 'a drinking, drink'], ['ποτητός', 'flying, winged']])">ποτῆτα </span>
+	<span ontouchstart="updateMasthead(event, [['καί', 'and']])">καὶ </span>
+	<span ontouchstart="updateMasthead(event, [['κοίμημα', 'sleep']])">κοιμήματα </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[πρὸς </span>
+	<span ontouchstart="updateMasthead(event, ])">σπ]αργάνοις </span>
+	<span ontouchstart="updateMasthead(event, [['μένω', 'to stay at home, stay where one is, not stir']])">μένουσα </span>
+	<span ontouchstart="updateMasthead(event, ])">λικνῖτιν </span>
+	<span ontouchstart="updateMasthead(event, [['τρέφω', 'to thicken'], ['τροφή', 'nourishment, food, victuals']])">τροφὴν </span>
+	<span class='line-number'>275</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ἐξευθ]ετίζω </span>
+	<span ontouchstart="updateMasthead(event, [['νύξ', 'the night-season']])">νύκτα </span>
+	<span ontouchstart="updateMasthead(event, [['καί', 'and']])">καὶ </span>
+	<span ontouchstart="updateMasthead(event, [['καθά', 'according as, just as'], ['καθό', 'in so far as, according as'], ['κατά', 'down, downwards, with gen. or acc.']])">καθ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἥμερος', 'tame, tamed, reclaimed'], ['ἡμέρα', 'day']])">ἡμέραν. </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ὁ </span>
+	<span ontouchstart="updateMasthead(event, [['δέ', 'but']])">δ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">α]ὔξεται </span>
+	<span ontouchstart="updateMasthead(event, [['κατά', 'down, downwards, with gen. or acc.']])">κατ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἦμαρ', 'day']])">ἦμαρ </span>
+	<span ontouchstart="updateMasthead(event, [['οὐ', '\N; why no, âcertainly not; for not; for in no manner; \N; I suppose not; no truly; no truly, nay verily; not surely, not verily; nevertheless, notwithstanding, yet, still; not however; not; nowhere; not; never yet at any time']])">οὐκ </span>
+	<span ontouchstart="updateMasthead(event, [['ἐφίημι', 'to send to'], ['ἐπέοικε', 'to be like, to suit']])">ἐπεικότα </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[μέγι]στος, </span>
+	<span ontouchstart="updateMasthead(event, [['ὥστε', 'as, as being']])">ὥστε </span>
+	<span ontouchstart="updateMasthead(event, [['θαῦμα', 'whatever one regards with wonder, a wonder, marvel'], ['θαυμάζω', 'to wonder, marvel, be astonied']])">θαῦμα </span>
+	<span ontouchstart="updateMasthead(event, [['καί', 'and']])">καὶ </span>
+	<span ontouchstart="updateMasthead(event, [['φόβος', 'flight']])">φόβος </span>
+	<span ontouchstart="updateMasthead(event, [['ἐγώ', 'ego'], ['ἐγώγε', '\N']])">μ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἔχις', 'an adder, viper'], ['ἔχω', 'to have'], ['χέω', 'to pour']])">ἔχει. </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[οὔπω </span>
+	<span ontouchstart="updateMasthead(event, ])">γ]ὰρ </span>
+	<span ontouchstart="updateMasthead(event, [['ἕκτος', 'sixth']])">ἑκτὸν </span>
+	<span ontouchstart="updateMasthead(event, [['ἦμαρ', 'day']])">ἦμαρ </span>
+	<span ontouchstart="updateMasthead(event, ])">ἐκπεφασμέν[ο]ς </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[γυίοι]ς </span>
+	<span ontouchstart="updateMasthead(event, ])">ἐρείδει </span>
+	<span ontouchstart="updateMasthead(event, [['παῖς', 'a child']])">παιδὸς </span>
+	<span ontouchstart="updateMasthead(event, [['εἶμι', 'to go'], ['εἰμί', 'I have'], ['εἰς', 'into, to c. acc.']])">εἰς </span>
+	<span ontouchstart="updateMasthead(event, [['ἅπτω', 'to fasten, bind fast'], ['ἥβη', 'manhood, youthful prime, youth'], ['ἡβάω', 'to be at man's estate, to be in the prime of youth'], ['ἡβός', '\N']])">ἥβης </span>
+	<span ontouchstart="updateMasthead(event, [['ἀκμή', 'a point, edge']])">ἀκμήν, </span>
+	<span class='line-number'>280</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[κἀξορ]μενίζει </span>
+	<span ontouchstart="updateMasthead(event, [['οὐκέτι', 'no more, no longer, no further']])">κοὐκέτι </span>
+	<span ontouchstart="updateMasthead(event, [['σχολάζω', 'to have leisure']])">σχολάζεται </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[βλάστη·] </span>
+	<span ontouchstart="updateMasthead(event, [['τοιόσδε', 'such a']])">τοιόνδε </span>
+	<span ontouchstart="updateMasthead(event, [['παῖς', 'a child']])">παῖδα </span>
+	<span ontouchstart="updateMasthead(event, [['θησαυρός', 'a store laid up, treasure']])">θησαυρὸς </span>
+	<span ontouchstart="updateMasthead(event, [['στέγος', 'a roof'], ['στέγω', 'to cover closely, so as to keep']])">στέγει. </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[δυσεύρε]τός </span>
+	<span ontouchstart="updateMasthead(event, ])">[τ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">ἔτ’] </span>
+	<span ontouchstart="updateMasthead(event, [['εἰμί', 'I have']])">ἐστι </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the'], ['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τοῦ </span>
+	<span ontouchstart="updateMasthead(event, [['πατήρ', 'a father']])">πατρὸς </span>
+	<span ontouchstart="updateMasthead(event, [['θέσις', 'a setting, placing, arranging']])">θέσει. </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ἀφανεῖ </span>
+	<span ontouchstart="updateMasthead(event, [['δέ', 'but']])">δ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the'], ['ὅς', 'this, that;']])">ὃ </span>
+	<span ontouchstart="updateMasthead(event, [['πεύθομαι', '\N']])">πεύθῃ </span>
+	<span ontouchstart="updateMasthead(event, ])">φ]θέγμα </span>
+	<span ontouchstart="updateMasthead(event, [['μηχανάομαι', 'to prepare, make ready'], ['μηχανή', 'an instrument, machine']])">μηχανῇ </span>
+	<span ontouchstart="updateMasthead(event, ])">βρέμ[ον </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['καί', 'and']])">καὶ </span>
+	<span ontouchstart="updateMasthead(event, ])">π[όλ]λ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">ἐθά]μβεις </span>
+	<span ontouchstart="updateMasthead(event, ])">αὐτὸ]ς, </span>
+	<span ontouchstart="updateMasthead(event, [['ἥμερος', 'tame, tamed, reclaimed'], ['ἡμέρα', 'day']])">ἡμέρᾳ </span>
+	<span ontouchstart="updateMasthead(event, ])">μιᾳ </span>
+	<span class='line-number'>285</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ἐξ', '\N'], ['ἐκ', 'from out of']])">ἐξ </span>
+	<span ontouchstart="updateMasthead(event, [['ὕπτιος', 'sub'], ['ὑπτιάζω', 'to bend oneself back, to carry one's head high']])">ὑπτίας </span>
+	<span ontouchstart="updateMasthead(event, ])">κ[ίστη </span>
+	<span ontouchstart="updateMasthead(event, [['γε', 'at least, at any rate']])">γ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">ἐμηχ]ανήσατο· </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['τοιόσδε', 'such a']])">τοιόνδε </span>
+	<span ontouchstart="updateMasthead(event, ])">θη[ρὸς </span>
+	<span ontouchstart="updateMasthead(event, [['ἐκ', 'from out of']])">ἐκ </span>
+	<span ontouchstart="updateMasthead(event, ])">θανόντ]ος </span>
+	<span ontouchstart="updateMasthead(event, [['ἡδονή', 'delight, enjoyment, pleasure']])">ἡδονῆς </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">ἔμμεστον </span>
+	<span ontouchstart="updateMasthead(event, ])">α[γγος </span>
+	<span ontouchstart="updateMasthead(event, [['εὑρίσκω', 'to find']])">εὗρε </span>
+	<span ontouchstart="updateMasthead(event, ])">κ]αὶ </span>
+	<span ontouchstart="updateMasthead(event, [['κάτω', 'down, downwards'], ['καθίημι', 'to send down, let fall']])">κάτω </span>
+	<span ontouchstart="updateMasthead(event, ])">δ[ονεῖ.]
+ </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Χο.</span>
+	<span ontouchstart="updateMasthead(event, ])">ἄφραστ[ο </span>
+	<span class='line-number'>290</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">παιδο[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">θηρευμ[α </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">φώνημ[α </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ὅδε', 'this']])">τόνδ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">αφ[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">τως </span>
+	<span ontouchstart="updateMasthead(event, ])">ἐξεφ[ </span>
+	<span class='line-number'>295</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">ροντ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">ἄπα[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">τος </span>
+	<span ontouchstart="updateMasthead(event, [['πορίζω', 'to carry: to bring about, to furnish, provide, supply, procure, cause']])">πορίζειν </span>
+	<span ontouchstart="updateMasthead(event, [['τοιόσδε', 'such a']])">τοιάνδε </span>
+	<span ontouchstart="updateMasthead(event, ])">γῆρυν.
+ </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Κυ.</span>
+	<span ontouchstart="updateMasthead(event, [['μή', 'not']])">μὴ </span>
+	<span ontouchstart="updateMasthead(event, [['νῦν', 'now, even now; now at this very time']])">νῦν </span>
+	<span ontouchstart="updateMasthead(event, [['ἀπιστέω', 'to be']])">ἀπίστει· </span>
+	<span ontouchstart="updateMasthead(event, [['πιστός', 'liquid medicines; to be trusted']])">πιστὰ </span>
+	<span ontouchstart="updateMasthead(event, [['γάρ', 'for']])">γάρ </span>
+	<span ontouchstart="updateMasthead(event, [['σός', 'thy, thine, of thee']])">σε </span>
+	<span ontouchstart="updateMasthead(event, [['προσγελάω', 'to look laughing at']])">προσγελᾷ </span>
+	<span ontouchstart="updateMasthead(event, [['θέα', 'a seeing, looking at, view'], ['θεά', 'a goddess']])">θεᾶς </span>
+	<span ontouchstart="updateMasthead(event, [['ἔπειμι1', 'sum'], ['ἔπος', 'a word']])">ἔπη. </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Χο.</span>
+	<span ontouchstart="updateMasthead(event, [['καί', 'and']])">καὶ </span>
+	<span ontouchstart="updateMasthead(event, [['πῶς', 'in a certain way; how? in what way'], ['πως', 'in any way, at all, by any means']])">πῶς </span>
+	<span ontouchstart="updateMasthead(event, [['πείθω', 'to prevail upon, win over, persuade']])">πίθωμαι </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the'], ['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τοῦ </span>
+	<span ontouchstart="updateMasthead(event, [['θνήσκω', 'to die, be dying']])">θανόντος </span>
+	<span ontouchstart="updateMasthead(event, [['φθέγμα', 'the sound of the voice, a voice']])">φθέγμα </span>
+	<span ontouchstart="updateMasthead(event, [['τοιοῦτος', 'such as this']])">τοιοῦτον </span>
+	<span ontouchstart="updateMasthead(event, [['βρέμω', 'to roar']])">βρέμειν; </span>
+	<span class='line-number'>300</span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Κυ.</span>
+	<span ontouchstart="updateMasthead(event, [['πείθω', 'to prevail upon, win over, persuade'], ['πίθος', 'a wine-jar']])">πιθοῦ· </span>
+	<span ontouchstart="updateMasthead(event, [['θνήσκω', 'to die, be dying']])">θανὼν </span>
+	<span ontouchstart="updateMasthead(event, [['γάρ', 'for']])">γὰρ </span>
+	<span ontouchstart="updateMasthead(event, [['ἔχω', 'to have']])">ἔσχε </span>
+	<span ontouchstart="updateMasthead(event, [['φωνέω', 'to produce a sound'], ['φωνή', 'a sound, tone']])">φωνήν, </span>
+	<span ontouchstart="updateMasthead(event, [['ζάω', 'to live'], ['ζέω', 'to boil, seethe'], ['ζώς', '\N']])">ζῶν </span>
+	<span ontouchstart="updateMasthead(event, [['δέ', 'but']])">δ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἄναυδος', 'speechless, silent']])">ἄναυδος </span>
+	<span ontouchstart="updateMasthead(event, [['ἐάν', 'if haply'], ['εἰμί', 'I have'], ['ἤν', 'see! see there! lo!'], ['ἠμί', 'I say']])">ἦν </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the'], ['ὅς', 'this, that;']])">ὁ </span>
+	<span ontouchstart="updateMasthead(event, [['θήρ', 'a wild beast, beast of prey']])">θήρ. </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Χο.</span>
+	<span ontouchstart="updateMasthead(event, [['ποῖος', 'of what nature? of what sort?'], ['ποιός', 'of a certain nature, kind']])">ποῖός </span>
+	<span ontouchstart="updateMasthead(event, [['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τις </span>
+	<span ontouchstart="updateMasthead(event, [['ἐάν', 'if haply'], ['εἰμί', 'I have'], ['ἤν', 'see! see there! lo!'], ['ἠμί', 'I say']])">ἦν </span>
+	<span ontouchstart="updateMasthead(event, [['εἶδος', 'that which is seen, form, shape, figure'], ['οἶδα', 'to know']])">εἶδος; </span>
+	<span ontouchstart="updateMasthead(event, ])">πρ[ο]μήκης, </span>
+	<span ontouchstart="updateMasthead(event, [['εἰμί', 'I have'], ['ἤ1', 'or; \N'], ['ἤ2', 'or; \N'], ['ἦ', 'in truth, truly, verily, of a surety'], ['ἠμί', 'I say']])">ἢ </span>
+	<span ontouchstart="updateMasthead(event, ])">’πίκυρτος, </span>
+	<span ontouchstart="updateMasthead(event, [['εἰμί', 'I have'], ['ἤ1', 'or; \N'], ['ἤ2', 'or; \N'], ['ἦ', 'in truth, truly, verily, of a surety'], ['ἠμί', 'I say']])">ἢ </span>
+	<span ontouchstart="updateMasthead(event, [['βραχύς', 'short']])">βραχύς; </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Κυ.</span>
+	<span ontouchstart="updateMasthead(event, [['βραχύς', 'short']])">βραχύς, </span>
+	<span ontouchstart="updateMasthead(event, ])">χυτρώδης, </span>
+	<span ontouchstart="updateMasthead(event, ])">πο[ι]κίλῃ </span>
+	<span ontouchstart="updateMasthead(event, [['δορά', 'a skin, hide']])">δορᾷ </span>
+	<span ontouchstart="updateMasthead(event, ])">κατερρικνωμένος. </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Χο.</span>
+	<span ontouchstart="updateMasthead(event, [['ὅς', 'this, that;'], ['ὡς', 'thus, as, so that, since']])">ὡς </span>
+	<span ontouchstart="updateMasthead(event, [['αἴλουρος', 'a cat']])">αἰέλουρος </span>
+	<span ontouchstart="updateMasthead(event, [['εἰκάζω', 'to make like to, represent by a likeness, portray']])">εἰκάσαι </span>
+	<span ontouchstart="updateMasthead(event, [['φύω', 'to bring forth, produce, put forth']])">πέφυκεν </span>
+	<span ontouchstart="updateMasthead(event, [['εἰμί', 'I have'], ['ἤ1', 'or; \N'], ['ἤ2', 'or; \N'], ['ἦ', 'in truth, truly, verily, of a surety'], ['ἠμί', 'I say']])">ἢ </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the'], ['τώς', 'so, in this wise']])">τὼς </span>
+	<span ontouchstart="updateMasthead(event, ])">πόρδαλις; </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Κυ.</span>
+	<span ontouchstart="updateMasthead(event, [['πλεῖστος', 'most, largest']])">πλεῖστον </span>
+	<span ontouchstart="updateMasthead(event, ])">με[τ]αξύ· </span>
+	<span ontouchstart="updateMasthead(event, [['γογγύλος', 'round']])">γογγύλον </span>
+	<span ontouchstart="updateMasthead(event, [['γάρ', 'for']])">γάρ </span>
+	<span ontouchstart="updateMasthead(event, [['εἰμί', 'I have']])">ἐστι </span>
+	<span ontouchstart="updateMasthead(event, [['καί', 'and']])">καὶ </span>
+	<span ontouchstart="updateMasthead(event, ])">βραχυσκελές. </span>
+	<span class='line-number'>305</span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Χο.</span>
+	<span ontouchstart="updateMasthead(event, [['οὐδέ', 'but not'], ['οὐδός', 'a threshold; a way']])">οὐδ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ὅς', 'this, that;'], ['ὡς', 'thus, as, so that, since']])">ὡς </span>
+	<span ontouchstart="updateMasthead(event, ])">ἰχνευμ<ων> </span>
+	<span ontouchstart="updateMasthead(event, [['προσφέρω', 'to bring to'], ['προσφερής', 'brought near, approaching']])">προσφερὲς </span>
+	<span ontouchstart="updateMasthead(event, [['φύω', 'to bring forth, produce, put forth']])">πέφυκεν </span>
+	<span ontouchstart="updateMasthead(event, [['οὐδέ', 'but not'], ['οὐδός', 'a threshold; a way']])">οὐδ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ὅς', 'this, that;'], ['ὡς', 'thus, as, so that, since']])">ὡς </span>
+	<span ontouchstart="updateMasthead(event, [['καρκίνος', 'a crab']])">καρκίν<ος>; </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Κυ.</span>
+	<span ontouchstart="updateMasthead(event, [['οὐδέ', 'but not'], ['οὐδός', 'a threshold; a way']])">οὐδ’ </span>
+	<span ontouchstart="updateMasthead(event, [['αὖ', 'again, anew, afresh, once more; bow wow']])">αὖ </span>
+	<span ontouchstart="updateMasthead(event, ])">τοιοῦτ[ό]ν </span>
+	<span ontouchstart="updateMasthead(event, [['εἰμί', 'I have']])">ἐστιν· </span>
+	<span ontouchstart="updateMasthead(event, [['ἄλλος', 'alius, another, one besides'], ['ἀλλά', 'otherwise, but'], ['ἀναλάζομαι', 'to take again']])">ἀλλ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἄλλος', 'alius, another, one besides']])">ἄλλον </span>
+	<span ontouchstart="updateMasthead(event, [['τίνω', 'to pay a price'], ['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τιν’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἐξευρίσκω', 'to find out, discover']])">ἐξευροῦ </span>
+	<span ontouchstart="updateMasthead(event, [['τρόπος', 'a turn, direction, course, way'], ['τροπός', 'a twisted leathern thong']])">τρόπον. </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Χο.</span>
+	<span ontouchstart="updateMasthead(event, [['ἄλλος', 'alius, another, one besides'], ['ἀλλά', 'otherwise, but'], ['ἀναλάζομαι', 'to take again']])">ἀλλ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ὅς', 'this, that;'], ['ὡς', 'thus, as, so that, since']])">ὡς </span>
+	<span ontouchstart="updateMasthead(event, ])">κεράστ[η]ς </span>
+	<span ontouchstart="updateMasthead(event, [['κάνθαρος', 'a Naxian boat']])">κάνθαρος </span>
+	<span ontouchstart="updateMasthead(event, [['δέω1', 'to bind, tie, fetter; to lack, miss, stand in need of'], ['δέω2', 'to bind, tie, fetter; to lack, miss, stand in need of'], ['δεῖ', 'to bind'], ['δῆτα', 'certainly, to be sure, of course']])">δῆτ’ </span>
+	<span ontouchstart="updateMasthead(event, [['εἰμί', 'I have']])">ἐστὶν </span>
+	<span ontouchstart="updateMasthead(event, [['Αἰτναῖος', 'of or belonging to Etna']])">Αἰτναῖος </span>
+	<span ontouchstart="updateMasthead(event, [['φύω', 'to bring forth, produce, put forth'], ['φυή', 'growth, stature']])">φυήν; </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Κυ.</span>
+	<span ontouchstart="updateMasthead(event, [['νῦν', 'now, even now; now at this very time']])">νῦν </span>
+	<span ontouchstart="updateMasthead(event, [['ἐγγύς', 'near, nigh, at hand']])">ἐγγὺς </span>
+	<span ontouchstart="updateMasthead(event, ])">ἔγν[ως] </span>
+	<span ontouchstart="updateMasthead(event, [['ὅς', 'this, that;']])">ᾧ </span>
+	<span ontouchstart="updateMasthead(event, [['μάλιστα', '\N']])">μάλιστα </span>
+	<span ontouchstart="updateMasthead(event, [['προσφέρω', 'to bring to'], ['προσφερής', 'brought near, approaching']])">προσφερὲς </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the']])">τὸ </span>
+	<span ontouchstart="updateMasthead(event, [['κνώδαλον', 'any dangerous animal']])">κνώδαλον. </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Χο.</span>
+	<span ontouchstart="updateMasthead(event, ])">τ[ί </span>
+	<span ontouchstart="updateMasthead(event, [['δέ', 'but']])">δ’ </span>
+	<span ontouchstart="updateMasthead(event, [['αὖ', 'again, anew, afresh, once more; bow wow']])">αὖ </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the']])">τὸ </span>
+	<span ontouchstart="updateMasthead(event, ])">] </span>
+	<span ontouchstart="updateMasthead(event, ])">φων[οῦ]ν </span>
+	<span ontouchstart="updateMasthead(event, [['εἰμί', 'I have']])">ἐστιν </span>
+	<span ontouchstart="updateMasthead(event, [['αὐτός', 'self'], ['αὐτοῦ', 'at the very place, just here, just there']])">αὐτοῦ, </span>
+	<span ontouchstart="updateMasthead(event, [['ἔντεα', 'fighting gear, arms, armour'], ['ἐντός', 'within, inside'], ['εἰμί', 'I have'], ['ἵημι', 'to set a going, put in motion']])">τοὐντὸς </span>
+	<span ontouchstart="updateMasthead(event, [['εἰμί', 'I have'], ['ἤ1', 'or; \N'], ['ἤ2', 'or; \N'], ['ἦ', 'in truth, truly, verily, of a surety'], ['ἠμί', 'I say']])">ἢ </span>
+	<span ontouchstart="updateMasthead(event, [['ἔξεστι', 'it is allowed, it is in one's power, is possible'], ['ἔξω', 'out'], ['ἔχω', 'to have'], ['ἐξίημι', 'to send out, let']])">τοὔξω, </span>
+	<span ontouchstart="updateMasthead(event, [['φράζω', 'to point out, shew, indicate']])">φράσον. </span>
+	<span class='line-number'>310</span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Κυ.</span>
+	<span ontouchstart="updateMasthead(event, ])">[ </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Χο.</span>
+	<span ontouchstart="updateMasthead(event, ])">[ποῖον </span>
+	<span ontouchstart="updateMasthead(event, [['δέ', 'but']])">δὲ </span>
+	<span ontouchstart="updateMasthead(event, [['ὄνομα', 'by name'], ['ὄνομαι', 'to blame, find fault with, throw a slur upon, treat scornfully'], ['ὀνομάζω', 'to name']])">τοὔνομ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">ἐν]νέ[πει]ς; </span>
+	<span ontouchstart="updateMasthead(event, [['πορσύνω', 'to offer, present']])">πόρσυνον, </span>
+	<span ontouchstart="updateMasthead(event, [['εἰ', 'whether.'], ['εἶμι', 'to go'], ['εἰμί', 'I have']])">εἴ </span>
+	<span ontouchstart="updateMasthead(event, [['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τι </span>
+	<span ontouchstart="updateMasthead(event, [['πλέος', 'full.'], ['πλέω', 'to sail, go by sea'], ['πλέως', 'full of'], ['πλείων', 'more, larger']])">πλέον </span>
+	<span ontouchstart="updateMasthead(event, [['ἔχις', 'an adder, viper'], ['ἔχω', 'to have'], ['χέω', 'to pour']])">ἔχεις. </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Κυ.</span>
+	<span ontouchstart="updateMasthead(event, ])">[τὸν </span>
+	<span ontouchstart="updateMasthead(event, [['θήρ', 'a wild beast, beast of prey'], ['θήρα', 'a hunting of wild beasts, the chase'], ['θηράω', 'to hunt']])">θῆρα </span>
+	<span ontouchstart="updateMasthead(event, [['μέν', 'on the one hand, on the other hand']])">μὲν </span>
+	<span ontouchstart="updateMasthead(event, [['χέλυς', 'a tortoise']])">χέλυν, </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the']])">τὸ </span>
+	<span ontouchstart="updateMasthead(event, ])">φωνο]ῦν </span>
+	<span ontouchstart="updateMasthead(event, [['δέ', 'but']])">δ’ </span>
+	<span ontouchstart="updateMasthead(event, [['αὖ', 'again, anew, afresh, once more; bow wow']])">αὖ </span>
+	<span ontouchstart="updateMasthead(event, [['λύρα', '\N']])">λύραν </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the'], ['ὅς', 'this, that;']])">ὁ </span>
+	<span ontouchstart="updateMasthead(event, [['πᾶς', 'all, the whole'], ['παῖς', 'a child']])">παῖς </span>
+	<span ontouchstart="updateMasthead(event, [['καλέω', 'to call, summon']])">καλεῖ. </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Χο.</span>
+	<span ontouchstart="updateMasthead(event, ])">[ </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Κυ.</span>
+	<span ontouchstart="updateMasthead(event, ])">[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ </span>
+	<span class='line-number'>315</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ </span>
+	<span class='line-number'>320</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">
+ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['καί', 'and']])">καὶ </span>
+	<span ontouchstart="updateMasthead(event, [['οὗτος', 'this']])">τοῦτο </span>
+	<span ontouchstart="updateMasthead(event, ])">λύπη[ς] </span>
+	<span ontouchstart="updateMasthead(event, [['ἔστε', 'up to the time that, until'], ['εἰμί', 'I have']])">ἔστ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">ἄκεστρον </span>
+	<span ontouchstart="updateMasthead(event, [['καί', 'and']])">καὶ </span>
+	<span ontouchstart="updateMasthead(event, ])">παραψυκ[τ]ήρ[ιο]ν </span>
+	<span class='line-number'>325</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ἐκεῖνος', 'the person there, that person'], ['κενός', 'empty']])">κείνῳ </span>
+	<span ontouchstart="updateMasthead(event, [['μόνος', 'alone, left alone, forsaken solitary']])">μόνον, </span>
+	<span ontouchstart="updateMasthead(event, ])">χα[ί]ρει </span>
+	<span ontouchstart="updateMasthead(event, [['δέ', 'but']])">δ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἄλυς', 'listlessness, ennui'], ['ἀλύω', 'to wander in mind']])">ἀλύων </span>
+	<span ontouchstart="updateMasthead(event, [['καί', 'and']])">καί </span>
+	<span ontouchstart="updateMasthead(event, [['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τι </span>
+	<span ontouchstart="updateMasthead(event, ])">προσφων[ῶν </span>
+	<span ontouchstart="updateMasthead(event, [['μέλος', 'a limb']])">μέλος </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['σύμφωνος', 'agreeing in sound, in unison']])">ξύμφωνον· </span>
+	<span ontouchstart="updateMasthead(event, ])">ἐξα[ί]ρει </span>
+	<span ontouchstart="updateMasthead(event, [['γάρ', 'for']])">γὰρ </span>
+	<span ontouchstart="updateMasthead(event, [['αὐτός', 'self']])">αὐτὸν </span>
+	<span ontouchstart="updateMasthead(event, ])">αἰόλισμα </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the']])">τῆς </span>
+	<span ontouchstart="updateMasthead(event, ])">λ[ύ]ρας. </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['οὕτως', 'hic']])">οὕτως </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the'], ['ὅς', 'this, that;']])">ὁ </span>
+	<span ontouchstart="updateMasthead(event, [['πᾶς', 'all, the whole'], ['παῖς', 'a child']])">παῖς </span>
+	<span ontouchstart="updateMasthead(event, [['θνήσκω', 'to die, be dying']])">θανόντι </span>
+	<span ontouchstart="updateMasthead(event, [['θήρ', 'a wild beast, beast of prey']])">θηρὶ </span>
+	<span ontouchstart="updateMasthead(event, [['φθέγμα', 'the sound of the voice, a voice']])">φθέγμ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">ἐμηχανήσατ[ο.
+ </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Χο.</span>
+	<span ontouchstart="updateMasthead(event, ])">ὀ<ρθ>οψάλακτός </span>
+	<span ontouchstart="updateMasthead(event, [['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τις </span>
+	<span ontouchstart="updateMasthead(event, [['ὀμφή', 'the voice of a god']])">ὀμφὴ </span>
+	<span ontouchstart="updateMasthead(event, ])">κατοιχνεῖ </span>
+	<span ontouchstart="updateMasthead(event, [['τόπος', 'a place']])">τόπου, </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['πρεπτός', 'distinguished, renowned']])">πρεπτὰ </span>
+	<span ontouchstart="updateMasthead(event, [['δέ', 'but']])"><δ’ </span>
+	<span ontouchstart="updateMasthead(event, [['αὖ', 'again, anew, afresh, once more; bow wow']])">αὖ> </span>
+	<span ontouchstart="updateMasthead(event, [['Ζεύς', 'Zeus'], ['δῖος', 'god-like, divine'], ['διά', 'through c. gen. through, by means of c. acc.']])">διὰ </span>
+	<span ontouchstart="updateMasthead(event, [['τόνος', 'that by which a thing is stretched, a rope, cord, brace']])">τόνου </span>
+	<span ontouchstart="updateMasthead(event, [['φάσμα', 'an apparition, phantom']])">φάσματ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">ἔγ‐ </span>
+	<span class='line-number'>330</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">χωρ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">ἐπανθεμίζει. </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ὁ', 'the']])">τὸ </span>
+	<span ontouchstart="updateMasthead(event, [['πρᾶγμα', 'that which has been done, a deed, act']])">πρᾶγμα </span>
+	<span ontouchstart="updateMasthead(event, [['δέ', 'but']])">δ’ </span>
+	<span ontouchstart="updateMasthead(event, [['οὗπερ', '\N']])">οὗπερ </span>
+	<span ontouchstart="updateMasthead(event, [['πορεύω', 'to make to go, carry, convey']])">πορεύω </span>
+	<span ontouchstart="updateMasthead(event, [['βάδην', 'step by step']])">βάδην, </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['εἰμί', 'I have'], ['οἶδα', 'to know']])">ἴσθι </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the']])">τὸν </span>
+	<span ontouchstart="updateMasthead(event, ])">δα[ί]μον’, </span>
+	<span ontouchstart="updateMasthead(event, [['ὅστις', 'any one who, anything which']])">ὅστις </span>
+	<span ontouchstart="updateMasthead(event, [['πόθι', 'where?'], ['πόθος', 'a longing, yearning, fond desire'], ['πότε', 'when? at what time?'], ['πότης', 'a drinker, tippler, toper'], ['πότος', 'drinking, a drinking-bout, carousal'], ['ποθή', 'fond desire for'], ['ποθι', 'anywhere'], ['ποτάομαι', 'to fly about'], ['ποτέ', 'at some time'], ['ποτή', 'flight'], ['ποτός', 'drunk, fit for drinking'], ['πρός', 'motion from']])">ποθ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ὅς', 'this, that;']])">ὃς </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['οὗτος', 'this']])">ταῦτ’ </span>
+	<span ontouchstart="updateMasthead(event, [['τεχνάομαι', 'to make by art, to execute skilfully']])">ἐτεχνήσατ’, </span>
+	<span ontouchstart="updateMasthead(event, [['οὐ', '\N; why no, âcertainly not; for not; for in no manner; \N; I suppose not; no truly; no truly, nay verily; not surely, not verily; nevertheless, notwithstanding, yet, still; not however; not; nowhere; not; never yet at any time']])">οὐκ </span>
+	<span ontouchstart="updateMasthead(event, [['ἄλλος', 'alius, another, one besides']])">ἄλλος </span>
+	<span ontouchstart="updateMasthead(event, [['εἰμί', 'I have']])">ἐστὶν </span>
+	<span ontouchstart="updateMasthead(event, ])">κλ[οπεὺς </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ἄντα', 'over against, face to face'], ['ἄντομαι', 'to meet'], ['ἀντάω', 'to come opposite to, meet face to face, meet with'], ['ἀντί', 'over against, opposite.  c. gen.']])">ἀντ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἐκεῖνος', 'the person there, that person'], ['κενόω', 'to empty out, drain']])">ἐκείνου, </span>
+	<span ontouchstart="updateMasthead(event, [['γυνή', 'a woman']])">γύναι, </span>
+	<span ontouchstart="updateMasthead(event, [['σάφα', '\N'], ['σαφής', 'clear, plain, distinct, manifest']])">σάφ’ </span>
+	<span ontouchstart="updateMasthead(event, [['εἰμί', 'I have'], ['οἶδα', 'to know']])">ἴσθι. </span>
+	<span class='line-number'>335</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['συ', 'thou, you.']])">σὺ </span>
+	<span ontouchstart="updateMasthead(event, [['δέ', 'but']])">δ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἀντί', 'over against, opposite.  c. gen.']])">ἀντὶ </span>
+	<span ontouchstart="updateMasthead(event, [['ὅδε', 'this']])">τῶνδε </span>
+	<span ontouchstart="updateMasthead(event, [['μή', 'not']])">μὴ </span>
+	<span ontouchstart="updateMasthead(event, ])">χαλε‐ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['φθάνω', 'to come']])">φθῇς </span>
+	<span ontouchstart="updateMasthead(event, [['Μῆδος', 'a Mede, Median'], ['μηδέ', 'but not']])">μ<η>δὲ </span>
+	<span ontouchstart="updateMasthead(event, ])">δυσφορηθῇς.
+ </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Κυ.</span>
+	<span ontouchstart="updateMasthead(event, ])">[τίς </span>
+	<span ontouchstart="updateMasthead(event, [['ἔχις', 'an adder, viper'], ['ἔχω', 'to have'], ['χέω', 'to pour']])">ἔχει </span>
+	<span ontouchstart="updateMasthead(event, ])">πλά]νη </span>
+	<span ontouchstart="updateMasthead(event, [['σός', 'thy, thine, of thee']])">σε; </span>
+	<span ontouchstart="updateMasthead(event, [['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τίνα </span>
+	<span ontouchstart="updateMasthead(event, [['κλοπή', 'theft']])">κλοπὴν </span>
+	<span ontouchstart="updateMasthead(event, ])">ὠνείδις[ας; </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Χο.</span>
+	<span ontouchstart="updateMasthead(event, ])">[οὐ </span>
+	<span ontouchstart="updateMasthead(event, [['μά', 'in affirmation'], ['μᾶ', '\N']])">μὰ </span>
+	<span ontouchstart="updateMasthead(event, ])">Δία </span>
+	<span ontouchstart="updateMasthead(event, [['σός', 'thy, thine, of thee']])">σ’, </span>
+	<span ontouchstart="updateMasthead(event, [['εἰμί', 'I have'], ['ὦ', 'O! oh!']])">ὦ </span>
+	<span ontouchstart="updateMasthead(event, ])">πρές]βειρα </span>
+	<span ontouchstart="updateMasthead(event, [['χειμάζω', 'to pass the winter']])">χειμάζειν </span>
+	<span ontouchstart="updateMasthead(event, ])">[ </span>
+	<span ontouchstart="updateMasthead(event, [['ἐθέλω', 'to will, wish, purpose']])">θέλω. </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Κυ.</span>
+	<span ontouchstart="updateMasthead(event, ])">[μῶν </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the']])">τὸν </span>
+	<span ontouchstart="updateMasthead(event, ])">Διὸς </span>
+	<span ontouchstart="updateMasthead(event, [['παῖς', 'a child']])">παῖδ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">ὄ]ντα </span>
+	<span ontouchstart="updateMasthead(event, [['φηλητής', 'a knave, thief']])">φ<η>λήτην </span>
+	<span ontouchstart="updateMasthead(event, ])">κα[λεῖς; </span>
+	<span class='line-number'>340</span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Χο.</span>
+	<span ontouchstart="updateMasthead(event, ])">[ </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Κυ.</span>
+	<span ontouchstart="updateMasthead(event, ])">[ </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Χο.</span>
+	<span ontouchstart="updateMasthead(event, ])">[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ </span>
+	<span class='line-number'>345</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">
+ </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Κυ.</span>
+	<span ontouchstart="updateMasthead(event, ])">[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[σὺ </span>
+	<span ontouchstart="updateMasthead(event, [['δέ', 'but']])">δ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">οὖν </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the']])">τὸ </span>
+	<span ontouchstart="updateMasthead(event, ])">λοιπ\ο]ν </span>
+	<span ontouchstart="updateMasthead(event, [['εἶμι', 'to go'], ['εἰμί', 'I have'], ['εἰς', 'into, to c. acc.']])">εἰς </span>
+	<span ontouchstart="updateMasthead(event, [['ἐγώ', 'ego'], ['ἐμός', 'mine']])">ἔμ’ </span>
+	<span ontouchstart="updateMasthead(event, [['εὐδία', 'fair weather']])">εὐδίαν </span>
+	<span ontouchstart="updateMasthead(event, [['ἔχω', 'to have'], ['χόω', 'to throw']])">ἔχων, </span>
+	<span class='line-number'>355</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[εἴ </span>
+	<span ontouchstart="updateMasthead(event, [['σός', 'thy, thine, of thee']])">σοι </span>
+	<span ontouchstart="updateMasthead(event, [['φέρω', 'to bear']])">φέρει </span>
+	<span ontouchstart="updateMasthead(event, ])">χάρ]μ’ </span>
+	<span ontouchstart="updateMasthead(event, [['εἰμί', 'I have'], ['ἤ1', 'or; \N'], ['ἤ2', 'or; \N'], ['ἦ', 'in truth, truly, verily, of a surety'], ['ἠμί', 'I say']])">ἤ </span>
+	<span ontouchstart="updateMasthead(event, [['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τι </span>
+	<span ontouchstart="updateMasthead(event, [['κερδαίνω', 'to gain, derive profit']])">κερδαίνειν </span>
+	<span ontouchstart="updateMasthead(event, [['δοκέω', 'videor mihi, to think, suppose, imagine, expect']])">δοκεῖς </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ὄπως </span>
+	<span ontouchstart="updateMasthead(event, [['ἐθέλω', 'to will, wish, purpose']])">θέλεις </span>
+	<span ontouchstart="updateMasthead(event, ])">κά]χαζε </span>
+	<span ontouchstart="updateMasthead(event, [['καί', 'and']])">καὶ </span>
+	<span ontouchstart="updateMasthead(event, [['τέρπω', 'to satisfy, delight, gladden, cheer']])">τέρπου </span>
+	<span ontouchstart="updateMasthead(event, [['φρήν', 'the midriff']])">φρένα· </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[τὸν </span>
+	<span ontouchstart="updateMasthead(event, [['παῖς', 'a child']])">παῖδα </span>
+	<span ontouchstart="updateMasthead(event, [['δέ', 'but']])">δ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">ὄ]ντα </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the'], ['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τοῦ </span>
+	<span ontouchstart="updateMasthead(event, ])">Διὸς </span>
+	<span ontouchstart="updateMasthead(event, [['σαφής', 'clear, plain, distinct, manifest']])">σαφεῖ </span>
+	<span ontouchstart="updateMasthead(event, [['λόγος', 'the word']])">λόγῳ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[μὴ </span>
+	<span ontouchstart="updateMasthead(event, [['σκώπτω', 'to hoot, mock, jeer, scoff at']])">σκῶπτε </span>
+	<span ontouchstart="updateMasthead(event, ])">ποι]ῶν </span>
+	<span ontouchstart="updateMasthead(event, [['ἐν', 'in, among. c. dat.'], ['εἰμί', 'I have'], ['εἰς', 'into, to c. acc.']])">ἐν </span>
+	<span ontouchstart="updateMasthead(event, [['ναός', 'the dwelling of a god, a temple'], ['νέος', 'young, youthful'], ['νεάω', 'to plough up anew'], ['νεάζω', 'to be young'], ['νεώς', 'a temple']])">νέῳ </span>
+	<span ontouchstart="updateMasthead(event, [['νέος', 'young, youthful'], ['νέω', 'to swim; to spin; to heap, pile, heap up; next year.'], ['νέω1', 'to swim; to spin; to heap, pile, heap up; next year.'], ['νέω2', 'to swim; to spin; to heap, pile, heap up; next year.'], ['νέω3', 'to swim; to spin; to heap, pile, heap up; next year.'], ['νειός', 'land ploughed up anew']])">νέον </span>
+	<span ontouchstart="updateMasthead(event, [['λόγος', 'the word']])">λόγον· </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[οὗτος </span>
+	<span ontouchstart="updateMasthead(event, [['γάρ', 'for']])">γὰρ </span>
+	<span ontouchstart="updateMasthead(event, ])">οὔτε] </span>
+	<span ontouchstart="updateMasthead(event, [['πρός', 'motion from']])">πρὸς </span>
+	<span ontouchstart="updateMasthead(event, [['πατήρ', 'a father']])">πατρὸς </span>
+	<span ontouchstart="updateMasthead(event, [['κλέπτης', 'a thief']])">κλέπτης </span>
+	<span ontouchstart="updateMasthead(event, [['φύω', 'to bring forth, produce, put forth']])">ἔφυ </span>
+	<span class='line-number'>360</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[οὔτ’ </span>
+	<span ontouchstart="updateMasthead(event, [['αὖθις', 'back, back again']])">αὖτις </span>
+	<span ontouchstart="updateMasthead(event, [['ἐν', 'in, among. c. dat.'], ['εἰμί', 'I have'], ['εἰς', 'into, to c. acc.']])">ἐν </span>
+	<span ontouchstart="updateMasthead(event, ])">μ]ήτρωσιν </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the'], ['ὅς', 'this, that;']])">ἡ </span>
+	<span ontouchstart="updateMasthead(event, [['κλοπεύς', 'a thief, stealer'], ['κλοπή', 'theft']])">κλοπὴ </span>
+	<span ontouchstart="updateMasthead(event, [['κράτος', 'strength, might'], ['κρατέω', 'to be strong, mighty, powerful'], ['κρατύς', 'strong, mighty']])">κρατεῖ. </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[εἰ </span>
+	<span ontouchstart="updateMasthead(event, [['δέω1', 'to bind, tie, fetter; to lack, miss, stand in need of'], ['δέω2', 'to bind, tie, fetter; to lack, miss, stand in need of'], ['δεῖ', 'to bind'], ['δή', 'exactness']])">δὴ </span>
+	<span ontouchstart="updateMasthead(event, [['κλοπεύς', 'a thief, stealer'], ['κλοπή', 'theft']])">κλοπή </span>
+	<span ontouchstart="updateMasthead(event, ])">τ]ίς </span>
+	<span ontouchstart="updateMasthead(event, [['εἰμί', 'I have']])">ἐστι, </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the']])">τὸν </span>
+	<span ontouchstart="updateMasthead(event, [['κλέπτης', 'a thief'], ['κλέπτω', 'to steal, filch, purloin']])">κλέπτην </span>
+	<span ontouchstart="updateMasthead(event, [['σκοπέω', 'to look at']])">σκόπει </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ἄπορον </span>
+	<span ontouchstart="updateMasthead(event, ])">ἄ]καρπον· </span>
+	<span ontouchstart="updateMasthead(event, [['ὅδε', 'this']])">τοῦδε </span>
+	<span ontouchstart="updateMasthead(event, [['δέ', 'but']])">δ’ </span>
+	<span ontouchstart="updateMasthead(event, [['οὐ', '\N; why no, âcertainly not; for not; for in no manner; \N; I suppose not; no truly; no truly, nay verily; not surely, not verily; nevertheless, notwithstanding, yet, still; not however; not; nowhere; not; never yet at any time']])">οὐ </span>
+	<span ontouchstart="updateMasthead(event, ])">π<ει>ν<ῇ> </span>
+	<span ontouchstart="updateMasthead(event, [['δόμος', 'a house']])">δόμος. </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ἄθρ]ει </span>
+	<span ontouchstart="updateMasthead(event, [['γένος', 'race, stock, family']])">γένος </span>
+	<span ontouchstart="updateMasthead(event, [['προσάπτω', 'to fasten']])">πρόσαπτε </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the']])">τὴν </span>
+	<span ontouchstart="updateMasthead(event, [['πονηρία', 'a bad state']])">πονηρίαν </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[πρὸ]ς </span>
+	<span ontouchstart="updateMasthead(event, [['ὅστις', 'any one who, anything which']])">ὅντιν’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἥκω', 'to have come, be present, be here']])">ἥκει· </span>
+	<span ontouchstart="updateMasthead(event, [['ὅδε', 'this']])">τῷδε </span>
+	<span ontouchstart="updateMasthead(event, [['δέ', 'but']])">δ’ </span>
+	<span ontouchstart="updateMasthead(event, [['οὐ', '\N; why no, âcertainly not; for not; for in no manner; \N; I suppose not; no truly; no truly, nay verily; not surely, not verily; nevertheless, notwithstanding, yet, still; not however; not; nowhere; not; never yet at any time']])">οὐχ </span>
+	<span ontouchstart="updateMasthead(event, [['οὕτως', 'hic']])">οὕτω </span>
+	<span ontouchstart="updateMasthead(event, [['πρέπω', 'to be clearly seen, to be conspicuous']])">πρέπει. </span>
+	<span class='line-number'>365</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">ἀ[λλ’] </span>
+	<span ontouchstart="updateMasthead(event, [['ἀεί', 'always, for ever']])">αἰὲν </span>
+	<span ontouchstart="updateMasthead(event, [['εἰ', 'whether.'], ['εἶμι', 'to go'], ['εἰμί', 'I have']])">εἶ </span>
+	<span ontouchstart="updateMasthead(event, [['συ', 'thou, you.']])">σὺ </span>
+	<span ontouchstart="updateMasthead(event, [['πᾶς', 'all, the whole'], ['παῖς', 'a child']])">παῖς· </span>
+	<span ontouchstart="updateMasthead(event, [['ναῦς', 'a ship'], ['νέος', 'young, youthful']])">νέος </span>
+	<span ontouchstart="updateMasthead(event, [['γάρ', 'for']])">γὰρ </span>
+	<span ontouchstart="updateMasthead(event, [['εἰμί', 'I have'], ['οὖν', 'really, at all events']])">ὢν </span>
+	<span ontouchstart="updateMasthead(event, [['ἀνήρ', 'a man']])">ἀνὴρ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">π[ώγ]ωνι </span>
+	<span ontouchstart="updateMasthead(event, [['θάλλω', 'to bloom, abound, to be luxuriant'], ['θαλλός', 'a young shoot, young branch']])">θάλλων </span>
+	<span ontouchstart="updateMasthead(event, [['ὅς', 'this, that;'], ['ὡς', 'thus, as, so that, since']])">ὡς </span>
+	<span ontouchstart="updateMasthead(event, [['τράγος', 'a he-goat']])">τράγος </span>
+	<span ontouchstart="updateMasthead(event, [['κνηκός', 'pale yellow, tawny']])">κνήκῳ </span>
+	<span ontouchstart="updateMasthead(event, [['χλιδάω', 'to be soft'], ['χλιδή', 'delicacy, daintiness, luxury, effeminacy']])">χλιδᾷς. </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['παύω', 'to make to cease']])">παύου </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the']])">τὸ </span>
+	<span ontouchstart="updateMasthead(event, [['λείων', '\N'], ['λεῖος', 'smooth, plain, not embroidered']])">λεῖον </span>
+	<span ontouchstart="updateMasthead(event, [['φαλακρός', 'baldheaded, bald']])">φαλακρὸν </span>
+	<span ontouchstart="updateMasthead(event, [['ἡδονή', 'delight, enjoyment, pleasure']])">ἡδονῇ </span>
+	<span ontouchstart="updateMasthead(event, [['πίτνημι', 'to spread out']])">πιτνάς. </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[ο]ὐκ </span>
+	<span ontouchstart="updateMasthead(event, [['ἐκ', 'from out of']])">ἐκ </span>
+	<span ontouchstart="updateMasthead(event, [['θέα', 'a seeing, looking at, view'], ['θέω', 'to run'], ['θεά', 'a goddess'], ['θεός', 'God']])">θεῶν </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the'], ['τίς', 'who? which?']])">τὰ </span>
+	<span ontouchstart="updateMasthead(event, [['μωρός', 'dull, sluggish, stupid']])">μῶρα </span>
+	<span ontouchstart="updateMasthead(event, [['καί', 'and']])">καὶ </span>
+	<span ontouchstart="updateMasthead(event, [['γέλοιος', 'causing laughter, laughable'], ['γελάω', 'to laugh']])">γέλοια </span>
+	<span ontouchstart="updateMasthead(event, [['χράω1', 'to fall upon, attack, assail; to furnish what is needful'], ['χράω2', 'to fall upon, attack, assail; to furnish what is needful'], ['χραύω', 'to scrape, graze, wound slightly'], ['χρή', 'it is fated, necessary'], ['χρῆ', 'need, necessity']])">χρὴ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[χ]ανόντα </span>
+	<span ontouchstart="updateMasthead(event, [['κλαίω', 'to weep, lament, wail'], ['κλείω1', 'to shut, close, bar; to celebrate']])">κλαίειν </span>
+	<span ontouchstart="updateMasthead(event, [['ὕστερος', 'latter, last'], ['ὑστέρα', 'the womb']])">ὕστερ’; </span>
+	<span ontouchstart="updateMasthead(event, [['ὅς', 'this, that;'], ['ὡς', 'thus, as, so that, since']])">ὡς </span>
+	<span ontouchstart="updateMasthead(event, [['ἐγώ', 'ego']])">ἐγὼ </span>
+	<span ontouchstart="updateMasthead(event, ])"><λ>έ<γ>ω.
+ </span>
+	<span class='line-number'>370</span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Χο.</span>
+	<span ontouchstart="updateMasthead(event, [['στρέφω', 'to turn about']])">στρέφου </span>
+	<span ontouchstart="updateMasthead(event, [['λυγίζω', 'to bend']])">λυγίζου </span>
+	<span ontouchstart="updateMasthead(event, [['τε', 'and; acc. and abl. of tu; tu or te; see tu']])">τε </span>
+	<span ontouchstart="updateMasthead(event, [['μῦθος', 'anything, delivered by word of mouth, word, speech']])">μύθοις, </span>
+	<span ontouchstart="updateMasthead(event, ])">ὁποι‐ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['αν', 'or']])">/αν </span>
+	<span ontouchstart="updateMasthead(event, [['ἐθέλω', 'to will, wish, purpose']])">θέλεις </span>
+	<span ontouchstart="updateMasthead(event, [['βάξις', 'a saying']])">βάξιν </span>
+	<span ontouchstart="updateMasthead(event, [['εὑρίσκω', 'to find']])">εὕρισκ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἀπό', 'from, away from. c. gen.']])">ἀπό‐ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">ψηκτον· </span>
+	<span ontouchstart="updateMasthead(event, [['οὐ', '\N; why no, âcertainly not; for not; for in no manner; \N; I suppose not; no truly; no truly, nay verily; not surely, not verily; nevertheless, notwithstanding, yet, still; not however; not; nowhere; not; never yet at any time']])">οὐ </span>
+	<span ontouchstart="updateMasthead(event, [['γάρ', 'for']])">γάρ </span>
+	<span ontouchstart="updateMasthead(event, [['ἐγώ', 'ego']])">με </span>
+	<span ontouchstart="updateMasthead(event, [['οὗτος', 'this']])">ταῦτα </span>
+	<span ontouchstart="updateMasthead(event, [['πείθω', 'to prevail upon, win over, persuade']])">πείσεις, </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ὅπως', 'as, in such manner as']])"><ὅ>πως </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the']])">τὸ </span>
+	<span ontouchstart="updateMasthead(event, [['χρῆμα', 'a thing that one uses']])">χρῆμ’ </span>
+	<span ontouchstart="updateMasthead(event, [['οὗτος', 'this']])">οὗτος </span>
+	<span ontouchstart="updateMasthead(event, [['ἐργάζομαι', 'to work, labour']])">εἰργασμένος </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">ῥινοκόλλητον </span>
+	<span ontouchstart="updateMasthead(event, [['ἄλλος', 'alius, another, one besides']])">ἄλλων </span>
+	<span ontouchstart="updateMasthead(event, [['ἐκλέπω', 'to bring'], ['κλέπτω', 'to steal, filch, purloin']])">ἔκλεψεν </span>
+	<span ontouchstart="updateMasthead(event, [['βάζω', 'to speak, say'], ['βόειος', 'of an ox'], ['βοάω', 'to cry aloud, to shout'], ['βοή', 'a loud cry, shout'], ['βοῦς', 'cow']])">βοῶν </span>
+	<span class='line-number'>375</span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['πού', 'anywhere, somewhere'], ['ποῦ', 'quis']])">που </span>
+	<span ontouchstart="updateMasthead(event, [['δορά', 'a skin, hide']])">δοράς </span>
+	<span ontouchstart="updateMasthead(event, ])">[ </span>
+	<span ontouchstart="updateMasthead(event, ])">ἢ] </span>
+	<span ontouchstart="updateMasthead(event, [['ἀπό', 'from, away from. c. gen.']])">’πὸ </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the']])">τῶν </span>
+	<span ontouchstart="updateMasthead(event, ])">Λοξίου. </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">[μ]ή </span>
+	<span ontouchstart="updateMasthead(event, [['ἐγώ', 'ego']])">με </span>
+	<span ontouchstart="updateMasthead(event, ])">τᾶ[σδ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">ἐ]ξ </span>
+	<span ontouchstart="updateMasthead(event, [['ὁδάω', 'to export and sell;'], ['ὁδός', 'a threshold; a way, path, track, road, highway'], ['ὁδόω', 'to lead by the right way']])">ὁδοῦ </span>
+	<span ontouchstart="updateMasthead(event, ])">βίβαζε.
+ </span>
+</span><br>
+<span class="line">
+	<span class="line">
+	<span class='speaker'>Χο.</span>
+	<span ontouchstart="updateMasthead(event, ])">[ὁ </span>
+	<span ontouchstart="updateMasthead(event, ])">Ζ]εὺς </span>
+	<span ontouchstart="updateMasthead(event, [['γάρ', 'for']])">γὰρ </span>
+	<span ontouchstart="updateMasthead(event, ])">] </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Κυ.</span>
+	<span ontouchstart="updateMasthead(event, ])">[ὁ] </span>
+	<span ontouchstart="updateMasthead(event, [['πᾶς', 'all, the whole'], ['παῖς', 'a child']])">παῖς </span>
+	<span ontouchstart="updateMasthead(event, ])">κλο[π </span>
+	<span class='line-number'>380</span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Χο.</span>
+	<span ontouchstart="updateMasthead(event, ])">[εἰ] </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the'], ['τοι', 'let me tell you, surely, verily']])">τοι </span>
+	<span ontouchstart="updateMasthead(event, ])">πονη[ρὰ </span>
+	<span ontouchstart="updateMasthead(event, [['δράω', 'to do']])">δρᾷ, </span>
+	<span ontouchstart="updateMasthead(event, [['πονηρός', 'toilsome, painful, grievous']])">πονηρὸς </span>
+	<span ontouchstart="updateMasthead(event, [['εἰμί', 'I have'], ['οὖν', 'really, at all events']])">ὢν </span>
+	<span ontouchstart="updateMasthead(event, [['κῦρος', 'supreme power, authority'], ['κυρέω', 'to hit, light upon']])">κυρεῖ. </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Κυ.</span>
+	<span ontouchstart="updateMasthead(event, ])">[κ]ακῶς </span>
+	<span ontouchstart="updateMasthead(event, ])">ἀκού[ειν </span>
+	<span ontouchstart="updateMasthead(event, [['οὐ', '\N; why no, âcertainly not; for not; for in no manner; \N; I suppose not; no truly; no truly, nay verily; not surely, not verily; nevertheless, notwithstanding, yet, still; not however; not; nowhere; not; never yet at any time']])">οὐ </span>
+	<span ontouchstart="updateMasthead(event, [['πρέπω', 'to be clearly seen, to be conspicuous']])">πρέπει </span>
+	<span ontouchstart="updateMasthead(event, ])">Διὸς </span>
+	<span ontouchstart="updateMasthead(event, [['γόνος', 'that which is begotten, offspring, a child']])">γόνῳ. </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Χο.</span>
+	<span ontouchstart="updateMasthead(event, ])">[ε]ἰ </span>
+	<span ontouchstart="updateMasthead(event, [['δέ', 'but']])">δ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἔστε', 'up to the time that, until'], ['εἰμί', 'I have']])">ἔστ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">ἀλη[θῆ, </span>
+	<span ontouchstart="updateMasthead(event, [['χράω1', 'to fall upon, attack, assail; to furnish what is needful'], ['χράω2', 'to fall upon, attack, assail; to furnish what is needful'], ['χραύω', 'to scrape, graze, wound slightly'], ['χρή', 'it is fated, necessary'], ['χρῆ', 'need, necessity']])">χρή </span>
+	<span ontouchstart="updateMasthead(event, [['ἐγώ', 'ego']])">με </span>
+	<span ontouchstart="updateMasthead(event, [['καί', 'and']])">καὶ </span>
+	<span ontouchstart="updateMasthead(event, [['λέγω1', 'to lay asleep, lull to sleep; to gather, pick up; to say, speak'], ['λέγω2', 'to lay asleep, lull to sleep; to gather, pick up; to say, speak'], ['λέγω3', 'to lay asleep, lull to sleep; to gather, pick up; to say, speak']])">λέγειν </span>
+	<span ontouchstart="updateMasthead(event, [['ὅδε', 'this']])">τάδε. </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Κυ.</span>
+	<span ontouchstart="updateMasthead(event, ])">[ο]ὐ </span>
+	<span ontouchstart="updateMasthead(event, [['μή', 'not']])">μὴ </span>
+	<span ontouchstart="updateMasthead(event, [['ὅδε', 'this']])">ταδ’ </span>
+	<span ontouchstart="updateMasthead(event, ])">[εἴπῃς </span>
+</span><br>
+<span class="line">
+	<span class="line">
+	<span class='speaker'>Κυ.</span>
+	<span ontouchstart="updateMasthead(event, [['πού', 'anywhere, somewhere'], ['ποῦ', 'quis']])">ποῦ </span>
+	<span ontouchstart="updateMasthead(event, [['καί', 'and']])">καὶ </span>
+	<span ontouchstart="updateMasthead(event, [['βοῦς', 'cow']])">βόες </span>
+	<span ontouchstart="updateMasthead(event, [['νέμω', 'to deal out, distribute, dispense']])">νέμουσι </span>
+	<span ontouchstart="updateMasthead(event, ])">τ[ </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Χο.</span>
+	<span ontouchstart="updateMasthead(event, ])">π[λ]είους </span>
+	<span ontouchstart="updateMasthead(event, [['δέ', 'but']])">δέ </span>
+	<span ontouchstart="updateMasthead(event, [['γε', 'at least, at any rate']])">γ’ </span>
+	<span ontouchstart="updateMasthead(event, [['ἤδη', 'nunc'], ['ἦδος', 'delight, enjoyment, pleasure']])">ἤδη </span>
+	<span ontouchstart="updateMasthead(event, [['νῦν', 'now, even now; now at this very time']])">νῦν </span>
+	<span ontouchstart="updateMasthead(event, ])">[ </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Κυ.</span>
+	<span ontouchstart="updateMasthead(event, ])">τ[ί]ς, </span>
+	<span ontouchstart="updateMasthead(event, [['εἰμί', 'I have'], ['ὦ', 'O! oh!']])">ὦ </span>
+	<span ontouchstart="updateMasthead(event, [['πονηρός', 'toilsome, painful, grievous']])">πόνηρ’, </span>
+	<span ontouchstart="updateMasthead(event, [['ἔχις', 'an adder, viper'], ['ἔχω', 'to have'], ['χέω', 'to pour']])">ἔχει; </span>
+	<span ontouchstart="updateMasthead(event, [['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τί </span>
+	<span ontouchstart="updateMasthead(event, ])">πλε[ </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Χο.</span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the'], ['ὅς', 'this, that;']])">ὁ </span>
+	<span ontouchstart="updateMasthead(event, [['πᾶς', 'all, the whole'], ['παῖς', 'a child']])">παῖς </span>
+	<span ontouchstart="updateMasthead(event, [['ὅς', 'this, that;']])">ὃς </span>
+	<span ontouchstart="updateMasthead(event, [['ἔνδον', 'in, within, in the house, at home'], ['ἐνδίδωμι', 'to give in']])">ἔνδον </span>
+	<span ontouchstart="updateMasthead(event, [['εἰμί', 'I have']])">ἐστὶν </span>
+	<span ontouchstart="updateMasthead(event, ])">ἐγκεκλη[ιμένος. </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Κυ.</span>
+	<span ontouchstart="updateMasthead(event, ])">[τὸ]ν </span>
+	<span ontouchstart="updateMasthead(event, [['παῖς', 'a child']])">παῖδα </span>
+	<span ontouchstart="updateMasthead(event, [['παύω', 'to make to cease']])">παῦσαι </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the'], ['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τοῦ </span>
+	<span ontouchstart="updateMasthead(event, ])">Διὸς </span>
+	<span ontouchstart="updateMasthead(event, ])">[ </span>
+	<span ontouchstart="updateMasthead(event, [['κακός', 'bad'], ['κακόω', 'to treat ill, maltreat, afflict, distress']])">κακῶς </span>
+	<span ontouchstart="updateMasthead(event, [['λέγω1', 'to lay asleep, lull to sleep; to gather, pick up; to say, speak'], ['λέγω2', 'to lay asleep, lull to sleep; to gather, pick up; to say, speak'], ['λέγω3', 'to lay asleep, lull to sleep; to gather, pick up; to say, speak']])">λέγων. </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Χο.</span>
+	<span ontouchstart="updateMasthead(event, ])">π[α]ύοιμ[’ </span>
+	<span ontouchstart="updateMasthead(event, ])">ἄ]ν </span>
+	<span ontouchstart="updateMasthead(event, ])">[, </span>
+	<span ontouchstart="updateMasthead(event, ])">εἰ] </span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the']])">τὰς </span>
+	<span ontouchstart="updateMasthead(event, [['βοῦς', 'cow']])">βοῦς </span>
+	<span ontouchstart="updateMasthead(event, [['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τις </span>
+	<span ontouchstart="updateMasthead(event, ])">ἐ[ξελᾶν </span>
+	<span ontouchstart="updateMasthead(event, [['ἐθέλω', 'to will, wish, purpose']])">θέλοι. </span>
+	<span class='line-number'>400</span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Κυ.</span>
+	<span ontouchstart="updateMasthead(event, [['ἤδη', 'nunc'], ['ἦδος', 'delight, enjoyment, pleasure']])">ἤδη </span>
+	<span ontouchstart="updateMasthead(event, [['ἐγώ', 'ego']])">με </span>
+	<span ontouchstart="updateMasthead(event, [['πνίγω', 'to choke, throttle, strangle'], ['πνιγεύς', 'an oven']])">πνίγεις </span>
+	<span ontouchstart="updateMasthead(event, [['καί', 'and']])">καὶ </span>
+	<span ontouchstart="updateMasthead(event, [['συ', 'thou, you.']])">σὺ </span>
+	<span ontouchstart="updateMasthead(event, ])">χα[ἰ </span>
+	<span ontouchstart="updateMasthead(event, [['βοῦς', 'cow']])">βόες </span>
+	<span ontouchstart="updateMasthead(event, ])">σέθεν. </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Χο.</span>
+	<span ontouchstart="updateMasthead(event, ])">[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">
+ </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Χο.</span>
+	<span ontouchstart="updateMasthead(event, [['ἴον', 'the violet'], ['ἰάομαι', 'to heal, cure'], ['ἰός', 'an arrow; rust'], ['ἰού', 'ho!']])">ἰοὺ </span>
+	<span ontouchstart="updateMasthead(event, [['ἴον', 'the violet'], ['ἰάομαι', 'to heal, cure'], ['ἰός', 'an arrow; rust'], ['ἰού', 'ho!']])">ἰοὺ </span>
+	<span ontouchstart="updateMasthead(event, ])">[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ὅς', 'this, that;']])">ἥν </span>
+	<span ontouchstart="updateMasthead(event, [['τε', 'and; acc. and abl. of tu; tu or te; see tu']])">τ’ </span>
+	<span ontouchstart="updateMasthead(event, [['φημί', 'to declare, make known']])">ἔφη </span>
+	<span ontouchstart="updateMasthead(event, ])">π[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['οὗτος', 'this']])">οὗτος </span>
+	<span ontouchstart="updateMasthead(event, [['οὐ', '\N; why no, âcertainly not; for not; for in no manner; \N; I suppose not; no truly; no truly, nay verily; not surely, not verily; nevertheless, notwithstanding, yet, still; not however; not; nowhere; not; never yet at any time']])">οὐ </span>
+	<span ontouchstart="updateMasthead(event, ])">φ[ </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Σι.</span>
+	<span ontouchstart="updateMasthead(event, [['ω', 'The twenty-seventh letter of the alphabet;']])">ω </span>
+	<span ontouchstart="updateMasthead(event, ])">Λ[οξία </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">ιω </span>
+	<span ontouchstart="updateMasthead(event, ])">δ[ </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Χο.</span>
+	<span ontouchstart="updateMasthead(event, [['εἰμί', 'I have'], ['ὦ', 'O! oh!']])">ὦ </span>
+	<span ontouchstart="updateMasthead(event, ])">Λοξία, </span>
+	<span ontouchstart="updateMasthead(event, ])">δε[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['καί', 'and']])">καὶ </span>
+	<span ontouchstart="updateMasthead(event, ])">παρη[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, [['ὁ', 'the']])">τῶν </span>
+	<span ontouchstart="updateMasthead(event, ])">[β]οῶ[ν </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>)α.</span>
+	<span ontouchstart="updateMasthead(event, ])">[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">ε[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">βο[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">οπο[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">πρ[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">μισθ\ς </span>
+	<span ontouchstart="updateMasthead(event, ])">[ </span>
+</span><br>
+<span class="line">
+		<span ontouchstart="updateMasthead(event, ])">ἐλεύθερο[ </span>
+</span><br>
+<span class="line">
+	<span class='speaker'>Σι.</span>
+	<span ontouchstart="updateMasthead(event, [['ὁ', 'the']])">τὸν </span>
+	<span ontouchstart="updateMasthead(event, ])">ἐγ[ </span>
+</span><br>
