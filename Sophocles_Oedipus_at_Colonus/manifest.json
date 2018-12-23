@@ -1,0 +1,21 @@
+{
+    "short_name": "Oedipus at Colonus",
+    "name": "Sophocles : Oedipus at Colonus",
+    "icons": [
+        {
+            "src": "images/icons-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+            },
+        {
+            "src": "images/icons-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+            }
+        ],
+    "start_url": "/Sophocles_Oedipus at Colonus/Sophocles_Oedipus at Colonus.html",
+    "background_color": "#3367D6",
+    "display": "standalone",
+    "scope": "/Sophocles_Oedipus at Colonus/",
+    "theme_color": "#3367D6"
+}

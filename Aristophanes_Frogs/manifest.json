@@ -1,0 +1,21 @@
+{
+    "short_name": "Frogs",
+    "name": "Aristophanes : Frogs",
+    "icons": [
+        {
+            "src": "images/icons-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+            },
+        {
+            "src": "images/icons-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+            }
+        ],
+    "start_url": "/Aristophanes_Frogs/Aristophanes_Frogs.html",
+    "background_color": "#3367D6",
+    "display": "standalone",
+    "scope": "/Aristophanes_Frogs/",
+    "theme_color": "#3367D6"
+}

@@ -1,0 +1,21 @@
+{
+    "short_name": "Phoenician Women",
+    "name": "Euripides : Phoenician Women",
+    "icons": [
+        {
+            "src": "images/icons-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+            },
+        {
+            "src": "images/icons-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+            }
+        ],
+    "start_url": "/Euripides_Phoenician Women/Euripides_Phoenician Women.html",
+    "background_color": "#3367D6",
+    "display": "standalone",
+    "scope": "/Euripides_Phoenician Women/",
+    "theme_color": "#3367D6"
+}

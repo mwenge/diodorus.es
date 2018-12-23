@@ -1,0 +1,21 @@
+{
+    "short_name": "Electra",
+    "name": "Euripides : Electra",
+    "icons": [
+        {
+            "src": "images/icons-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+            },
+        {
+            "src": "images/icons-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+            }
+        ],
+    "start_url": "/Euripides_Electra/Euripides_Electra.html",
+    "background_color": "#3367D6",
+    "display": "standalone",
+    "scope": "/Euripides_Electra/",
+    "theme_color": "#3367D6"
+}

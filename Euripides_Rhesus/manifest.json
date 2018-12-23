@@ -1,0 +1,21 @@
+{
+    "short_name": "Rhesus",
+    "name": "Euripides : Rhesus",
+    "icons": [
+        {
+            "src": "images/icons-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+            },
+        {
+            "src": "images/icons-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+            }
+        ],
+    "start_url": "/Euripides_Rhesus/Euripides_Rhesus.html",
+    "background_color": "#3367D6",
+    "display": "standalone",
+    "scope": "/Euripides_Rhesus/",
+    "theme_color": "#3367D6"
+}

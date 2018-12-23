@@ -1,0 +1,21 @@
+{
+    "short_name": "Thesmophoriazusae",
+    "name": "Aristophanes : Thesmophoriazusae",
+    "icons": [
+        {
+            "src": "images/icons-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+            },
+        {
+            "src": "images/icons-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+            }
+        ],
+    "start_url": "/Aristophanes_Thesmophoriazusae/Aristophanes_Thesmophoriazusae.html",
+    "background_color": "#3367D6",
+    "display": "standalone",
+    "scope": "/Aristophanes_Thesmophoriazusae/",
+    "theme_color": "#3367D6"
+}

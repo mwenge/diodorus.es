@@ -1,0 +1,21 @@
+{
+    "short_name": "Peace",
+    "name": "Aristophanes : Peace",
+    "icons": [
+        {
+            "src": "images/icons-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+            },
+        {
+            "src": "images/icons-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+            }
+        ],
+    "start_url": "/Aristophanes_Peace/Aristophanes_Peace.html",
+    "background_color": "#3367D6",
+    "display": "standalone",
+    "scope": "/Aristophanes_Peace/",
+    "theme_color": "#3367D6"
+}
