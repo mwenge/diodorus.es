@@ -2,7 +2,6 @@
 
 var CACHE_NAME = 'Sophocles_Oedipus Tyrannus';
 var urlsToCache = [
-  '/',
   'Sophocles_Oedipus Tyrannus.html'
 ];
 

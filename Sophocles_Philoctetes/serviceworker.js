@@ -2,7 +2,6 @@
 
 var CACHE_NAME = 'Sophocles_Philoctetes';
 var urlsToCache = [
-  '/',
   'Sophocles_Philoctetes.html'
 ];
 

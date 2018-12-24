@@ -2,7 +2,6 @@
 
 var CACHE_NAME = 'Aristophanes_Thesmophoriazusae';
 var urlsToCache = [
-  '/',
   'Aristophanes_Thesmophoriazusae.html'
 ];
 

@@ -2,7 +2,6 @@
 
 var CACHE_NAME = 'Sophocles_Ajax';
 var urlsToCache = [
-  '/',
   'Sophocles_Ajax.html'
 ];
 

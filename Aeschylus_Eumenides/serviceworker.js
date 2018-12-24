@@ -2,7 +2,6 @@
 
 var CACHE_NAME = 'Aeschylus_Eumenides';
 var urlsToCache = [
-  '/',
   'Aeschylus_Eumenides.html'
 ];
 

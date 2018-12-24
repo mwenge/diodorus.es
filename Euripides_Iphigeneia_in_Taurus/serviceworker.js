@@ -2,7 +2,6 @@
 
 var CACHE_NAME = 'Euripides_Iphigeneia in Taurus';
 var urlsToCache = [
-  '/',
   'Euripides_Iphigeneia in Taurus.html'
 ];
 

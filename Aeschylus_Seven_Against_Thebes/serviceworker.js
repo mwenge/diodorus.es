@@ -2,7 +2,6 @@
 
 var CACHE_NAME = 'Aeschylus_Seven Against Thebes';
 var urlsToCache = [
-  '/',
   'Aeschylus_Seven Against Thebes.html'
 ];
 

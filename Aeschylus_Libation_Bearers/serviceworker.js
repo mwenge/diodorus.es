@@ -2,7 +2,6 @@
 
 var CACHE_NAME = 'Aeschylus_Libation Bearers';
 var urlsToCache = [
-  '/',
   'Aeschylus_Libation Bearers.html'
 ];
 

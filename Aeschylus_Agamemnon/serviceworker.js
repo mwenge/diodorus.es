@@ -2,7 +2,6 @@
 
 var CACHE_NAME = 'Aeschylus_Agamemnon';
 var urlsToCache = [
-  '/',
   'Aeschylus_Agamemnon.html'
 ];
 

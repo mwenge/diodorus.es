@@ -2,7 +2,6 @@
 
 var CACHE_NAME = 'Aeschylus_Prometheus Bound';
 var urlsToCache = [
-  '/',
   'Aeschylus_Prometheus Bound.html'
 ];
 

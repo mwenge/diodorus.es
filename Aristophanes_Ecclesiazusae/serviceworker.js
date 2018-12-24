@@ -2,7 +2,6 @@
 
 var CACHE_NAME = 'Aristophanes_Ecclesiazusae';
 var urlsToCache = [
-  '/',
   'Aristophanes_Ecclesiazusae.html'
 ];
 

@@ -2,7 +2,6 @@
 
 var CACHE_NAME = 'Euripides_Hecuba';
 var urlsToCache = [
-  '/',
   'Euripides_Hecuba.html'
 ];
 

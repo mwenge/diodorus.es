@@ -2,7 +2,6 @@
 
 var CACHE_NAME = 'Aristophanes_Wasps';
 var urlsToCache = [
-  '/',
   'Aristophanes_Wasps.html'
 ];
 

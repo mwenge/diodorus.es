@@ -2,7 +2,6 @@
 
 var CACHE_NAME = 'Euripides_Suppliants';
 var urlsToCache = [
-  '/',
   'Euripides_Suppliants.html'
 ];
 

@@ -2,7 +2,6 @@
 
 var CACHE_NAME = 'Euripides_Helen';
 var urlsToCache = [
-  '/',
   'Euripides_Helen.html'
 ];
 

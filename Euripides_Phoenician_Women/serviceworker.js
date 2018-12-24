@@ -2,7 +2,6 @@
 
 var CACHE_NAME = 'Euripides_Phoenician Women';
 var urlsToCache = [
-  '/',
   'Euripides_Phoenician Women.html'
 ];
 

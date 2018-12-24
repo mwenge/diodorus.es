@@ -2,7 +2,6 @@
 
 var CACHE_NAME = 'Euripides_Trojan Women';
 var urlsToCache = [
-  '/',
   'Euripides_Trojan Women.html'
 ];
 

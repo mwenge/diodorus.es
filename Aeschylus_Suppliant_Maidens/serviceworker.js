@@ -2,7 +2,6 @@
 
 var CACHE_NAME = 'Aeschylus_Suppliant Maidens';
 var urlsToCache = [
-  '/',
   'Aeschylus_Suppliant Maidens.html'
 ];
 

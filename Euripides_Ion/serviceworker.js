@@ -2,7 +2,6 @@
 
 var CACHE_NAME = 'Euripides_Ion';
 var urlsToCache = [
-  '/',
   'Euripides_Ion.html'
 ];
 
