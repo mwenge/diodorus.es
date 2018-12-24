@@ -13,9 +13,9 @@
             "sizes": "512x512"
             }
         ],
-    "start_url": "/Euripides_Helen/Euripides_Helen.html",
+    "start_url": "Euripides_Helen.html",
     "background_color": "#3367D6",
     "display": "standalone",
-    "scope": "/Euripides_Helen/",
+    "scope": ".",
     "theme_color": "#3367D6"
 }

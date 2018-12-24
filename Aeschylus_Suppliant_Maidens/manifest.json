@@ -13,9 +13,9 @@
             "sizes": "512x512"
             }
         ],
-    "start_url": "/Aeschylus_Suppliant Maidens/Aeschylus_Suppliant Maidens.html",
+    "start_url": "Aeschylus_Suppliant Maidens.html",
     "background_color": "#3367D6",
     "display": "standalone",
-    "scope": "/Aeschylus_Suppliant Maidens/",
+    "scope": ".",
     "theme_color": "#3367D6"
 }

@@ -13,9 +13,9 @@
             "sizes": "512x512"
             }
         ],
-    "start_url": "/Aristophanes_Thesmophoriazusae/Aristophanes_Thesmophoriazusae.html",
+    "start_url": "Aristophanes_Thesmophoriazusae.html",
     "background_color": "#3367D6",
     "display": "standalone",
-    "scope": "/Aristophanes_Thesmophoriazusae/",
+    "scope": ".",
     "theme_color": "#3367D6"
 }

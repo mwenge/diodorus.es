@@ -13,9 +13,9 @@
             "sizes": "512x512"
             }
         ],
-    "start_url": "/Euripides_Ion/Euripides_Ion.html",
+    "start_url": "Euripides_Ion.html",
     "background_color": "#3367D6",
     "display": "standalone",
-    "scope": "/Euripides_Ion/",
+    "scope": ".",
     "theme_color": "#3367D6"
 }

@@ -13,9 +13,9 @@
             "sizes": "512x512"
             }
         ],
-    "start_url": "/Aeschylus_Agamemnon/Aeschylus_Agamemnon.html",
+    "start_url": "Aeschylus_Agamemnon.html",
     "background_color": "#3367D6",
     "display": "standalone",
-    "scope": "/Aeschylus_Agamemnon/",
+    "scope": ".",
     "theme_color": "#3367D6"
 }

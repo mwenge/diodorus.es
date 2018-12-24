@@ -13,9 +13,9 @@
             "sizes": "512x512"
             }
         ],
-    "start_url": "/Aeschylus_Libation Bearers/Aeschylus_Libation Bearers.html",
+    "start_url": "Aeschylus_Libation Bearers.html",
     "background_color": "#3367D6",
     "display": "standalone",
-    "scope": "/Aeschylus_Libation Bearers/",
+    "scope": ".",
     "theme_color": "#3367D6"
 }

@@ -13,9 +13,9 @@
             "sizes": "512x512"
             }
         ],
-    "start_url": "/Euripides_Iphigeneia in Taurus/Euripides_Iphigeneia in Taurus.html",
+    "start_url": "Euripides_Iphigeneia in Taurus.html",
     "background_color": "#3367D6",
     "display": "standalone",
-    "scope": "/Euripides_Iphigeneia in Taurus/",
+    "scope": ".",
     "theme_color": "#3367D6"
 }

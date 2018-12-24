@@ -13,9 +13,9 @@
             "sizes": "512x512"
             }
         ],
-    "start_url": "/Aristophanes_Plutus/Aristophanes_Plutus.html",
+    "start_url": "Aristophanes_Plutus.html",
     "background_color": "#3367D6",
     "display": "standalone",
-    "scope": "/Aristophanes_Plutus/",
+    "scope": ".",
     "theme_color": "#3367D6"
 }

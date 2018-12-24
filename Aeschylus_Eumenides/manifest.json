@@ -13,9 +13,9 @@
             "sizes": "512x512"
             }
         ],
-    "start_url": "/Aeschylus_Eumenides/Aeschylus_Eumenides.html",
+    "start_url": "Aeschylus_Eumenides.html",
     "background_color": "#3367D6",
     "display": "standalone",
-    "scope": "/Aeschylus_Eumenides/",
+    "scope": ".",
     "theme_color": "#3367D6"
 }

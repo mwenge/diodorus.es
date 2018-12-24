@@ -13,9 +13,9 @@
             "sizes": "512x512"
             }
         ],
-    "start_url": "/Aristophanes_Ecclesiazusae/Aristophanes_Ecclesiazusae.html",
+    "start_url": "Aristophanes_Ecclesiazusae.html",
     "background_color": "#3367D6",
     "display": "standalone",
-    "scope": "/Aristophanes_Ecclesiazusae/",
+    "scope": ".",
     "theme_color": "#3367D6"
 }

@@ -13,9 +13,9 @@
             "sizes": "512x512"
             }
         ],
-    "start_url": "/Aristophanes_Peace/Aristophanes_Peace.html",
+    "start_url": "Aristophanes_Peace.html",
     "background_color": "#3367D6",
     "display": "standalone",
-    "scope": "/Aristophanes_Peace/",
+    "scope": ".",
     "theme_color": "#3367D6"
 }

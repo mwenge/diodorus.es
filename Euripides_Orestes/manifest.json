@@ -13,9 +13,9 @@
             "sizes": "512x512"
             }
         ],
-    "start_url": "/Euripides_Orestes/Euripides_Orestes.html",
+    "start_url": "Euripides_Orestes.html",
     "background_color": "#3367D6",
     "display": "standalone",
-    "scope": "/Euripides_Orestes/",
+    "scope": ".",
     "theme_color": "#3367D6"
 }

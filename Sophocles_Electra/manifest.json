@@ -13,9 +13,9 @@
             "sizes": "512x512"
             }
         ],
-    "start_url": "/Sophocles_Electra/Sophocles_Electra.html",
+    "start_url": "Sophocles_Electra.html",
     "background_color": "#3367D6",
     "display": "standalone",
-    "scope": "/Sophocles_Electra/",
+    "scope": ".",
     "theme_color": "#3367D6"
 }

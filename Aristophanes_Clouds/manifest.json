@@ -13,9 +13,9 @@
             "sizes": "512x512"
             }
         ],
-    "start_url": "/Aristophanes_Clouds/Aristophanes_Clouds.html",
+    "start_url": "Aristophanes_Clouds.html",
     "background_color": "#3367D6",
     "display": "standalone",
-    "scope": "/Aristophanes_Clouds/",
+    "scope": ".",
     "theme_color": "#3367D6"
 }

@@ -13,9 +13,9 @@
             "sizes": "512x512"
             }
         ],
-    "start_url": "/Sophocles_Philoctetes/Sophocles_Philoctetes.html",
+    "start_url": "Sophocles_Philoctetes.html",
     "background_color": "#3367D6",
     "display": "standalone",
-    "scope": "/Sophocles_Philoctetes/",
+    "scope": ".",
     "theme_color": "#3367D6"
 }
