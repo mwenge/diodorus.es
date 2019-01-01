@@ -2,7 +2,9 @@
 
 var CACHE_NAME = 'Euripides_Ion';
 var urlsToCache = [
-  'Euripides_Ion.html'
+  'Euripides_Ion.html',
+  'book.css',
+  'book.js',
 ];
 
 self.addEventListener('install', function(event) {

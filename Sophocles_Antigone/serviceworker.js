@@ -2,7 +2,9 @@
 
 var CACHE_NAME = 'Sophocles_Antigone';
 var urlsToCache = [
-  'Sophocles_Antigone.html'
+  'Sophocles_Antigone.html',
+  'book.css',
+  'book.js',
 ];
 
 self.addEventListener('install', function(event) {

@@ -2,7 +2,9 @@
 
 var CACHE_NAME = 'Aristophanes_Lysistrata';
 var urlsToCache = [
-  'Aristophanes_Lysistrata.html'
+  'Aristophanes_Lysistrata.html',
+  'book.css',
+  'book.js',
 ];
 
 self.addEventListener('install', function(event) {

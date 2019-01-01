@@ -2,7 +2,9 @@
 
 var CACHE_NAME = 'Sophocles_Philoctetes';
 var urlsToCache = [
-  'Sophocles_Philoctetes.html'
+  'Sophocles_Philoctetes.html',
+  'book.css',
+  'book.js',
 ];
 
 self.addEventListener('install', function(event) {

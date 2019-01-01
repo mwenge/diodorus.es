@@ -2,7 +2,9 @@
 
 var CACHE_NAME = 'Euripides_Suppliants';
 var urlsToCache = [
-  'Euripides_Suppliants.html'
+  'Euripides_Suppliants.html',
+  'book.css',
+  'book.js',
 ];
 
 self.addEventListener('install', function(event) {

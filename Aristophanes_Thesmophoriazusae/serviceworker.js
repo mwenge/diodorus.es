@@ -2,7 +2,9 @@
 
 var CACHE_NAME = 'Aristophanes_Thesmophoriazusae';
 var urlsToCache = [
-  'Aristophanes_Thesmophoriazusae.html'
+  'Aristophanes_Thesmophoriazusae.html',
+  'book.css',
+  'book.js',
 ];
 
 self.addEventListener('install', function(event) {

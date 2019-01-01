@@ -2,7 +2,9 @@
 
 var CACHE_NAME = 'Aeschylus_Libation Bearers';
 var urlsToCache = [
-  'Aeschylus_Libation Bearers.html'
+  'Aeschylus_Libation Bearers.html',
+  'book.css',
+  'book.js',
 ];
 
 self.addEventListener('install', function(event) {

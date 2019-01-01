@@ -2,7 +2,9 @@
 
 var CACHE_NAME = 'Aristophanes_Acharnians';
 var urlsToCache = [
-  'Aristophanes_Acharnians.html'
+  'Aristophanes_Acharnians.html',
+  'book.css',
+  'book.js',
 ];
 
 self.addEventListener('install', function(event) {

@@ -2,7 +2,9 @@
 
 var CACHE_NAME = 'Euripides_Heracles';
 var urlsToCache = [
-  'Euripides_Heracles.html'
+  'Euripides_Heracles.html',
+  'book.css',
+  'book.js',
 ];
 
 self.addEventListener('install', function(event) {

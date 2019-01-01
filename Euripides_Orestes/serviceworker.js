@@ -2,7 +2,9 @@
 
 var CACHE_NAME = 'Euripides_Orestes';
 var urlsToCache = [
-  'Euripides_Orestes.html'
+  'Euripides_Orestes.html',
+  'book.css',
+  'book.js',
 ];
 
 self.addEventListener('install', function(event) {

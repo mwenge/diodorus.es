@@ -2,7 +2,9 @@
 
 var CACHE_NAME = 'Sophocles_Trachiniae';
 var urlsToCache = [
-  'Sophocles_Trachiniae.html'
+  'Sophocles_Trachiniae.html',
+  'book.css',
+  'book.js',
 ];
 
 self.addEventListener('install', function(event) {

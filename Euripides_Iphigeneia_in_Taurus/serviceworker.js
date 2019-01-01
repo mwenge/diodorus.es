@@ -2,7 +2,9 @@
 
 var CACHE_NAME = 'Euripides_Iphigeneia in Taurus';
 var urlsToCache = [
-  'Euripides_Iphigeneia in Taurus.html'
+  'Euripides_Iphigeneia in Taurus.html',
+  'book.css',
+  'book.js',
 ];
 
 self.addEventListener('install', function(event) {

@@ -2,7 +2,9 @@
 
 var CACHE_NAME = 'Aeschylus_Eumenides';
 var urlsToCache = [
-  'Aeschylus_Eumenides.html'
+  'Aeschylus_Eumenides.html',
+  'book.css',
+  'book.js',
 ];
 
 self.addEventListener('install', function(event) {

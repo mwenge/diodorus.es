@@ -2,7 +2,9 @@
 
 var CACHE_NAME = 'Aristophanes_Ecclesiazusae';
 var urlsToCache = [
-  'Aristophanes_Ecclesiazusae.html'
+  'Aristophanes_Ecclesiazusae.html',
+  'book.css',
+  'book.js',
 ];
 
 self.addEventListener('install', function(event) {

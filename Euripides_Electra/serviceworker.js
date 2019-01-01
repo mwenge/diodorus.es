@@ -2,7 +2,9 @@
 
 var CACHE_NAME = 'Euripides_Electra';
 var urlsToCache = [
-  'Euripides_Electra.html'
+  'Euripides_Electra.html',
+  'book.css',
+  'book.js',
 ];
 
 self.addEventListener('install', function(event) {

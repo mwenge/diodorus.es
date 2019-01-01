@@ -2,7 +2,9 @@
 
 var CACHE_NAME = 'Euripides_Phoenician Women';
 var urlsToCache = [
-  'Euripides_Phoenician Women.html'
+  'Euripides_Phoenician Women.html',
+  'book.css',
+  'book.js',
 ];
 
 self.addEventListener('install', function(event) {

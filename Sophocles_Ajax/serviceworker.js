@@ -2,7 +2,9 @@
 
 var CACHE_NAME = 'Sophocles_Ajax';
 var urlsToCache = [
-  'Sophocles_Ajax.html'
+  'Sophocles_Ajax.html',
+  'book.css',
+  'book.js',
 ];
 
 self.addEventListener('install', function(event) {

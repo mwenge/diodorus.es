@@ -2,7 +2,9 @@
 
 var CACHE_NAME = 'Sophocles_Oedipus at Colonus';
 var urlsToCache = [
-  'Sophocles_Oedipus at Colonus.html'
+  'Sophocles_Oedipus at Colonus.html',
+  'book.css',
+  'book.js',
 ];
 
 self.addEventListener('install', function(event) {

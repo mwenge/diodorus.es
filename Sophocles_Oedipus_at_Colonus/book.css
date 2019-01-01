@@ -1,0 +1,61 @@
+body {
+  font-family: 'GFS Didot', serif;
+  background-color: ivory;
+}
+.masthead-container {
+  top: -1px;
+  left: 0px;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+}
+.masthead, .helper {
+  z-index: 100;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0px 1px 0.5px 0px rgba(194, 191, 201, 0.92);
+  background-color: ivory;
+  font-family: 'Lato', sans-serif;
+}
+.firstspeaker {
+  margin-left: 6vw;
+  user-select: none;
+  font-size: 5vw;
+}
+.hexameter-line {
+  margin-left: 2vw;
+  margin-right: 2vw;
+  user-select: none;
+}
+.line {
+  margin-left: 5vw;
+  user-select: none;
+}
+.speaker {
+  margin-top: 0.4vh;
+  position: absolute;
+  left: 2px;
+  font-size: 3.6vw;
+}
+.line-number {
+  margin-top: 0.8vh;
+  float: right;
+  font-size: 3vw;
+  vertical-align: bottom;
+}
+.title {
+  text-transform: uppercase;
+  font-size: 8vw;
+}
+span {
+  font-style: italic;
+  font-size: 4.2vw;
+}
+#transCount {
+  position: absolute;
+  right: 0;
+  font-size: 3vw;
+}
+.translation {
+  font-size: 5vw;
+}

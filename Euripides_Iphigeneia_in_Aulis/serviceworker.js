@@ -2,7 +2,9 @@
 
 var CACHE_NAME = 'Euripides_Iphigeneia in Aulis';
 var urlsToCache = [
-  'Euripides_Iphigeneia in Aulis.html'
+  'Euripides_Iphigeneia in Aulis.html',
+  'book.css',
+  'book.js',
 ];
 
 self.addEventListener('install', function(event) {

@@ -2,7 +2,9 @@
 
 var CACHE_NAME = 'Euripides_Bacchae';
 var urlsToCache = [
-  'Euripides_Bacchae.html'
+  'Euripides_Bacchae.html',
+  'book.css',
+  'book.js',
 ];
 
 self.addEventListener('install', function(event) {

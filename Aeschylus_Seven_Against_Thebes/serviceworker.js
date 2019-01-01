@@ -2,7 +2,9 @@
 
 var CACHE_NAME = 'Aeschylus_Seven Against Thebes';
 var urlsToCache = [
-  'Aeschylus_Seven Against Thebes.html'
+  'Aeschylus_Seven Against Thebes.html',
+  'book.css',
+  'book.js',
 ];
 
 self.addEventListener('install', function(event) {

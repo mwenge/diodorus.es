@@ -2,7 +2,9 @@
 
 var CACHE_NAME = 'Sophocles_Electra';
 var urlsToCache = [
-  'Sophocles_Electra.html'
+  'Sophocles_Electra.html',
+  'book.css',
+  'book.js',
 ];
 
 self.addEventListener('install', function(event) {

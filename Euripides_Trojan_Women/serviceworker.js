@@ -2,7 +2,9 @@
 
 var CACHE_NAME = 'Euripides_Trojan Women';
 var urlsToCache = [
-  'Euripides_Trojan Women.html'
+  'Euripides_Trojan Women.html',
+  'book.css',
+  'book.js',
 ];
 
 self.addEventListener('install', function(event) {

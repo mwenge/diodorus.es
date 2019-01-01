@@ -2,7 +2,9 @@
 
 var CACHE_NAME = 'Aeschylus_Persians';
 var urlsToCache = [
-  'Aeschylus_Persians.html'
+  'Aeschylus_Persians.html',
+  'book.css',
+  'book.js',
 ];
 
 self.addEventListener('install', function(event) {

@@ -2,7 +2,9 @@
 
 var CACHE_NAME = 'Aeschylus_Prometheus Bound';
 var urlsToCache = [
-  'Aeschylus_Prometheus Bound.html'
+  'Aeschylus_Prometheus Bound.html',
+  'book.css',
+  'book.js',
 ];
 
 self.addEventListener('install', function(event) {
