@@ -2,6 +2,20 @@ var translations = [];
 var current = 0;
 var forceDisplayOfTitleOnScroll = false;
 
+function updateScrollPosition() {
+  var scrollPosition = localStorage.getItem("scrollPosition");
+  if (scrollPosition == null) {
+    scrollPosition = window.pageYOffset;
+    localStorage.setItem("scrollPosition", scrollPosition);
+  }
+  window.scrollTo(0, scrollPosition)
+}
+
+function storeScrollPosition() {
+  scrollPosition = window.pageYOffset;
+  localStorage.setItem("scrollPosition", scrollPosition);
+}
+
 function showNextOnHelper(evt) {
   current++;
   if (current > translations.length - 1) {
@@ -54,7 +68,6 @@ function showTitle(lineNumber) {
     return;
   }
   var result = page % 2;
-  console.log(page, lineNumber, result);
   
   var titleToShow = titleElements[result];
   var innerHTML = "<span class=\"title\">" + titleToShow + "</span>";
@@ -70,5 +83,8 @@ if ('serviceWorker' in navigator) {
       // registration failed :(
       console.log('ServiceWorker registration failed: ', err);
     });
-    });
-    }
+  });
+}
+
+window.onload = updateScrollPosition;
+window.onscroll = storeScrollPosition;

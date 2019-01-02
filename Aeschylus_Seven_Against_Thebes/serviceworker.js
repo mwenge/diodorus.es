@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Aeschylus_Seven Against Thebes';
+var CACHE_NAME = 'Aeschylus_Seven_Against_Thebes';
 var urlsToCache = [
-  'Aeschylus_Seven Against Thebes.html',
+  'Aeschylus_Seven_Against_Thebes.html',
   'book.css',
   'book.js',
 ];

@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Aeschylus_Suppliant Maidens';
+var CACHE_NAME = 'Aeschylus_Suppliant_Maidens';
 var urlsToCache = [
-  'Aeschylus_Suppliant Maidens.html',
+  'Aeschylus_Suppliant_Maidens.html',
   'book.css',
   'book.js',
 ];

@@ -1,6 +1,6 @@
 {
-    "short_name": "Iphigeneia in Aulis",
-    "name": "Euripides : Iphigeneia in Aulis",
+    "short_name": "Iphigeneia_in_Aulis",
+    "name": "Euripides : Iphigeneia_in_Aulis",
     "icons": [
         {
             "src": "images/icons-192.png",
@@ -13,8 +13,8 @@
             "sizes": "512x512"
             }
         ],
-    "start_url": "Euripides_Iphigeneia in Aulis.html",
-    "background_color": "#3367D6",
+    "start_url": "Euripides_Iphigeneia_in_Aulis.html",
+    "background_color": "ivory",
     "display": "standalone",
     "scope": ".",
     "theme_color": "ivory"

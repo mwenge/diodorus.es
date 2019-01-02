@@ -1,6 +1,6 @@
 {
-    "short_name": "Oedipus Tyrannus",
-    "name": "Sophocles : Oedipus Tyrannus",
+    "short_name": "Oedipus_Tyrannus",
+    "name": "Sophocles : Oedipus_Tyrannus",
     "icons": [
         {
             "src": "images/icons-192.png",
@@ -13,8 +13,8 @@
             "sizes": "512x512"
             }
         ],
-    "start_url": "Sophocles_Oedipus Tyrannus.html",
-    "background_color": "#3367D6",
+    "start_url": "Sophocles_Oedipus_Tyrannus.html",
+    "background_color": "ivory",
     "display": "standalone",
     "scope": ".",
     "theme_color": "ivory"

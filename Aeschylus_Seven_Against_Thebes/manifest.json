@@ -1,6 +1,6 @@
 {
-    "short_name": "Seven Against Thebes",
-    "name": "Aeschylus : Seven Against Thebes",
+    "short_name": "Seven_Against_Thebes",
+    "name": "Aeschylus : Seven_Against_Thebes",
     "icons": [
         {
             "src": "images/icons-192.png",
@@ -13,8 +13,8 @@
             "sizes": "512x512"
             }
         ],
-    "start_url": "Aeschylus_Seven Against Thebes.html",
-    "background_color": "#3367D6",
+    "start_url": "Aeschylus_Seven_Against_Thebes.html",
+    "background_color": "ivory",
     "display": "standalone",
     "scope": ".",
     "theme_color": "ivory"

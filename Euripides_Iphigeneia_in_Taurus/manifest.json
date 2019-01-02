@@ -1,6 +1,6 @@
 {
-    "short_name": "Iphigeneia in Taurus",
-    "name": "Euripides : Iphigeneia in Taurus",
+    "short_name": "Iphigeneia_in_Taurus",
+    "name": "Euripides : Iphigeneia_in_Taurus",
     "icons": [
         {
             "src": "images/icons-192.png",
@@ -13,8 +13,8 @@
             "sizes": "512x512"
             }
         ],
-    "start_url": "Euripides_Iphigeneia in Taurus.html",
-    "background_color": "#3367D6",
+    "start_url": "Euripides_Iphigeneia_in_Taurus.html",
+    "background_color": "ivory",
     "display": "standalone",
     "scope": ".",
     "theme_color": "ivory"

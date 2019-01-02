@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Euripides_Iphigeneia in Taurus';
+var CACHE_NAME = 'Euripides_Iphigeneia_in_Taurus';
 var urlsToCache = [
-  'Euripides_Iphigeneia in Taurus.html',
+  'Euripides_Iphigeneia_in_Taurus.html',
   'book.css',
   'book.js',
 ];

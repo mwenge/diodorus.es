@@ -1,6 +1,6 @@
 {
-    "short_name": "Trojan Women",
-    "name": "Euripides : Trojan Women",
+    "short_name": "Trojan_Women",
+    "name": "Euripides : Trojan_Women",
     "icons": [
         {
             "src": "images/icons-192.png",
@@ -13,8 +13,8 @@
             "sizes": "512x512"
             }
         ],
-    "start_url": "Euripides_Trojan Women.html",
-    "background_color": "#3367D6",
+    "start_url": "Euripides_Trojan_Women.html",
+    "background_color": "ivory",
     "display": "standalone",
     "scope": ".",
     "theme_color": "ivory"

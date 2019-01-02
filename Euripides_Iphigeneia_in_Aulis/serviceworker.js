@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Euripides_Iphigeneia in Aulis';
+var CACHE_NAME = 'Euripides_Iphigeneia_in_Aulis';
 var urlsToCache = [
-  'Euripides_Iphigeneia in Aulis.html',
+  'Euripides_Iphigeneia_in_Aulis.html',
   'book.css',
   'book.js',
 ];

@@ -1,6 +1,6 @@
 {
-    "short_name": "Prometheus Bound",
-    "name": "Aeschylus : Prometheus Bound",
+    "short_name": "Prometheus_Bound",
+    "name": "Aeschylus : Prometheus_Bound",
     "icons": [
         {
             "src": "images/icons-192.png",
@@ -13,8 +13,8 @@
             "sizes": "512x512"
             }
         ],
-    "start_url": "Aeschylus_Prometheus Bound.html",
-    "background_color": "#3367D6",
+    "start_url": "Aeschylus_Prometheus_Bound.html",
+    "background_color": "ivory",
     "display": "standalone",
     "scope": ".",
     "theme_color": "ivory"

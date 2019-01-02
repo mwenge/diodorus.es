@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Aeschylus_Prometheus Bound';
+var CACHE_NAME = 'Aeschylus_Prometheus_Bound';
 var urlsToCache = [
-  'Aeschylus_Prometheus Bound.html',
+  'Aeschylus_Prometheus_Bound.html',
   'book.css',
   'book.js',
 ];

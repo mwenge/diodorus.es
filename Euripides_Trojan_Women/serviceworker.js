@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Euripides_Trojan Women';
+var CACHE_NAME = 'Euripides_Trojan_Women';
 var urlsToCache = [
-  'Euripides_Trojan Women.html',
+  'Euripides_Trojan_Women.html',
   'book.css',
   'book.js',
 ];

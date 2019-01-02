@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Aeschylus_Libation Bearers';
+var CACHE_NAME = 'Aeschylus_Libation_Bearers';
 var urlsToCache = [
-  'Aeschylus_Libation Bearers.html',
+  'Aeschylus_Libation_Bearers.html',
   'book.css',
   'book.js',
 ];

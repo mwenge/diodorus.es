@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Sophocles_Oedipus at Colonus';
+var CACHE_NAME = 'Sophocles_Oedipus_at_Colonus';
 var urlsToCache = [
-  'Sophocles_Oedipus at Colonus.html',
+  'Sophocles_Oedipus_at_Colonus.html',
   'book.css',
   'book.js',
 ];
