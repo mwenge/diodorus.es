@@ -3,17 +3,19 @@ var current = 0;
 var forceDisplayOfTitleOnScroll = false;
 
 function updateScrollPosition() {
-  var scrollPosition = localStorage.getItem("scrollPosition");
+  var storageName = titleElements[0] + titleElements[1] + "ScrollPosition";
+  var scrollPosition = localStorage.getItem(storageName);
   if (scrollPosition == null) {
     scrollPosition = window.pageYOffset;
-    localStorage.setItem("scrollPosition", scrollPosition);
+    localStorage.setItem(storageName, scrollPosition);
   }
   window.scrollTo(0, scrollPosition)
 }
 
 function storeScrollPosition() {
+  var storageName = titleElements[0] + titleElements[1] + "ScrollPosition";
   scrollPosition = window.pageYOffset;
-  localStorage.setItem("scrollPosition", scrollPosition);
+  localStorage.setItem(storageName, scrollPosition);
 }
 
 function showNextOnHelper(evt) {

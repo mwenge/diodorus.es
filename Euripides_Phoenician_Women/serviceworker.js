@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Euripides_Phoenician_Women';
+var CACHE_NAME = 'Euripides_Phoenician Women';
 var urlsToCache = [
-  'Euripides_Phoenician_Women.html',
+  'Euripides_Phoenician Women.html',
   'book.css',
   'book.js',
 ];

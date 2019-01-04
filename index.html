@@ -1,21 +1,47 @@
 <!DOCTYPE html>
+<meta charset="UTF-8">
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=GFS+Didot">
 <style>
   body {
     background-color: ivory;
   }
-  .masthead {
-    top: 0px;
-    left: 0px;
+  .search {
+    background-color: purple;
+    border-right: white 3px solid;
+    display: inline-block;
+    position: absolute;
+    font-family: 'GFS Didot';
+    font-size: 5vh;
+    color: white;
+    left: 0;
+    width: 10%;
     position: fixed;
-    z-index: 100;
-    width: 100%;
+    border: white 3px solid;
     text-align: center;
     box-shadow: 0px 1px 0.5px 0px rgba(194, 191, 201, 0.92);
-    font-size: 9vw;
+  }
+  .masthead-container {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+    box-shadow: 0px 1px 0.5px 0px rgba(194, 191, 201, 0.92);
+  }
+  .masthead {
+    position: fixed;
+    left: 10%;
+    width: 90%;
+    text-align: center;
     font-family: 'Lato';
-    background-color: ivory;
+    font-size: 5vh;
+    background-color: black;
+    color: white;
+    border: white 3px solid;
+    display: inline-block;
+    box-shadow: 0px 1px 0.5px 0px rgba(194, 191, 201, 0.92);
   }
   #container {
     display: inline-block;
@@ -35,7 +61,86 @@
   }
 </style>
 <body>
-<div class="masthead">Greek Drama</div>
+  <div class="masthead-container">
+    <div class="search">Σ</div><div class="masthead">Greek Drama</div>
+  </div>
 <br><br><br>
 <div id="container">
-<div class='item' onclick='window.location = "Euripides_Iphigeneia_in_Taurus/Euripides_Iphigeneia_in_Taurus.html"'>Euripides<br><i>Iphigeneia in Taurus</i></div><div class='item' onclick='window.location = "Euripides_Electra/Euripides_Electra.html"'>Euripides<br><i>Electra</i></div><div class='item' onclick='window.location = "Aristophanes_Ecclesiazusae/Aristophanes_Ecclesiazusae.html"'>Aristophanes<br><i>Ecclesiazusae</i></div><div class='item' onclick='window.location = "Sophocles_Antigone/Sophocles_Antigone.html"'>Sophocles<br><i>Antigone</i></div><div class='item' onclick='window.location = "Sophocles_Ajax/Sophocles_Ajax.html"'>Sophocles<br><i>Ajax</i></div><div class='item' onclick='window.location = "Aeschylus_Agamemnon/Aeschylus_Agamemnon.html"'>Aeschylus<br><i>Agamemnon</i></div><div class='item' onclick='window.location = "Sophocles_Philoctetes/Sophocles_Philoctetes.html"'>Sophocles<br><i>Philoctetes</i></div><div class='item' onclick='window.location = "Aeschylus_Eumenides/Aeschylus_Eumenides.html"'>Aeschylus<br><i>Eumenides</i></div><div class='item' onclick='window.location = "Euripides_Phoenician_Women/Euripides_Phoenician_Women.html"'>Euripides<br><i>Phoenician Women</i></div><div class='item' onclick='window.location = "Aeschylus_Libation_Bearers/Aeschylus_Libation_Bearers.html"'>Aeschylus<br><i>Libation Bearers</i></div><div class='item' onclick='window.location = "Aeschylus_Prometheus_Bound/Aeschylus_Prometheus_Bound.html"'>Aeschylus<br><i>Prometheus Bound</i></div><div class='item' onclick='window.location = "Euripides_Trojan_Women/Euripides_Trojan_Women.html"'>Euripides<br><i>Trojan Women</i></div><div class='item' onclick='window.location = "Aristophanes_Wasps/Aristophanes_Wasps.html"'>Aristophanes<br><i>Wasps</i></div><div class='item' onclick='window.location = "Sophocles_Trachiniae/Sophocles_Trachiniae.html"'>Sophocles<br><i>Trachiniae</i></div><div class='item' onclick='window.location = "Aristophanes_Knights/Aristophanes_Knights.html"'>Aristophanes<br><i>Knights</i></div><div class='item' onclick='window.location = "Aristophanes_Birds/Aristophanes_Birds.html"'>Aristophanes<br><i>Birds</i></div><div class='item' onclick='window.location = "Sophocles_Electra/Sophocles_Electra.html"'>Sophocles<br><i>Electra</i></div><div class='item' onclick='window.location = "Aeschylus_Persians/Aeschylus_Persians.html"'>Aeschylus<br><i>Persians</i></div><div class='item' onclick='window.location = "Aristophanes_Acharnians/Aristophanes_Acharnians.html"'>Aristophanes<br><i>Acharnians</i></div><div class='item' onclick='window.location = "Sophocles_Oedipus_at_Colonus/Sophocles_Oedipus_at_Colonus.html"'>Sophocles<br><i>Oedipus at Colonus</i></div><div class='item' onclick='window.location = "Euripides_Iphigeneia_in_Aulis/Euripides_Iphigeneia_in_Aulis.html"'>Euripides<br><i>Iphigeneia in Aulis</i></div><div class='item' onclick='window.location = "Euripides_Hecuba/Euripides_Hecuba.html"'>Euripides<br><i>Hecuba</i></div><div class='item' onclick='window.location = "Aristophanes_Clouds/Aristophanes_Clouds.html"'>Aristophanes<br><i>Clouds</i></div><div class='item' onclick='window.location = "Euripides_Orestes/Euripides_Orestes.html"'>Euripides<br><i>Orestes</i></div><div class='item' onclick='window.location = "Sophocles_Oedipus_Tyrannus/Sophocles_Oedipus_Tyrannus.html"'>Sophocles<br><i>Oedipus Tyrannus</i></div><div class='item' onclick='window.location = "Aristophanes_Plutus/Aristophanes_Plutus.html"'>Aristophanes<br><i>Plutus</i></div><div class='item' onclick='window.location = "Aristophanes_Thesmophoriazusae/Aristophanes_Thesmophoriazusae.html"'>Aristophanes<br><i>Thesmophoriazusae</i></div><div class='item' onclick='window.location = "Aeschylus_Seven_Against_Thebes/Aeschylus_Seven_Against_Thebes.html"'>Aeschylus<br><i>Seven Against Thebes</i></div><div class='item' onclick='window.location = "Aristophanes_Peace/Aristophanes_Peace.html"'>Aristophanes<br><i>Peace</i></div><div class='item' onclick='window.location = "Sophocles_Ichneutae/Sophocles_Ichneutae.html"'>Sophocles<br><i>Ichneutae</i></div><div class='item' onclick='window.location = "Euripides_Bacchae/Euripides_Bacchae.html"'>Euripides<br><i>Bacchae</i></div><div class='item' onclick='window.location = "Euripides_Ion/Euripides_Ion.html"'>Euripides<br><i>Ion</i></div><div class='item' onclick='window.location = "Euripides_Helen/Euripides_Helen.html"'>Euripides<br><i>Helen</i></div><div class='item' onclick='window.location = "Aristophanes_Frogs/Aristophanes_Frogs.html"'>Aristophanes<br><i>Frogs</i></div><div class='item' onclick='window.location = "Euripides_Suppliants/Euripides_Suppliants.html"'>Euripides<br><i>Suppliants</i></div><div class='item' onclick='window.location = "Euripides_Rhesus/Euripides_Rhesus.html"'>Euripides<br><i>Rhesus</i></div><div class='item' onclick='window.location = "Aristophanes_Lysistrata/Aristophanes_Lysistrata.html"'>Aristophanes<br><i>Lysistrata</i></div><div class='item' onclick='window.location = "Aeschylus_Suppliant_Maidens/Aeschylus_Suppliant_Maidens.html"'>Aeschylus<br><i>Suppliant Maidens</i></div><div class='item' onclick='window.location = "Euripides_Heracles/Euripides_Heracles.html"'>Euripides<br><i>Heracles</i></div>
+<div class='item' onclick='window.location = "Sophocles_Philoctetes/Sophocles_Philoctetes.html"'>Sophocles<br><i>Philoctetes</i></div>
+<div class='item' onclick='window.location = "Aristophanes_Birds/Aristophanes_Birds.html"'>Aristophanes<br><i>Birds</i></div>
+<div class='item' onclick='window.location = "Sophocles_Electra/Sophocles_Electra.html"'>Sophocles<br><i>Electra</i></div>
+<div class='item' onclick='window.location = "Sophocles_Trachiniae/Sophocles_Trachiniae.html"'>Sophocles<br><i>Trachiniae</i></div>
+<div class='item' onclick='window.location = "Euripides_Suppliants/Euripides_Suppliants.html"'>Euripides<br><i>Suppliants</i></div>
+<div class='item' onclick='window.location = "Aristophanes_Frogs/Aristophanes_Frogs.html"'>Aristophanes<br><i>Frogs</i></div>
+<div class='item' onclick='window.location = "Euripides_Ion/Euripides_Ion.html"'>Euripides<br><i>Ion</i></div>
+<div class='item' onclick='window.location = "Aeschylus_Libation_Bearers/Aeschylus_Libation_Bearers.html"'>Aeschylus<br><i>Libation Bearers</i></div>
+<div class='item' onclick='window.location = "Aeschylus_Suppliant_Maidens/Aeschylus_Suppliant_Maidens.html"'>Aeschylus<br><i>Suppliant Maidens</i></div>
+<div class='item' onclick='window.location = "Aeschylus_Prometheus_Bound/Aeschylus_Prometheus_Bound.html"'>Aeschylus<br><i>Prometheus Bound</i></div>
+<div class='item' onclick='window.location = "Euripides_Helen/Euripides_Helen.html"'>Euripides<br><i>Helen</i></div>
+<div class='item' onclick='window.location = "Aristophanes_Knights/Aristophanes_Knights.html"'>Aristophanes<br><i>Knights</i></div>
+<div class='item' onclick='window.location = "Aristophanes_Wasps/Aristophanes_Wasps.html"'>Aristophanes<br><i>Wasps</i></div>
+<div class='item' onclick='window.location = "Sophocles_Oedipus_Tyrannus/Sophocles_Oedipus_Tyrannus.html"'>Sophocles<br><i>Oedipus Tyrannus</i></div>
+<div class='item' onclick='window.location = "Euripides_Trojan_Women/Euripides_Trojan_Women.html"'>Euripides<br><i>Trojan Women</i></div>
+<div class='item' onclick='window.location = "Euripides_Bacchae/Euripides_Bacchae.html"'>Euripides<br><i>Bacchae</i></div>
+<div class='item' onclick='window.location = "Euripides_Heracles/Euripides_Heracles.html"'>Euripides<br><i>Heracles</i></div>
+<div class='item' onclick='window.location = "Euripides_Electra/Euripides_Electra.html"'>Euripides<br><i>Electra</i></div>
+<div class='item' onclick='window.location = "Sophocles_Ichneutae/Sophocles_Ichneutae.html"'>Sophocles<br><i>Ichneutae</i></div>
+<div class='item' onclick='window.location = "Aeschylus_Persians/Aeschylus_Persians.html"'>Aeschylus<br><i>Persians</i></div>
+<div class='item' onclick='window.location = "Aristophanes_Peace/Aristophanes_Peace.html"'>Aristophanes<br><i>Peace</i></div>
+<div class='item' onclick='window.location = "Euripides_Iphigeneia_in_Taurus/Euripides_Iphigeneia_in_Taurus.html"'>Euripides<br><i>Iphigeneia in Taurus</i></div>
+<div class='item' onclick='window.location = "Sophocles_Oedipus_at_Colonus/Sophocles_Oedipus_at_Colonus.html"'>Sophocles<br><i>Oedipus at Colonus</i></div>
+<div class='item' onclick='window.location = "Aristophanes_Ecclesiazusae/Aristophanes_Ecclesiazusae.html"'>Aristophanes<br><i>Ecclesiazusae</i></div>
+<div class='item' onclick='window.location = "Aeschylus_Agamemnon/Aeschylus_Agamemnon.html"'>Aeschylus<br><i>Agamemnon</i></div>
+<div class='item' onclick='window.location = "Sophocles_Ajax/Sophocles_Ajax.html"'>Sophocles<br><i>Ajax</i></div>
+<div class='item' onclick='window.location = "Aeschylus_Seven_Against_Thebes/Aeschylus_Seven_Against_Thebes.html"'>Aeschylus<br><i>Seven Against Thebes</i></div>
+<div class='item' onclick='window.location = "Aeschylus_Eumenides/Aeschylus_Eumenides.html"'>Aeschylus<br><i>Eumenides</i></div>
+<div class='item' onclick='window.location = "Aristophanes_Plutus/Aristophanes_Plutus.html"'>Aristophanes<br><i>Plutus</i></div>
+<div class='item' onclick='window.location = "Aristophanes_Acharnians/Aristophanes_Acharnians.html"'>Aristophanes<br><i>Acharnians</i></div>
+<div class='item' onclick='window.location = "Euripides_Orestes/Euripides_Orestes.html"'>Euripides<br><i>Orestes</i></div>
+<div class='item' onclick='window.location = "Euripides_Rhesus/Euripides_Rhesus.html"'>Euripides<br><i>Rhesus</i></div>
+<div class='item' onclick='window.location = "Aristophanes_Lysistrata/Aristophanes_Lysistrata.html"'>Aristophanes<br><i>Lysistrata</i></div>
+<div class='item' onclick='window.location = "Euripides_Iphigeneia_in_Aulis/Euripides_Iphigeneia_in_Aulis.html"'>Euripides<br><i>Iphigeneia in Aulis</i></div>
+<div class='item' onclick='window.location = "Euripides_Hecuba/Euripides_Hecuba.html"'>Euripides<br><i>Hecuba</i></div>
+<div class='item' onclick='window.location = "Aristophanes_Thesmophoriazusae/Aristophanes_Thesmophoriazusae.html"'>Aristophanes<br><i>Thesmophoriazusae</i></div>
+<div class='item' onclick='window.location = "Euripides_Phoenician_Women/Euripides_Phoenician_Women.html"'>Euripides<br><i>Phoenician Women</i></div>
+<div class='item' onclick='window.location = "Sophocles_Antigone/Sophocles_Antigone.html"'>Sophocles<br><i>Antigone</i></div>
+<div class='item' onclick='window.location = "Aristophanes_Clouds/Aristophanes_Clouds.html"'>Aristophanes<br><i>Clouds</i></div>
+<div class='item' onclick='window.location = "Sophocles_Philoctetes/Sophocles_Philoctetes.html"'>Sophocles<br><i>Philoctetes</i></div>
+<div class='item' onclick='window.location = "Aristophanes_Birds/Aristophanes_Birds.html"'>Aristophanes<br><i>Birds</i></div>
+<div class='item' onclick='window.location = "Sophocles_Electra/Sophocles_Electra.html"'>Sophocles<br><i>Electra</i></div>
+<div class='item' onclick='window.location = "Sophocles_Trachiniae/Sophocles_Trachiniae.html"'>Sophocles<br><i>Trachiniae</i></div>
+<div class='item' onclick='window.location = "Euripides_Suppliants/Euripides_Suppliants.html"'>Euripides<br><i>Suppliants</i></div>
+<div class='item' onclick='window.location = "Aristophanes_Frogs/Aristophanes_Frogs.html"'>Aristophanes<br><i>Frogs</i></div>
+<div class='item' onclick='window.location = "Euripides_Ion/Euripides_Ion.html"'>Euripides<br><i>Ion</i></div>
+<div class='item' onclick='window.location = "Aeschylus_Libation_Bearers/Aeschylus_Libation_Bearers.html"'>Aeschylus<br><i>Libation Bearers</i></div>
+<div class='item' onclick='window.location = "Aeschylus_Suppliant_Maidens/Aeschylus_Suppliant_Maidens.html"'>Aeschylus<br><i>Suppliant Maidens</i></div>
+<div class='item' onclick='window.location = "Aeschylus_Prometheus_Bound/Aeschylus_Prometheus_Bound.html"'>Aeschylus<br><i>Prometheus Bound</i></div>
+<div class='item' onclick='window.location = "Euripides_Helen/Euripides_Helen.html"'>Euripides<br><i>Helen</i></div>
+<div class='item' onclick='window.location = "Aristophanes_Knights/Aristophanes_Knights.html"'>Aristophanes<br><i>Knights</i></div>
+<div class='item' onclick='window.location = "Aristophanes_Wasps/Aristophanes_Wasps.html"'>Aristophanes<br><i>Wasps</i></div>
+<div class='item' onclick='window.location = "Sophocles_Oedipus_Tyrannus/Sophocles_Oedipus_Tyrannus.html"'>Sophocles<br><i>Oedipus Tyrannus</i></div>
+<div class='item' onclick='window.location = "Euripides_Trojan_Women/Euripides_Trojan_Women.html"'>Euripides<br><i>Trojan Women</i></div>
+<div class='item' onclick='window.location = "Euripides_Bacchae/Euripides_Bacchae.html"'>Euripides<br><i>Bacchae</i></div>
+<div class='item' onclick='window.location = "Euripides_Heracles/Euripides_Heracles.html"'>Euripides<br><i>Heracles</i></div>
+<div class='item' onclick='window.location = "Euripides_Electra/Euripides_Electra.html"'>Euripides<br><i>Electra</i></div>
+<div class='item' onclick='window.location = "Sophocles_Ichneutae/Sophocles_Ichneutae.html"'>Sophocles<br><i>Ichneutae</i></div>
+<div class='item' onclick='window.location = "Aeschylus_Persians/Aeschylus_Persians.html"'>Aeschylus<br><i>Persians</i></div>
+<div class='item' onclick='window.location = "Aristophanes_Peace/Aristophanes_Peace.html"'>Aristophanes<br><i>Peace</i></div>
+<div class='item' onclick='window.location = "Euripides_Iphigeneia_in_Taurus/Euripides_Iphigeneia_in_Taurus.html"'>Euripides<br><i>Iphigeneia in Taurus</i></div>
+<div class='item' onclick='window.location = "Sophocles_Oedipus_at_Colonus/Sophocles_Oedipus_at_Colonus.html"'>Sophocles<br><i>Oedipus at Colonus</i></div>
+<div class='item' onclick='window.location = "Aristophanes_Ecclesiazusae/Aristophanes_Ecclesiazusae.html"'>Aristophanes<br><i>Ecclesiazusae</i></div>
+<div class='item' onclick='window.location = "Aeschylus_Agamemnon/Aeschylus_Agamemnon.html"'>Aeschylus<br><i>Agamemnon</i></div>
+<div class='item' onclick='window.location = "Sophocles_Ajax/Sophocles_Ajax.html"'>Sophocles<br><i>Ajax</i></div>
+<div class='item' onclick='window.location = "Aeschylus_Seven_Against_Thebes/Aeschylus_Seven_Against_Thebes.html"'>Aeschylus<br><i>Seven Against Thebes</i></div>
+<div class='item' onclick='window.location = "Aeschylus_Eumenides/Aeschylus_Eumenides.html"'>Aeschylus<br><i>Eumenides</i></div>
+<div class='item' onclick='window.location = "Aristophanes_Plutus/Aristophanes_Plutus.html"'>Aristophanes<br><i>Plutus</i></div>
+<div class='item' onclick='window.location = "Aristophanes_Acharnians/Aristophanes_Acharnians.html"'>Aristophanes<br><i>Acharnians</i></div>
+<div class='item' onclick='window.location = "Euripides_Orestes/Euripides_Orestes.html"'>Euripides<br><i>Orestes</i></div>
+<div class='item' onclick='window.location = "Euripides_Rhesus/Euripides_Rhesus.html"'>Euripides<br><i>Rhesus</i></div>
+<div class='item' onclick='window.location = "Aristophanes_Lysistrata/Aristophanes_Lysistrata.html"'>Aristophanes<br><i>Lysistrata</i></div>
+<div class='item' onclick='window.location = "Euripides_Iphigeneia_in_Aulis/Euripides_Iphigeneia_in_Aulis.html"'>Euripides<br><i>Iphigeneia in Aulis</i></div>
+<div class='item' onclick='window.location = "Euripides_Hecuba/Euripides_Hecuba.html"'>Euripides<br><i>Hecuba</i></div>
+<div class='item' onclick='window.location = "Aristophanes_Thesmophoriazusae/Aristophanes_Thesmophoriazusae.html"'>Aristophanes<br><i>Thesmophoriazusae</i></div>
+<div class='item' onclick='window.location = "Euripides_Phoenician_Women/Euripides_Phoenician_Women.html"'>Euripides<br><i>Phoenician Women</i></div>
+<div class='item' onclick='window.location = "Sophocles_Antigone/Sophocles_Antigone.html"'>Sophocles<br><i>Antigone</i></div>
+<div class='item' onclick='window.location = "Aristophanes_Clouds/Aristophanes_Clouds.html"'>Aristophanes<br><i>Clouds</i></div>

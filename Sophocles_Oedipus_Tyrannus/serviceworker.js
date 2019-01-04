@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Sophocles_Oedipus_Tyrannus';
+var CACHE_NAME = 'Sophocles_Oedipus Tyrannus';
 var urlsToCache = [
-  'Sophocles_Oedipus_Tyrannus.html',
+  'Sophocles_Oedipus Tyrannus.html',
   'book.css',
   'book.js',
 ];
