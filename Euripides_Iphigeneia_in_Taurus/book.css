@@ -2,6 +2,55 @@ body {
   font-family: 'GFS Didot', serif;
   background-color: ivory;
 }
+note {
+  display: none;
+}
+title, lemma, foreign, quote {
+  font-style: italic;
+}
+lemma[lang="greek"], foreign[lang="greek"], quote[lang="greek"] {
+  font-family: 'GFS Didot', serif;
+}
+lemma {
+  font-weight: bold;
+}
+emph, bibl {
+  font-style: italic;
+}
+bibl > title {
+  display: inline;
+}
+quote > l {
+  margin-left: 10px;
+  display: block;
+  font-style: italic;
+}
+quote[lang="greek"]::before, quote[lang="greek"]::after {
+  content: "'";
+}
+.line-ref {
+  font-weight: bold;
+}
+.comment {
+  display: none;
+  position:fixed;
+  z-index: 250;
+  bottom: 0;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  max-height: 75%;
+  overflow-y: scroll;
+  background-color: ivory;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  border: 1px black solid;
+  border-radius: 4px;
+}
+.comment-indicator {
+  float: right;
+  display: none;
+  z-index: 200;
+}
 .masthead-container {
   top: -1px;
   left: 0px;

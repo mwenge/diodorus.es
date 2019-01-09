@@ -35,18 +35,24 @@ function showNextOnHelper(evt) {
   }
 }
 
-function updateHelper(evt, translationsForWord) {
+function updateHelper(evt, lineNumber, translationsForWord) {
   if (typeof updateHelper.currentWord === 'object') {
     updateHelper.currentWord.style.textDecoration = "none";
   }
   evt.target.style.textDecoration = "underline red";
   updateHelper.currentWord = evt.target;
 
-  var lastChild = evt.target.parentNode.lastChild.previousSibling;
-  if (lastChild.className == "line-number") {
-    var lineNumber = lastChild.textContent;
-    showTitle(lineNumber);
+  if (typeof updateHelper.previousCommentBubble === 'object' 
+      && updateHelper.previousCommentBubble != null) {
+    updateHelper.previousCommentBubble.style.display = "none";
   }
+  var commentBubble = document.getElementById("indicator-" + lineNumber);
+  if (commentBubble != null) {
+    commentBubble.style.display = "inline";
+  }
+  updateHelper.previousCommentBubble = commentBubble;
+
+  showTitle(lineNumber);
 
 
   translations = translationsForWord;
@@ -74,6 +80,21 @@ function showTitle(lineNumber) {
   var titleToShow = titleElements[result];
   var innerHTML = "<span class=\"title\">" + titleToShow + "</span>";
   masthead.innerHTML = innerHTML;
+}
+
+function displayComment(line) {
+  if (typeof displayComment.previousComment === 'object' 
+      && displayComment.previousComment != null) {
+    displayComment.previousComment.style.display = "none";
+  }
+  var comment = document.getElementById(line);
+  comment.style.display = "block";
+  displayComment.previousComment = comment;
+}
+
+function hideComment(line) {
+  var comment = document.getElementById(line);
+  comment.style.display = "none";
 }
 
 if ('serviceWorker' in navigator) {
