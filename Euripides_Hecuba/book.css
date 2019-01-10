@@ -50,6 +50,7 @@ quote[lang="greek"]::before, quote[lang="greek"]::after {
   float: right;
   display: none;
   z-index: 200;
+  font-size: 8vw;
 }
 .masthead-container {
   top: -1px;
