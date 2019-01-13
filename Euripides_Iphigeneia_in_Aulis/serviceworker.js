@@ -5,6 +5,7 @@ var urlsToCache = [
   'Euripides_Iphigeneia in Aulis.html',
   'book.css',
   'book.js',
+  'atobAndBtoaTogether.min.js',
 ];
 
 self.addEventListener('install', function(event) {

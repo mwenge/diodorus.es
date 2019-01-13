@@ -5,6 +5,7 @@ var urlsToCache = [
   'Aristophanes_Knights.html',
   'book.css',
   'book.js',
+  'atobAndBtoaTogether.min.js',
 ];
 
 self.addEventListener('install', function(event) {

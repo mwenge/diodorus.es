@@ -83,17 +83,11 @@ function showTitle(lineNumber) {
 }
 
 function displayComment(line) {
-  if (typeof displayComment.previousComment === 'object' 
-      && displayComment.previousComment != null) {
-    displayComment.previousComment.style.display = "none";
-  }
-  var comment = document.getElementById(line);
+  comment.innerHTML = atobUTF8(commentary[line]);
   comment.style.display = "block";
-  displayComment.previousComment = comment;
 }
 
-function hideComment(line) {
-  var comment = document.getElementById(line);
+function hideComment() {
   comment.style.display = "none";
 }
 
@@ -110,4 +104,5 @@ if ('serviceWorker' in navigator) {
 }
 
 window.onload = updateScrollPosition;
-window.onscroll = storeScrollPosition;
+setInterval(storeScrollPosition, 10000);
+

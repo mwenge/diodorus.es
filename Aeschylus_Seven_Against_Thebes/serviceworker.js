@@ -5,6 +5,7 @@ var urlsToCache = [
   'Aeschylus_Seven Against Thebes.html',
   'book.css',
   'book.js',
+  'atobAndBtoaTogether.min.js',
 ];
 
 self.addEventListener('install', function(event) {

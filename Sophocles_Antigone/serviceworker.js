@@ -5,6 +5,7 @@ var urlsToCache = [
   'Sophocles_Antigone.html',
   'book.css',
   'book.js',
+  'atobAndBtoaTogether.min.js',
 ];
 
 self.addEventListener('install', function(event) {

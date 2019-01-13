@@ -35,12 +35,14 @@ Text provided by Perseus Digital Library. Original version available for viewing
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
 <link rel="stylesheet" href="book.css">
+<script src="atobAndBtoaTogether.min.js"></script>
 <script src="book.js"></script>
 <body>
 <div class="masthead-container" id="masthead-container">
   <div class="masthead" id="masthead"><span class="title"></span></div>
   <div class="helper" id="helper" style="display: none;" ontouchstart="showNextOnHelper(event)"></div>
 </div>
+<div id="comment" class="comment" onclick="hideComment();"></div>
 <script>
   var titleElements = ["Euripides", "Suppliants"];
   showTitle(110);

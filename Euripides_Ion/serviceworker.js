@@ -5,6 +5,7 @@ var urlsToCache = [
   'Euripides_Ion.html',
   'book.css',
   'book.js',
+  'atobAndBtoaTogether.min.js',
 ];
 
 self.addEventListener('install', function(event) {
