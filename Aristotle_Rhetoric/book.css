@@ -77,9 +77,18 @@ quote[lang="greek"]::before, quote[lang="greek"]::after {
   margin-right: 2vw;
   user-select: none;
 }
-.line {
+.prose-line {
+  font-size: 5vw;
+}
+.heading {
+  font-size: 6vw;
+}
+.line, .prose-line, .heading {
   margin-left: 5vw;
   user-select: none;
+}
+.line {
+  font-size: 4.2vw;
 }
 .speaker {
   margin-top: 0.4vh;
@@ -99,7 +108,6 @@ quote[lang="greek"]::before, quote[lang="greek"]::after {
 }
 span {
   font-style: italic;
-  font-size: 4.2vw;
 }
 #transCount {
   position: absolute;
