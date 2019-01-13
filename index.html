@@ -60,13 +60,38 @@
     vertical-align: middle;
     font-size: 8vw;
     font-family: 'Lato';
-    word-break: break-all;
+    overflow-wrap: word-break;
+  }
+  textarea:focus, input:focus{
+    outline: none;
+  }
+  ::placeholder { 
+    color: ivory;
+    opacity: 0.9;
   }
 </style>
+  <script>
+    function updateSearch(event) {
+      var searchTerm = event.target.value.toLowerCase();
+      console.log(searchTerm);
+      var allElements = document.getElementsByClassName('item');
+      for (var i = 0; i < allElements.length; i++) {
+        var element = allElements[i];
+        if (searchTerm == "" || element.textContent.toLowerCase().includes(searchTerm)) {
+          element.style.display = "block";
+        } else {
+          element.style.display = "none";
+        }
+      } 
+    }
+  </script>
 <body>
   <div class="masthead-container">
-    <div class="search">Σ</div><div class="masthead">Greek Drama</div>
+    <div class="search">Σ</div><input type="search" class="masthead" id="search" placeholder="Greek Literature"></input>
   </div>
+  <script>
+    document.getElementById('search').oninput = updateSearch;
+  </script>
 <br><br><br>
 <div id="container">
 <div class='item' onclick='window.location = "Sophocles_Philoctetes/Sophocles_Philoctetes.html"'>Sophocles<br><i>Philoctetes</i><br><span class='subtitle'></span></div>
@@ -108,42 +133,370 @@
 <div class='item' onclick='window.location = "Euripides_Phoenician_Women/Euripides_Phoenician_Women.html"'>Euripides<br><i>Phoenician Women</i><br><span class='subtitle'></span></div>
 <div class='item' onclick='window.location = "Sophocles_Antigone/Sophocles_Antigone.html"'>Sophocles<br><i>Antigone</i><br><span class='subtitle'>With Commentary</span></div>
 <div class='item' onclick='window.location = "Aristophanes_Clouds/Aristophanes_Clouds.html"'>Aristophanes<br><i>Clouds</i><br><span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Sophocles_Philoctetes/Sophocles_Philoctetes.html"'>Sophocles<br><i>Philoctetes</i><br><span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Aristophanes_Birds/Aristophanes_Birds.html"'>Aristophanes<br><i>Birds</i><br><span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Sophocles_Electra/Sophocles_Electra.html"'>Sophocles<br><i>Electra</i><br><span class='subtitle'>With Commentary</span></div>
-<div class='item' onclick='window.location = "Sophocles_Trachiniae/Sophocles_Trachiniae.html"'>Sophocles<br><i>Trachiniae</i><br><span class='subtitle'>With Commentary</span></div>
-<div class='item' onclick='window.location = "Euripides_Suppliants/Euripides_Suppliants.html"'>Euripides<br><i>Suppliants</i><br><span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Aristophanes_Frogs/Aristophanes_Frogs.html"'>Aristophanes<br><i>Frogs</i><br><span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Euripides_Ion/Euripides_Ion.html"'>Euripides<br><i>Ion</i><br><span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Aeschylus_Libation_Bearers/Aeschylus_Libation_Bearers.html"'>Aeschylus<br><i>Libation Bearers</i><br><span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Aeschylus_Suppliant_Maidens/Aeschylus_Suppliant_Maidens.html"'>Aeschylus<br><i>Suppliant Maidens</i><br><span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Aeschylus_Prometheus_Bound/Aeschylus_Prometheus_Bound.html"'>Aeschylus<br><i>Prometheus Bound</i><br><span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Euripides_Helen/Euripides_Helen.html"'>Euripides<br><i>Helen</i><br><span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Aristophanes_Knights/Aristophanes_Knights.html"'>Aristophanes<br><i>Knights</i><br><span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Aristophanes_Wasps/Aristophanes_Wasps.html"'>Aristophanes<br><i>Wasps</i><br><span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Sophocles_Oedipus_Tyrannus/Sophocles_Oedipus_Tyrannus.html"'>Sophocles<br><i>Oedipus Tyrannus</i><br><span class='subtitle'>With Commentary</span></div>
-<div class='item' onclick='window.location = "Euripides_Trojan_Women/Euripides_Trojan_Women.html"'>Euripides<br><i>Trojan Women</i><br><span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Euripides_Bacchae/Euripides_Bacchae.html"'>Euripides<br><i>Bacchae</i><br><span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Euripides_Heracles/Euripides_Heracles.html"'>Euripides<br><i>Heracles</i><br><span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Euripides_Electra/Euripides_Electra.html"'>Euripides<br><i>Electra</i><br><span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Sophocles_Ichneutae/Sophocles_Ichneutae.html"'>Sophocles<br><i>Ichneutae</i><br><span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Aeschylus_Persians/Aeschylus_Persians.html"'>Aeschylus<br><i>Persians</i><br><span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Aristophanes_Peace/Aristophanes_Peace.html"'>Aristophanes<br><i>Peace</i><br><span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Euripides_Iphigeneia_in_Taurus/Euripides_Iphigeneia_in_Taurus.html"'>Euripides<br><i>Iphigeneia in Taurus</i><br><span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Sophocles_Oedipus_at_Colonus/Sophocles_Oedipus_at_Colonus.html"'>Sophocles<br><i>Oedipus at Colonus</i><br><span class='subtitle'>With Commentary</span></div>
-<div class='item' onclick='window.location = "Aristophanes_Ecclesiazusae/Aristophanes_Ecclesiazusae.html"'>Aristophanes<br><i>Ecclesiazusae</i><br><span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Aeschylus_Agamemnon/Aeschylus_Agamemnon.html"'>Aeschylus<br><i>Agamemnon</i><br><span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Sophocles_Ajax/Sophocles_Ajax.html"'>Sophocles<br><i>Ajax</i><br><span class='subtitle'>With Commentary</span></div>
-<div class='item' onclick='window.location = "Aeschylus_Seven_Against_Thebes/Aeschylus_Seven_Against_Thebes.html"'>Aeschylus<br><i>Seven Against Thebes</i><br><span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Aeschylus_Eumenides/Aeschylus_Eumenides.html"'>Aeschylus<br><i>Eumenides</i><br><span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Aristophanes_Plutus/Aristophanes_Plutus.html"'>Aristophanes<br><i>Plutus</i><br><span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Aristophanes_Acharnians/Aristophanes_Acharnians.html"'>Aristophanes<br><i>Acharnians</i><br><span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Euripides_Orestes/Euripides_Orestes.html"'>Euripides<br><i>Orestes</i><br><span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Euripides_Rhesus/Euripides_Rhesus.html"'>Euripides<br><i>Rhesus</i><br><span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Aristophanes_Lysistrata/Aristophanes_Lysistrata.html"'>Aristophanes<br><i>Lysistrata</i><br><span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Euripides_Iphigeneia_in_Aulis/Euripides_Iphigeneia_in_Aulis.html"'>Euripides<br><i>Iphigeneia in Aulis</i><br><span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Euripides_Hecuba/Euripides_Hecuba.html"'>Euripides<br><i>Hecuba</i><br><span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Aristophanes_Thesmophoriazusae/Aristophanes_Thesmophoriazusae.html"'>Aristophanes<br><i>Thesmophoriazusae</i><br><span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Euripides_Phoenician_Women/Euripides_Phoenician_Women.html"'>Euripides<br><i>Phoenician Women</i><br><span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Sophocles_Antigone/Sophocles_Antigone.html"'>Sophocles<br><i>Antigone</i><br><span class='subtitle'>With Commentary</span></div>
-<div class='item' onclick='window.location = "Aristophanes_Clouds/Aristophanes_Clouds.html"'>Aristophanes<br><i>Clouds</i><br><span class='subtitle'></span></div>
+<div class='item' onclick='window.location = "Diodorus_Historical_Library/Diodorus_Historical_Library.html"'>Diodorus<br><i>Historical Library</i></div>
+<div class='item' onclick='window.location = "Xenophon_Cyropaedia/Xenophon_Cyropaedia.html"'>Xenophon<br><i>Cyropaedia</i></div>
+<div class='item' onclick='window.location = "Xenophon_Apology/Xenophon_Apology.html"'>Xenophon<br><i>Apology</i></div>
+<div class='item' onclick='window.location = "Xenophon_Economics/Xenophon_Economics.html"'>Xenophon<br><i>Economics</i></div>
+<div class='item' onclick='window.location = "Xenophon_Symposium/Xenophon_Symposium.html"'>Xenophon<br><i>Symposium</i></div>
+<div class='item' onclick='window.location = "Flavius_Josephus_The_Jewish_War/Flavius_Josephus_The_Jewish_War.html"'>Flavius Josephus<br><i>The Jewish War</i></div>
+<div class='item' onclick='window.location = "Plato_Alcibiades_1/Plato_Alcibiades_1.html"'>Plato<br><i>Alcibiades 1</i></div>
+<div class='item' onclick='window.location = "Plato_Alcibiades_2/Plato_Alcibiades_2.html"'>Plato<br><i>Alcibiades 2</i></div>
+<div class='item' onclick='window.location = "Plato_Hipparchus/Plato_Hipparchus.html"'>Plato<br><i>Hipparchus</i></div>
+<div class='item' onclick='window.location = "Plato_Lovers/Plato_Lovers.html"'>Plato<br><i>Lovers</i></div>
+<div class='item' onclick='window.location = "Plato_Theages/Plato_Theages.html"'>Plato<br><i>Theages</i></div>
+<div class='item' onclick='window.location = "Plato_Charmides/Plato_Charmides.html"'>Plato<br><i>Charmides</i></div>
+<div class='item' onclick='window.location = "Plato_Laches/Plato_Laches.html"'>Plato<br><i>Laches</i></div>
+<div class='item' onclick='window.location = "Plato_Lysis/Plato_Lysis.html"'>Plato<br><i>Lysis</i></div>
+<div class='item' onclick='window.location = "Plato_Greater_Hippias/Plato_Greater_Hippias.html"'>Plato<br><i>Greater Hippias</i></div>
+<div class='item' onclick='window.location = "Plato_Lesser_Hippias/Plato_Lesser_Hippias.html"'>Plato<br><i>Lesser Hippias</i></div>
+<div class='item' onclick='window.location = "Plato_Ion/Plato_Ion.html"'>Plato<br><i>Ion</i></div>
+<div class='item' onclick='window.location = "Plato_Menexenus/Plato_Menexenus.html"'>Plato<br><i>Menexenus</i></div>
+<div class='item' onclick='window.location = "Plato_Cleitophon/Plato_Cleitophon.html"'>Plato<br><i>Cleitophon</i></div>
+<div class='item' onclick='window.location = "Plato_Timaeus/Plato_Timaeus.html"'>Plato<br><i>Timaeus</i></div>
+<div class='item' onclick='window.location = "Plato_Critias/Plato_Critias.html"'>Plato<br><i>Critias</i></div>
+<div class='item' onclick='window.location = "Plato_Minos/Plato_Minos.html"'>Plato<br><i>Minos</i></div>
+<div class='item' onclick='window.location = "Plato_Epinomis/Plato_Epinomis.html"'>Plato<br><i>Epinomis</i></div>
+<div class='item' onclick='window.location = "Flavius_Josephus_Life_of_Josephus/Flavius_Josephus_Life_of_Josephus.html"'>Flavius Josephus<br><i>Life of Josephus</i></div>
+<div class='item' onclick='window.location = "Xenophon_Memorabilia/Xenophon_Memorabilia.html"'>Xenophon<br><i>Memorabilia</i></div>
+<div class='item' onclick='window.location = "Theophrastus_Characters/Theophrastus_Characters.html"'>Theophrastus<br><i>Characters</i></div>
+<div class='item' onclick='window.location = "New_Testament_Matthew/New_Testament_Matthew.html"'>New Testament<br><i>Matthew</i></div>
+<div class='item' onclick='window.location = "New_Testament_Mark/New_Testament_Mark.html"'>New Testament<br><i>Mark</i></div>
+<div class='item' onclick='window.location = "New_Testament_Luke/New_Testament_Luke.html"'>New Testament<br><i>Luke</i></div>
+<div class='item' onclick='window.location = "New_Testament_John/New_Testament_John.html"'>New Testament<br><i>John</i></div>
+<div class='item' onclick='window.location = "New_Testament_Acts/New_Testament_Acts.html"'>New Testament<br><i>Acts</i></div>
+<div class='item' onclick='window.location = "New_Testament_James/New_Testament_James.html"'>New Testament<br><i>James</i></div>
+<div class='item' onclick='window.location = "New_Testament_1_Peter/New_Testament_1_Peter.html"'>New Testament<br><i>1 Peter</i></div>
+<div class='item' onclick='window.location = "New_Testament_2_Peter/New_Testament_2_Peter.html"'>New Testament<br><i>2 Peter</i></div>
+<div class='item' onclick='window.location = "New_Testament_1_John/New_Testament_1_John.html"'>New Testament<br><i>1 John</i></div>
+<div class='item' onclick='window.location = "New_Testament_2_John/New_Testament_2_John.html"'>New Testament<br><i>2 John</i></div>
+<div class='item' onclick='window.location = "New_Testament_3_John/New_Testament_3_John.html"'>New Testament<br><i>3 John</i></div>
+<div class='item' onclick='window.location = "New_Testament_Jude/New_Testament_Jude.html"'>New Testament<br><i>Jude</i></div>
+<div class='item' onclick='window.location = "New_Testament_Romans/New_Testament_Romans.html"'>New Testament<br><i>Romans</i></div>
+<div class='item' onclick='window.location = "New_Testament_1_Corinthians/New_Testament_1_Corinthians.html"'>New Testament<br><i>1 Corinthians</i></div>
+<div class='item' onclick='window.location = "New_Testament_2_Corinthians/New_Testament_2_Corinthians.html"'>New Testament<br><i>2 Corinthians</i></div>
+<div class='item' onclick='window.location = "New_Testament_Galatians/New_Testament_Galatians.html"'>New Testament<br><i>Galatians</i></div>
+<div class='item' onclick='window.location = "New_Testament_Ephesians/New_Testament_Ephesians.html"'>New Testament<br><i>Ephesians</i></div>
+<div class='item' onclick='window.location = "New_Testament_Philippians/New_Testament_Philippians.html"'>New Testament<br><i>Philippians</i></div>
+<div class='item' onclick='window.location = "New_Testament_Colossians/New_Testament_Colossians.html"'>New Testament<br><i>Colossians</i></div>
+<div class='item' onclick='window.location = "New_Testament_1_Thessalonians/New_Testament_1_Thessalonians.html"'>New Testament<br><i>1 Thessalonians</i></div>
+<div class='item' onclick='window.location = "New_Testament_2_Thessalonians/New_Testament_2_Thessalonians.html"'>New Testament<br><i>2 Thessalonians</i></div>
+<div class='item' onclick='window.location = "New_Testament_Hebrews/New_Testament_Hebrews.html"'>New Testament<br><i>Hebrews</i></div>
+<div class='item' onclick='window.location = "New_Testament_1_Timothy/New_Testament_1_Timothy.html"'>New Testament<br><i>1 Timothy</i></div>
+<div class='item' onclick='window.location = "New_Testament_2_Timothy/New_Testament_2_Timothy.html"'>New Testament<br><i>2 Timothy</i></div>
+<div class='item' onclick='window.location = "New_Testament_Titus/New_Testament_Titus.html"'>New Testament<br><i>Titus</i></div>
+<div class='item' onclick='window.location = "New_Testament_Philemon/New_Testament_Philemon.html"'>New Testament<br><i>Philemon</i></div>
+<div class='item' onclick='window.location = "New_Testament_Revelation/New_Testament_Revelation.html"'>New Testament<br><i>Revelation</i></div>
+<div class='item' onclick='window.location = "Epictetus_Discourses/Epictetus_Discourses.html"'>Epictetus<br><i>Discourses</i></div>
+<div class='item' onclick='window.location = "Epictetus_Enchiridion/Epictetus_Enchiridion.html"'>Epictetus<br><i>Enchiridion</i></div>
+<div class='item' onclick='window.location = "Epictetus_Fragments/Epictetus_Fragments.html"'>Epictetus<br><i>Fragments</i></div>
+<div class='item' onclick='window.location = "Aristotle_Rhetoric/Aristotle_Rhetoric.html"'>Aristotle<br><i>Rhetoric</i></div>
+<div class='item' onclick='window.location = "Aristotle_Metaphysics/Aristotle_Metaphysics.html"'>Aristotle<br><i>Metaphysics</i></div>
+<div class='item' onclick='window.location = "Plutarch_Aristeides/Plutarch_Aristeides.html"'>Plutarch<br><i>Aristeides</i></div>
+<div class='item' onclick='window.location = "Plato_Cratylus/Plato_Cratylus.html"'>Plato<br><i>Cratylus</i></div>
+<div class='item' onclick='window.location = "Plato_Theaetetus/Plato_Theaetetus.html"'>Plato<br><i>Theaetetus</i></div>
+<div class='item' onclick='window.location = "Plato_Sophist/Plato_Sophist.html"'>Plato<br><i>Sophist</i></div>
+<div class='item' onclick='window.location = "Plato_Statesman/Plato_Statesman.html"'>Plato<br><i>Statesman</i></div>
+<div class='item' onclick='window.location = "Strabo_Geography/Strabo_Geography.html"'>Strabo<br><i>Geography</i></div>
+<div class='item' onclick='window.location = "Aristotle_Constitution_of_the_Athenians/Aristotle_Constitution_of_the_Athenians.html"'>Aristotle<br><i>Constitution of the Athenians</i></div>
+<div class='item' onclick='window.location = "Plato_Laws/Plato_Laws.html"'>Plato<br><i>Laws</i></div>
+<div class='item' onclick='window.location = "Flavius_Josephus_Jewish_Antiquities/Flavius_Josephus_Jewish_Antiquities.html"'>Flavius Josephus<br><i>Jewish Antiquities</i></div>
+<div class='item' onclick='window.location = "Appian_Kings/Appian_Kings.html"'>Appian<br><i>Kings</i></div>
+<div class='item' onclick='window.location = "Appian_Italy/Appian_Italy.html"'>Appian<br><i>Italy</i></div>
+<div class='item' onclick='window.location = "Appian_Samnite_History/Appian_Samnite_History.html"'>Appian<br><i>Samnite History</i></div>
+<div class='item' onclick='window.location = "Appian_Gallic_History/Appian_Gallic_History.html"'>Appian<br><i>Gallic History</i></div>
+<div class='item' onclick='window.location = "Appian_Sicily_and_the_Other_Islands/Appian_Sicily_and_the_Other_Islands.html"'>Appian<br><i>Sicily and the Other Islands</i></div>
+<div class='item' onclick='window.location = "Appian_Wars_in_Spain/Appian_Wars_in_Spain.html"'>Appian<br><i>Wars in Spain</i></div>
+<div class='item' onclick='window.location = "Appian_Hannibalic_War/Appian_Hannibalic_War.html"'>Appian<br><i>Hannibalic War</i></div>
+<div class='item' onclick='window.location = "Appian_Punic_Wars/Appian_Punic_Wars.html"'>Appian<br><i>Punic Wars</i></div>
+<div class='item' onclick='window.location = "Appian_Numidian_Affairs/Appian_Numidian_Affairs.html"'>Appian<br><i>Numidian Affairs</i></div>
+<div class='item' onclick='window.location = "Appian_Macedonian_Affairs/Appian_Macedonian_Affairs.html"'>Appian<br><i>Macedonian Affairs</i></div>
+<div class='item' onclick='window.location = "Appian_Illyrian_Wars/Appian_Illyrian_Wars.html"'>Appian<br><i>Illyrian Wars</i></div>
+<div class='item' onclick='window.location = "Appian_Syrian_Wars/Appian_Syrian_Wars.html"'>Appian<br><i>Syrian Wars</i></div>
+<div class='item' onclick='window.location = "Appian_Mithridatic_Wars/Appian_Mithridatic_Wars.html"'>Appian<br><i>Mithridatic Wars</i></div>
+<div class='item' onclick='window.location = "Herodotus_Histories/Herodotus_Histories.html"'>Herodotus<br><i>Histories</i></div>
+<div class='item' onclick='window.location = "Plutarch_Alcibiades/Plutarch_Alcibiades.html"'>Plutarch<br><i>Alcibiades</i></div>
+<div class='item' onclick='window.location = "Aristotle_Virtues_and_Vices/Aristotle_Virtues_and_Vices.html"'>Aristotle<br><i>Virtues and Vices</i></div>
+<div class='item' onclick='window.location = "Plato_Parmenides/Plato_Parmenides.html"'>Plato<br><i>Parmenides</i></div>
+<div class='item' onclick='window.location = "Plato_Philebus/Plato_Philebus.html"'>Plato<br><i>Philebus</i></div>
+<div class='item' onclick='window.location = "Plato_Symposium/Plato_Symposium.html"'>Plato<br><i>Symposium</i></div>
+<div class='item' onclick='window.location = "Plato_Phaedrus/Plato_Phaedrus.html"'>Plato<br><i>Phaedrus</i></div>
+<div class='item' onclick='window.location = "Plato_Euthydemus/Plato_Euthydemus.html"'>Plato<br><i>Euthydemus</i></div>
+<div class='item' onclick='window.location = "Plato_Protagoras/Plato_Protagoras.html"'>Plato<br><i>Protagoras</i></div>
+<div class='item' onclick='window.location = "Plato_Gorgias/Plato_Gorgias.html"'>Plato<br><i>Gorgias</i></div>
+<div class='item' onclick='window.location = "Plato_Meno/Plato_Meno.html"'>Plato<br><i>Meno</i></div>
+<div class='item' onclick='window.location = "Aristotle_Politics/Aristotle_Politics.html"'>Aristotle<br><i>Politics</i></div>
+<div class='item' onclick='window.location = "Pseudo-Apollodorus_Library/Pseudo-Apollodorus_Library.html"'>Pseudo-Apollodorus<br><i>Library</i></div>
+<div class='item' onclick='window.location = "Pseudo-Apollodorus_Epitome/Pseudo-Apollodorus_Epitome.html"'>Pseudo-Apollodorus<br><i>Epitome</i></div>
+<div class='item' onclick='window.location = "Plato_Republic/Plato_Republic.html"'>Plato<br><i>Republic</i></div>
+<div class='item' onclick='window.location = "Plato_Letters/Plato_Letters.html"'>Plato<br><i>Letters</i></div>
+<div class='item' onclick='window.location = "Aristotle_Economics/Aristotle_Economics.html"'>Aristotle<br><i>Economics</i></div>
+<div class='item' onclick='window.location = "Polybius_Histories/Polybius_Histories.html"'>Polybius<br><i>Histories</i></div>
+<div class='item' onclick='window.location = "Aristotle_Eudemian_Ethics/Aristotle_Eudemian_Ethics.html"'>Aristotle<br><i>Eudemian Ethics</i></div>
+<div class='item' onclick='window.location = "Aristotle_Nicomachean_Ethics/Aristotle_Nicomachean_Ethics.html"'>Aristotle<br><i>Nicomachean Ethics</i></div>
+<div class='item' onclick='window.location = "Xenophon_Anabasis/Xenophon_Anabasis.html"'>Xenophon<br><i>Anabasis</i></div>
+<div class='item' onclick='window.location = "Xenophon_Hellenica/Xenophon_Hellenica.html"'>Xenophon<br><i>Hellenica</i></div>
+<div class='item' onclick='window.location = "Xenophon_Agesilaus/Xenophon_Agesilaus.html"'>Xenophon<br><i>Agesilaus</i></div>
+<div class='item' onclick='window.location = "Xenophon_On_the_Cavalry_Commander/Xenophon_On_the_Cavalry_Commander.html"'>Xenophon<br><i>On the Cavalry Commander</i></div>
+<div class='item' onclick='window.location = "Xenophon_Constitution_of_the_Lacedaimonians/Xenophon_Constitution_of_the_Lacedaimonians.html"'>Xenophon<br><i>Constitution of the Lacedaimonians</i></div>
+<div class='item' onclick='window.location = "Xenophon_Hiero/Xenophon_Hiero.html"'>Xenophon<br><i>Hiero</i></div>
+<div class='item' onclick='window.location = "Xenophon_On_the_Art_of_Horsemanship/Xenophon_On_the_Art_of_Horsemanship.html"'>Xenophon<br><i>On the Art of Horsemanship</i></div>
+<div class='item' onclick='window.location = "Xenophon_On_Hunting/Xenophon_On_Hunting.html"'>Xenophon<br><i>On Hunting</i></div>
+<div class='item' onclick='window.location = "Xenophon_Ways_and_Means/Xenophon_Ways_and_Means.html"'>Xenophon<br><i>Ways and Means</i></div>
+<div class='item' onclick='window.location = "Appian_Civil_Wars/Appian_Civil_Wars.html"'>Appian<br><i>Civil Wars</i></div>
+<div class='item' onclick='window.location = "Euclid_Elements/Euclid_Elements.html"'>Euclid<br><i>Elements</i></div>
+<div class='item' onclick='window.location = "Plato_Euthyphro/Plato_Euthyphro.html"'>Plato<br><i>Euthyphro</i></div>
+<div class='item' onclick='window.location = "Plato_Apology/Plato_Apology.html"'>Plato<br><i>Apology</i></div>
+<div class='item' onclick='window.location = "Plato_Crito/Plato_Crito.html"'>Plato<br><i>Crito</i></div>
+<div class='item' onclick='window.location = "Plato_Phaedo/Plato_Phaedo.html"'>Plato<br><i>Phaedo</i></div>
+<div class='item' onclick='window.location = "Pausanias_Description_of_Greece/Pausanias_Description_of_Greece.html"'>Pausanias<br><i>Description of Greece</i></div>
+<div class='item' onclick='window.location = "Flavius_Josephus_Against_Apion/Flavius_Josephus_Against_Apion.html"'>Flavius Josephus<br><i>Against Apion</i></div>
+<div class='item' onclick='window.location = "Dionysius_of_Halicarnassus_De_Isaeo/Dionysius_of_Halicarnassus_De_Isaeo.html"'>Dionysius of Halicarnassus<br><i>De Isaeo</i></div>
+<div class='item' onclick='window.location = "Plutarch_De_Pythiae_oraculis/Plutarch_De_Pythiae_oraculis.html"'>Plutarch<br><i>De Pythiae oraculis</i></div>
+<div class='item' onclick='window.location = "Plutarch_De_Stoicorum_repugnantiis/Plutarch_De_Stoicorum_repugnantiis.html"'>Plutarch<br><i>De Stoicorum repugnantiis</i></div>
+<div class='item' onclick='window.location = "Lucian_Imagines/Lucian_Imagines.html"'>Lucian<br><i>Imagines</i></div>
+<div class='item' onclick='window.location = "Lucian_De_sacrificiis/Lucian_De_sacrificiis.html"'>Lucian<br><i>De sacrificiis</i></div>
+<div class='item' onclick='window.location = "Plutarch_Parallela_minora/Plutarch_Parallela_minora.html"'>Plutarch<br><i>Parallela minora</i></div>
+<div class='item' onclick='window.location = "Plutarch_De_fortuna_Romanorum/Plutarch_De_fortuna_Romanorum.html"'>Plutarch<br><i>De fortuna Romanorum</i></div>
+<div class='item' onclick='window.location = "Plutarch_De_virtute_et_vitio/Plutarch_De_virtute_et_vitio.html"'>Plutarch<br><i>De virtute et vitio</i></div>
+<div class='item' onclick='window.location = "Plutarch_Amatorius/Plutarch_Amatorius.html"'>Plutarch<br><i>Amatorius</i></div>
+<div class='item' onclick='window.location = "Lucian_Juppiter_trageodeus/Lucian_Juppiter_trageodeus.html"'>Lucian<br><i>Juppiter trageodeus</i></div>
+<div class='item' onclick='window.location = "Lucian_De_Syria_dea/Lucian_De_Syria_dea.html"'>Lucian<br><i>De Syria dea</i></div>
+<div class='item' onclick='window.location = "Plutarch_De_gloria_Atheniensium/Plutarch_De_gloria_Atheniensium.html"'>Plutarch<br><i>De gloria Atheniensium</i></div>
+<div class='item' onclick='window.location = "Lucian_Podagra/Lucian_Podagra.html"'>Lucian<br><i>Podagra</i></div>
+<div class='item' onclick='window.location = "Athenaeus,_of_Naucratis_Deipnosophistae/Athenaeus,_of_Naucratis_Deipnosophistae.html"'>Athenaeus, of Naucratis<br><i>Deipnosophistae</i></div>
+<div class='item' onclick='window.location = "Plutarch_Comparison_of_Lysander_and_Sulla/Plutarch_Comparison_of_Lysander_and_Sulla.html"'>Plutarch<br><i>Comparison of Lysander and Sulla</i></div>
+<div class='item' onclick='window.location = "Plutarch_Aratus/Plutarch_Aratus.html"'>Plutarch<br><i>Aratus</i></div>
+<div class='item' onclick='window.location = "Plutarch_Otho/Plutarch_Otho.html"'>Plutarch<br><i>Otho</i></div>
+<div class='item' onclick='window.location = "Plutarch_De_animae_procreatione_in_Timaeo/Plutarch_De_animae_procreatione_in_Timaeo.html"'>Plutarch<br><i>De animae procreatione in Timaeo</i></div>
+<div class='item' onclick='window.location = "Plutarch_Titus_Flamininus/Plutarch_Titus_Flamininus.html"'>Plutarch<br><i>Titus Flamininus</i></div>
+<div class='item' onclick='window.location = "Lucian_Dipsades/Lucian_Dipsades.html"'>Lucian<br><i>Dipsades</i></div>
+<div class='item' onclick='window.location = "Plutarch_Crassus/Plutarch_Crassus.html"'>Plutarch<br><i>Crassus</i></div>
+<div class='item' onclick='window.location = "Lucian_Dialogi_meretricii/Lucian_Dialogi_meretricii.html"'>Lucian<br><i>Dialogi meretricii</i></div>
+<div class='item' onclick='window.location = "Plutarch_Epitome_libri_de_animae_procreatione_in_Timaeo/Plutarch_Epitome_libri_de_animae_procreatione_in_Timaeo.html"'>Plutarch<br><i>Epitome libri de animae procreatione in Timaeo</i></div>
+<div class='item' onclick='window.location = "Plutarch_Sertorius/Plutarch_Sertorius.html"'>Plutarch<br><i>Sertorius</i></div>
+<div class='item' onclick='window.location = "Lucian_Apologia/Lucian_Apologia.html"'>Lucian<br><i>Apologia</i></div>
+<div class='item' onclick='window.location = "Plutarch_Cleomenes/Plutarch_Cleomenes.html"'>Plutarch<br><i>Cleomenes</i></div>
+<div class='item' onclick='window.location = "Plutarch_Adversus_Colotem/Plutarch_Adversus_Colotem.html"'>Plutarch<br><i>Adversus Colotem</i></div>
+<div class='item' onclick='window.location = "Lucian_Bacchus/Lucian_Bacchus.html"'>Lucian<br><i>Bacchus</i></div>
+<div class='item' onclick='window.location = "Plutarch_Comparison_of_Nicias_and_Crassus/Plutarch_Comparison_of_Nicias_and_Crassus.html"'>Plutarch<br><i>Comparison of Nicias and Crassus</i></div>
+<div class='item' onclick='window.location = "Plutarch_Themistocles/Plutarch_Themistocles.html"'>Plutarch<br><i>Themistocles</i></div>
+<div class='item' onclick='window.location = "Plutarch_Apophthegmata_Laconica/Plutarch_Apophthegmata_Laconica.html"'>Plutarch<br><i>Apophthegmata Laconica</i></div>
+<div class='item' onclick='window.location = "Plutarch_Pompey/Plutarch_Pompey.html"'>Plutarch<br><i>Pompey</i></div>
+<div class='item' onclick='window.location = "Plutarch_De_Alexandri_magni_fortuna_aut_virtute/Plutarch_De_Alexandri_magni_fortuna_aut_virtute.html"'>Plutarch<br><i>De Alexandri magni fortuna aut virtute</i></div>
+<div class='item' onclick='window.location = "Lucian_Icaromenippus/Lucian_Icaromenippus.html"'>Lucian<br><i>Icaromenippus</i></div>
+<div class='item' onclick='window.location = "Plutarch_Caius_Marius/Plutarch_Caius_Marius.html"'>Plutarch<br><i>Caius Marius</i></div>
+<div class='item' onclick='window.location = "Plutarch_Mulierum_virtutes/Plutarch_Mulierum_virtutes.html"'>Plutarch<br><i>Mulierum virtutes</i></div>
+<div class='item' onclick='window.location = "Plutarch_Comparison_of_Aristides_with_Marcus_Cato/Plutarch_Comparison_of_Aristides_with_Marcus_Cato.html"'>Plutarch<br><i>Comparison of Aristides with Marcus Cato</i></div>
+<div class='item' onclick='window.location = "Lucian_Dialogi_Marini/Lucian_Dialogi_Marini.html"'>Lucian<br><i>Dialogi Marini</i></div>
+<div class='item' onclick='window.location = "Lucian_Hercules/Lucian_Hercules.html"'>Lucian<br><i>Hercules</i></div>
+<div class='item' onclick='window.location = "Plutarch_Comparison_of_Agis_and_Cleomenes_and_the_Gracchi/Plutarch_Comparison_of_Agis_and_Cleomenes_and_the_Gracchi.html"'>Plutarch<br><i>Comparison of Agis and Cleomenes and the Gracchi</i></div>
+<div class='item' onclick='window.location = "Plutarch_Ad_principem_ineruditum/Plutarch_Ad_principem_ineruditum.html"'>Plutarch<br><i>Ad principem ineruditum</i></div>
+<div class='item' onclick='window.location = "Lucian_Cataplus/Lucian_Cataplus.html"'>Lucian<br><i>Cataplus</i></div>
+<div class='item' onclick='window.location = "Lucian_Phalaris/Lucian_Phalaris.html"'>Lucian<br><i>Phalaris</i></div>
+<div class='item' onclick='window.location = "Plutarch_Bruta_animalia_ratione_uti/Plutarch_Bruta_animalia_ratione_uti.html"'>Plutarch<br><i>Bruta animalia ratione uti</i></div>
+<div class='item' onclick='window.location = "Arrian_Periplus_Ponti_Euxini/Arrian_Periplus_Ponti_Euxini.html"'>Arrian<br><i>Periplus Ponti Euxini</i></div>
+<div class='item' onclick='window.location = "Plutarch_Aquane_an_ignis_sit_utilior/Plutarch_Aquane_an_ignis_sit_utilior.html"'>Plutarch<br><i>Aquane an ignis sit utilior</i></div>
+<div class='item' onclick='window.location = "Lucian_Adversus_indoctum_et_libros_multos_ementem/Lucian_Adversus_indoctum_et_libros_multos_ementem.html"'>Lucian<br><i>Adversus indoctum et libros multos ementem</i></div>
+<div class='item' onclick='window.location = "Plutarch_De_invidia_et_odio/Plutarch_De_invidia_et_odio.html"'>Plutarch<br><i>De invidia et odio</i></div>
+<div class='item' onclick='window.location = "Plutarch_Numa/Plutarch_Numa.html"'>Plutarch<br><i>Numa</i></div>
+<div class='item' onclick='window.location = "Lucian_Judicium_vocalium/Lucian_Judicium_vocalium.html"'>Lucian<br><i>Judicium vocalium</i></div>
+<div class='item' onclick='window.location = "Dionysius_of_Halicarnassus_De_Compositione_Verborum/Dionysius_of_Halicarnassus_De_Compositione_Verborum.html"'>Dionysius of Halicarnassus<br><i>De Compositione Verborum</i></div>
+<div class='item' onclick='window.location = "Plutarch_De_tranquilitate_animi/Plutarch_De_tranquilitate_animi.html"'>Plutarch<br><i>De tranquilitate animi</i></div>
+<div class='item' onclick='window.location = "Dionysius_of_Halicarnassus_De_Lysia/Dionysius_of_Halicarnassus_De_Lysia.html"'>Dionysius of Halicarnassus<br><i>De Lysia</i></div>
+<div class='item' onclick='window.location = "Plutarch_De_sollertia_animalium/Plutarch_De_sollertia_animalium.html"'>Plutarch<br><i>De sollertia animalium</i></div>
+<div class='item' onclick='window.location = "Lucian_De_luctu/Lucian_De_luctu.html"'>Lucian<br><i>De luctu</i></div>
+<div class='item' onclick='window.location = "Plutarch_De_amore_prolis/Plutarch_De_amore_prolis.html"'>Plutarch<br><i>De amore prolis</i></div>
+<div class='item' onclick='window.location = "Plutarch_Quaestiones_Graecae/Plutarch_Quaestiones_Graecae.html"'>Plutarch<br><i>Quaestiones Graecae</i></div>
+<div class='item' onclick='window.location = "Lucian_Zeuxis/Lucian_Zeuxis.html"'>Lucian<br><i>Zeuxis</i></div>
+<div class='item' onclick='window.location = "Lucian_Pro_imaginibus/Lucian_Pro_imaginibus.html"'>Lucian<br><i>Pro imaginibus</i></div>
+<div class='item' onclick='window.location = "Athenaeus,_of_Naucratis_Deipnosophistae/Athenaeus,_of_Naucratis_Deipnosophistae.html"'>Athenaeus, of Naucratis<br><i>Deipnosophistae</i></div>
+<div class='item' onclick='window.location = "Plutarch_Demetrius/Plutarch_Demetrius.html"'>Plutarch<br><i>Demetrius</i></div>
+<div class='item' onclick='window.location = "Lucian_Patriae_encomium/Lucian_Patriae_encomium.html"'>Lucian<br><i>Patriae encomium</i></div>
+<div class='item' onclick='window.location = "Plutarch_Comparison_of_Lucullus_and_Cimon/Plutarch_Comparison_of_Lucullus_and_Cimon.html"'>Plutarch<br><i>Comparison of Lucullus and Cimon</i></div>
+<div class='item' onclick='window.location = "Pseudo-Plutarch_De_musica/Pseudo-Plutarch_De_musica.html"'>Pseudo-Plutarch<br><i>De musica</i></div>
+<div class='item' onclick='window.location = "Plutarch_Aemilius_Paullus/Plutarch_Aemilius_Paullus.html"'>Plutarch<br><i>Aemilius Paullus</i></div>
+<div class='item' onclick='window.location = "Plutarch_Maxime_cum_principbus_philosopho_esse_diserendum/Plutarch_Maxime_cum_principbus_philosopho_esse_diserendum.html"'>Plutarch<br><i>Maxime cum principbus philosopho esse diserendum</i></div>
+<div class='item' onclick='window.location = "Lucian_Gallus/Lucian_Gallus.html"'>Lucian<br><i>Gallus</i></div>
+<div class='item' onclick='window.location = "Plutarch_De_Iside_et_Osiride/Plutarch_De_Iside_et_Osiride.html"'>Plutarch<br><i>De Iside et Osiride</i></div>
+<div class='item' onclick='window.location = "Lucian_Necyomantia/Lucian_Necyomantia.html"'>Lucian<br><i>Necyomantia</i></div>
+<div class='item' onclick='window.location = "Athenaeus,_of_Naucratis_Deipnosophistae/Athenaeus,_of_Naucratis_Deipnosophistae.html"'>Athenaeus, of Naucratis<br><i>Deipnosophistae</i></div>
+<div class='item' onclick='window.location = "Plutarch_Consolatio_ad_uxorem/Plutarch_Consolatio_ad_uxorem.html"'>Plutarch<br><i>Consolatio ad uxorem</i></div>
+<div class='item' onclick='window.location = "Plutarch_Quomodo_quis_suos_in_virtute_sentiat_profectus/Plutarch_Quomodo_quis_suos_in_virtute_sentiat_profectus.html"'>Plutarch<br><i>Quomodo quis suos in virtute sentiat profectus</i></div>
+<div class='item' onclick='window.location = "Plutarch_Parallela_minora/Plutarch_Parallela_minora.html"'>Plutarch<br><i>Parallela minora</i></div>
+<div class='item' onclick='window.location = "Plutarch_De_E_apud_Delphos/Plutarch_De_E_apud_Delphos.html"'>Plutarch<br><i>De E apud Delphos</i></div>
+<div class='item' onclick='window.location = "Lucian_Herodotus/Lucian_Herodotus.html"'>Lucian<br><i>Herodotus</i></div>
+<div class='item' onclick='window.location = "Plutarch_Camillus/Plutarch_Camillus.html"'>Plutarch<br><i>Camillus</i></div>
+<div class='item' onclick='window.location = "Plutarch_Comparison_of_Pericles_and_Fabius_Maximus/Plutarch_Comparison_of_Pericles_and_Fabius_Maximus.html"'>Plutarch<br><i>Comparison of Pericles and Fabius Maximus</i></div>
+<div class='item' onclick='window.location = "Plutarch_De_faciae_quae_in_orbe_lunae_apparet/Plutarch_De_faciae_quae_in_orbe_lunae_apparet.html"'>Plutarch<br><i>De faciae quae in orbe lunae apparet</i></div>
+<div class='item' onclick='window.location = "Plutarch_Phocion/Plutarch_Phocion.html"'>Plutarch<br><i>Phocion</i></div>
+<div class='item' onclick='window.location = "Plutarch_De_superstitione/Plutarch_De_superstitione.html"'>Plutarch<br><i>De superstitione</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_1/Aelius_Aristides_Orationes_1.html"'>Aelius Aristides<br><i>Orationes 1</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_2/Aelius_Aristides_Orationes_2.html"'>Aelius Aristides<br><i>Orationes 2</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_3/Aelius_Aristides_Orationes_3.html"'>Aelius Aristides<br><i>Orationes 3</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_4/Aelius_Aristides_Orationes_4.html"'>Aelius Aristides<br><i>Orationes 4</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_5/Aelius_Aristides_Orationes_5.html"'>Aelius Aristides<br><i>Orationes 5</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_6/Aelius_Aristides_Orationes_6.html"'>Aelius Aristides<br><i>Orationes 6</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_7/Aelius_Aristides_Orationes_7.html"'>Aelius Aristides<br><i>Orationes 7</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_8/Aelius_Aristides_Orationes_8.html"'>Aelius Aristides<br><i>Orationes 8</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_9/Aelius_Aristides_Orationes_9.html"'>Aelius Aristides<br><i>Orationes 9</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_10/Aelius_Aristides_Orationes_10.html"'>Aelius Aristides<br><i>Orationes 10</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_11/Aelius_Aristides_Orationes_11.html"'>Aelius Aristides<br><i>Orationes 11</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_12/Aelius_Aristides_Orationes_12.html"'>Aelius Aristides<br><i>Orationes 12</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_13/Aelius_Aristides_Orationes_13.html"'>Aelius Aristides<br><i>Orationes 13</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_14/Aelius_Aristides_Orationes_14.html"'>Aelius Aristides<br><i>Orationes 14</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_15/Aelius_Aristides_Orationes_15.html"'>Aelius Aristides<br><i>Orationes 15</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_16/Aelius_Aristides_Orationes_16.html"'>Aelius Aristides<br><i>Orationes 16</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_17/Aelius_Aristides_Orationes_17.html"'>Aelius Aristides<br><i>Orationes 17</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_18/Aelius_Aristides_Orationes_18.html"'>Aelius Aristides<br><i>Orationes 18</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_19/Aelius_Aristides_Orationes_19.html"'>Aelius Aristides<br><i>Orationes 19</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_20/Aelius_Aristides_Orationes_20.html"'>Aelius Aristides<br><i>Orationes 20</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_21/Aelius_Aristides_Orationes_21.html"'>Aelius Aristides<br><i>Orationes 21</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_22/Aelius_Aristides_Orationes_22.html"'>Aelius Aristides<br><i>Orationes 22</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_23/Aelius_Aristides_Orationes_23.html"'>Aelius Aristides<br><i>Orationes 23</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_24/Aelius_Aristides_Orationes_24.html"'>Aelius Aristides<br><i>Orationes 24</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_25/Aelius_Aristides_Orationes_25.html"'>Aelius Aristides<br><i>Orationes 25</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_26/Aelius_Aristides_Orationes_26.html"'>Aelius Aristides<br><i>Orationes 26</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_27/Aelius_Aristides_Orationes_27.html"'>Aelius Aristides<br><i>Orationes 27</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_28/Aelius_Aristides_Orationes_28.html"'>Aelius Aristides<br><i>Orationes 28</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_29/Aelius_Aristides_Orationes_29.html"'>Aelius Aristides<br><i>Orationes 29</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_30/Aelius_Aristides_Orationes_30.html"'>Aelius Aristides<br><i>Orationes 30</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_31/Aelius_Aristides_Orationes_31.html"'>Aelius Aristides<br><i>Orationes 31</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_32/Aelius_Aristides_Orationes_32.html"'>Aelius Aristides<br><i>Orationes 32</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_33/Aelius_Aristides_Orationes_33.html"'>Aelius Aristides<br><i>Orationes 33</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_34/Aelius_Aristides_Orationes_34.html"'>Aelius Aristides<br><i>Orationes 34</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_35/Aelius_Aristides_Orationes_35.html"'>Aelius Aristides<br><i>Orationes 35</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_36/Aelius_Aristides_Orationes_36.html"'>Aelius Aristides<br><i>Orationes 36</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_37/Aelius_Aristides_Orationes_37.html"'>Aelius Aristides<br><i>Orationes 37</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_38/Aelius_Aristides_Orationes_38.html"'>Aelius Aristides<br><i>Orationes 38</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_39/Aelius_Aristides_Orationes_39.html"'>Aelius Aristides<br><i>Orationes 39</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_40/Aelius_Aristides_Orationes_40.html"'>Aelius Aristides<br><i>Orationes 40</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_41/Aelius_Aristides_Orationes_41.html"'>Aelius Aristides<br><i>Orationes 41</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_42/Aelius_Aristides_Orationes_42.html"'>Aelius Aristides<br><i>Orationes 42</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_43/Aelius_Aristides_Orationes_43.html"'>Aelius Aristides<br><i>Orationes 43</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_44/Aelius_Aristides_Orationes_44.html"'>Aelius Aristides<br><i>Orationes 44</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_45/Aelius_Aristides_Orationes_45.html"'>Aelius Aristides<br><i>Orationes 45</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_46/Aelius_Aristides_Orationes_46.html"'>Aelius Aristides<br><i>Orationes 46</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_47/Aelius_Aristides_Orationes_47.html"'>Aelius Aristides<br><i>Orationes 47</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_48/Aelius_Aristides_Orationes_48.html"'>Aelius Aristides<br><i>Orationes 48</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_49/Aelius_Aristides_Orationes_49.html"'>Aelius Aristides<br><i>Orationes 49</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_50/Aelius_Aristides_Orationes_50.html"'>Aelius Aristides<br><i>Orationes 50</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_51/Aelius_Aristides_Orationes_51.html"'>Aelius Aristides<br><i>Orationes 51</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_52/Aelius_Aristides_Orationes_52.html"'>Aelius Aristides<br><i>Orationes 52</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_53/Aelius_Aristides_Orationes_53.html"'>Aelius Aristides<br><i>Orationes 53</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_55/Aelius_Aristides_Orationes_55.html"'>Aelius Aristides<br><i>Orationes 55</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Orationes_55/Aelius_Aristides_Orationes_55.html"'>Aelius Aristides<br><i>Orationes 55</i></div>
+<div class='item' onclick='window.location = "Athenaeus,_of_Naucratis_Deipnosophistae/Athenaeus,_of_Naucratis_Deipnosophistae.html"'>Athenaeus, of Naucratis<br><i>Deipnosophistae</i></div>
+<div class='item' onclick='window.location = "Athenaeus,_of_Naucratis_Deipnosophistae/Athenaeus,_of_Naucratis_Deipnosophistae.html"'>Athenaeus, of Naucratis<br><i>Deipnosophistae</i></div>
+<div class='item' onclick='window.location = "Plutarch_De_fortuna_Romanorum/Plutarch_De_fortuna_Romanorum.html"'>Plutarch<br><i>De fortuna Romanorum</i></div>
+<div class='item' onclick='window.location = "Plutarch_De_esu_carnium_II/Plutarch_De_esu_carnium_II.html"'>Plutarch<br><i>De esu carnium II</i></div>
+<div class='item' onclick='window.location = "Athenaeus,_of_Naucratis_Deipnosophistae/Athenaeus,_of_Naucratis_Deipnosophistae.html"'>Athenaeus, of Naucratis<br><i>Deipnosophistae</i></div>
+<div class='item' onclick='window.location = "Plutarch_Comparison_of_Agesilaus_and_Pompey/Plutarch_Comparison_of_Agesilaus_and_Pompey.html"'>Plutarch<br><i>Comparison of Agesilaus and Pompey</i></div>
+<div class='item' onclick='window.location = "Plutarch_Comparison_of_Lycurgus_and_Numa/Plutarch_Comparison_of_Lycurgus_and_Numa.html"'>Plutarch<br><i>Comparison of Lycurgus and Numa</i></div>
+<div class='item' onclick='window.location = "Plutarch_Consolatio_ad_Apollonium/Plutarch_Consolatio_ad_Apollonium.html"'>Plutarch<br><i>Consolatio ad Apollonium</i></div>
+<div class='item' onclick='window.location = "Athenaeus,_of_Naucratis_Deipnosophistae/Athenaeus,_of_Naucratis_Deipnosophistae.html"'>Athenaeus, of Naucratis<br><i>Deipnosophistae</i></div>
+<div class='item' onclick='window.location = "Lucian_Symposium/Lucian_Symposium.html"'>Lucian<br><i>Symposium</i></div>
+<div class='item' onclick='window.location = "Plutarch_De_vitioso_pudore/Plutarch_De_vitioso_pudore.html"'>Plutarch<br><i>De vitioso pudore</i></div>
+<div class='item' onclick='window.location = "Lucian_Hermotimus/Lucian_Hermotimus.html"'>Lucian<br><i>Hermotimus</i></div>
+<div class='item' onclick='window.location = "Lucian_Juppiter_confuatus/Lucian_Juppiter_confuatus.html"'>Lucian<br><i>Juppiter confuatus</i></div>
+<div class='item' onclick='window.location = "Lucian_Hippias/Lucian_Hippias.html"'>Lucian<br><i>Hippias</i></div>
+<div class='item' onclick='window.location = "Dionysius_of_Halicarnassus_De_Dinarcho/Dionysius_of_Halicarnassus_De_Dinarcho.html"'>Dionysius of Halicarnassus<br><i>De Dinarcho</i></div>
+<div class='item' onclick='window.location = "Lucian_Deorum_concilium/Lucian_Deorum_concilium.html"'>Lucian<br><i>Deorum concilium</i></div>
+<div class='item' onclick='window.location = "Lucian_Tyrannicida/Lucian_Tyrannicida.html"'>Lucian<br><i>Tyrannicida</i></div>
+<div class='item' onclick='window.location = "Plutarch_Caesar/Plutarch_Caesar.html"'>Plutarch<br><i>Caesar</i></div>
+<div class='item' onclick='window.location = "Lucian_Contemplantes/Lucian_Contemplantes.html"'>Lucian<br><i>Contemplantes</i></div>
+<div class='item' onclick='window.location = "Plutarch_Praecepta_gerendae_reipublicae/Plutarch_Praecepta_gerendae_reipublicae.html"'>Plutarch<br><i>Praecepta gerendae reipublicae</i></div>
+<div class='item' onclick='window.location = "Lucian_De_saltatione/Lucian_De_saltatione.html"'>Lucian<br><i>De saltatione</i></div>
+<div class='item' onclick='window.location = "Lucian_Pseudologista/Lucian_Pseudologista.html"'>Lucian<br><i>Pseudologista</i></div>
+<div class='item' onclick='window.location = "Plutarch_De_Alexandri_magni_fortuna_aut_virtute/Plutarch_De_Alexandri_magni_fortuna_aut_virtute.html"'>Plutarch<br><i>De Alexandri magni fortuna aut virtute</i></div>
+<div class='item' onclick='window.location = "Plutarch_Pelopidas/Plutarch_Pelopidas.html"'>Plutarch<br><i>Pelopidas</i></div>
+<div class='item' onclick='window.location = "Plutarch_An_virtus_doceri_possit/Plutarch_An_virtus_doceri_possit.html"'>Plutarch<br><i>An virtus doceri possit</i></div>
+<div class='item' onclick='window.location = "Plutarch_Lucullus/Plutarch_Lucullus.html"'>Plutarch<br><i>Lucullus</i></div>
+<div class='item' onclick='window.location = "Diodorus_Historical_Library/Diodorus_Historical_Library.html"'>Diodorus<br><i>Historical Library</i></div>
+<div class='item' onclick='window.location = "Lucian_Fugitivi/Lucian_Fugitivi.html"'>Lucian<br><i>Fugitivi</i></div>
+<div class='item' onclick='window.location = "Lucian_Eunuchus/Lucian_Eunuchus.html"'>Lucian<br><i>Eunuchus</i></div>
+<div class='item' onclick='window.location = "Dionysius_of_Halicarnassus_Epistula_ad_Pompeium_Geminum/Dionysius_of_Halicarnassus_Epistula_ad_Pompeium_Geminum.html"'>Dionysius of Halicarnassus<br><i>Epistula ad Pompeium Geminum</i></div>
+<div class='item' onclick='window.location = "Plutarch_De_Se_Ipsum_Citra_Invidiam_Laudando/Plutarch_De_Se_Ipsum_Citra_Invidiam_Laudando.html"'>Plutarch<br><i>De Se Ipsum Citra Invidiam Laudando</i></div>
+<div class='item' onclick='window.location = "Plutarch_An_seni_respublica_gerenda_sit/Plutarch_An_seni_respublica_gerenda_sit.html"'>Plutarch<br><i>An seni respublica gerenda sit</i></div>
+<div class='item' onclick='window.location = "Plutarch_Quomodo_adulator_ab_amico_internoscatur/Plutarch_Quomodo_adulator_ab_amico_internoscatur.html"'>Plutarch<br><i>Quomodo adulator ab amico internoscatur</i></div>
+<div class='item' onclick='window.location = "Plutarch_Alexander/Plutarch_Alexander.html"'>Plutarch<br><i>Alexander</i></div>
+<div class='item' onclick='window.location = "Plutarch_Brutus/Plutarch_Brutus.html"'>Plutarch<br><i>Brutus</i></div>
+<div class='item' onclick='window.location = "Plutarch_Cimon/Plutarch_Cimon.html"'>Plutarch<br><i>Cimon</i></div>
+<div class='item' onclick='window.location = "Plutarch_Galba/Plutarch_Galba.html"'>Plutarch<br><i>Galba</i></div>
+<div class='item' onclick='window.location = "Lucian_Rhetorum_praeceptor/Lucian_Rhetorum_praeceptor.html"'>Lucian<br><i>Rhetorum praeceptor</i></div>
+<div class='item' onclick='window.location = "Plutarch_Quaestiones_Convivales/Plutarch_Quaestiones_Convivales.html"'>Plutarch<br><i>Quaestiones Convivales</i></div>
+<div class='item' onclick='window.location = "Plutarch_Lacaenarum_Apophthegmata/Plutarch_Lacaenarum_Apophthegmata.html"'>Plutarch<br><i>Lacaenarum Apophthegmata</i></div>
+<div class='item' onclick='window.location = "Plutarch_Comparison_of_Demetrius_and_Antony/Plutarch_Comparison_of_Demetrius_and_Antony.html"'>Plutarch<br><i>Comparison of Demetrius and Antony</i></div>
+<div class='item' onclick='window.location = "Plutarch_Theseus/Plutarch_Theseus.html"'>Plutarch<br><i>Theseus</i></div>
+<div class='item' onclick='window.location = "Lucian_De_morte_Peregrini/Lucian_De_morte_Peregrini.html"'>Lucian<br><i>De morte Peregrini</i></div>
+<div class='item' onclick='window.location = "Plutarch_De_communibus_notitiis_adversus_Stoicos/Plutarch_De_communibus_notitiis_adversus_Stoicos.html"'>Plutarch<br><i>De communibus notitiis adversus Stoicos</i></div>
+<div class='item' onclick='window.location = "Plutarch_Amatoriae_narrationes/Plutarch_Amatoriae_narrationes.html"'>Plutarch<br><i>Amatoriae narrationes</i></div>
+<div class='item' onclick='window.location = "Plutarch_Tiberius_Gracchus/Plutarch_Tiberius_Gracchus.html"'>Plutarch<br><i>Tiberius Gracchus</i></div>
+<div class='item' onclick='window.location = "Plutarch_De_vitando_aere_alieno/Plutarch_De_vitando_aere_alieno.html"'>Plutarch<br><i>De vitando aere alieno</i></div>
+<div class='item' onclick='window.location = "Plutarch_De_sera_numinis_vindicta/Plutarch_De_sera_numinis_vindicta.html"'>Plutarch<br><i>De sera numinis vindicta</i></div>
+<div class='item' onclick='window.location = "Plutarch_Instituta_Laconica/Plutarch_Instituta_Laconica.html"'>Plutarch<br><i>Instituta Laconica</i></div>
+<div class='item' onclick='window.location = "Plutarch_Vitae_decem_oratorum/Plutarch_Vitae_decem_oratorum.html"'>Plutarch<br><i>Vitae decem oratorum</i></div>
+<div class='item' onclick='window.location = "Lucian_Toxaris_vel_amicitia/Lucian_Toxaris_vel_amicitia.html"'>Lucian<br><i>Toxaris vel amicitia</i></div>
+<div class='item' onclick='window.location = "Lucian_Somnium_sive_vita_Luciani/Lucian_Somnium_sive_vita_Luciani.html"'>Lucian<br><i>Somnium sive vita Luciani</i></div>
+<div class='item' onclick='window.location = "Plutarch_De_fortuna/Plutarch_De_fortuna.html"'>Plutarch<br><i>De fortuna</i></div>
+<div class='item' onclick='window.location = "Plutarch_Quomodo_adolescens_poetas_audire_debeat/Plutarch_Quomodo_adolescens_poetas_audire_debeat.html"'>Plutarch<br><i>Quomodo adolescens poetas audire debeat</i></div>
+<div class='item' onclick='window.location = "Plutarch_Animine_an_corporis_affectiones_sint_peiores/Plutarch_Animine_an_corporis_affectiones_sint_peiores.html"'>Plutarch<br><i>Animine an corporis affectiones sint peiores</i></div>
+<div class='item' onclick='window.location = "Antiquitates_Romanae_De_antiquis_oratoribus/Antiquitates_Romanae_De_antiquis_oratoribus.html"'>Antiquitates Romanae<br><i>De antiquis oratoribus</i></div>
+<div class='item' onclick='window.location = "Plutarch_Lysander/Plutarch_Lysander.html"'>Plutarch<br><i>Lysander</i></div>
+<div class='item' onclick='window.location = "Plutarch_Compendium_Argumenti_Stoicos_absurdiora_poetis_dicere/Plutarch_Compendium_Argumenti_Stoicos_absurdiora_poetis_dicere.html"'>Plutarch<br><i>Compendium Argumenti Stoicos absurdiora poetis dicere</i></div>
+<div class='item' onclick='window.location = "Lucian_Macrobii/Lucian_Macrobii.html"'>Lucian<br><i>Macrobii</i></div>
+<div class='item' onclick='window.location = "Lucian_Saturnalia/Lucian_Saturnalia.html"'>Lucian<br><i>Saturnalia</i></div>
+<div class='item' onclick='window.location = "Plutarch_Marcellus/Plutarch_Marcellus.html"'>Plutarch<br><i>Marcellus</i></div>
+<div class='item' onclick='window.location = "Plutarch_De_fato/Plutarch_De_fato.html"'>Plutarch<br><i>De fato</i></div>
+<div class='item' onclick='window.location = "Plutarch_Agis/Plutarch_Agis.html"'>Plutarch<br><i>Agis</i></div>
+<div class='item' onclick='window.location = "Plutarch_De_recta_ratione_audiendi/Plutarch_De_recta_ratione_audiendi.html"'>Plutarch<br><i>De recta ratione audiendi</i></div>
+<div class='item' onclick='window.location = "Plutarch_Dion/Plutarch_Dion.html"'>Plutarch<br><i>Dion</i></div>
+<div class='item' onclick='window.location = "Plutarch_Comparison_of_Sertorius_and_Eumenes/Plutarch_Comparison_of_Sertorius_and_Eumenes.html"'>Plutarch<br><i>Comparison of Sertorius and Eumenes</i></div>
+<div class='item' onclick='window.location = "Lucian_Abdicatus/Lucian_Abdicatus.html"'>Lucian<br><i>Abdicatus</i></div>
+<div class='item' onclick='window.location = "Lucian_Pro_lapsu_inter_salutandum/Lucian_Pro_lapsu_inter_salutandum.html"'>Lucian<br><i>Pro lapsu inter salutandum</i></div>
+<div class='item' onclick='window.location = "Plutarch_Quaestiones_Naturales/Plutarch_Quaestiones_Naturales.html"'>Plutarch<br><i>Quaestiones Naturales</i></div>
+<div class='item' onclick='window.location = "Plutarch_De_fraterno_amore/Plutarch_De_fraterno_amore.html"'>Plutarch<br><i>De fraterno amore</i></div>
+<div class='item' onclick='window.location = "Plutarch_Timoleon/Plutarch_Timoleon.html"'>Plutarch<br><i>Timoleon</i></div>
+<div class='item' onclick='window.location = "Plutarch_Gaius_Gracchus/Plutarch_Gaius_Gracchus.html"'>Plutarch<br><i>Gaius Gracchus</i></div>
+<div class='item' onclick='window.location = "Lucian_Calumniae_non_temere_credundum/Lucian_Calumniae_non_temere_credundum.html"'>Lucian<br><i>Calumniae non temere credundum</i></div>
+<div class='item' onclick='window.location = "Athenaeus,_of_Naucratis_Deipnosophistae/Athenaeus,_of_Naucratis_Deipnosophistae.html"'>Athenaeus, of Naucratis<br><i>Deipnosophistae</i></div>
+<div class='item' onclick='window.location = "Plutarch_Regum_et_imperatorum_apophthegmata/Plutarch_Regum_et_imperatorum_apophthegmata.html"'>Plutarch<br><i>Regum et imperatorum apophthegmata</i></div>
+<div class='item' onclick='window.location = "Plutarch_Lycurgus/Plutarch_Lycurgus.html"'>Plutarch<br><i>Lycurgus</i></div>
+<div class='item' onclick='window.location = "Plutarch_Agesilaus/Plutarch_Agesilaus.html"'>Plutarch<br><i>Agesilaus</i></div>
+<div class='item' onclick='window.location = "Plutarch_An_vitiositas_ad_infelicitatem_sufficia/Plutarch_An_vitiositas_ad_infelicitatem_sufficia.html"'>Plutarch<br><i>An vitiositas ad infelicitatem sufficia</i></div>
+<div class='item' onclick='window.location = "Plutarch_Lacaenarum_Apophthegmata/Plutarch_Lacaenarum_Apophthegmata.html"'>Plutarch<br><i>Lacaenarum Apophthegmata</i></div>
+<div class='item' onclick='window.location = "Plutarch_Pericles/Plutarch_Pericles.html"'>Plutarch<br><i>Pericles</i></div>
+<div class='item' onclick='window.location = "Pseudo-Plutarch_Placita_Philosophorum/Pseudo-Plutarch_Placita_Philosophorum.html"'>Pseudo-Plutarch<br><i>Placita Philosophorum</i></div>
+<div class='item' onclick='window.location = "Lucian_De_mercede/Lucian_De_mercede.html"'>Lucian<br><i>De mercede</i></div>
+<div class='item' onclick='window.location = "Dionysius_of_Halicarnassus_De_antiquis_oratoribus_reliquiae/Dionysius_of_Halicarnassus_De_antiquis_oratoribus_reliquiae.html"'>Dionysius of Halicarnassus<br><i>De antiquis oratoribus reliquiae</i></div>
+<div class='item' onclick='window.location = "Athenaeus,_of_Naucratis_Deipnosophistae/Athenaeus,_of_Naucratis_Deipnosophistae.html"'>Athenaeus, of Naucratis<br><i>Deipnosophistae</i></div>
+<div class='item' onclick='window.location = "Plutarch_Comparison_of_Timoleon_and_Aemilius/Plutarch_Comparison_of_Timoleon_and_Aemilius.html"'>Plutarch<br><i>Comparison of Timoleon and Aemilius</i></div>
+<div class='item' onclick='window.location = "Dionysius_of_Halicarnassus_De_Demosthene/Dionysius_of_Halicarnassus_De_Demosthene.html"'>Dionysius of Halicarnassus<br><i>De Demosthene</i></div>
+<div class='item' onclick='window.location = "Plutarch_Comparison_of_Alcibiades_and_Coriolanus/Plutarch_Comparison_of_Alcibiades_and_Coriolanus.html"'>Plutarch<br><i>Comparison of Alcibiades and Coriolanus</i></div>
+<div class='item' onclick='window.location = "Plutarch_Regum_et_imperatorum_apophthegmata/Plutarch_Regum_et_imperatorum_apophthegmata.html"'>Plutarch<br><i>Regum et imperatorum apophthegmata</i></div>
+<div class='item' onclick='window.location = "Plutarch_De_cohibenda_ira/Plutarch_De_cohibenda_ira.html"'>Plutarch<br><i>De cohibenda ira</i></div>
+<div class='item' onclick='window.location = "Arrian_Cynegeticus/Arrian_Cynegeticus.html"'>Arrian<br><i>Cynegeticus</i></div>
+<div class='item' onclick='window.location = "Athenaeus,_of_Naucratis_Deipnosophistae/Athenaeus,_of_Naucratis_Deipnosophistae.html"'>Athenaeus, of Naucratis<br><i>Deipnosophistae</i></div>
+<div class='item' onclick='window.location = "Dio_Chrysostomus_Soph._Orationes/Dio_Chrysostomus_Soph._Orationes.html"'>Dio Chrysostomus Soph.<br><i>Orationes</i></div>
+<div class='item' onclick='window.location = "Lucian_Alexander/Lucian_Alexander.html"'>Lucian<br><i>Alexander</i></div>
+<div class='item' onclick='window.location = "Plutarch_De_liberis_educandis/Plutarch_De_liberis_educandis.html"'>Plutarch<br><i>De liberis educandis</i></div>
+<div class='item' onclick='window.location = "Plutarch_De_Herodoti_malignitate/Plutarch_De_Herodoti_malignitate.html"'>Plutarch<br><i>De Herodoti malignitate</i></div>
+<div class='item' onclick='window.location = "Plutarch_De_tuenda_sanitate_praecepta/Plutarch_De_tuenda_sanitate_praecepta.html"'>Plutarch<br><i>De tuenda sanitate praecepta</i></div>
+<div class='item' onclick='window.location = "Lucian_Piscator/Lucian_Piscator.html"'>Lucian<br><i>Piscator</i></div>
+<div class='item' onclick='window.location = "Plutarch_De_genio_Socratis/Plutarch_De_genio_Socratis.html"'>Plutarch<br><i>De genio Socratis</i></div>
+<div class='item' onclick='window.location = "Plutarch_De_capienda_ex_inimicis_utilitate/Plutarch_De_capienda_ex_inimicis_utilitate.html"'>Plutarch<br><i>De capienda ex inimicis utilitate</i></div>
+<div class='item' onclick='window.location = "Lucian_Timon/Lucian_Timon.html"'>Lucian<br><i>Timon</i></div>
+<div class='item' onclick='window.location = "Lucian_De_astrologia/Lucian_De_astrologia.html"'>Lucian<br><i>De astrologia</i></div>
+<div class='item' onclick='window.location = "Plutarch_Comparationis_Aristophanis_et_Menandri_compendium/Plutarch_Comparationis_Aristophanis_et_Menandri_compendium.html"'>Plutarch<br><i>Comparationis Aristophanis et Menandri compendium</i></div>
+<div class='item' onclick='window.location = "Plutarch_De_virtute_morali/Plutarch_De_virtute_morali.html"'>Plutarch<br><i>De virtute morali</i></div>
+<div class='item' onclick='window.location = "Dionysius_of_Halicarnassus_De_antiquis_oratoribus/Dionysius_of_Halicarnassus_De_antiquis_oratoribus.html"'>Dionysius of Halicarnassus<br><i>De antiquis oratoribus</i></div>
+<div class='item' onclick='window.location = "Plutarch_An_Recte_Dictum_Sit_Latenter_Esse_Vivendum/Plutarch_An_Recte_Dictum_Sit_Latenter_Esse_Vivendum.html"'>Plutarch<br><i>An Recte Dictum Sit Latenter Esse Vivendum</i></div>
+<div class='item' onclick='window.location = "Lucian_Bis_accusatus_sive_tribunalia/Lucian_Bis_accusatus_sive_tribunalia.html"'>Lucian<br><i>Bis accusatus sive tribunalia</i></div>
+<div class='item' onclick='window.location = "Plutarch_Nicias/Plutarch_Nicias.html"'>Plutarch<br><i>Nicias</i></div>
+<div class='item' onclick='window.location = "Plutarch_De_gloria_Atheniensium/Plutarch_De_gloria_Atheniensium.html"'>Plutarch<br><i>De gloria Atheniensium</i></div>
+<div class='item' onclick='window.location = "Aelius_Aristides_Ars_Rhetorica/Aelius_Aristides_Ars_Rhetorica.html"'>Aelius Aristides<br><i>Ars Rhetorica</i></div>
+<div class='item' onclick='window.location = "Plutarch_De_curiositate/Plutarch_De_curiositate.html"'>Plutarch<br><i>De curiositate</i></div>
+<div class='item' onclick='window.location = "Plutarch_Artaxerxes/Plutarch_Artaxerxes.html"'>Plutarch<br><i>Artaxerxes</i></div>
+<div class='item' onclick='window.location = "Lucian_Demonax/Lucian_Demonax.html"'>Lucian<br><i>Demonax</i></div>
+<div class='item' onclick='window.location = "Lucian_Navigium/Lucian_Navigium.html"'>Lucian<br><i>Navigium</i></div>
+<div class='item' onclick='window.location = "Arrian_Indica/Arrian_Indica.html"'>Arrian<br><i>Indica</i></div>
+<div class='item' onclick='window.location = "Lucian_Soleocista/Lucian_Soleocista.html"'>Lucian<br><i>Soleocista</i></div>

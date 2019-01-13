@@ -1,0 +1,842 @@
+<!--
+ Copyright (c) 2018 Robert Hogan (robhogan at gmail.com) All rights reserved.
+
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are
+ met:
+
+    * Redistributions of source code must retain the above copyright
+ notice, this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above
+ copyright notice, this list of conditions and the following disclaimer
+ in the documentation and/or other materials provided with the
+ distribution.
+
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+ A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+ OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Text provided by Perseus Digital Library. Original version available for viewing and download at http://www.perseus.tufts.edu/hopper/.
+-->
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="theme-color" content="ivory"/>
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=GFS+Didot">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+<link rel="stylesheet" href="book.css">
+<script src="atobAndBtoaTogether.min.js"></script>
+<script src="book.js"></script>
+<body>
+<div class="masthead-container" id="masthead-container">
+  <div class="masthead" id="masthead"><span class="title"></span></div>
+  <div class="helper" id="helper" style="display: none;" ontouchstart="showNextOnHelper(event)"></div>
+</div>
+<div id="comment" class="comment" onclick="hideComment();"></div>
+<script>
+  var titleElements = ["Plutarch", "Comparison of Pericles and Fabius Maximus"];
+  showTitle(110);
+</script>
+<br><br><br>
+<span class="line">
+		<span onclick="updateHelper(event, 0,[])">τηις</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">τεχτ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">μαψ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">βε</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">φρεελψ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">διστριβυτεδ,</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">συβjεξτ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">το</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">τηε</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">φολλοωινγ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">ρεστριξτιονς·</span><span> </span>
+</span><br>
+<span class="line">
+		<span onclick="updateHelper(event, 0,[])">οπτιξαλ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">ξηαραξτερ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">ρεξογνιτιον</span><span> </span>
+</span><br>
+<span class="line">
+	</span><br>
+	<span onclick="updateHelper(event, 0,[['ἕ', 'sui.'], ['ὁ', 'the'], ['ὅς', 'this, that;']])">οἱ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['μέν', 'on the one hand, on the other hand']])">μὲν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['οὖν', 'really, at all events']])">οὖν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['βίος', 'life'], ['βιάω', 'to constrain'], ['βιός', 'a bow'], ['βιόω', 'to live, pass one\'s life']])">βίοι</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τῶν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἀνδρόω', 'to rear up into manhood'], ['ἀνδρών', 'the men\'s apartment'], ['ἀνήρ', 'a man']])">ἀνδρῶν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['τοιοῦτος', 'such as this']])">τοιαύτην</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἔχω', 'to have']])">ἔχουσιν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἱστορία', 'a learning by inquiry, inquiry']])">ἱστορίαν.</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἔπειμι', 'sum'], ['ἔπος', 'a word'], ['ἐπεί', 'after that, after (postquam), since, when (quum)']])">ἐπεὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['δέ', 'but']])">δὲ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πολιτικός', 'of, for']])">πολιτικῆς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πολεμικός', 'of']])">πολεμικῆς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἀρετάω', 'to be fit'], ['ἀρετή', 'goodness, excellence']])">ἀρετῆς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πολύς', 'many']])">πολλὰ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['κᾶλον', 'wood'], ['καλός', 'beautiful, beauteous, fair'], ['κήλη', 'a tumor']])">καλὰ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['παράδειγμα', 'a pattern']])">παραδείγματα</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καταλιμπάνω', 'No translation available.']])">καταλελοίπασιν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἀμφότερος', 'each']])">ἀμφότεροι,</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['φέρω', 'to bear']])">φέρε</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τῶν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πολεμικός', 'of']])">πολεμικῶν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἐκεῖνος', 'the person there, that person']])">ἐκεῖνο</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πρότερος', 'prae.']])">πρῶτον</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['λάπτω', 'to lap with the tongue'], ['λαμβάνω', 'to take']])">λάβωμεν,</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὅστις', 'any one who, anything which'], ['ὅτι', 'that); that']])">ὅτι</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Περικλῆς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['μέν', 'on the one hand, on the other hand']])">μὲν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἄριστον', 'the morning meal, breakfast'], ['ἄριστος', 'best'], ['ἀριστάω', 'to take breakfast']])">ἄριστα</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πράσσω', 'to pass over']])">πράττοντι</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the'], ['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;'], ['τῷ', 'therefore, in this wise, thereupon']])">τῷ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['δῆμος', 'a country-district, country, land'], ['δημός', 'fat']])">δήμῳ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['μέγας', 'big, great']])">μεγίστῳ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καθά', 'according as, just as'], ['καθό', 'in so far as, according as'], ['κατά', 'down, downwards, with gen. or acc.']])">καθ’</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἑαυτοῦ', 'itself, absolutely']])">αὑτὸν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['εἰμί', 'I have']])">ὄντι</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['μάλιστα', 'No translation available.']])">μάλιστα</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πρός', 'motion from']])">πρὸς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['δύναμις', 'power, might, strength']])">δύναμιν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἀκμάζω', 'to be in full bloom, be at one\'s prime']])">ἀκμάζοντι</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['χράομαι', 'consulting'], ['χράω', 'to fall upon, attack, assail; to furnish what is needful'], ['χραύω', 'to scrape, graze, wound slightly']])">χρώμενος</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὑπό', 'from under, by, c. gen. under, c. dat., towards c. acc.']])">ὑπὸ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['κοινός', 'common, shared in common'], ['κοινόω', 'to make common, communicate, impart']])">κοινῆς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἄν', 'No translation available.; No translation available.'], ['ἀνά', 'up, upon'], ['ἐάν', 'if haply']])">ἂν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['δοκέω', 'videor mihi, to think, suppose, imagine, expect']])">δόξειεν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['εὐτυχία', 'good luck, success, prosperity']])">εὐτυχίας</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ῥώμη', 'bodily strength, strength, might']])">ῥώμης</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πρᾶγμα', 'that which has been done, a deed, act']])">πραγμάτων</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἀσφαλής', 'not liable to fall, immoveable, steadfast, firm']])">ἀσφαλὴς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['διαγίγνομαι', 'to go through, pass']])">διαγενέσθαι</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἄπταιστος', 'not stumbling']])">ἄπταιστος,</span><span> </span>
+</span><br>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the'], ['ὅς', 'this, that;']])">αἱ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['δέ', 'but']])">δὲ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Φαβίου</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πράσσω', 'to pass over'], ['πρᾶξις', 'a doing, transaction, business']])">πράξεις</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἐν', 'in, among. c. dat.'], ['εἰμί', 'I have'], ['εἰς', 'into, to c. acc.']])">ἐν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['αἰσχρός', 'causing shame, abusive']])">αἰσχίστοις</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">δυσποτμοτάτοις</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καῖρος', 'the row of thrums'], ['καιρός', 'due measure, proportion, fitness']])">καιροῖς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἀναδέχομαι', 'to take up, catch, receive'], ['ἀναδείκνυμι', 'to lift up and shew']])">ἀναδεξαμένου</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τὴν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πόλις', 'a city']])">πόλιν,</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['οὐ', 'No translation available.; why no, âcertainly not; for not; for in no manner; No translation available.; I suppose not; no truly; no truly, nay verily; not surely, not verily; nevertheless, notwithstanding, yet, still; not however; not; nowhere; not; never yet at any time']])">οὐκ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἐπί', 'on, upon with gen., dat., and acc.']])">ἐπ’</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἀγαθός', 'good']])">ἀγαθοῖς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἀσφαλής', 'not liable to fall, immoveable, steadfast, firm']])">ἀσφαλῆ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['διατηρέω', 'to watch closely, observe']])">διετήρησαν,</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἄλλος', 'alius, another, one besides'], ['ἀλλά', 'otherwise, but'], ['ἀναλάζομαι', 'to take again']])">ἀλλ’</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἐκ', 'from out of']])">ἐκ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['κάκη', 'wickedness, vice'], ['κακός', 'bad'], ['κακόω', 'to treat ill, maltreat, afflict, distress']])">κακῶν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['εἶμι', 'to go'], ['εἰμί', 'I have'], ['εἰς', 'into, to c. acc.']])">εἰς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['βελτίων', 'better']])">βελτίω</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['μεθίστημι', 'to place in another way, to change']])">μετέστησαν.</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Περικλεῖ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['μέν', 'on the one hand, on the other hand']])">μὲν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the'], ['ὅς', 'this, that;']])">αἱ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Κίμωνος</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['εὐπραξία', 'good conduct']])">εὐπραξίαι</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the'], ['τίς', 'who? which?']])">τὰ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Μυρωνίδου</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the'], ['τίς', 'who? which?']])">τὰ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Λεωκράτους</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['τρόπαιον', 'a trophy'], ['τροπαία', 'an alternating wind'], ['τροπαῖος', 'of']])">τρόπαια</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πολύς', 'many']])">πολλὰ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['μέγας', 'big, great']])">μεγάλα</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Τολμίδης</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['κατορθόω', 'to set upright, erect']])">κατορθῶν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">ἐνεορτάσαι</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['μᾶλλον', 'No translation available.'], ['μαλλός', 'a lock of wool, wool']])">μᾶλλον</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">ἐμπανηγυρίσαι</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['στρατηγέω', 'to be general']])">στρατηγοῦντι</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τὴν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πόλις', 'a city']])">πόλιν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['εἰμί', 'I have'], ['ἤ', 'or; No translation available.'], ['ἦ', 'in truth, truly, verily, of a surety'], ['ἠμί', 'I say']])">ἢ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['κτάομαι', 'to procure for oneself, to get, gain, acquire'], ['κτέομαι', 'No translation available.']])">κτήσασθαι</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πόλεμος', 'battle, fight, war']])">πολέμῳ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['φυλάσσω', 'to keep watch and ward, keep guard'], ['φυλάζω', 'to divide into tribes']])">φυλάξαι</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['παραδίδωμι', 'to give']])">παρέδωκαν·</span><span> </span>
+</span><br>
+	<span onclick="updateHelper(event, 0,[])">Φάβιος</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['δέ', 'but']])">δ’</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὅρος', 'a boundary, landmark'], ['ὁράω', 'To see']])">ὁρῶν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πολύς', 'many']])">πολλὰς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['μέν', 'on the one hand, on the other hand']])">μὲν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['φυγάς', 'one who flees'], ['φυγή', 'flight']])">φυγὰς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἧσσα', 'a defeat, discomfiture']])">ἥττας,</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πολύς', 'many']])">πολλοὺς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['δέ', 'but']])">δὲ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['θάνατος', 'death'], ['θανατόω', 'to put to death']])">θανάτους</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['σφαγεύς', 'a slayer, butcher'], ['σφαγή', 'slaughter, butchery']])">σφαγὰς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['αὐτοκράτωρ', 'one\'s own master']])">αὐτοκρατόρων</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['στρατηγέω', 'to be general'], ['στρατηγός', 'the leader']])">στρατηγῶν,</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['λίμνη', 'a pool of standing water'], ['λιμνάς', 'No translation available.']])">λίμνας</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['δέ', 'but']])">δὲ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πεδίον', 'a plain'], ['πεδιάς', 'flat, level'], ['πεδιεύς', 'No translation available.']])">πεδία</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['δρυμός', 'an oak-coppice;']])">δρυμοὺς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['νεκρός', 'a dead body, corpse'], ['νεκρόω', 'to make dead'], ['νεκρών', 'a burial-place']])">νεκρῶν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['στρατόπεδον', 'the ground on which soldiers are encamped, a camp, encampment']])">στρατοπέδων</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πλήθω', 'to be']])">πλήθοντας,</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['αἷμα', 'blood']])">αἵματι</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['δέ', 'but']])">δὲ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['φόνος', 'murder, homicide, slaughter'], ['φονάω', 'to be athirst for blood, to be murderous']])">φόνῳ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ποταμός', 'a river, stream']])">ποταμοὺς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἄχρι', 'to the uttermost, utterly']])">ἄχρι</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['θάλασσα', 'the sea']])">θαλάττης</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ῥέω', 'to flow, run, stream, gush']])">ῥέοντας,</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἐν', 'in, among. c. dat.'], ['εἰμί', 'I have'], ['εἰς', 'into, to c. acc.']])">ἐν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the'], ['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;'], ['τῷ', 'therefore, in this wise, thereupon']])">τῷ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καθά', 'according as, just as'], ['καθό', 'in so far as, according as'], ['κατά', 'down, downwards, with gen. or acc.']])">καθ’</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἑαυτοῦ', 'itself, absolutely']])">ἑαυτὸν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁρμάω', 'to set in motion, urge']])">ὁρμωμένῳ</span><span> </span>
+</span><br>
+</span><br>
+	<span onclick="updateHelper(event, 0,[['ὁρμάω', 'to set in motion, urge']])">ὁρμωμένῳ</span><span> </span>
+</span><br>
+	<span onclick="updateHelper(event, 0,[])">βεκκερ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">ξορρεξτς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">το</span><span> </span>
+</span><br>
+	<span onclick="updateHelper(event, 0,[])">ἡπμοσμένῳ</span><span> </span>
+</span><br>
+	<span onclick="updateHelper(event, 0,[])">(</span><span> </span>
+</span><br>
+	<span onclick="updateHelper(event, 0,[])">αττεμπερεδ</span><span> </span>
+</span><br>
+	<span onclick="updateHelper(event, 0,[])">),</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">αφτερ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">ξοραëς.</span><span> </span>
+</span><br>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">βεβηκότι</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τὴν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πόλις', 'a city']])">πόλιν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἀντιλαμβάνω', 'to receive instead of']])">ἀντιλαμβανόμενος</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">ὑπερείδων,</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['οὐ', 'No translation available.; why no, âcertainly not; for not; for in no manner; No translation available.; I suppose not; no truly; no truly, nay verily; not surely, not verily; nevertheless, notwithstanding, yet, still; not however; not; nowhere; not; never yet at any time']])">οὐκ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἐάω', 'to let, suffer, allow, permit']])">εἴασε</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τοῖς</span><span> </span>
+</span><br>
+	<span onclick="updateHelper(event, 0,[['ἐκεῖνος', 'the person there, that person'], ['κενόω', 'to empty out, drain']])">ἐκείνων</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὑποφέρω', 'to carry away under']])">ὑποφερομένην</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πταῖσμα', 'a stumble, trip, false step']])">πταίσμασι</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['τέλειος', 'having reached its end, finished, complete'], ['τελειόω', 'to make perfect, complete']])">τελέως</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἐκχέω', 'to pour out']])">ἐκχυθῆναι.</span><span> </span>
+</span><br>
+	<span onclick="updateHelper(event, 0,[['καίτοι', 'and indeed, and further']])">καίτοι</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['δοκέω', 'videor mihi, to think, suppose, imagine, expect']])">δόξειεν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἄν', 'No translation available.; No translation available.'], ['ἀνά', 'up, upon'], ['ἐάν', 'if haply']])">ἂν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['οὐ', 'No translation available.; why no, âcertainly not; for not; for in no manner; No translation available.; I suppose not; no truly; no truly, nay verily; not surely, not verily; nevertheless, notwithstanding, yet, still; not however; not; nowhere; not; never yet at any time']])">οὐχ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['οὕτως', 'hic']])">οὕτω</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['χαλεπός', 'hard to bear, painful, sore, grievous']])">χαλεπὸν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['εἰμί', 'I have']])">εἶναι</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πόλις', 'a city']])">πόλιν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἐν', 'in, among. c. dat.'], ['εἰμί', 'I have'], ['εἰς', 'into, to c. acc.']])">ἐν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['συμφορά', 'an event, circumstance, chance, hap']])">συμφοραῖς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['μεταχειρίζω', 'to have']])">μεταχειρίσασθαι</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ταπεινός', 'low']])">ταπεινὴν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the'], ['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τοῦ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['φρονέω', 'to think, to have understanding, to be sage, wise, prudent']])">φρονοῦντος</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὑπό', 'from under, by, c. gen. under, c. dat., towards c. acc.']])">ὑπ’</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἀνάγκη', 'force, constraint, necessity'], ['ἀναγκάζω', 'to force, compel']])">ἀνάγκης</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['κατήκους', 'listening']])">κατήκοον</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['γίγνομαι', 'gi-geno']])">γενομένην,</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὅς', 'this, that;'], ['ὡς', 'thus, as, so that, since']])">ὡς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['Ζεύς', 'Zeus'], ['δίω', 'to run away, take to flight, flee'], ['δῖος', 'god-like, divine'], ['διά', 'through c. gen. through, by means of c. acc.'], ['διό', 'wherefore, on which account']])">δῑ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['εὐτυχία', 'good luck, success, prosperity']])">εὐτυχίαν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">ἐπηρμένῳ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['σπάργω', 'No translation available.'], ['σπαργάω', 'to be full to bursting, to swell, be ripe']])">σπαργῶντι</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the'], ['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;'], ['τῷ', 'therefore, in this wise, thereupon']])">τῷ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['δῆμος', 'a country-district, country, land'], ['δημός', 'fat']])">δήμῳ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['χαλινός', 'a bridle, bit']])">χαλινὸν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἐμβάλλω', 'to throw in, put in']])">ἐμβαλεῖν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὕβρις', 'wantonness, wanton violence']])">ὕβρεως</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['θρασύτης', 'over-boldness, audacity']])">θρασύτητος·</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὅς', 'this, that;']])">ᾧ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['δέω', 'to bind, tie, fetter; to lack, miss, stand in need of'], ['δεῖ', 'to bind'], ['δή', 'exactness']])">δὴ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['μάλιστα', 'No translation available.']])">μάλιστα</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['φαίνω', 'to bring to light, make to appear']])">φαίνεται</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['τρόπος', 'a turn, direction, course, way'], ['τροπός', 'a twisted leathern thong']])">τρόπῳ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Περικλῆς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Ἀθηναίων</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['περιγίγνομαι', 'to be superior to']])">περιγενόμενος.</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἄλλος', 'alius, another, one besides'], ['ἀλλά', 'otherwise, but']])">ἀλλὰ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τῶν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Ῥωμαίοις</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">συμπεσόντων</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['τότε', 'at that time, then'], ['τοτέ', 'at times, now and then']])">τότε</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['κάκη', 'wickedness, vice'], ['κακός', 'bad'], ['κακόω', 'to treat ill, maltreat, afflict, distress']])">κακῶν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τὸ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['μέγεθος', 'greatness, magnitude, size, height, stature']])">μέγεθος</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τὸ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πλῆθος', 'a great number, a throng, crowd, multitude']])">πλῆθος</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἰσχυρός', 'strong, mighty']])">ἰσχυρόν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τινα</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τὴν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['γνώμη', 'a means of knowing, a mark, token']])">γνώμην</span><span> </span>
+</span><br>
+</span><br>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τὴν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['γνώμη', 'a means of knowing, a mark, token']])">γνώμην</span><span> </span>
+</span><br>
+	<span onclick="updateHelper(event, 0,[])">ξοραëς·</span><span> </span>
+</span><br>
+	<span onclick="updateHelper(event, 0,[['γνώμη', 'a means of knowing, a mark, token']])">γνώμην</span><span> </span>
+</span><br>
+	<span onclick="updateHelper(event, 0,[])">.</span><span> </span>
+</span><br>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['μέγας', 'big, great']])">μέγαν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['δείκνυμι', 'to bring to light, display, exhibit']])">ἔδειξεν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἀνήρ', 'a man']])">ἄνδρα</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τὸν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['μή', 'not']])">μὴ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">συγχυθέντα</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['Μῆδος', 'a Mede, Median'], ['μηδέ', 'but not']])">μηδὲ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['προίημι', 'to send before, send on']])">προέμενον</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τοὺς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἑαυτοῦ', 'itself, absolutely']])">αὑτοῦ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['λογισμός', 'a counting, reckoning, calculation, computation']])">λογισμούς.</span><span> </span>
+</span><br>
+<span class="line">
+	</span><br>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Σάμῳ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['μέν', 'on the one hand, on the other hand']])">μὲν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὑπό', 'from under, by, c. gen. under, c. dat., towards c. acc.']])">ὑπὸ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Περικλέους</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἁλίσκομαι', 'to be taken, conquered']])">ἁλούσῃ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τὴν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Τάραντος</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['εἰμί', 'I have']])">ἔστι</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['κατάληψις', 'a seizing']])">κατάληψιν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἀντιτίθημι', 'to set against, oppose']])">ἀντιθεῖναι,</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['νάω', 'to flow'], ['νέω', 'to swim; to spin; to heap, pile, heap up; next year.'], ['νή', 'No translation available.']])">νὴ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Δί’</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Εὐβοίᾳ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τὰς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['περί', 'around, round about with gen., dat., and acc.']])">περὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Καμπανίαν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πόλις', 'a city'], ['πολέω', 'to go about, range over'], ['πολύς', 'many']])">πόλεις·</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἔπειμι', 'sum'], ['ἔπος', 'a word'], ['ἐπεί', 'after that, after (postquam), since, when (quum)']])">ἐπεὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['αὐτός', 'self']])">αὐτήν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['γε', 'at least, at any rate']])">γε</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Καπύην</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἕ', 'sui.'], ['ὁ', 'the'], ['ὅς', 'this, that;']])">οἱ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['περί', 'around, round about with gen., dat., and acc.']])">περὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Φούλβιον</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Ἄππιον</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὕπατος', 'supremus, the highest, uppermost']])">ὕπατοι</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['κατέχω', 'to hold fast']])">κατέσχον.</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἐκ', 'from out of']])">ἐκ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['δέ', 'but']])">δὲ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['παράταξις', 'a placing in line of battle']])">παρατάξεως</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Φάβιος</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['οὐ', 'No translation available.; why no, âcertainly not; for not; for in no manner; No translation available.; I suppose not; no truly; no truly, nay verily; not surely, not verily; nevertheless, notwithstanding, yet, still; not however; not; nowhere; not; never yet at any time']])">οὐ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['φαίνω', 'to bring to light, make to appear']])">φαίνεται</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['μάχη', 'battle, fight, combat'], ['μάχομαι', 'to fight'], ['συμμαχέω', 'to be an ally, to be in alliance']])">μάχῃ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['νικάω', 'to conquer, prevail, vanquish']])">νενικηκώς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πλέω', 'to sail, go by sea'], ['πλήν', 'more than']])">πλὴν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἄπαις', 'childless'], ['ἀπό', 'from, away from. c. gen.'], ['Ἆπις', 'Apis'], ['ἄπιος', 'a pear-tree; far away, far off, distant']])">ἀφ’</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὅς', 'this, that;']])">ἧς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τὸν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πρότερος', 'prae.']])">πρότερον</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['εἰσελαύνω', 'to drive in']])">εἰσήλασε</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['θρίαμβος', 'a hymn to Bacchus']])">θρίαμβον,</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Περικλῆς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['δέ', 'but']])">δ’</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἐνεός', 'dumb, deaf and dumb'], ['ἐννέα', 'nine'], ['ἐννεάς', 'a body of nine']])">ἐννέα</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['τρόπαιον', 'a trophy'], ['τροπαία', 'an alternating wind'], ['τροπαῖος', 'of']])">τρόπαια</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['κατά', 'down, downwards, with gen. or acc.']])">κατὰ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['γῆ', 'earth']])">γῆν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['κατά', 'down, downwards, with gen. or acc.']])">κατὰ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['θάλασσα', 'the sea']])">θάλατταν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἵστημι', 'to make to stand']])">ἔστησεν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἀπό', 'from, away from. c. gen.']])">ἀπὸ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τῶν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πολέμιος', 'of'], ['πολεμέω', 'to be at war'], ['πολεμίζω', 'to wage war, make war, fight']])">πολεμίων,</span><span> </span>
+</span><br>
+	<span onclick="updateHelper(event, 0,[['οὐ', 'No translation available.; why no, âcertainly not; for not; for in no manner; No translation available.; I suppose not; no truly; no truly, nay verily; not surely, not verily; nevertheless, notwithstanding, yet, still; not however; not; nowhere; not; never yet at any time']])">οὐ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['μείς', 'a month'], ['μήν', 'now verily, full surely']])">μὴν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['λέγω', 'to lay asleep, lull to sleep; to gather, pick up; to say, speak']])">λέγεται</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['τοιοῦτος', 'such as this']])">τοιαύτη</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πρᾶξις', 'a doing, transaction, business']])">πρᾶξις</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Περικλέους,</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['οἷος', 'such as, what sort']])">οἵαν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πράσσω', 'to pass over']])">ἔπραξε</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Φάβιος</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Μινούκιον</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἐξαρπάζω', 'to snatch away from']])">ἐξαρπάσας</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Ἀννίβου</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">διασώσας</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἐντελής', 'complete, full']])">ἐντελὲς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['στρατόπεδον', 'the ground on which soldiers are encamped, a camp, encampment']])">στρατόπεδον</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Ῥωμαίων·</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['κάλως', 'a reefing rope, reef'], ['κᾶλον', 'wood'], ['καλός', 'beautiful, beauteous, fair']])">καλὸν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['γάρ', 'for']])">γὰρ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τὸ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἔργνυμι', 'to confine'], ['ἔργον', 'work']])">ἔργον</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['κοινός', 'common, shared in common']])">κοινὸν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἀνδρεία', 'manliness, manhood, manly spirit'], ['ἀνδρεῖος', 'of']])">ἀνδρείας</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁμός', 'one and the same, common, joint'], ['ὁμόω', 'to unite'], ['ὁμοῦ', 'at the same place, together']])">ὁμοῦ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['φρόνησις', 'a minding']])">φρονήσεως</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['χρηστότης', 'goodness, honesty']])">χρηστότητος·</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὥσπερ', 'just as if, even as']])">ὥσπερ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['αὖ', 'again, anew, afresh, once more; bow wow']])">αὖ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πάλιν', 'back, backwards']])">πάλιν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['οὐδέ', 'but not'], ['οὐδός', 'a threshold; a way']])">οὐδὲ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">σφάλμα</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['λέγω', 'to lay asleep, lull to sleep; to gather, pick up; to say, speak']])">λέγεται</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Περικλέους</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['οἷος', 'such as, what sort']])">οἷον</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['σφάλλω', 'to make to fall, throw down, overthrow']])">ἐσφάλη</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Φάβιος</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['Ζεύς', 'Zeus'], ['δῖος', 'god-like, divine'], ['διά', 'through c. gen. through, by means of c. acc.']])">διὰ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τῶν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['βάζω', 'to speak, say'], ['βόειος', 'of an ox'], ['βοάω', 'to cry aloud, to shout'], ['βοή', 'a loud cry, shout'], ['βοῦς', 'cow']])">βοῶν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">καταστρατηγηθεὶς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὑπό', 'from under, by, c. gen. under, c. dat., towards c. acc.']])">ὑπ’</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Ἀννίβου,</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['λαβή', 'the part intended for grasping, a handle, haft'], ['λαμβάνω', 'to take']])">λαβὼν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['μέν', 'on the one hand, on the other hand']])">μὲν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['αὐτόματος', 'acting of one\'s own will, of oneself']])">αὐτομάτως</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['κατά', 'down, downwards, with gen. or acc.']])">κατὰ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['τύχη', 'the good which man obtains'], ['τυγχάνω', 'to hit']])">τύχην</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὑπέρχομαι', 'to go']])">ὑπελθόντα</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τοῖς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['στένω', 'to moan, sigh, groan'], ['στενός', 'narrow, strait'], ['στενόω', 'to straiten']])">στενοῖς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τὸν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πολέμιος', 'of'], ['πολεμέω', 'to be at war']])">πολέμιον,</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['προίημι', 'to send before, send on']])">προέμενος</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['δέ', 'but']])">δὲ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['νύξ', 'the night-season']])">νυκτὸς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['λανθάνω', 'to escape notice, to be unknown, unseen, unnoticed']])">λαθόντα</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['μέθη', 'strong drink'], ['μεθό', 'after that.'], ['μετά', 'in the midst of, among with gen., dat., and acc.']])">μεθ’</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἥμερος', 'tame, tamed, reclaimed'], ['ἡμέρα', 'day']])">ἡμέραν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['βιάω', 'to constrain'], ['βιάζω', 'to constrain']])">βιασάμενον</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['φθάνω', 'to come']])">φθάσαντα</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['μέλλω', 'to think of doing, intend to do, to be about to do']])">μέλλοντος</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+</span><br>
+	<span onclick="updateHelper(event, 0,[])">κρατή</span><span> </span>
+</span><br>
+	<span onclick="updateHelper(event, 0,[])">σαντα</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['συλλαμβάνω', 'to collect, gather together']])">συλλαβόντος.</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['εἰ', 'whether.'], ['εἶμι', 'to go'], ['εἰμί', 'I have']])">εἰ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['δέ', 'but']])">δὲ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['δέω', 'to bind, tie, fetter; to lack, miss, stand in need of'], ['δεῖ', 'to bind']])">δεῖ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['μή', 'not']])">μὴ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['μόνος', 'alone, left alone, forsaken solitary']])">μόνον</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['χράομαι', 'consulting'], ['χράω', 'to fall upon, attack, assail; to furnish what is needful'], ['χραύω', 'to scrape, graze, wound slightly']])">χρῆσθαι</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τοῖς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πάρειμι', 'sum; ibo'], ['πείρω', 'to pierce quite through, fix']])">παροῦσιν,</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἄλλος', 'alius, another, one besides'], ['ἀλλά', 'otherwise, but']])">ἀλλὰ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['τεκμαίρομαι', 'to fix by a mark']])">τεκμαίρεσθαι</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['περί', 'around, round about with gen., dat., and acc.']])">περὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the'], ['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τοῦ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['μέλλω', 'to think of doing, intend to do, to be about to do']])">μέλλοντος</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὀρθός', 'straight'], ['ὀρθόω', 'to set straight']])">ὀρθῶς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τὸν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἀγαθός', 'good']])">ἀγαθὸν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['στρατηγός', 'the leader']])">στρατηγόν,</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Ἀθηναίοις</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['μέν', 'on the one hand, on the other hand']])">μὲν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὅς', 'this, that;'], ['ὡς', 'thus, as, so that, since']])">ὡς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Περικλῆς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['προγιγνώσκω', 'to know, perceive, learn']])">προέγνω</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['προεῖπον', 'to tell']])">προεῖπεν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['τελευτάω', 'to complete, finish, accomplish']])">ἐτελεύτησεν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the'], ['ὅς', 'this, that;']])">ὁ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πόλεμος', 'battle, fight, war']])">πόλεμος·</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πολυπραγμονέω', 'to be busy about many things']])">πολυπραγμονοῦντες</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['γάρ', 'for']])">γὰρ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἀπόλλυμι', 'to destroy utterly, kill, slay']])">ἀπώλεσαν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τὴν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['δύναμις', 'power, might, strength']])">δύναμιν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Ῥωμαῖοι</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['δέ', 'but']])">δὲ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['παρά', 'from the side of, c. gen., beside, alongside of, c. dat., to the side of, motion alongside of, c. acc.'], ['πηρός', 'disabled in a limb, maimed']])">παρὰ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τοὺς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Φαβίου</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['λογισμός', 'a counting, reckoning, calculation, computation']])">λογισμοὺς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἐκπέμπω', 'to send out']])">ἐκπέμψαντες</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἐπί', 'on, upon with gen., dat., and acc.']])">ἐπὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Καρχηδονίους</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Σκηπίωνα</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πᾶς', 'all, the whole']])">πάντων</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['κρατέω', 'to be strong, mighty, powerful']])">ἐκράτησαν,</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['οὐ', 'No translation available.; why no, âcertainly not; for not; for in no manner; No translation available.; I suppose not; no truly; no truly, nay verily; not surely, not verily; nevertheless, notwithstanding, yet, still; not however; not; nowhere; not; never yet at any time']])">οὐ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['τύχη', 'the good which man obtains'], ['τυγχάνω', 'to hit']])">τύχῃ,</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['σοφία', 'skill']])">σοφίᾳ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['δέ', 'but']])">δὲ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the'], ['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τοῦ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['στρατηγέω', 'to be general'], ['στρατηγός', 'the leader']])">στρατηγοῦ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἀνδρεία', 'manliness, manhood, manly spirit'], ['ἀνδρεῖος', 'of']])">ἀνδρείᾳ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['κατά', 'down, downwards, with gen. or acc.']])">κατὰ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['κράς', 'the head'], ['κράτος', 'strength, might']])">κράτος</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['νικάω', 'to conquer, prevail, vanquish']])">νικήσαντος</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τοὺς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πολέμιος', 'of']])">πολεμίους.</span><span> </span>
+</span><br>
+	<span onclick="updateHelper(event, 0,[['ὥστε', 'as, as being']])">ὥστε</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the'], ['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;'], ['τῷ', 'therefore, in this wise, thereupon']])">τῷ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['μέν', 'on the one hand, on the other hand']])">μὲν</span><span> </span>
+</span><br>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the'], ['τίς', 'who? which?']])">τὰ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πταῖσμα', 'a stumble, trip, false step']])">πταίσματα</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τῆς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πατρίς', 'of one\'s fathers']])">πατρίδος</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['μαρτυρέω', 'to be a witness, to bear witness, give evidence, bear testimony']])">μαρτυρεῖν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὅστις', 'any one who, anything which'], ['ὅτι', 'that); that']])">ὅτι</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['κάλως', 'a reefing rope, reef'], ['καλός', 'beautiful, beauteous, fair']])">καλῶς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['γιγνώσκω', 'to learn to know, to perceive, mark, learn']])">ἔγνω,</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τὸν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['δέ', 'but']])">δὲ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὑπό', 'from under, by, c. gen. under, c. dat., towards c. acc.']])">ὑπὸ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τῶν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">κατορθωμάτων</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἐλέγχω', 'to disgrace, put to shame']])">ἐλέγχεσθαι</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the'], ['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τοῦ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πᾶς', 'all, the whole']])">παντὸς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['σφάλλω', 'to make to fall, throw down, overthrow']])">ἐσφαλμένον.</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἴσος', 'equal to, the same as']])">ἴση</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['δέ', 'but']])">δ’</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἁμάρτημα', 'a failure, fault, sin'], ['ἁμαρτία', 'a failure, fault, sin']])">ἁμαρτία</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['στρατηγέω', 'to be general'], ['στρατηγός', 'the leader']])">στρατηγοῦ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['κακός', 'bad']])">κακῷ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['περιπίπτω', 'to fall around, so as to embrace']])">περιπεσεῖν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['μή', 'not']])">μὴ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['προσδοκάω', 'to expect'], ['προσδοκέω', 'to be thought besides']])">προσδοκήσαντα</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">κατορθώματος</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καῖρος', 'the row of thrums'], ['καιρός', 'due measure, proportion, fitness']])">καιρὸν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἀπιστία', 'disbelief, distrust, mistrust']])">ἀπιστίᾳ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['προίημι', 'to send before, send on']])">προέσθαι.</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">μία</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['γάρ', 'for']])">γὰρ,</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὅς', 'this, that;'], ['ὡς', 'thus, as, so that, since']])">ὡς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἔοικα', 'it seemed good']])">ἔοικεν,</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἀπειρία', 'want of skill, inexperience; infinity']])">ἀπειρία</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['θράσος', 'courage, boldness']])">θράσος</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['γέννα', 'descent, birth'], ['γεννάω', 'to beget, engender']])">γεννᾷ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['θάρσος', 'courage, boldness']])">θάρσος</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἀφαιρέω', 'to take from, take away from']])">ἀφαιρεῖται,</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['οὗτος', 'this']])">ταῦτα</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['περί', 'around, round about with gen., dat., and acc.']])">περὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τῶν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πολεμικός', 'of']])">πολεμικῶν.</span><span> </span>
+</span><br>
+<span class="line">
+	</span><br>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τῆς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['δέ', 'but']])">δὲ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πολιτεία', 'the condition and rights of a citizen, citizenship']])">πολιτείας</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['μέγας', 'big, great']])">μέγα</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['μέν', 'on the one hand, on the other hand']])">μὲν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἔγκλημα', 'an accusation, charge, complaint']])">ἔγκλημα</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the'], ['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τοῦ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Περικλέους</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the'], ['ὅς', 'this, that;']])">ὁ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πόλεμος', 'battle, fight, war']])">πόλεμος,</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['λέγω', 'to lay asleep, lull to sleep; to gather, pick up; to say, speak']])">λέγεται</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['γάρ', 'for']])">γὰρ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἐπακτός', 'brought in, imported']])">ἐπακτὸς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὑπό', 'from under, by, c. gen. under, c. dat., towards c. acc.']])">ὑπ’</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἐκεῖνος', 'the person there, that person'], ['κενόω', 'to empty out, drain']])">ἐκείνου</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['γίγνομαι', 'gi-geno']])">γενέσθαι</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Λακεδαιμονίοις</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἐρίζω', 'to strive, wrangle, quarrel']])">ἐρίσαντος</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['μή', 'not']])">μὴ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἐνδίδωμι', 'to give in']])">ἐνδοῦναι.</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['δοκέω', 'videor mihi, to think, suppose, imagine, expect'], ['δοκός', 'a bearing-beam']])">δοκῶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['δέ', 'but']])">δὲ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['Μῆδος', 'a Mede, Median'], ['Μηδίς', 'a Median woman'], ['μηδέ', 'but not']])">μηδ’</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἄν', 'No translation available.; No translation available.'], ['ἀνά', 'up, upon'], ['ἐάν', 'if haply']])">ἂν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Φάβιον</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Μάξιμον</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἐνδίδωμι', 'to give in']])">ἐνδοῦναί</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τι</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Καρχηδονίοις,</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἄλλος', 'alius, another, one besides'], ['ἀλλά', 'otherwise, but'], ['ἀναλάζομαι', 'to take again']])">ἀλλ’</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['εὐγενής', 'well-born, of noble race, of high descent']])">εὐγενῶς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὑφίστημι', 'to place']])">ὑποστῆναι</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τὸν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὑπέρ', 'over, above, w. gen, over, beyond, w. acc.']])">ὑπὲρ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τῆς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἡγεμονία', 'a leading the way, going first']])">ἡγεμονίας</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['κίνδυνος', 'a danger, risk, hazard, venture, enterprise']])">κίνδυνον.</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the'], ['ὅς', 'this, that;']])">ἡ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['μέντοι', 'No translation available.']])">μέντοι</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πρός', 'motion from']])">πρὸς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Μινούκιον</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἐπιείκεια', 'reasonableness, fairness, equity']])">ἐπιείκεια</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the'], ['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τοῦ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Φαβίου</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πραότης', 'mildness, gentleness']])">πρᾳότης</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἔλεγχος', 'a cross-examining, testing; a reproach, disgrace, dishonour'], ['ἐλέγχω', 'to disgrace, put to shame'], ['ἐλεγχής', 'worthy of reproof;']])">ἐλέγχει</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τὸν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πρός', 'motion from']])">πρὸς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Κίμωνα</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Θουκυδίδην</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">στασιασμόν,</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἀνήρ', 'a man']])">ἄνδρας</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἀγαθός', 'good']])">ἀγαθοὺς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+</span><br>
+	<span onclick="updateHelper(event, 0,[])">ἀριστοκρατικοὺς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['εἶμι', 'to go'], ['εἰμί', 'I have'], ['εἰς', 'into, to c. acc.']])">εἰς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['φεύγω', 'to flee, take flight, run away'], ['φυγή', 'flight']])">φυγὴν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὑπό', 'from under, by, c. gen. under, c. dat., towards c. acc.']])">ὑπ’</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['αὐτός', 'self'], ['αὐτοῦ', 'at the very place, just here, just there']])">αὐτοῦ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὄστρακον', 'an earthen vessel']])">τοὔστρακον</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">ἐκπεσόντας.</span><span> </span>
+</span><br>
+	<span onclick="updateHelper(event, 0,[['ἄλλος', 'alius, another, one besides'], ['ἀλλά', 'otherwise, but'], ['ἀναλάζομαι', 'to take again']])">ἀλλ’</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the'], ['ὅς', 'this, that;']])">ἥ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['γε', 'at least, at any rate']])">γε</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['δύναμις', 'power, might, strength']])">δύναμις</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['μέγας', 'big, great']])">μείζων</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the'], ['ὅς', 'this, that;']])">ἡ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the'], ['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τοῦ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Περικλέους</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τὸ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['κράς', 'the head'], ['κράτος', 'strength, might']])">κράτος,</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὅθεν', 'from whom']])">ὅθεν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['οὐδέ', 'but not'], ['οὐδός', 'a threshold; a way']])">οὐδ’</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἄλλος', 'alius, another, one besides']])">ἄλλον</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἐάω', 'to let, suffer, allow, permit']])">εἴασεν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἐνδυστυχέω', 'to be unlucky in']])">ἐνδυστυχῆσαι</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the'], ['τῇ', 'here, there']])">τῇ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πόλις', 'a city'], ['πολέω', 'to go about, range over']])">πόλει</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['κακός', 'bad'], ['κακόω', 'to treat ill, maltreat, afflict, distress']])">κακῶς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['βουλεύω', 'to take counsel, deliberate, concert measures']])">βουλευσάμενον</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['στρατηγός', 'the leader']])">στρατηγόν,</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἄλλος', 'alius, another, one besides'], ['ἀλλά', 'otherwise, but'], ['ἀναλάζομαι', 'to take again']])">ἀλλ’</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['εἰμί', 'I have'], ['ἤ', 'or; No translation available.'], ['ἦ', 'in truth, truly, verily, of a surety'], ['ἠμί', 'I say']])">ἢ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['μόνος', 'alone, left alone, forsaken solitary']])">μόνος</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['αὐτός', 'self']])">αὐτὸν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἐκφεύγω', 'to flee out']])">ἐκφυγὼν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Τολμίδης</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['διωθέω', 'to push asunder, tear away']])">διωσάμενος</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['βία', 'bodily strength, force, power, might'], ['βιάω', 'to constrain'], ['βιάζω', 'to constrain']])">βίᾳ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['προσπταίω', 'to strike against']])">προσέπταισε</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Βοιωτοῖς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἕ', 'sui.'], ['ὁ', 'the'], ['ὅς', 'this, that;']])">οἱ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['δέ', 'but']])">δ’</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἄλλος', 'alius, another, one besides']])">ἄλλοι</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['προστίθημι', 'to put to']])">προσετίθεντο</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">κατεκοσμοῦντο</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πᾶς', 'all, the whole']])">πάντες</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['εἶμι', 'to go'], ['εἰμί', 'I have'], ['εἰς', 'into, to c. acc.']])">εἰς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τήν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἐκεῖνος', 'the person there, that person'], ['κενόω', 'to empty out, drain']])">ἐκείνου</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['γνώμη', 'a means of knowing, a mark, token']])">γνώμην</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὑπό', 'from under, by, c. gen. under, c. dat., towards c. acc.']])">ὑπὸ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['μέγεθος', 'greatness, magnitude, size, height, stature']])">μεγέθους</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['αὐτός', 'self'], ['αὐτοῦ', 'at the very place, just here, just there']])">αὐτοῦ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τῆς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['δύναμις', 'power, might, strength']])">δυνάμεως.</span><span> </span>
+</span><br>
+	<span onclick="updateHelper(event, 0,[])">Φάβιος</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['δέ', 'but']])">δὲ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τὸ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καθά', 'according as, just as'], ['καθό', 'in so far as, according as'], ['κατά', 'down, downwards, with gen. or acc.']])">καθ’</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['αὐτός', 'self']])">αὐτὸν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἀσφαλής', 'not liable to fall, immoveable, steadfast, firm']])">ἀσφαλὴς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['εἰμί', 'I have'], ['οὖν', 'really, at all events']])">ὢν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἀναμάρτητος', 'without missing, unfailing, unerring']])">ἀναμάρτητος</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the'], ['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;'], ['τῷ', 'therefore, in this wise, thereupon']])">τῷ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πρός', 'motion from']])">πρὸς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τὸ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['κωλύω', 'to let, hinder, check, prevent']])">κωλύειν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἕτερος', 'one of the']])">ἑτέρους</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἀδύνατος', 'unable']])">ἀδυνάτῳ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['φαίνω', 'to bring to light, make to appear']])">φαίνεται</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['λείπω', 'to leave, quit']])">λειπόμενος.</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['οὐ', 'No translation available.; why no, âcertainly not; for not; for in no manner; No translation available.; I suppose not; no truly; no truly, nay verily; not surely, not verily; nevertheless, notwithstanding, yet, still; not however; not; nowhere; not; never yet at any time']])">οὐ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['γάρ', 'for']])">γὰρ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἄν', 'No translation available.; No translation available.'], ['ἀνά', 'up, upon'], ['ἐάν', 'if haply']])">ἂν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['τοσοῦτος', 'so large, so tall']])">τοσαύταις</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['συμφορά', 'an event, circumstance, chance, hap']])">συμφοραῖς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['χράω', 'to fall upon, attack, assail; to furnish what is needful']])">ἐχρήσαντο</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Ῥωμαῖοι</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Φαβίου</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['Πάρος', 'Paros'], ['παρά', 'from the side of, c. gen., beside, alongside of, c. dat., to the side of, motion alongside of, c. acc.'], ['πηρός', 'disabled in a limb, maimed']])">παρ’</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['αὐτός', 'self']])">αὐτοῖς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὅσος', 'quantus']])">ὅσον</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Ἀθήνησι</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Περικλέους</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['δύναμαι', 'to be able, capable, strong enough']])">δυνηθέντος.</span><span> </span>
+</span><br>
+<span class="line">
+		<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['μείς', 'a month'], ['μήν', 'now verily, full surely']])">μὴν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τήν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['γε', 'at least, at any rate']])">γε</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πρός', 'motion from']])">πρὸς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['χρῆμα', 'a thing that one uses']])">χρήματα</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['μεγαλοφροσύνη', 'greatness of mind']])">μεγαλοφροσύνην</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the'], ['ὅς', 'this, that;']])">ὁ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['μέν', 'on the one hand, on the other hand']])">μὲν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the'], ['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;'], ['τῷ', 'therefore, in this wise, thereupon']])">τῷ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['μηδείς', 'and not one']])">μηδὲν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['λαμβάνω', 'to take']])">λαβεῖν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['παρά', 'from the side of, c. gen., beside, alongside of, c. dat., to the side of, motion alongside of, c. acc.'], ['πηρός', 'disabled in a limb, maimed']])">παρὰ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τῶν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['δίδωμι', 'to give']])">διδόντων,</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the'], ['ὅς', 'this, that;']])">ὁ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['δέ', 'but']])">δὲ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the'], ['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;'], ['τῷ', 'therefore, in this wise, thereupon']])">τῷ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['προίημι', 'to send before, send on']])">προέσθαι</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πολύς', 'many']])">πολλὰ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τοῖς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['δέω', 'to bind, tie, fetter; to lack, miss, stand in need of']])">δεομένοις</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἐπιδείκνυμι', 'to exhibit as a specimen']])">ἐπεδείξατο,</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['λύω', 'to loose']])">λυσάμενος</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τοῖς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἴδιος', 'one\'s own, pertaining to oneself'], ['ἰδίω', 'to sweat']])">ἰδίοις</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['χρῆμα', 'a thing that one uses']])">χρήμασι</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τοὺς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['αἰχμάλωτος', 'taken by the spear, captive to one\'s spear, taken prisoner']])">αἰχμαλώτους.</span><span> </span>
+</span><br>
+	<span onclick="updateHelper(event, 0,[['πλέω', 'to sail, go by sea'], ['πλήν', 'more than']])">πλὴν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['οὗτος', 'this']])">τούτων</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['μέν', 'on the one hand, on the other hand']])">μὲν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['οὐ', 'No translation available.; why no, âcertainly not; for not; for in no manner; No translation available.; I suppose not; no truly; no truly, nay verily; not surely, not verily; nevertheless, notwithstanding, yet, still; not however; not; nowhere; not; never yet at any time']])">οὐ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πολύς', 'many']])">πολὺς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἐάν', 'if haply'], ['εἰμί', 'I have'], ['ἤν', 'see! see there! lo!'], ['ἠμί', 'I say']])">ἦν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἀριθμός', 'number']])">ἀριθμός,</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἄλλος', 'alius, another, one besides'], ['ἀλλά', 'otherwise, but'], ['ἀναλάζομαι', 'to take again']])">ἀλλ’</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὅσος', 'quantus']])">ὅσον</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἕξ', 'six']])">ἓξ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['τάλαντον', 'a balance']])">τάλαντα·</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Περικλῆς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['δέ', 'but']])">δ’</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['οὐ', 'No translation available.; why no, âcertainly not; for not; for in no manner; No translation available.; I suppose not; no truly; no truly, nay verily; not surely, not verily; nevertheless, notwithstanding, yet, still; not however; not; nowhere; not; never yet at any time']])">οὐκ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἄν', 'No translation available.; No translation available.'], ['ἀνά', 'up, upon'], ['ἐάν', 'if haply']])">ἂν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἴσος', 'equal to, the same as'], ['ἴσως', 'equally, in like manner'], ['ἰσόω', 'to make equal']])">ἴσως</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['εἶπον', 'to speak, say']])">εἴποι</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τις</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὅσος', 'quantus']])">ὅσα</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['παρά', 'from the side of, c. gen., beside, alongside of, c. dat., to the side of, motion alongside of, c. acc.'], ['πηρός', 'disabled in a limb, maimed']])">παρὰ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['σύμμαχος', 'fighting along with, allied with'], ['συμμαχέω', 'to be an ally, to be in alliance']])">συμμάχων</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['βασιλεύς', 'a king, chief']])">βασιλέων</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὠφελέω', 'to help, aid, assist, succour, to be of use']])">ὠφελεῖσθαι</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['θεραπεύω', 'to be an attendant, do service']])">θεραπεύεσθαι</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πάρειμι', 'sum; ibo'], ['πηρός', 'disabled in a limb, maimed']])">παρόν,</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τῆς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['δύναμις', 'power, might, strength']])">δυνάμεως</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['δίδωμι', 'to give']])">διδούσης,</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">ἀδωρότατον</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἑαυτοῦ', 'itself, absolutely']])">ἑαυτὸν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καθαρός', 'clear of dirt, clean, spotless, unsoiled']])">καθαρώτατον</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['φυλάσσω', 'to keep watch and ward, keep guard'], ['φυλάζω', 'to divide into tribes']])">ἐφύλαξεν.</span><span> </span>
+</span><br>
+<span class="line">
+	</span><br>
+	<span onclick="updateHelper(event, 0,[['ἔργνυμι', 'to confine'], ['ἔργον', 'work']])">ἔργων</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['γε', 'at least, at any rate']])">γε</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['μείς', 'a month'], ['μήν', 'now verily, full surely']])">μὴν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['μέγεθος', 'greatness, magnitude, size, height, stature']])">μεγέθεσι</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ναός', 'the dwelling of a god, a temple'], ['ναῦς', 'a ship']])">ναῶν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['κατασκευάζω', 'to equip'], ['κατασκευή', 'preparation']])">κατασκευαῖς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['οἰκοδόμημα', 'a building, structure']])">οἰκοδομημάτων,</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἐξ', 'No translation available.'], ['ἐκ', 'from out of']])">ἐξ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὅς', 'this, that;']])">ὧν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['κοσμέω', 'to order, arrange']])">ἐκόσμησεν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the'], ['ὅς', 'this, that;']])">ὁ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Περικλῆς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τὰς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Ἀθήνας,</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['οὐ', 'No translation available.; why no, âcertainly not; for not; for in no manner; No translation available.; I suppose not; no truly; no truly, nay verily; not surely, not verily; nevertheless, notwithstanding, yet, still; not however; not; nowhere; not; never yet at any time']])">οὐκ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἄξιος', 'weighing as much'], ['ἄγνυμι', 'to break, shiver'], ['ἄγω', 'to lead']])">ἄξιον</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁμός', 'one and the same, common, joint'], ['ὁμόω', 'to unite'], ['ὁμοῦ', 'at the same place, together']])">ὁμοῦ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πάντῃ', 'every way, on every side'], ['πᾶς', 'all, the whole']])">πάντα</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the'], ['τίς', 'who? which?']])">τὰ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πρό', 'before']])">πρὸ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τῶν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Καισάρων</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['φιλοτίμημα', 'an act of ambition']])">φιλοτιμήματα</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τῆς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">Ῥώμης</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['παραβάλλω', 'to throw beside']])">παραβαλεῖν,</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἄλλος', 'alius, another, one besides'], ['ἀλλά', 'otherwise, but'], ['ἀναλάζομαι', 'to take again']])">ἀλλ’</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἔξοχος', 'standing out']])">ἔξοχόν</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['τίς', 'who? which?'], ['τις', 'any one, any thing, some one, some thing;']])">τι</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πρός', 'motion from']])">πρὸς</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἐκεῖνος', 'the person there, that person']])">ἐκεῖνα</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[])">ἀσύγκριτον</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the'], ['ὅς', 'this, that;']])">ἡ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['οὗτος', 'this']])">τούτων</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ἔχω', 'to have']])">ἔσχε</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['μεγαλοεργία', 'magnificence']])">μεγαλουργία</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['καί', 'and']])">καὶ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['μεγαλοπρέπεια', 'the character of a']])">μεγαλοπρέπεια</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['ὁ', 'the']])">τὸ</span><span> </span>
+	<span onclick="updateHelper(event, 0,[['πρωτεῖον', 'the chief rank, first place']])">πρωτεῖον.</span><span> </span>
+</span><br>
