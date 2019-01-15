@@ -3,19 +3,44 @@ var current = 0;
 var forceDisplayOfTitleOnScroll = false;
 
 function updateScrollPosition() {
-  var storageName = titleElements[0] + titleElements[1] + "ScrollPosition";
-  var scrollPosition = localStorage.getItem(storageName);
+  var book = titleElements[0] + titleElements[1];
+  var path = window.location.pathname;
+  var page = path.split("/").pop();
+  console.log(page)
+
+  var bookmarkedPageFieldName = book + "Page";
+  var bookmarkedPage = localStorage.getItem(bookmarkedPageFieldName);
+  if (bookmarkedPage == null) {
+    localStorage.setItem(bookmarkedPageFieldName, page);
+  }
+
+  var pageOfBook = page.replace(".html", "");
+  var positionOnPage = pageOfBook + "ScrollPosition";
+
+  var scrollPosition = localStorage.getItem(positionOnPage);
   if (scrollPosition == null) {
     scrollPosition = window.pageYOffset;
-    localStorage.setItem(storageName, scrollPosition);
+    localStorage.setItem(positionOnPage, scrollPosition);
+    return;
   }
-  window.scrollTo(0, scrollPosition)
+
+  if (bookmarkedPage == page) {
+    window.scrollTo(0, scrollPosition)
+    return;
+  }
+  window.location = bookmarkedPage;
 }
 
 function storeScrollPosition() {
-  var storageName = titleElements[0] + titleElements[1] + "ScrollPosition";
+  var book = titleElements[0] + titleElements[1];
+  var path = window.location.pathname;
+  var page = path.split("/").pop();
+  localStorage.setItem(book + "Page", page);
+
+  var pageOfBook = page.replace(".html", "");
+  var positionOnPage = pageOfBook + "ScrollPosition";
   scrollPosition = window.pageYOffset;
-  localStorage.setItem(storageName, scrollPosition);
+  localStorage.setItem(positionOnPage, scrollPosition);
 }
 
 function showNextOnHelper(evt) {
@@ -68,6 +93,8 @@ function updateHelper(evt, lineNumber, translationsForWord) {
     transCount.textContent = "1/" + translations.length;
     helper.appendChild(transCount);
   }
+
+  storeScrollPosition();
 }
 
 function showTitle(lineNumber) {
@@ -104,5 +131,4 @@ if ('serviceWorker' in navigator) {
 }
 
 window.onload = updateScrollPosition;
-setInterval(storeScrollPosition, 10000);
 

@@ -8,6 +8,10 @@ var urlsToCache = [
   'atobAndBtoaTogether.min.js',
 ];
 
+for (var i = 2; i <= 7; i++) {
+  urlsToCache.push("Xenophon_Anabasis_" + i + ".html");
+}
+
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(

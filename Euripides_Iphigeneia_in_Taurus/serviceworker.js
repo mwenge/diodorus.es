@@ -8,6 +8,10 @@ var urlsToCache = [
   'atobAndBtoaTogether.min.js',
 ];
 
+for (var i = 2; i <= %BOOKS%; i++) {
+  urlsToCache.push("Euripides_Iphigeneia in Taurus_" + i + ".html");
+}
+
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(

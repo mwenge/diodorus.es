@@ -83,14 +83,17 @@ quote[lang="greek"]::before, quote[lang="greek"]::after {
 .heading {
   font-size: 6vw;
 }
-.line, .prose-line, .heading {
+.para {
+  display: inline-block;
+}
+.line, .para, .heading {
   margin-left: 5vw;
   user-select: none;
 }
 .line {
   font-size: 4.2vw;
 }
-.speaker {
+.speaker, .chapter {
   margin-top: 0.4vh;
   position: absolute;
   left: 2px;

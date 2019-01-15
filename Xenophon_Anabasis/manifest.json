@@ -13,7 +13,7 @@
             "sizes": "512x512"
             }
         ],
-    "start_url": "%AUTHOR_FILENAME%_%TITLE_FILENAME%.html",
+    "start_url": "Xenophon_Anabasis.html",
     "background_color": "ivory",
     "display": "standalone",
     "scope": ".",
