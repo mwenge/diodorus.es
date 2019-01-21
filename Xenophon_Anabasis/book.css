@@ -31,7 +31,7 @@ quote[lang="greek"]::before, quote[lang="greek"]::after {
 .line-ref {
   font-weight: bold;
 }
-.comment {
+.parallel_translation, .comment {
   display: none;
   position:fixed;
   z-index: 250;
@@ -81,7 +81,7 @@ quote[lang="greek"]::before, quote[lang="greek"]::after {
   font-size: 5vw;
 }
 head, .heading {
-  font-size: 6vw; !important
+  font-size: 6vw;
 }
 .para {
   display: inline-block;
@@ -125,5 +125,5 @@ span {
   font-size: 3vw;
 }
 .translation {
-  font-size: 5vw;
+  font-size: 5vw !important;
 }
