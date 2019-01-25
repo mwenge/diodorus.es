@@ -49,7 +49,7 @@ function showNextOnHelper(evt) {
     current = 0;
   }
   var translation = translations[current];
-  var innerHTML = "<span class=\"helper\"><span style='font-weight: bold; font-family:\"GFS Didot\"'>"
+  var innerHTML = "<span><span style='font-weight: bold; font-family:\"GFS Didot\"'>"
     + translation[0] + ",</span> " + translation[1] + "</span>";
   helper.innerHTML = innerHTML;
   if (translations.length > 1) {
@@ -85,10 +85,9 @@ function updateHelper(evt, lineNumber, translationsForWord) {
 
   showTitle(lineNumber);
 
-
   translations = translationsForWord;
   var translation = translations[0];
-  var innerHTML = "<span class=\"helper\"><span style='font-weight: bold; font-family:\"GFS Didot\"'>"
+  var innerHTML = "<span><span style='font-weight: bold; font-family:\"GFS Didot\"'>"
     + translation[0] + ",</span> " + translation[1] + "</span>";
   helper.innerHTML = innerHTML;
   helper.style.display = "block";
@@ -104,6 +103,7 @@ function updateHelper(evt, lineNumber, translationsForWord) {
 }
 
 function showTitle(lineNumber) {
+  lineNumber = lineNumber.replace(/\./g, '');
   var page = parseInt(parseInt(lineNumber, 10) / 100, 10);
   if (isNaN(page)) {
     return;
@@ -153,4 +153,3 @@ if ('serviceWorker' in navigator) {
 }
 
 window.onload = updateScrollPosition;
-
