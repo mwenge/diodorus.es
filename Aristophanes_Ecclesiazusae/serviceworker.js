@@ -8,7 +8,7 @@ var urlsToCache = [
   'atobAndBtoaTogether.min.js',
 ];
 
-for (var i = 2; i <= %BOOKS%; i++) {
+for (var i = 2; i <= 1; i++) {
   urlsToCache.push("Aristophanes_Ecclesiazusae_" + i + ".html");
 }
 

@@ -1,50 +1,42 @@
 <!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=GFS+Didot">
 <style>
   body {
-    background-color: ivory;
+    background-color: #101010;
   }
   .subtitle {
     font-size: 5vw;
   }
   .search {
     background-color: purple;
-    border-right: white 3px solid;
-    display: inline-block;
-    position: absolute;
     font-family: 'GFS Didot';
     font-size: 5vh;
     color: white;
-    left: 0;
-    width: 10%;
-    position: fixed;
     border: white 3px solid;
     text-align: center;
-    box-shadow: 0px 1px 0.5px 0px rgba(194, 191, 201, 0.92);
+    display: inline-block;
+    width: 15%;
+    padding: 2px;
+    box-sizing: border-box;
   }
   .masthead-container {
     position: fixed;
-    width: 100%;
     top: 0px;
     left: 0px;
     z-index: 100;
-    box-shadow: 0px 1px 0.5px 0px rgba(194, 191, 201, 0.92);
   }
   .masthead {
-    position: fixed;
-    left: 10%;
-    width: 90%;
+    width: 85%;
+    display: inline-block;
     text-align: center;
-    font-family: 'Lato';
+    font-family: 'Cinzel', serif;
     font-size: 5vh;
     background-color: black;
     color: white;
     border: white 3px solid;
-    display: inline-block;
-    box-shadow: 0px 1px 0.5px 0px rgba(194, 191, 201, 0.92);
   }
   #container {
     display: inline-block;
@@ -54,13 +46,15 @@
     margin-left: 2%;
     margin-top: 2%;
     display: inline-block;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 6px rgba(50, 50, 50, 0.5);
     border-radius: 4px;
     width: 100%;
     vertical-align: middle;
     font-size: 8vw;
-    font-family: 'Lato';
+    font-family: 'Cinzel', serif;
     overflow-wrap: word-break;
+    background-color: black;
+    color: ivory;
   }
   textarea:focus, input:focus{
     outline: none;
@@ -87,13 +81,14 @@
   </script>
 <body>
   <div class="masthead-container">
-    <div class="search">Σ</div><input type="search" class="masthead" id="search" placeholder="Greek Literature"></input>
+    <div class="search">Σ</div><input type="search" class="masthead" id="search" placeholder="Search"></input>
   </div>
   <script>
     document.getElementById('search').oninput = updateSearch;
   </script>
 <br><br><br>
 <div id="container">
+  <div class='item' style="font-size: 4vw;">Download and read Greek Classics with built-in translation and commentary:<br><video src="demo.mp4" controls width="50%" height="25%"></video><video src="demo.mp4" controls width="50%" height="25%"></video><br><span class='subtitle'></span></div>
 <div class='item' onclick='window.location = "Sophocles_Philoctetes/Sophocles_Philoctetes.html"'>Sophocles<br><i>Philoctetes</i><br><span class='subtitle'></span></div>
 <div class='item' onclick='window.location = "Aristophanes_Birds/Aristophanes_Birds.html"'>Aristophanes<br><i>Birds</i><br><span class='subtitle'></span></div>
 <div class='item' onclick='window.location = "Sophocles_Electra/Sophocles_Electra.html"'>Sophocles<br><i>Electra</i><br><span class='subtitle'>With Commentary</span></div>
@@ -133,95 +128,3 @@
 <div class='item' onclick='window.location = "Euripides_Phoenician_Women/Euripides_Phoenician_Women.html"'>Euripides<br><i>Phoenician Women</i><br><span class='subtitle'></span></div>
 <div class='item' onclick='window.location = "Sophocles_Antigone/Sophocles_Antigone.html"'>Sophocles<br><i>Antigone</i><br><span class='subtitle'>With Commentary</span></div>
 <div class='item' onclick='window.location = "Aristophanes_Clouds/Aristophanes_Clouds.html"'>Aristophanes<br><i>Clouds</i><br><span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Diodorus_Historical_Library/Diodorus_Historical_Library.html"'>Diodorus<br><i>Historical Library</i><br>
-<span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Xenophon_Cyropaedia/Xenophon_Cyropaedia.html"'>Xenophon<br><i>Cyropaedia</i><br>
-<span class='subtitle'>With Translation</span></div>
-<div class='item' onclick='window.location = "Xenophon_Memorabilia/Xenophon_Memorabilia.html"'>Xenophon<br><i>Memorabilia</i><br>
-<span class='subtitle'>With Translation</span></div>
-<div class='item' onclick='window.location = "Theophrastus_Characters/Theophrastus_Characters.html"'>Theophrastus<br><i>Characters</i><br>
-<span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "New_Testament_Matthew/New_Testament_Matthew.html"'>New Testament<br><i>Matthew</i><br>
-<span class='subtitle'>With Translation</span></div>
-<div class='item' onclick='window.location = "New_Testament_Mark/New_Testament_Mark.html"'>New Testament<br><i>Mark</i><br>
-<span class='subtitle'>With Translation</span></div>
-<div class='item' onclick='window.location = "New_Testament_Luke/New_Testament_Luke.html"'>New Testament<br><i>Luke</i><br>
-<span class='subtitle'>With Translation</span></div>
-<div class='item' onclick='window.location = "New_Testament_John/New_Testament_John.html"'>New Testament<br><i>John</i><br>
-<span class='subtitle'>With Translation</span></div>
-<div class='item' onclick='window.location = "Epictetus_Discourses/Epictetus_Discourses.html"'>Epictetus<br><i>Discourses</i><br>
-<span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Epictetus_Enchiridion/Epictetus_Enchiridion.html"'>Epictetus<br><i>Enchiridion</i><br>
-<span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Aristotle_Rhetoric/Aristotle_Rhetoric.html"'>Aristotle<br><i>Rhetoric</i><br>
-<span class='subtitle'>With Translation</span></div>
-<div class='item' onclick='window.location = "Aristotle_Metaphysics/Aristotle_Metaphysics.html"'>Aristotle<br><i>Metaphysics</i><br>
-<span class='subtitle'>With Translation</span></div>
-<div class='item' onclick='window.location = "Aristotle_Constitution_of_the_Athenians/Aristotle_Constitution_of_the_Athenians.html"'>Aristotle<br><i>Constitution of the Athenians</i><br>
-<span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Herodotus_Histories/Herodotus_Histories.html"'>Herodotus<br><i>Histories</i><br>
-<span class='subtitle'>With Translation</span></div>
-<div class='item' onclick='window.location = "Aristotle_Politics/Aristotle_Politics.html"'>Aristotle<br><i>Politics</i><br>
-<span class='subtitle'>With Translation</span></div>
-<div class='item' onclick='window.location = "Plato_Letters/Plato_Letters.html"'>Plato<br><i>Letters</i><br>
-<span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Aristotle_Economics/Aristotle_Economics.html"'>Aristotle<br><i>Economics</i><br>
-<span class='subtitle'>With Translation</span></div>
-<div class='item' onclick='window.location = "Polybius_Histories/Polybius_Histories.html"'>Polybius<br><i>Histories</i><br>
-<span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Aristotle_Eudemian_Ethics/Aristotle_Eudemian_Ethics.html"'>Aristotle<br><i>Eudemian Ethics</i><br>
-<span class='subtitle'>With Translation</span></div>
-<div class='item' onclick='window.location = "Aristotle_Nicomachean_Ethics/Aristotle_Nicomachean_Ethics.html"'>Aristotle<br><i>Nicomachean Ethics</i><br>
-<span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Xenophon_Anabasis/Xenophon_Anabasis.html"'>Xenophon<br><i>Anabasis</i><br>
-<span class='subtitle'>With Translation</span></div>
-<div class='item' onclick='window.location = "Xenophon_Hellenica/Xenophon_Hellenica.html"'>Xenophon<br><i>Hellenica</i><br>
-<span class='subtitle'>With Translation</span></div>
-<div class='item' onclick='window.location = "Pausanias_Description_of_Greece/Pausanias_Description_of_Greece.html"'>Pausanias<br><i>Description of Greece</i><br>
-<span class='subtitle'>With Translation</span></div>
-<div class='item' onclick='window.location = "Diodorus_Historical_Library/Diodorus_Historical_Library.html"'>Diodorus<br><i>Historical Library</i><br>
-<span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Xenophon_Cyropaedia/Xenophon_Cyropaedia.html"'>Xenophon<br><i>Cyropaedia</i><br>
-<span class='subtitle'>With Translation</span></div>
-<div class='item' onclick='window.location = "Xenophon_Memorabilia/Xenophon_Memorabilia.html"'>Xenophon<br><i>Memorabilia</i><br>
-<span class='subtitle'>With Translation</span></div>
-<div class='item' onclick='window.location = "Theophrastus_Characters/Theophrastus_Characters.html"'>Theophrastus<br><i>Characters</i><br>
-<span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "New_Testament_Matthew/New_Testament_Matthew.html"'>New Testament<br><i>Matthew</i><br>
-<span class='subtitle'>With Translation</span></div>
-<div class='item' onclick='window.location = "New_Testament_Mark/New_Testament_Mark.html"'>New Testament<br><i>Mark</i><br>
-<span class='subtitle'>With Translation</span></div>
-<div class='item' onclick='window.location = "New_Testament_Luke/New_Testament_Luke.html"'>New Testament<br><i>Luke</i><br>
-<span class='subtitle'>With Translation</span></div>
-<div class='item' onclick='window.location = "New_Testament_John/New_Testament_John.html"'>New Testament<br><i>John</i><br>
-<span class='subtitle'>With Translation</span></div>
-<div class='item' onclick='window.location = "Epictetus_Discourses/Epictetus_Discourses.html"'>Epictetus<br><i>Discourses</i><br>
-<span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Epictetus_Enchiridion/Epictetus_Enchiridion.html"'>Epictetus<br><i>Enchiridion</i><br>
-<span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Aristotle_Rhetoric/Aristotle_Rhetoric.html"'>Aristotle<br><i>Rhetoric</i><br>
-<span class='subtitle'>With Translation</span></div>
-<div class='item' onclick='window.location = "Aristotle_Metaphysics/Aristotle_Metaphysics.html"'>Aristotle<br><i>Metaphysics</i><br>
-<span class='subtitle'>With Translation</span></div>
-<div class='item' onclick='window.location = "Aristotle_Constitution_of_the_Athenians/Aristotle_Constitution_of_the_Athenians.html"'>Aristotle<br><i>Constitution of the Athenians</i><br>
-<span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Herodotus_Histories/Herodotus_Histories.html"'>Herodotus<br><i>Histories</i><br>
-<span class='subtitle'>With Translation</span></div>
-<div class='item' onclick='window.location = "Aristotle_Politics/Aristotle_Politics.html"'>Aristotle<br><i>Politics</i><br>
-<span class='subtitle'>With Translation</span></div>
-<div class='item' onclick='window.location = "Plato_Letters/Plato_Letters.html"'>Plato<br><i>Letters</i><br>
-<span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Aristotle_Economics/Aristotle_Economics.html"'>Aristotle<br><i>Economics</i><br>
-<span class='subtitle'>With Translation</span></div>
-<div class='item' onclick='window.location = "Polybius_Histories/Polybius_Histories.html"'>Polybius<br><i>Histories</i><br>
-<span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Aristotle_Eudemian_Ethics/Aristotle_Eudemian_Ethics.html"'>Aristotle<br><i>Eudemian Ethics</i><br>
-<span class='subtitle'>With Translation</span></div>
-<div class='item' onclick='window.location = "Aristotle_Nicomachean_Ethics/Aristotle_Nicomachean_Ethics.html"'>Aristotle<br><i>Nicomachean Ethics</i><br>
-<span class='subtitle'></span></div>
-<div class='item' onclick='window.location = "Xenophon_Anabasis/Xenophon_Anabasis.html"'>Xenophon<br><i>Anabasis</i><br>
-<span class='subtitle'>With Translation</span></div>
-<div class='item' onclick='window.location = "Xenophon_Hellenica/Xenophon_Hellenica.html"'>Xenophon<br><i>Hellenica</i><br>
-<span class='subtitle'>With Translation</span></div>
-<div class='item' onclick='window.location = "Pausanias_Description_of_Greece/Pausanias_Description_of_Greece.html"'>Pausanias<br><i>Description of Greece</i><br>
-<span class='subtitle'>With Translation</span></div>

@@ -1,6 +1,6 @@
 var translations = [];
+var translatedSection = null;
 var current = 0;
-var forceDisplayOfTitleOnScroll = false;
 
 function updateScrollPosition() {
   var book = titleElements[0] + titleElements[1];
@@ -49,7 +49,7 @@ function showNextOnHelper(evt) {
     current = 0;
   }
   var translation = translations[current];
-  var innerHTML = "<span class=\"translation\"><span style='font-weight: bold; font-family:\"GFS Didot\"'>"
+  var innerHTML = "<span><span style='font-weight: bold; font-family:\"GFS Didot\"'>"
     + translation[0] + ",</span> " + translation[1] + "</span>";
   helper.innerHTML = innerHTML;
   if (translations.length > 1) {
@@ -64,6 +64,12 @@ function updateHelper(evt, lineNumber, translationsForWord) {
   if (typeof updateHelper.currentWord === 'object') {
     updateHelper.currentWord.style.textDecoration = "none";
   }
+  
+  if (evt.target == updateHelper.currentWord) {
+    displayTranslation(lineNumber);
+    return;
+  }
+
   evt.target.style.textDecoration = "underline red";
   updateHelper.currentWord = evt.target;
 
@@ -79,10 +85,9 @@ function updateHelper(evt, lineNumber, translationsForWord) {
 
   showTitle(lineNumber);
 
-
   translations = translationsForWord;
   var translation = translations[0];
-  var innerHTML = "<span class=\"translation\"><span style='font-weight: bold; font-family:\"GFS Didot\"'>"
+  var innerHTML = "<span><span style='font-weight: bold; font-family:\"GFS Didot\"'>"
     + translation[0] + ",</span> " + translation[1] + "</span>";
   helper.innerHTML = innerHTML;
   helper.style.display = "block";
@@ -98,6 +103,7 @@ function updateHelper(evt, lineNumber, translationsForWord) {
 }
 
 function showTitle(lineNumber) {
+  lineNumber = lineNumber.replace(/\./g, '');
   var page = parseInt(parseInt(lineNumber, 10) / 100, 10);
   if (isNaN(page)) {
     return;
@@ -108,6 +114,25 @@ function showTitle(lineNumber) {
   var innerHTML = "<span class=\"title\">" + titleToShow + "</span>";
   masthead.innerHTML = innerHTML;
 }
+
+function displayTranslation(line) {
+  if (translatedSection) {
+    translatedSection.style.backgroundColor = "";
+  }
+  translatedSection = document.getElementById(line);
+  if (!translatedSection) {
+    return;
+  }
+  translatedSection.style.backgroundColor = "yellow";
+  parallel_translation.innerHTML = atobUTF8(translation[line]);
+  parallel_translation.style.display = "block";
+}
+
+function hideTranslation() {
+  translatedSection.style.backgroundColor = "";
+  parallel_translation.style.display = "none";
+}
+
 
 function displayComment(line) {
   comment.innerHTML = atobUTF8(commentary[line]);
@@ -131,4 +156,3 @@ if ('serviceWorker' in navigator) {
 }
 
 window.onload = updateScrollPosition;
-
