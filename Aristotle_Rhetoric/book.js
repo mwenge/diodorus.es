@@ -120,6 +120,9 @@ function displayTranslation(line) {
     translatedSection.style.backgroundColor = "";
   }
   translatedSection = document.getElementById(line);
+  if (!translatedSection) {
+    return;
+  }
   translatedSection.style.backgroundColor = "yellow";
   parallel_translation.innerHTML = atobUTF8(translation[line]);
   parallel_translation.style.display = "block";
