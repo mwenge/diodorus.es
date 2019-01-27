@@ -52,6 +52,7 @@ translation {
   font-family: 'Open Sans', sans-serif;
 }
 .comment-indicator {
+  font-style: bold;
   float: right;
   display: none;
   z-index: 200;
