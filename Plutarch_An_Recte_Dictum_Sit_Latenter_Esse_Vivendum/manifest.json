@@ -1,0 +1,21 @@
+{
+    "short_name": "An Recte Dictum Sit Latenter Esse Vivendum",
+    "name": "Plutarch : An Recte Dictum Sit Latenter Esse Vivendum",
+    "icons": [
+        {
+            "src": "images/icons-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+            },
+        {
+            "src": "images/icons-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+            }
+        ],
+    "start_url": "Plutarch_An_Recte_Dictum_Sit_Latenter_Esse_Vivendum.html",
+    "background_color": "ivory",
+    "display": "standalone",
+    "scope": ".",
+    "theme_color": "ivory"
+}

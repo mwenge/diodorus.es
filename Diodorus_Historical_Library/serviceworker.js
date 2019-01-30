@@ -8,7 +8,7 @@ var urlsToCache = [
   'atobAndBtoaTogether.min.js',
 ];
 
-for (var i = 2; i <= 17; i++) {
+for (var i = 2; i <= 20; i++) {
   urlsToCache.push("Diodorus_Historical Library_" + i + ".html");
 }
 

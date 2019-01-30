@@ -1,0 +1,21 @@
+{
+    "short_name": "Comparison of Timoleon and Aemilius",
+    "name": "Plutarch : Comparison of Timoleon and Aemilius",
+    "icons": [
+        {
+            "src": "images/icons-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+            },
+        {
+            "src": "images/icons-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+            }
+        ],
+    "start_url": "Plutarch_Comparison_of_Timoleon_and_Aemilius.html",
+    "background_color": "ivory",
+    "display": "standalone",
+    "scope": ".",
+    "theme_color": "ivory"
+}

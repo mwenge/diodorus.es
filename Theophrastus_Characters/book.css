@@ -111,7 +111,7 @@ head, .heading {
   left: 2px;
   font-size: 3.6vw;
 }
-.milestone[unit="section"] {
+.milestone {
   font-size: 2.2vw;
   vertical-align: super;
 }

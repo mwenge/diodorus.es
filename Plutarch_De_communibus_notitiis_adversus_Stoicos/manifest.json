@@ -1,0 +1,21 @@
+{
+    "short_name": "De communibus notitiis adversus Stoicos",
+    "name": "Plutarch : De communibus notitiis adversus Stoicos",
+    "icons": [
+        {
+            "src": "images/icons-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+            },
+        {
+            "src": "images/icons-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+            }
+        ],
+    "start_url": "Plutarch_De_communibus_notitiis_adversus_Stoicos.html",
+    "background_color": "ivory",
+    "display": "standalone",
+    "scope": ".",
+    "theme_color": "ivory"
+}
