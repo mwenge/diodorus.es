@@ -117,22 +117,28 @@ function showTitle(lineNumber) {
 
 function displayTranslation(line) {
   if (translatedSection) {
-    translatedSection.style.backgroundColor = "";
+    for (var i = 0; i < translatedSection.length; i++) {
+        translatedSection[i].style.backgroundColor = "";
+    }
   }
-  translatedSection = document.getElementById(line);
+  translatedSection = document.getElementsByClassName(line);
   if (!translatedSection) {
     return;
   }
   if (!translation.hasOwnProperty(line)) {
     return;
   }
-  translatedSection.style.backgroundColor = "yellow";
+  for (var i = 0; i < translatedSection.length; i++) {
+      translatedSection[i].style.backgroundColor = "yellow";
+  }
   parallel_translation.innerHTML = atobUTF8(translation[line]);
   parallel_translation.style.display = "block";
 }
 
 function hideTranslation() {
-  translatedSection.style.backgroundColor = "";
+  for (var i = 0; i < translatedSection.length; i++) {
+      translatedSection[i].style.backgroundColor = "";
+  }
   parallel_translation.style.display = "none";
 }
 
@@ -159,4 +165,5 @@ if ('serviceWorker' in navigator) {
 }
 
 window.onload = updateScrollPosition;
+var translation={}
 var translation={}
