@@ -51,6 +51,12 @@ translation {
   font-size: 4.2vw !important;
   font-family: 'Open Sans', sans-serif;
 }
+.navigator {
+  font-style: normal !important;
+  font-weight: bold;
+  z-index: 200;
+  font-size: 8vw;
+}
 .comment-indicator {
   font-style: normal !important;
   font-weight: bold;
