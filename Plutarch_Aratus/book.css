@@ -52,7 +52,8 @@ translation {
   font-family: 'Open Sans', sans-serif;
 }
 .comment-indicator {
-  font-style: bold !important;
+  font-style: normal !important;
+  font-weight: bold;
   float: right;
   display: none;
   z-index: 200;
@@ -141,3 +142,4 @@ span {
 .helper {
   font-size: 5vw !important;
 }
+<!--- Translation: ../perseus/processedtext/texts/2008.01/2008.01.0008.xml -->

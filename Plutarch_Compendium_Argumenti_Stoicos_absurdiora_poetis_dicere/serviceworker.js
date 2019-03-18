@@ -6,6 +6,12 @@ var urlsToCache = [
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
+  'GFSDidot.css',
+  'GFSDidot.ttf',
+  'OpenSans.css',
+  'OpenSans.ttf',
+  'Cinzel.css',
+  'Cinzel.ttf',
 ];
 
 for (var i = 2; i <= 6; i++) {

@@ -1,0 +1,21 @@
+{
+    "short_name": "Rape of Helen",
+    "name": "Colluthus : Rape of Helen",
+    "icons": [
+        {
+            "src": "images/icons-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+            },
+        {
+            "src": "images/icons-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+            }
+        ],
+    "start_url": "Colluthus_Rape_of_Helen.html",
+    "background_color": "ivory",
+    "display": "standalone",
+    "scope": ".",
+    "theme_color": "ivory"
+}
