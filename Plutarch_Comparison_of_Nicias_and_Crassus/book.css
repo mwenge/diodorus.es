@@ -126,7 +126,6 @@ head, .heading {
   font-size: 2.5vw;
 }
 .line-number {
-  margin-top: 0.8vh;
   float: right;
   font-size: 3vw;
   vertical-align: bottom;

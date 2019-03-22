@@ -1,0 +1,21 @@
+{
+    "short_name": "Epitome Rerum Romanorum",
+    "name": "Florus : Epitome Rerum Romanorum",
+    "icons": [
+        {
+            "src": "images/icons-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+            },
+        {
+            "src": "images/icons-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+            }
+        ],
+    "start_url": "Florus_Epitome_Rerum_Romanorum.html",
+    "background_color": "ivory",
+    "display": "standalone",
+    "scope": ".",
+    "theme_color": "ivory"
+}

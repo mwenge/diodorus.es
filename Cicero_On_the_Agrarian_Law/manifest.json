@@ -1,0 +1,21 @@
+{
+    "short_name": "On the Agrarian Law",
+    "name": "Cicero : On the Agrarian Law",
+    "icons": [
+        {
+            "src": "images/icons-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+            },
+        {
+            "src": "images/icons-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+            }
+        ],
+    "start_url": "Cicero_On_the_Agrarian_Law.html",
+    "background_color": "ivory",
+    "display": "standalone",
+    "scope": ".",
+    "theme_color": "ivory"
+}
