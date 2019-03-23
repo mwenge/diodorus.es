@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_Titus Flamininus';
+var CACHE_NAME = 'Plutarch_Titus_Flamininus';
 var urlsToCache = [
-  'Plutarch_Titus Flamininus.html',
+  'Plutarch_Titus_Flamininus.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 21; i++) {
-  urlsToCache.push("Plutarch_Titus Flamininus_" + i + ".html");
+  urlsToCache.push("Plutarch_Titus_Flamininus_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

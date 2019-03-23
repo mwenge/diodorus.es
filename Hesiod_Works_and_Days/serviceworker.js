@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Hesiod_Works and Days';
+var CACHE_NAME = 'Hesiod_Works_and_Days';
 var urlsToCache = [
-  'Hesiod_Works and Days.html',
+  'Hesiod_Works_and_Days.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -15,7 +15,7 @@ var urlsToCache = [
 ];
 
 for (var i = 2; i <= 1; i++) {
-  urlsToCache.push("Hesiod_Works and Days_" + i + ".html");
+  urlsToCache.push("Hesiod_Works_and_Days_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

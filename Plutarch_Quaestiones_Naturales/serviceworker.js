@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_Quaestiones Naturales';
+var CACHE_NAME = 'Plutarch_Quaestiones_Naturales';
 var urlsToCache = [
-  'Plutarch_Quaestiones Naturales.html',
+  'Plutarch_Quaestiones_Naturales.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 39; i++) {
-  urlsToCache.push("Plutarch_Quaestiones Naturales_" + i + ".html");
+  urlsToCache.push("Plutarch_Quaestiones_Naturales_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

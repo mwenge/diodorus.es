@@ -103,6 +103,9 @@ function updateHelper(evt, lineNumber, translationsForWord) {
 }
 
 function showTitle(lineNumber) {
+  if (Array.isArray(lineNumber)) {
+    lineNumber = lineNumber[0];
+  }
   lineNumber = lineNumber.replace(/\./g, '');
   var page = parseInt(parseInt(lineNumber, 10) / 100, 10);
   if (isNaN(page)) {

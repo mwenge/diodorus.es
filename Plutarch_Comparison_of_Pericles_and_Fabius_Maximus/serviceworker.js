@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_Comparison of Pericles and Fabius Maximus';
+var CACHE_NAME = 'Plutarch_Comparison_of_Pericles_and_Fabius_Maximus';
 var urlsToCache = [
-  'Plutarch_Comparison of Pericles and Fabius Maximus.html',
+  'Plutarch_Comparison_of_Pericles_and_Fabius_Maximus.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 3; i++) {
-  urlsToCache.push("Plutarch_Comparison of Pericles and Fabius Maximus_" + i + ".html");
+  urlsToCache.push("Plutarch_Comparison_of_Pericles_and_Fabius_Maximus_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

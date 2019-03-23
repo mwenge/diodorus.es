@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_Mulierum virtutes';
+var CACHE_NAME = 'Plutarch_Mulierum_virtutes';
 var urlsToCache = [
-  'Plutarch_Mulierum virtutes.html',
+  'Plutarch_Mulierum_virtutes.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 27; i++) {
-  urlsToCache.push("Plutarch_Mulierum virtutes_" + i + ".html");
+  urlsToCache.push("Plutarch_Mulierum_virtutes_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

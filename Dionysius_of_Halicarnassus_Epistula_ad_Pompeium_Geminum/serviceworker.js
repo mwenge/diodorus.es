@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Dionysius of Halicarnassus_Epistula ad Pompeium Geminum';
+var CACHE_NAME = 'Dionysius_of_Halicarnassus_Epistula_ad_Pompeium_Geminum';
 var urlsToCache = [
-  'Dionysius of Halicarnassus_Epistula ad Pompeium Geminum.html',
+  'Dionysius_of_Halicarnassus_Epistula_ad_Pompeium_Geminum.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 6; i++) {
-  urlsToCache.push("Dionysius of Halicarnassus_Epistula ad Pompeium Geminum_" + i + ".html");
+  urlsToCache.push("Dionysius_of_Halicarnassus_Epistula_ad_Pompeium_Geminum_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

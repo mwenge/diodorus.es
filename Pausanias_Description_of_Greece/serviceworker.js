@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Pausanias_Description of Greece';
+var CACHE_NAME = 'Pausanias_Description_of_Greece';
 var urlsToCache = [
-  'Pausanias_Description of Greece.html',
+  'Pausanias_Description_of_Greece.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 10; i++) {
-  urlsToCache.push("Pausanias_Description of Greece_" + i + ".html");
+  urlsToCache.push("Pausanias_Description_of_Greece_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Tryphiodorus_Taking of Ilios';
+var CACHE_NAME = 'Tryphiodorus_Taking_of_Ilios';
 var urlsToCache = [
-  'Tryphiodorus_Taking of Ilios.html',
+  'Tryphiodorus_Taking_of_Ilios.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -15,7 +15,7 @@ var urlsToCache = [
 ];
 
 for (var i = 2; i <= 1; i++) {
-  urlsToCache.push("Tryphiodorus_Taking of Ilios_" + i + ".html");
+  urlsToCache.push("Tryphiodorus_Taking_of_Ilios_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

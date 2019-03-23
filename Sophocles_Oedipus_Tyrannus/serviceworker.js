@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Sophocles_Oedipus Tyrannus';
+var CACHE_NAME = 'Sophocles_Oedipus_Tyrannus';
 var urlsToCache = [
-  'Sophocles_Oedipus Tyrannus.html',
+  'Sophocles_Oedipus_Tyrannus.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -15,7 +15,7 @@ var urlsToCache = [
 ];
 
 for (var i = 2; i <= 1; i++) {
-  urlsToCache.push("Sophocles_Oedipus Tyrannus_" + i + ".html");
+  urlsToCache.push("Sophocles_Oedipus_Tyrannus_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

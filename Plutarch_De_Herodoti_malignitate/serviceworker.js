@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_De Herodoti malignitate';
+var CACHE_NAME = 'Plutarch_De_Herodoti_malignitate';
 var urlsToCache = [
-  'Plutarch_De Herodoti malignitate.html',
+  'Plutarch_De_Herodoti_malignitate.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 43; i++) {
-  urlsToCache.push("Plutarch_De Herodoti malignitate_" + i + ".html");
+  urlsToCache.push("Plutarch_De_Herodoti_malignitate_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_De curiositate';
+var CACHE_NAME = 'Plutarch_De_curiositate';
 var urlsToCache = [
-  'Plutarch_De curiositate.html',
+  'Plutarch_De_curiositate.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 15; i++) {
-  urlsToCache.push("Plutarch_De curiositate_" + i + ".html");
+  urlsToCache.push("Plutarch_De_curiositate_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

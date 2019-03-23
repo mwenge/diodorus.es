@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_Platonicae quaestiones';
+var CACHE_NAME = 'Plutarch_Platonicae_quaestiones';
 var urlsToCache = [
-  'Plutarch_Platonicae quaestiones.html',
+  'Plutarch_Platonicae_quaestiones.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 10; i++) {
-  urlsToCache.push("Plutarch_Platonicae quaestiones_" + i + ".html");
+  urlsToCache.push("Plutarch_Platonicae_quaestiones_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

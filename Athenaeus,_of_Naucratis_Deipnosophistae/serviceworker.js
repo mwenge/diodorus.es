@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Athenaeus, of Naucratis_Deipnosophistae';
+var CACHE_NAME = 'Athenaeus,_of_Naucratis_Deipnosophistae';
 var urlsToCache = [
-  'Athenaeus, of Naucratis_Deipnosophistae.html',
+  'Athenaeus,_of_Naucratis_Deipnosophistae.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 5; i++) {
-  urlsToCache.push("Athenaeus, of Naucratis_Deipnosophistae_" + i + ".html");
+  urlsToCache.push("Athenaeus,_of_Naucratis_Deipnosophistae_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

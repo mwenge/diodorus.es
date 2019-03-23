@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Euripides_Iphigeneia in Aulis';
+var CACHE_NAME = 'Euripides_Iphigeneia_in_Aulis';
 var urlsToCache = [
-  'Euripides_Iphigeneia in Aulis.html',
+  'Euripides_Iphigeneia_in_Aulis.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -15,7 +15,7 @@ var urlsToCache = [
 ];
 
 for (var i = 2; i <= 1; i++) {
-  urlsToCache.push("Euripides_Iphigeneia in Aulis_" + i + ".html");
+  urlsToCache.push("Euripides_Iphigeneia_in_Aulis_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

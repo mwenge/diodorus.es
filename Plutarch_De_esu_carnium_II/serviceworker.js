@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_De esu carnium II';
+var CACHE_NAME = 'Plutarch_De_esu_carnium_II';
 var urlsToCache = [
-  'Plutarch_De esu carnium II.html',
+  'Plutarch_De_esu_carnium_II.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 7; i++) {
-  urlsToCache.push("Plutarch_De esu carnium II_" + i + ".html");
+  urlsToCache.push("Plutarch_De_esu_carnium_II_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

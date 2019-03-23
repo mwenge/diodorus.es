@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_De Alexandri magni fortuna aut virtute';
+var CACHE_NAME = 'Plutarch_De_Alexandri_magni_fortuna_aut_virtute';
 var urlsToCache = [
-  'Plutarch_De Alexandri magni fortuna aut virtute.html',
+  'Plutarch_De_Alexandri_magni_fortuna_aut_virtute.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 2; i++) {
-  urlsToCache.push("Plutarch_De Alexandri magni fortuna aut virtute_" + i + ".html");
+  urlsToCache.push("Plutarch_De_Alexandri_magni_fortuna_aut_virtute_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

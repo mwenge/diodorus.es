@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_An Recte Dictum Sit Latenter Esse Vivendum';
+var CACHE_NAME = 'Plutarch_An_Recte_Dictum_Sit_Latenter_Esse_Vivendum';
 var urlsToCache = [
-  'Plutarch_An Recte Dictum Sit Latenter Esse Vivendum.html',
+  'Plutarch_An_Recte_Dictum_Sit_Latenter_Esse_Vivendum.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 7; i++) {
-  urlsToCache.push("Plutarch_An Recte Dictum Sit Latenter Esse Vivendum_" + i + ".html");
+  urlsToCache.push("Plutarch_An_Recte_Dictum_Sit_Latenter_Esse_Vivendum_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_De liberis educandis';
+var CACHE_NAME = 'Plutarch_De_liberis_educandis';
 var urlsToCache = [
-  'Plutarch_De liberis educandis.html',
+  'Plutarch_De_liberis_educandis.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 20; i++) {
-  urlsToCache.push("Plutarch_De liberis educandis_" + i + ".html");
+  urlsToCache.push("Plutarch_De_liberis_educandis_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

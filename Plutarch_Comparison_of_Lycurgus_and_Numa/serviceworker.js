@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_Comparison of Lycurgus and Numa';
+var CACHE_NAME = 'Plutarch_Comparison_of_Lycurgus_and_Numa';
 var urlsToCache = [
-  'Plutarch_Comparison of Lycurgus and Numa.html',
+  'Plutarch_Comparison_of_Lycurgus_and_Numa.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 4; i++) {
-  urlsToCache.push("Plutarch_Comparison of Lycurgus and Numa_" + i + ".html");
+  urlsToCache.push("Plutarch_Comparison_of_Lycurgus_and_Numa_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

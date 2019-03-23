@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_Comparison of Timoleon and Aemilius';
+var CACHE_NAME = 'Plutarch_Comparison_of_Timoleon_and_Aemilius';
 var urlsToCache = [
-  'Plutarch_Comparison of Timoleon and Aemilius.html',
+  'Plutarch_Comparison_of_Timoleon_and_Aemilius.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 2; i++) {
-  urlsToCache.push("Plutarch_Comparison of Timoleon and Aemilius_" + i + ".html");
+  urlsToCache.push("Plutarch_Comparison_of_Timoleon_and_Aemilius_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

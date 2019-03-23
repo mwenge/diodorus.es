@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_Aemilius Paullus';
+var CACHE_NAME = 'Plutarch_Aemilius_Paullus';
 var urlsToCache = [
-  'Plutarch_Aemilius Paullus.html',
+  'Plutarch_Aemilius_Paullus.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 39; i++) {
-  urlsToCache.push("Plutarch_Aemilius Paullus_" + i + ".html");
+  urlsToCache.push("Plutarch_Aemilius_Paullus_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

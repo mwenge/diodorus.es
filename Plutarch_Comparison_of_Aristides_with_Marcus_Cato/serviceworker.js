@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_Comparison of Aristides with Marcus Cato';
+var CACHE_NAME = 'Plutarch_Comparison_of_Aristides_with_Marcus_Cato';
 var urlsToCache = [
-  'Plutarch_Comparison of Aristides with Marcus Cato.html',
+  'Plutarch_Comparison_of_Aristides_with_Marcus_Cato.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 6; i++) {
-  urlsToCache.push("Plutarch_Comparison of Aristides with Marcus Cato_" + i + ".html");
+  urlsToCache.push("Plutarch_Comparison_of_Aristides_with_Marcus_Cato_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

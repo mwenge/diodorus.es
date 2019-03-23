@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_Caius Marius';
+var CACHE_NAME = 'Plutarch_Caius_Marius';
 var urlsToCache = [
-  'Plutarch_Caius Marius.html',
+  'Plutarch_Caius_Marius.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 46; i++) {
-  urlsToCache.push("Plutarch_Caius Marius_" + i + ".html");
+  urlsToCache.push("Plutarch_Caius_Marius_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

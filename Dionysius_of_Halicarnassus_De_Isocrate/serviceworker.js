@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Dionysius of Halicarnassus_De Isocrate';
+var CACHE_NAME = 'Dionysius_of_Halicarnassus_De_Isocrate';
 var urlsToCache = [
-  'Dionysius of Halicarnassus_De Isocrate.html',
+  'Dionysius_of_Halicarnassus_De_Isocrate.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 20; i++) {
-  urlsToCache.push("Dionysius of Halicarnassus_De Isocrate_" + i + ".html");
+  urlsToCache.push("Dionysius_of_Halicarnassus_De_Isocrate_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

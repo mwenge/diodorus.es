@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Homer_Homeric Hymns';
+var CACHE_NAME = 'Homer_Homeric_Hymns';
 var urlsToCache = [
-  'Homer_Homeric Hymns.html',
+  'Homer_Homeric_Hymns.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -15,7 +15,7 @@ var urlsToCache = [
 ];
 
 for (var i = 2; i <= 1; i++) {
-  urlsToCache.push("Homer_Homeric Hymns_" + i + ".html");
+  urlsToCache.push("Homer_Homeric_Hymns_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

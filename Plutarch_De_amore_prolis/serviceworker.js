@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_De amore prolis';
+var CACHE_NAME = 'Plutarch_De_amore_prolis';
 var urlsToCache = [
-  'Plutarch_De amore prolis.html',
+  'Plutarch_De_amore_prolis.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 5; i++) {
-  urlsToCache.push("Plutarch_De amore prolis_" + i + ".html");
+  urlsToCache.push("Plutarch_De_amore_prolis_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

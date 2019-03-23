@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_Marcus Cato';
+var CACHE_NAME = 'Plutarch_Marcus_Cato';
 var urlsToCache = [
-  'Plutarch_Marcus Cato.html',
+  'Plutarch_Marcus_Cato.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 27; i++) {
-  urlsToCache.push("Plutarch_Marcus Cato_" + i + ".html");
+  urlsToCache.push("Plutarch_Marcus_Cato_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Dionysius of Halicarnassus_De antiquis oratoribus reliquiae';
+var CACHE_NAME = 'Dionysius_of_Halicarnassus_De_antiquis_oratoribus_reliquiae';
 var urlsToCache = [
-  'Dionysius of Halicarnassus_De antiquis oratoribus reliquiae.html',
+  'Dionysius_of_Halicarnassus_De_antiquis_oratoribus_reliquiae.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 5; i++) {
-  urlsToCache.push("Dionysius of Halicarnassus_De antiquis oratoribus reliquiae_" + i + ".html");
+  urlsToCache.push("Dionysius_of_Halicarnassus_De_antiquis_oratoribus_reliquiae_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

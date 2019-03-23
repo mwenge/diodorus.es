@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_Amatoriae narrationes';
+var CACHE_NAME = 'Plutarch_Amatoriae_narrationes';
 var urlsToCache = [
-  'Plutarch_Amatoriae narrationes.html',
+  'Plutarch_Amatoriae_narrationes.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 5; i++) {
-  urlsToCache.push("Plutarch_Amatoriae narrationes_" + i + ".html");
+  urlsToCache.push("Plutarch_Amatoriae_narrationes_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

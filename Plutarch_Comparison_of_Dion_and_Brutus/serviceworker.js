@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_Comparison of Dion and Brutus';
+var CACHE_NAME = 'Plutarch_Comparison_of_Dion_and_Brutus';
 var urlsToCache = [
-  'Plutarch_Comparison of Dion and Brutus.html',
+  'Plutarch_Comparison_of_Dion_and_Brutus.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 5; i++) {
-  urlsToCache.push("Plutarch_Comparison of Dion and Brutus_" + i + ".html");
+  urlsToCache.push("Plutarch_Comparison_of_Dion_and_Brutus_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

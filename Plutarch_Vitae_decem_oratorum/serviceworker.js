@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_Vitae decem oratorum';
+var CACHE_NAME = 'Plutarch_Vitae_decem_oratorum';
 var urlsToCache = [
-  'Plutarch_Vitae decem oratorum.html',
+  'Plutarch_Vitae_decem_oratorum.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 11; i++) {
-  urlsToCache.push("Plutarch_Vitae decem oratorum_" + i + ".html");
+  urlsToCache.push("Plutarch_Vitae_decem_oratorum_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

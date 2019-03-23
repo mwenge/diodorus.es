@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_Comparison of Solon and Publicola';
+var CACHE_NAME = 'Plutarch_Comparison_of_Solon_and_Publicola';
 var urlsToCache = [
-  'Plutarch_Comparison of Solon and Publicola.html',
+  'Plutarch_Comparison_of_Solon_and_Publicola.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 4; i++) {
-  urlsToCache.push("Plutarch_Comparison of Solon and Publicola_" + i + ".html");
+  urlsToCache.push("Plutarch_Comparison_of_Solon_and_Publicola_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

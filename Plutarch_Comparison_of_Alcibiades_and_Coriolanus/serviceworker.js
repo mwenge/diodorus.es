@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_Comparison of Alcibiades and Coriolanus';
+var CACHE_NAME = 'Plutarch_Comparison_of_Alcibiades_and_Coriolanus';
 var urlsToCache = [
-  'Plutarch_Comparison of Alcibiades and Coriolanus.html',
+  'Plutarch_Comparison_of_Alcibiades_and_Coriolanus.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 5; i++) {
-  urlsToCache.push("Plutarch_Comparison of Alcibiades and Coriolanus_" + i + ".html");
+  urlsToCache.push("Plutarch_Comparison_of_Alcibiades_and_Coriolanus_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Euripides_Trojan Women';
+var CACHE_NAME = 'Euripides_Trojan_Women';
 var urlsToCache = [
-  'Euripides_Trojan Women.html',
+  'Euripides_Trojan_Women.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -15,7 +15,7 @@ var urlsToCache = [
 ];
 
 for (var i = 2; i <= 1; i++) {
-  urlsToCache.push("Euripides_Trojan Women_" + i + ".html");
+  urlsToCache.push("Euripides_Trojan_Women_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

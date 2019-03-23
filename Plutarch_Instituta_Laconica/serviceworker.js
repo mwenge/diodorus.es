@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_Instituta Laconica';
+var CACHE_NAME = 'Plutarch_Instituta_Laconica';
 var urlsToCache = [
-  'Plutarch_Instituta Laconica.html',
+  'Plutarch_Instituta_Laconica.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 42; i++) {
-  urlsToCache.push("Plutarch_Instituta Laconica_" + i + ".html");
+  urlsToCache.push("Plutarch_Instituta_Laconica_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

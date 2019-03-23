@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_Regum et imperatorum apophthegmata';
+var CACHE_NAME = 'Plutarch_Regum_et_imperatorum_apophthegmata';
 var urlsToCache = [
-  'Plutarch_Regum et imperatorum apophthegmata.html',
+  'Plutarch_Regum_et_imperatorum_apophthegmata.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 92; i++) {
-  urlsToCache.push("Plutarch_Regum et imperatorum apophthegmata_" + i + ".html");
+  urlsToCache.push("Plutarch_Regum_et_imperatorum_apophthegmata_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

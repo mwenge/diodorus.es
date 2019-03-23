@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_De Stoicorum repugnantiis';
+var CACHE_NAME = 'Plutarch_De_Stoicorum_repugnantiis';
 var urlsToCache = [
-  'Plutarch_De Stoicorum repugnantiis.html',
+  'Plutarch_De_Stoicorum_repugnantiis.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 47; i++) {
-  urlsToCache.push("Plutarch_De Stoicorum repugnantiis_" + i + ".html");
+  urlsToCache.push("Plutarch_De_Stoicorum_repugnantiis_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

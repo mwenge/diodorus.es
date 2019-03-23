@@ -8,3 +8,4 @@ Cicero_de_Finibus_Bonorum_et_Malorum/Cicero_de_Finibus_Bonorum_et_Malorum_edit.h
 Cicero_de_Finibus_Bonorum_et_Malorum/Cicero_de_Finibus_Bonorum_et_Malorum_index.html filter=lfs diff=lfs merge=lfs -text
 Cicero_de_Finibus_Bonorum_et_Malorum/Cicero_de_Finibus_Bonorum_et_Malorum_praef.html filter=lfs diff=lfs merge=lfs -text
 Cicero_Tusculanae_Disputationes/Cicero_Tusculanae_Disputationes_index.html filter=lfs diff=lfs merge=lfs -text
+Cicero_Academica_index.html filter=lfs diff=lfs merge=lfs -text

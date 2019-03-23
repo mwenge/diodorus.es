@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_Comparison of Pelopidas and Marcellus';
+var CACHE_NAME = 'Plutarch_Comparison_of_Pelopidas_and_Marcellus';
 var urlsToCache = [
-  'Plutarch_Comparison of Pelopidas and Marcellus.html',
+  'Plutarch_Comparison_of_Pelopidas_and_Marcellus.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 3; i++) {
-  urlsToCache.push("Plutarch_Comparison of Pelopidas and Marcellus_" + i + ".html");
+  urlsToCache.push("Plutarch_Comparison_of_Pelopidas_and_Marcellus_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

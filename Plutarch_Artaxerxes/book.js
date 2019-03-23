@@ -103,6 +103,9 @@ function updateHelper(evt, lineNumber, translationsForWord) {
 }
 
 function showTitle(lineNumber) {
+  if (Array.isArray(lineNumber)) {
+    lineNumber = lineNumber[0];
+  }
   lineNumber = lineNumber.replace(/\./g, '');
   var page = parseInt(parseInt(lineNumber, 10) / 100, 10);
   if (isNaN(page)) {
@@ -115,23 +118,29 @@ function showTitle(lineNumber) {
   masthead.innerHTML = innerHTML;
 }
 
-function displayTranslation(line) {
+function displayTranslation(refs) {
   if (translatedSection) {
     for (var i = 0; i < translatedSection.length; i++) {
         translatedSection[i].style.backgroundColor = "";
     }
   }
-  translatedSection = document.getElementsByClassName(line);
+  translatedSection = null;
+  for (var i = 0; i < refs.length; i++) {
+    var ref = refs[i];
+    translatedSection = document.getElementsByClassName(ref);
+    if (translatedSection)
+      break;
+  }
   if (!translatedSection) {
     return;
   }
-  if (!translation.hasOwnProperty(line)) {
+  if (!translation.hasOwnProperty(ref)) {
     return;
   }
   for (var i = 0; i < translatedSection.length; i++) {
       translatedSection[i].style.backgroundColor = "yellow";
   }
-  parallel_translation.innerHTML = atobUTF8(translation[line]);
+  parallel_translation.innerHTML = atobUTF8(translation[ref]);
   parallel_translation.style.display = "block";
 }
 

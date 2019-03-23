@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_Caius Marcius Coriolanus';
+var CACHE_NAME = 'Plutarch_Caius_Marcius_Coriolanus';
 var urlsToCache = [
-  'Plutarch_Caius Marcius Coriolanus.html',
+  'Plutarch_Caius_Marcius_Coriolanus.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 39; i++) {
-  urlsToCache.push("Plutarch_Caius Marcius Coriolanus_" + i + ".html");
+  urlsToCache.push("Plutarch_Caius_Marcius_Coriolanus_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

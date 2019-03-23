@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Dionysius of Halicarnassus_De Lysia';
+var CACHE_NAME = 'Dionysius_of_Halicarnassus_De_Lysia';
 var urlsToCache = [
-  'Dionysius of Halicarnassus_De Lysia.html',
+  'Dionysius_of_Halicarnassus_De_Lysia.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 34; i++) {
-  urlsToCache.push("Dionysius of Halicarnassus_De Lysia_" + i + ".html");
+  urlsToCache.push("Dionysius_of_Halicarnassus_De_Lysia_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

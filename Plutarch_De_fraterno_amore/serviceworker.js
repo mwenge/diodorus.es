@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_De fraterno amore';
+var CACHE_NAME = 'Plutarch_De_fraterno_amore';
 var urlsToCache = [
-  'Plutarch_De fraterno amore.html',
+  'Plutarch_De_fraterno_amore.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 21; i++) {
-  urlsToCache.push("Plutarch_De fraterno amore_" + i + ".html");
+  urlsToCache.push("Plutarch_De_fraterno_amore_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_Consolatio ad uxorem';
+var CACHE_NAME = 'Plutarch_Consolatio_ad_uxorem';
 var urlsToCache = [
-  'Plutarch_Consolatio ad uxorem.html',
+  'Plutarch_Consolatio_ad_uxorem.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 11; i++) {
-  urlsToCache.push("Plutarch_Consolatio ad uxorem_" + i + ".html");
+  urlsToCache.push("Plutarch_Consolatio_ad_uxorem_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

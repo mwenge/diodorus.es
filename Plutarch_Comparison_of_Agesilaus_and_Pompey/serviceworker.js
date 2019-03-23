@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_Comparison of Agesilaus and Pompey';
+var CACHE_NAME = 'Plutarch_Comparison_of_Agesilaus_and_Pompey';
 var urlsToCache = [
-  'Plutarch_Comparison of Agesilaus and Pompey.html',
+  'Plutarch_Comparison_of_Agesilaus_and_Pompey.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 5; i++) {
-  urlsToCache.push("Plutarch_Comparison of Agesilaus and Pompey_" + i + ".html");
+  urlsToCache.push("Plutarch_Comparison_of_Agesilaus_and_Pompey_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

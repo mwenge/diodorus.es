@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_De cupiditate divitiarum';
+var CACHE_NAME = 'Plutarch_De_cupiditate_divitiarum';
 var urlsToCache = [
-  'Plutarch_De cupiditate divitiarum.html',
+  'Plutarch_De_cupiditate_divitiarum.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 10; i++) {
-  urlsToCache.push("Plutarch_De cupiditate divitiarum_" + i + ".html");
+  urlsToCache.push("Plutarch_De_cupiditate_divitiarum_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

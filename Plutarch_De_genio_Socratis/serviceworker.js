@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_De genio Socratis';
+var CACHE_NAME = 'Plutarch_De_genio_Socratis';
 var urlsToCache = [
-  'Plutarch_De genio Socratis.html',
+  'Plutarch_De_genio_Socratis.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 34; i++) {
-  urlsToCache.push("Plutarch_De genio Socratis_" + i + ".html");
+  urlsToCache.push("Plutarch_De_genio_Socratis_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

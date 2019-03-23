@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_De Iside et Osiride';
+var CACHE_NAME = 'Plutarch_De_Iside_et_Osiride';
 var urlsToCache = [
-  'Plutarch_De Iside et Osiride.html',
+  'Plutarch_De_Iside_et_Osiride.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 80; i++) {
-  urlsToCache.push("Plutarch_De Iside et Osiride_" + i + ".html");
+  urlsToCache.push("Plutarch_De_Iside_et_Osiride_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

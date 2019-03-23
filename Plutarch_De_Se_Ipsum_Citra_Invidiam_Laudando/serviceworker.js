@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_De Se Ipsum Citra Invidiam Laudando';
+var CACHE_NAME = 'Plutarch_De_Se_Ipsum_Citra_Invidiam_Laudando';
 var urlsToCache = [
-  'Plutarch_De Se Ipsum Citra Invidiam Laudando.html',
+  'Plutarch_De_Se_Ipsum_Citra_Invidiam_Laudando.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 22; i++) {
-  urlsToCache.push("Plutarch_De Se Ipsum Citra Invidiam Laudando_" + i + ".html");
+  urlsToCache.push("Plutarch_De_Se_Ipsum_Citra_Invidiam_Laudando_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

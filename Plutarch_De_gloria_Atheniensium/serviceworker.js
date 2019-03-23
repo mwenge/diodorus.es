@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_De gloria Atheniensium';
+var CACHE_NAME = 'Plutarch_De_gloria_Atheniensium';
 var urlsToCache = [
-  'Plutarch_De gloria Atheniensium.html',
+  'Plutarch_De_gloria_Atheniensium.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 8; i++) {
-  urlsToCache.push("Plutarch_De gloria Atheniensium_" + i + ".html");
+  urlsToCache.push("Plutarch_De_gloria_Atheniensium_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

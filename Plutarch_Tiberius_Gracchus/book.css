@@ -1,5 +1,9 @@
-body {
+.greek-body {
   font-family: 'GFS Didot', serif;
+  background-color: ivory;
+}
+.latin-body {
+  font-family: 'Cormorant Garamond', serif;
   background-color: ivory;
 }
 note {

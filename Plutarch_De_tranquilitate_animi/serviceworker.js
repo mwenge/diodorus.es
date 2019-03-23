@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_De tranquilitate animi';
+var CACHE_NAME = 'Plutarch_De_tranquilitate_animi';
 var urlsToCache = [
-  'Plutarch_De tranquilitate animi.html',
+  'Plutarch_De_tranquilitate_animi.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 20; i++) {
-  urlsToCache.push("Plutarch_De tranquilitate animi_" + i + ".html");
+  urlsToCache.push("Plutarch_De_tranquilitate_animi_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

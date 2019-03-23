@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_De vitioso pudore';
+var CACHE_NAME = 'Plutarch_De_vitioso_pudore';
 var urlsToCache = [
-  'Plutarch_De vitioso pudore.html',
+  'Plutarch_De_vitioso_pudore.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 19; i++) {
-  urlsToCache.push("Plutarch_De vitioso pudore_" + i + ".html");
+  urlsToCache.push("Plutarch_De_vitioso_pudore_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

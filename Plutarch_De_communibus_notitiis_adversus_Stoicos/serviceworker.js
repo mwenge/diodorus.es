@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_De communibus notitiis adversus Stoicos';
+var CACHE_NAME = 'Plutarch_De_communibus_notitiis_adversus_Stoicos';
 var urlsToCache = [
-  'Plutarch_De communibus notitiis adversus Stoicos.html',
+  'Plutarch_De_communibus_notitiis_adversus_Stoicos.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 50; i++) {
-  urlsToCache.push("Plutarch_De communibus notitiis adversus Stoicos_" + i + ".html");
+  urlsToCache.push("Plutarch_De_communibus_notitiis_adversus_Stoicos_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Diodorus_Historical Library';
+var CACHE_NAME = 'Diodorus_Historical_Library';
 var urlsToCache = [
-  'Diodorus_Historical Library.html',
+  'Diodorus_Historical_Library.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 20; i++) {
-  urlsToCache.push("Diodorus_Historical Library_" + i + ".html");
+  urlsToCache.push("Diodorus_Historical_Library_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

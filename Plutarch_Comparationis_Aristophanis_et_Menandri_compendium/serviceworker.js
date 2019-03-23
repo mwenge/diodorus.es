@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_Comparationis Aristophanis et Menandri compendium';
+var CACHE_NAME = 'Plutarch_Comparationis_Aristophanis_et_Menandri_compendium';
 var urlsToCache = [
-  'Plutarch_Comparationis Aristophanis et Menandri compendium.html',
+  'Plutarch_Comparationis_Aristophanis_et_Menandri_compendium.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 4; i++) {
-  urlsToCache.push("Plutarch_Comparationis Aristophanis et Menandri compendium_" + i + ".html");
+  urlsToCache.push("Plutarch_Comparationis_Aristophanis_et_Menandri_compendium_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

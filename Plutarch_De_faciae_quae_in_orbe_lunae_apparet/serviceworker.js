@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_De faciae quae in orbe lunae apparet';
+var CACHE_NAME = 'Plutarch_De_faciae_quae_in_orbe_lunae_apparet';
 var urlsToCache = [
-  'Plutarch_De faciae quae in orbe lunae apparet.html',
+  'Plutarch_De_faciae_quae_in_orbe_lunae_apparet.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 15; i++) {
-  urlsToCache.push("Plutarch_De faciae quae in orbe lunae apparet_" + i + ".html");
+  urlsToCache.push("Plutarch_De_faciae_quae_in_orbe_lunae_apparet_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

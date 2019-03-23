@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_De virtute morali';
+var CACHE_NAME = 'Plutarch_De_virtute_morali';
 var urlsToCache = [
-  'Plutarch_De virtute morali.html',
+  'Plutarch_De_virtute_morali.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 12; i++) {
-  urlsToCache.push("Plutarch_De virtute morali_" + i + ".html");
+  urlsToCache.push("Plutarch_De_virtute_morali_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

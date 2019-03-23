@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_Tiberius Gracchus';
+var CACHE_NAME = 'Plutarch_Tiberius_Gracchus';
 var urlsToCache = [
-  'Plutarch_Tiberius Gracchus.html',
+  'Plutarch_Tiberius_Gracchus.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 21; i++) {
-  urlsToCache.push("Plutarch_Tiberius Gracchus_" + i + ".html");
+  urlsToCache.push("Plutarch_Tiberius_Gracchus_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

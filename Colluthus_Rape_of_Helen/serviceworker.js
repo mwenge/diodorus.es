@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Colluthus_Rape of Helen';
+var CACHE_NAME = 'Colluthus_Rape_of_Helen';
 var urlsToCache = [
-  'Colluthus_Rape of Helen.html',
+  'Colluthus_Rape_of_Helen.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -15,7 +15,7 @@ var urlsToCache = [
 ];
 
 for (var i = 2; i <= 1; i++) {
-  urlsToCache.push("Colluthus_Rape of Helen_" + i + ".html");
+  urlsToCache.push("Colluthus_Rape_of_Helen_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

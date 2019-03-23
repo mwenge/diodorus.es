@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_An virtus doceri possit';
+var CACHE_NAME = 'Plutarch_An_virtus_doceri_possit';
 var urlsToCache = [
-  'Plutarch_An virtus doceri possit.html',
+  'Plutarch_An_virtus_doceri_possit.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 3; i++) {
-  urlsToCache.push("Plutarch_An virtus doceri possit_" + i + ".html");
+  urlsToCache.push("Plutarch_An_virtus_doceri_possit_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

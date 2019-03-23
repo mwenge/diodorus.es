@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_An vitiositas ad infelicitatem sufficia';
+var CACHE_NAME = 'Plutarch_An_vitiositas_ad_infelicitatem_sufficia';
 var urlsToCache = [
-  'Plutarch_An vitiositas ad infelicitatem sufficia.html',
+  'Plutarch_An_vitiositas_ad_infelicitatem_sufficia.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 5; i++) {
-  urlsToCache.push("Plutarch_An vitiositas ad infelicitatem sufficia_" + i + ".html");
+  urlsToCache.push("Plutarch_An_vitiositas_ad_infelicitatem_sufficia_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_Apophthegmata Laconica';
+var CACHE_NAME = 'Plutarch_Apophthegmata_Laconica';
 var urlsToCache = [
-  'Plutarch_Apophthegmata Laconica.html',
+  'Plutarch_Apophthegmata_Laconica.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 69; i++) {
-  urlsToCache.push("Plutarch_Apophthegmata Laconica_" + i + ".html");
+  urlsToCache.push("Plutarch_Apophthegmata_Laconica_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Quintus_Fall of Troy';
+var CACHE_NAME = 'Quintus_Fall_of_Troy';
 var urlsToCache = [
-  'Quintus_Fall of Troy.html',
+  'Quintus_Fall_of_Troy.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -15,7 +15,7 @@ var urlsToCache = [
 ];
 
 for (var i = 2; i <= 1; i++) {
-  urlsToCache.push("Quintus_Fall of Troy_" + i + ".html");
+  urlsToCache.push("Quintus_Fall_of_Troy_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

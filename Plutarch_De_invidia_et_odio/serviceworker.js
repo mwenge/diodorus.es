@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_De invidia et odio';
+var CACHE_NAME = 'Plutarch_De_invidia_et_odio';
 var urlsToCache = [
-  'Plutarch_De invidia et odio.html',
+  'Plutarch_De_invidia_et_odio.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 8; i++) {
-  urlsToCache.push("Plutarch_De invidia et odio_" + i + ".html");
+  urlsToCache.push("Plutarch_De_invidia_et_odio_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

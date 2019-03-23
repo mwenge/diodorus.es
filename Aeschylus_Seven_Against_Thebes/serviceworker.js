@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Aeschylus_Seven Against Thebes';
+var CACHE_NAME = 'Aeschylus_Seven_Against_Thebes';
 var urlsToCache = [
-  'Aeschylus_Seven Against Thebes.html',
+  'Aeschylus_Seven_Against_Thebes.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -15,7 +15,7 @@ var urlsToCache = [
 ];
 
 for (var i = 2; i <= 1; i++) {
-  urlsToCache.push("Aeschylus_Seven Against Thebes_" + i + ".html");
+  urlsToCache.push("Aeschylus_Seven_Against_Thebes_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

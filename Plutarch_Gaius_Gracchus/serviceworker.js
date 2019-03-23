@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_Gaius Gracchus';
+var CACHE_NAME = 'Plutarch_Gaius_Gracchus';
 var urlsToCache = [
-  'Plutarch_Gaius Gracchus.html',
+  'Plutarch_Gaius_Gracchus.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 19; i++) {
-  urlsToCache.push("Plutarch_Gaius Gracchus_" + i + ".html");
+  urlsToCache.push("Plutarch_Gaius_Gracchus_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

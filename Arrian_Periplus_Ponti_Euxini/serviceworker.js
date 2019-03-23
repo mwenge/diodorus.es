@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Arrian_Periplus Ponti Euxini';
+var CACHE_NAME = 'Arrian_Periplus_Ponti_Euxini';
 var urlsToCache = [
-  'Arrian_Periplus Ponti Euxini.html',
+  'Arrian_Periplus_Ponti_Euxini.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 25; i++) {
-  urlsToCache.push("Arrian_Periplus Ponti Euxini_" + i + ".html");
+  urlsToCache.push("Arrian_Periplus_Ponti_Euxini_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

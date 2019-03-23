@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_Fabius Maximus';
+var CACHE_NAME = 'Plutarch_Fabius_Maximus';
 var urlsToCache = [
-  'Plutarch_Fabius Maximus.html',
+  'Plutarch_Fabius_Maximus.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 27; i++) {
-  urlsToCache.push("Plutarch_Fabius Maximus_" + i + ".html");
+  urlsToCache.push("Plutarch_Fabius_Maximus_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

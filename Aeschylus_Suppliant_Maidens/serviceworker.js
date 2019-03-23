@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Aeschylus_Suppliant Maidens';
+var CACHE_NAME = 'Aeschylus_Suppliant_Maidens';
 var urlsToCache = [
-  'Aeschylus_Suppliant Maidens.html',
+  'Aeschylus_Suppliant_Maidens.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -15,7 +15,7 @@ var urlsToCache = [
 ];
 
 for (var i = 2; i <= 1; i++) {
-  urlsToCache.push("Aeschylus_Suppliant Maidens_" + i + ".html");
+  urlsToCache.push("Aeschylus_Suppliant_Maidens_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

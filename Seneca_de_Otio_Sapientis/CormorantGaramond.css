@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cormorant Garamond Regular'), local('CormorantGaramond-Regular'), url(CormorantGaramond.ttf) format('truetype');
+}

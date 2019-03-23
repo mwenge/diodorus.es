@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Sophocles_Oedipus at Colonus';
+var CACHE_NAME = 'Sophocles_Oedipus_at_Colonus';
 var urlsToCache = [
-  'Sophocles_Oedipus at Colonus.html',
+  'Sophocles_Oedipus_at_Colonus.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -15,7 +15,7 @@ var urlsToCache = [
 ];
 
 for (var i = 2; i <= 1; i++) {
-  urlsToCache.push("Sophocles_Oedipus at Colonus_" + i + ".html");
+  urlsToCache.push("Sophocles_Oedipus_at_Colonus_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

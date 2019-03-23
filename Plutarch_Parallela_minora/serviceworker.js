@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_Parallela minora';
+var CACHE_NAME = 'Plutarch_Parallela_minora';
 var urlsToCache = [
-  'Plutarch_Parallela minora.html',
+  'Plutarch_Parallela_minora.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 41; i++) {
-  urlsToCache.push("Plutarch_Parallela minora_" + i + ".html");
+  urlsToCache.push("Plutarch_Parallela_minora_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

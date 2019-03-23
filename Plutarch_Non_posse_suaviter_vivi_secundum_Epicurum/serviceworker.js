@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_Non posse suaviter vivi secundum Epicurum';
+var CACHE_NAME = 'Plutarch_Non_posse_suaviter_vivi_secundum_Epicurum';
 var urlsToCache = [
-  'Plutarch_Non posse suaviter vivi secundum Epicurum.html',
+  'Plutarch_Non_posse_suaviter_vivi_secundum_Epicurum.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 31; i++) {
-  urlsToCache.push("Plutarch_Non posse suaviter vivi secundum Epicurum_" + i + ".html");
+  urlsToCache.push("Plutarch_Non_posse_suaviter_vivi_secundum_Epicurum_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

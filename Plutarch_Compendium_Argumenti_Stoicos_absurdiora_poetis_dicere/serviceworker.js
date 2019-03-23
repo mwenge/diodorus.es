@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_Compendium Argumenti Stoicos absurdiora poetis dicere';
+var CACHE_NAME = 'Plutarch_Compendium_Argumenti_Stoicos_absurdiora_poetis_dicere';
 var urlsToCache = [
-  'Plutarch_Compendium Argumenti Stoicos absurdiora poetis dicere.html',
+  'Plutarch_Compendium_Argumenti_Stoicos_absurdiora_poetis_dicere.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 6; i++) {
-  urlsToCache.push("Plutarch_Compendium Argumenti Stoicos absurdiora poetis dicere_" + i + ".html");
+  urlsToCache.push("Plutarch_Compendium_Argumenti_Stoicos_absurdiora_poetis_dicere_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

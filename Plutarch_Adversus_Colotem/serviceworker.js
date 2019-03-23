@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_Adversus Colotem';
+var CACHE_NAME = 'Plutarch_Adversus_Colotem';
 var urlsToCache = [
-  'Plutarch_Adversus Colotem.html',
+  'Plutarch_Adversus_Colotem.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 34; i++) {
-  urlsToCache.push("Plutarch_Adversus Colotem_" + i + ".html");
+  urlsToCache.push("Plutarch_Adversus_Colotem_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

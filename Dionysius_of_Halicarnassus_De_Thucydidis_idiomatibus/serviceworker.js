@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Dionysius of Halicarnassus_De Thucydidis idiomatibus';
+var CACHE_NAME = 'Dionysius_of_Halicarnassus_De_Thucydidis_idiomatibus';
 var urlsToCache = [
-  'Dionysius of Halicarnassus_De Thucydidis idiomatibus.html',
+  'Dionysius_of_Halicarnassus_De_Thucydidis_idiomatibus.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 17; i++) {
-  urlsToCache.push("Dionysius of Halicarnassus_De Thucydidis idiomatibus_" + i + ".html");
+  urlsToCache.push("Dionysius_of_Halicarnassus_De_Thucydidis_idiomatibus_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

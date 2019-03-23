@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_Comparison of Sertorius and Eumenes';
+var CACHE_NAME = 'Plutarch_Comparison_of_Sertorius_and_Eumenes';
 var urlsToCache = [
-  'Plutarch_Comparison of Sertorius and Eumenes.html',
+  'Plutarch_Comparison_of_Sertorius_and_Eumenes.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 2; i++) {
-  urlsToCache.push("Plutarch_Comparison of Sertorius and Eumenes_" + i + ".html");
+  urlsToCache.push("Plutarch_Comparison_of_Sertorius_and_Eumenes_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_Comparison of Agis and Cleomenes and the Gracchi';
+var CACHE_NAME = 'Plutarch_Comparison_of_Agis_and_Cleomenes_and_the_Gracchi';
 var urlsToCache = [
-  'Plutarch_Comparison of Agis and Cleomenes and the Gracchi.html',
+  'Plutarch_Comparison_of_Agis_and_Cleomenes_and_the_Gracchi.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 5; i++) {
-  urlsToCache.push("Plutarch_Comparison of Agis and Cleomenes and the Gracchi_" + i + ".html");
+  urlsToCache.push("Plutarch_Comparison_of_Agis_and_Cleomenes_and_the_Gracchi_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

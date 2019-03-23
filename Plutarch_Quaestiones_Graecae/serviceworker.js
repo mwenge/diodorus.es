@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_Quaestiones Graecae';
+var CACHE_NAME = 'Plutarch_Quaestiones_Graecae';
 var urlsToCache = [
-  'Plutarch_Quaestiones Graecae.html',
+  'Plutarch_Quaestiones_Graecae.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 59; i++) {
-  urlsToCache.push("Plutarch_Quaestiones Graecae_" + i + ".html");
+  urlsToCache.push("Plutarch_Quaestiones_Graecae_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

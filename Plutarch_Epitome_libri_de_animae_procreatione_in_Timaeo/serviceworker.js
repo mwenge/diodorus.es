@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_Epitome libri de animae procreatione in Timaeo';
+var CACHE_NAME = 'Plutarch_Epitome_libri_de_animae_procreatione_in_Timaeo';
 var urlsToCache = [
-  'Plutarch_Epitome libri de animae procreatione in Timaeo.html',
+  'Plutarch_Epitome_libri_de_animae_procreatione_in_Timaeo.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 6; i++) {
-  urlsToCache.push("Plutarch_Epitome libri de animae procreatione in Timaeo_" + i + ".html");
+  urlsToCache.push("Plutarch_Epitome_libri_de_animae_procreatione_in_Timaeo_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

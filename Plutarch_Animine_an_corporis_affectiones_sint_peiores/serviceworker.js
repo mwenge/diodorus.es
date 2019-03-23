@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_Animine an corporis affectiones sint peiores';
+var CACHE_NAME = 'Plutarch_Animine_an_corporis_affectiones_sint_peiores';
 var urlsToCache = [
-  'Plutarch_Animine an corporis affectiones sint peiores.html',
+  'Plutarch_Animine_an_corporis_affectiones_sint_peiores.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 4; i++) {
-  urlsToCache.push("Plutarch_Animine an corporis affectiones sint peiores_" + i + ".html");
+  urlsToCache.push("Plutarch_Animine_an_corporis_affectiones_sint_peiores_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_De cohibenda ira';
+var CACHE_NAME = 'Plutarch_De_cohibenda_ira';
 var urlsToCache = [
-  'Plutarch_De cohibenda ira.html',
+  'Plutarch_De_cohibenda_ira.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 16; i++) {
-  urlsToCache.push("Plutarch_De cohibenda ira_" + i + ".html");
+  urlsToCache.push("Plutarch_De_cohibenda_ira_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_Cato Minor';
+var CACHE_NAME = 'Plutarch_Cato_Minor';
 var urlsToCache = [
-  'Plutarch_Cato Minor.html',
+  'Plutarch_Cato_Minor.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 73; i++) {
-  urlsToCache.push("Plutarch_Cato Minor_" + i + ".html");
+  urlsToCache.push("Plutarch_Cato_Minor_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_De sera numinis vindicta';
+var CACHE_NAME = 'Plutarch_De_sera_numinis_vindicta';
 var urlsToCache = [
-  'Plutarch_De sera numinis vindicta.html',
+  'Plutarch_De_sera_numinis_vindicta.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 22; i++) {
-  urlsToCache.push("Plutarch_De sera numinis vindicta_" + i + ".html");
+  urlsToCache.push("Plutarch_De_sera_numinis_vindicta_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

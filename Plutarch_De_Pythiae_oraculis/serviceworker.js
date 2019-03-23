@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_De Pythiae oraculis';
+var CACHE_NAME = 'Plutarch_De_Pythiae_oraculis';
 var urlsToCache = [
-  'Plutarch_De Pythiae oraculis.html',
+  'Plutarch_De_Pythiae_oraculis.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 30; i++) {
-  urlsToCache.push("Plutarch_De Pythiae oraculis_" + i + ".html");
+  urlsToCache.push("Plutarch_De_Pythiae_oraculis_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

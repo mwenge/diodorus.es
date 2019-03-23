@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Plutarch_De fortuna Romanorum';
+var CACHE_NAME = 'Plutarch_De_fortuna_Romanorum';
 var urlsToCache = [
-  'Plutarch_De fortuna Romanorum.html',
+  'Plutarch_De_fortuna_Romanorum.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 13; i++) {
-  urlsToCache.push("Plutarch_De fortuna Romanorum_" + i + ".html");
+  urlsToCache.push("Plutarch_De_fortuna_Romanorum_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

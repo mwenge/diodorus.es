@@ -1,5 +1,9 @@
-body {
+.greek-body {
   font-family: 'GFS Didot', serif;
+  background-color: ivory;
+}
+.latin-body {
+  font-family: 'Cormorant Garamond', serif;
   background-color: ivory;
 }
 note {
@@ -126,7 +130,6 @@ head, .heading {
   font-size: 2.5vw;
 }
 .line-number {
-  margin-top: 0.8vh;
   float: right;
   font-size: 3vw;
   vertical-align: bottom;

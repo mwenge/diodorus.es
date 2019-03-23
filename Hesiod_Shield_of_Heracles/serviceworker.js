@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Hesiod_Shield of Heracles';
+var CACHE_NAME = 'Hesiod_Shield_of_Heracles';
 var urlsToCache = [
-  'Hesiod_Shield of Heracles.html',
+  'Hesiod_Shield_of_Heracles.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -15,7 +15,7 @@ var urlsToCache = [
 ];
 
 for (var i = 2; i <= 1; i++) {
-  urlsToCache.push("Hesiod_Shield of Heracles_" + i + ".html");
+  urlsToCache.push("Hesiod_Shield_of_Heracles_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {
