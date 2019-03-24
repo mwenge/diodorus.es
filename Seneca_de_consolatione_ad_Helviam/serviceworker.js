@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Seneca_de consolatione ad Helviam';
+var CACHE_NAME = 'Seneca_de_consolatione_ad_Helviam';
 var urlsToCache = [
-  'Seneca_de consolatione ad Helviam.html',
+  'Seneca_de_consolatione_ad_Helviam.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 11; i++) {
-  urlsToCache.push("Seneca_de consolatione ad Helviam_" + i + ".html");
+  urlsToCache.push("Seneca_de_consolatione_ad_Helviam_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

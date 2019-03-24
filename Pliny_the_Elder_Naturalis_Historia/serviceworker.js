@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Pliny the Elder_Naturalis Historia';
+var CACHE_NAME = 'Pliny_the_Elder_Naturalis_Historia';
 var urlsToCache = [
-  'Pliny the Elder_Naturalis Historia.html',
+  'Pliny_the_Elder_Naturalis_Historia.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 78; i++) {
-  urlsToCache.push("Pliny the Elder_Naturalis Historia_" + i + ".html");
+  urlsToCache.push("Pliny_the_Elder_Naturalis_Historia_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

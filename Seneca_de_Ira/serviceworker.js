@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Seneca_de Ira';
+var CACHE_NAME = 'Seneca_de_Ira';
 var urlsToCache = [
-  'Seneca_de Ira.html',
+  'Seneca_de_Ira.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 3; i++) {
-  urlsToCache.push("Seneca_de Ira_" + i + ".html");
+  urlsToCache.push("Seneca_de_Ira_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Cicero_Against Catiline';
+var CACHE_NAME = 'Cicero_Against_Catiline';
 var urlsToCache = [
-  'Cicero_Against Catiline.html',
+  'Cicero_Against_Catiline.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 4; i++) {
-  urlsToCache.push("Cicero_Against Catiline_" + i + ".html");
+  urlsToCache.push("Cicero_Against_Catiline_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

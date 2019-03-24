@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Vitruvius_On Architecture';
+var CACHE_NAME = 'Vitruvius_On_Architecture';
 var urlsToCache = [
-  'Vitruvius_On Architecture.html',
+  'Vitruvius_On_Architecture.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 10; i++) {
-  urlsToCache.push("Vitruvius_On Architecture_" + i + ".html");
+  urlsToCache.push("Vitruvius_On_Architecture_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Seneca_de Clementia';
+var CACHE_NAME = 'Seneca_de_Clementia';
 var urlsToCache = [
-  'Seneca_de Clementia.html',
+  'Seneca_de_Clementia.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 2; i++) {
-  urlsToCache.push("Seneca_de Clementia_" + i + ".html");
+  urlsToCache.push("Seneca_de_Clementia_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

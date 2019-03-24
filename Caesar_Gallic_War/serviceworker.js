@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Caesar_Gallic War';
+var CACHE_NAME = 'Caesar_Gallic_War';
 var urlsToCache = [
-  'Caesar_Gallic War.html',
+  'Caesar_Gallic_War.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 8; i++) {
-  urlsToCache.push("Caesar_Gallic War_" + i + ".html");
+  urlsToCache.push("Caesar_Gallic_War_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

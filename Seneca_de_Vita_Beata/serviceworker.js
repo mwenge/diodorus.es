@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Seneca_de Vita Beata';
+var CACHE_NAME = 'Seneca_de_Vita_Beata';
 var urlsToCache = [
-  'Seneca_de Vita Beata.html',
+  'Seneca_de_Vita_Beata.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 7; i++) {
-  urlsToCache.push("Seneca_de Vita Beata_" + i + ".html");
+  urlsToCache.push("Seneca_de_Vita_Beata_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

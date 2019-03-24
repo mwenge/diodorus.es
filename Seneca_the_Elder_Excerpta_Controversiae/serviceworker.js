@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Seneca the Elder_Excerpta Controversiae';
+var CACHE_NAME = 'Seneca_the_Elder_Excerpta_Controversiae';
 var urlsToCache = [
-  'Seneca the Elder_Excerpta Controversiae.html',
+  'Seneca_the_Elder_Excerpta_Controversiae.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 10; i++) {
-  urlsToCache.push("Seneca the Elder_Excerpta Controversiae_" + i + ".html");
+  urlsToCache.push("Seneca_the_Elder_Excerpta_Controversiae_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

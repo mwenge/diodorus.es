@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Cicero_Letters to Brutus';
+var CACHE_NAME = 'Cicero_Letters_to_Brutus';
 var urlsToCache = [
-  'Cicero_Letters to Brutus.html',
+  'Cicero_Letters_to_Brutus.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 2; i++) {
-  urlsToCache.push("Cicero_Letters to Brutus_" + i + ".html");
+  urlsToCache.push("Cicero_Letters_to_Brutus_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

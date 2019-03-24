@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Seneca_de Tranquilitate Animi';
+var CACHE_NAME = 'Seneca_de_Tranquilitate_Animi';
 var urlsToCache = [
-  'Seneca_de Tranquilitate Animi.html',
+  'Seneca_de_Tranquilitate_Animi.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 9; i++) {
-  urlsToCache.push("Seneca_de Tranquilitate Animi_" + i + ".html");
+  urlsToCache.push("Seneca_de_Tranquilitate_Animi_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

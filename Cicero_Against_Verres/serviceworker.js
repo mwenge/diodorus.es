@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Cicero_Against Verres';
+var CACHE_NAME = 'Cicero_Against_Verres';
 var urlsToCache = [
-  'Cicero_Against Verres.html',
+  'Cicero_Against_Verres.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 5; i++) {
-  urlsToCache.push("Cicero_Against Verres_" + i + ".html");
+  urlsToCache.push("Cicero_Against_Verres_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

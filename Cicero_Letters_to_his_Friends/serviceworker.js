@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Cicero_Letters to his Friends';
+var CACHE_NAME = 'Cicero_Letters_to_his_Friends';
 var urlsToCache = [
-  'Cicero_Letters to his Friends.html',
+  'Cicero_Letters_to_his_Friends.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 16; i++) {
-  urlsToCache.push("Cicero_Letters to his Friends_" + i + ".html");
+  urlsToCache.push("Cicero_Letters_to_his_Friends_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

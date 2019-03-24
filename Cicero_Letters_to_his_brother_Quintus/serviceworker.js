@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Cicero_Letters to his brother Quintus';
+var CACHE_NAME = 'Cicero_Letters_to_his_brother_Quintus';
 var urlsToCache = [
-  'Cicero_Letters to his brother Quintus.html',
+  'Cicero_Letters_to_his_brother_Quintus.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 3; i++) {
-  urlsToCache.push("Cicero_Letters to his brother Quintus_" + i + ".html");
+  urlsToCache.push("Cicero_Letters_to_his_brother_Quintus_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

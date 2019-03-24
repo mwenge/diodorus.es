@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Cicero_de Finibus Bonorum et Malorum';
+var CACHE_NAME = 'Cicero_de_Finibus_Bonorum_et_Malorum';
 var urlsToCache = [
-  'Cicero_de Finibus Bonorum et Malorum.html',
+  'Cicero_de_Finibus_Bonorum_et_Malorum.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= index; i++) {
-  urlsToCache.push("Cicero_de Finibus Bonorum et Malorum_" + i + ".html");
+  urlsToCache.push("Cicero_de_Finibus_Bonorum_et_Malorum_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

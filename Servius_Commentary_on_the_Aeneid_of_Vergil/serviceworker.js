@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Servius_Commentary on the Aeneid of Vergil';
+var CACHE_NAME = 'Servius_Commentary_on_the_Aeneid_of_Vergil';
 var urlsToCache = [
-  'Servius_Commentary on the Aeneid of Vergil.html',
+  'Servius_Commentary_on_the_Aeneid_of_Vergil.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 12; i++) {
-  urlsToCache.push("Servius_Commentary on the Aeneid of Vergil_" + i + ".html");
+  urlsToCache.push("Servius_Commentary_on_the_Aeneid_of_Vergil_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

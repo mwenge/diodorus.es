@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Pliny the Younger_Epistulae';
+var CACHE_NAME = 'Pliny_the_Younger_Epistulae';
 var urlsToCache = [
-  'Pliny the Younger_Epistulae.html',
+  'Pliny_the_Younger_Epistulae.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 10; i++) {
-  urlsToCache.push("Pliny the Younger_Epistulae_" + i + ".html");
+  urlsToCache.push("Pliny_the_Younger_Epistulae_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

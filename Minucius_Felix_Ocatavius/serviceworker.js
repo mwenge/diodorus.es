@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Minucius Felix_Ocatavius';
+var CACHE_NAME = 'Minucius_Felix_Ocatavius';
 var urlsToCache = [
-  'Minucius Felix_Ocatavius.html',
+  'Minucius_Felix_Ocatavius.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 40; i++) {
-  urlsToCache.push("Minucius Felix_Ocatavius_" + i + ".html");
+  urlsToCache.push("Minucius_Felix_Ocatavius_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

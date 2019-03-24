@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Seneca_de Otio Sapientis';
+var CACHE_NAME = 'Seneca_de_Otio_Sapientis';
 var urlsToCache = [
-  'Seneca_de Otio Sapientis.html',
+  'Seneca_de_Otio_Sapientis.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 8; i++) {
-  urlsToCache.push("Seneca_de Otio Sapientis_" + i + ".html");
+  urlsToCache.push("Seneca_de_Otio_Sapientis_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

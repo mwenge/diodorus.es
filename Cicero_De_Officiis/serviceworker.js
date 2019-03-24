@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Cicero_De Officiis';
+var CACHE_NAME = 'Cicero_De_Officiis';
 var urlsToCache = [
-  'Cicero_De Officiis.html',
+  'Cicero_De_Officiis.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 3; i++) {
-  urlsToCache.push("Cicero_De Officiis_" + i + ".html");
+  urlsToCache.push("Cicero_De_Officiis_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

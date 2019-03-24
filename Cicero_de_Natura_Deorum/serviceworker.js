@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Cicero_de Natura Deorum';
+var CACHE_NAME = 'Cicero_de_Natura_Deorum';
 var urlsToCache = [
-  'Cicero_de Natura Deorum.html',
+  'Cicero_de_Natura_Deorum.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 3; i++) {
-  urlsToCache.push("Cicero_de Natura Deorum_" + i + ".html");
+  urlsToCache.push("Cicero_de_Natura_Deorum_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

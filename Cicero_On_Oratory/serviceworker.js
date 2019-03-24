@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Cicero_On Oratory';
+var CACHE_NAME = 'Cicero_On_Oratory';
 var urlsToCache = [
-  'Cicero_On Oratory.html',
+  'Cicero_On_Oratory.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 3; i++) {
-  urlsToCache.push("Cicero_On Oratory_" + i + ".html");
+  urlsToCache.push("Cicero_On_Oratory_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

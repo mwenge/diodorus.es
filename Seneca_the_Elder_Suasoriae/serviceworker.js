@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Seneca the Elder_Suasoriae';
+var CACHE_NAME = 'Seneca_the_Elder_Suasoriae';
 var urlsToCache = [
-  'Seneca the Elder_Suasoriae.html',
+  'Seneca_the_Elder_Suasoriae.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 7; i++) {
-  urlsToCache.push("Seneca the Elder_Suasoriae_" + i + ".html");
+  urlsToCache.push("Seneca_the_Elder_Suasoriae_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

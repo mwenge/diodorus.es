@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Seneca_de Brevitate Vitae';
+var CACHE_NAME = 'Seneca_de_Brevitate_Vitae';
 var urlsToCache = [
-  'Seneca_de Brevitate Vitae.html',
+  'Seneca_de_Brevitate_Vitae.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 10; i++) {
-  urlsToCache.push("Seneca_de Brevitate Vitae_" + i + ".html");
+  urlsToCache.push("Seneca_de_Brevitate_Vitae_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

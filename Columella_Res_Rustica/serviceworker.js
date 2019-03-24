@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Columella_Res Rustica';
+var CACHE_NAME = 'Columella_Res_Rustica';
 var urlsToCache = [
-  'Columella_Res Rustica.html',
+  'Columella_Res_Rustica.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 4; i++) {
-  urlsToCache.push("Columella_Res Rustica_" + i + ".html");
+for (var i = 2; i <= 9; i++) {
+  urlsToCache.push("Columella_Res_Rustica_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

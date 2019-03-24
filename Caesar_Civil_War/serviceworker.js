@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Caesar_Civil War';
+var CACHE_NAME = 'Caesar_Civil_War';
 var urlsToCache = [
-  'Caesar_Civil War.html',
+  'Caesar_Civil_War.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 3; i++) {
-  urlsToCache.push("Caesar_Civil War_" + i + ".html");
+  urlsToCache.push("Caesar_Civil_War_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

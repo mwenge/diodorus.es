@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Seneca_de Providentia';
+var CACHE_NAME = 'Seneca_de_Providentia';
 var urlsToCache = [
-  'Seneca_de Providentia.html',
+  'Seneca_de_Providentia.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 1; i++) {
-  urlsToCache.push("Seneca_de Providentia_" + i + ".html");
+  urlsToCache.push("Seneca_de_Providentia_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

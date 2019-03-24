@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Quintilian_Institutio Oratoria, Preface';
+var CACHE_NAME = 'Quintilian_Institutio_Oratoria,_Preface';
 var urlsToCache = [
-  'Quintilian_Institutio Oratoria, Preface.html',
+  'Quintilian_Institutio_Oratoria,_Preface.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= epTryph; i++) {
-  urlsToCache.push("Quintilian_Institutio Oratoria, Preface_" + i + ".html");
+  urlsToCache.push("Quintilian_Institutio_Oratoria,_Preface_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

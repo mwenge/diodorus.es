@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Seneca_de consolatione ad Polybium';
+var CACHE_NAME = 'Seneca_de_consolatione_ad_Polybium';
 var urlsToCache = [
-  'Seneca_de consolatione ad Polybium.html',
+  'Seneca_de_consolatione_ad_Polybium.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 11; i++) {
-  urlsToCache.push("Seneca_de consolatione ad Polybium_" + i + ".html");
+  urlsToCache.push("Seneca_de_consolatione_ad_Polybium_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

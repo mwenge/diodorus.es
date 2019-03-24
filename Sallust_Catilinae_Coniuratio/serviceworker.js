@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Sallust_Catilinae Coniuratio';
+var CACHE_NAME = 'Sallust_Catilinae_Coniuratio';
 var urlsToCache = [
-  'Sallust_Catilinae Coniuratio.html',
+  'Sallust_Catilinae_Coniuratio.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 61; i++) {
-  urlsToCache.push("Sallust_Catilinae Coniuratio_" + i + ".html");
+  urlsToCache.push("Sallust_Catilinae_Coniuratio_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

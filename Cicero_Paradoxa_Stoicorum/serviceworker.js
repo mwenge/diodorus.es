@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Cicero_Paradoxa Stoicorum';
+var CACHE_NAME = 'Cicero_Paradoxa_Stoicorum';
 var urlsToCache = [
-  'Cicero_Paradoxa Stoicorum.html',
+  'Cicero_Paradoxa_Stoicorum.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 6; i++) {
-  urlsToCache.push("Cicero_Paradoxa Stoicorum_" + i + ".html");
+  urlsToCache.push("Cicero_Paradoxa_Stoicorum_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

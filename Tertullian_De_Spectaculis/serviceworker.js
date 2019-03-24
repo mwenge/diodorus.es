@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Tertullian_De Spectaculis';
+var CACHE_NAME = 'Tertullian_De_Spectaculis';
 var urlsToCache = [
-  'Tertullian_De Spectaculis.html',
+  'Tertullian_De_Spectaculis.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 30; i++) {
-  urlsToCache.push("Tertullian_De Spectaculis_" + i + ".html");
+  urlsToCache.push("Tertullian_De_Spectaculis_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

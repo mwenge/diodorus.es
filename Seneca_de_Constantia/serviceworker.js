@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Seneca_de Constantia';
+var CACHE_NAME = 'Seneca_de_Constantia';
 var urlsToCache = [
-  'Seneca_de Constantia.html',
+  'Seneca_de_Constantia.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 2; i++) {
-  urlsToCache.push("Seneca_de Constantia_" + i + ".html");
+  urlsToCache.push("Seneca_de_Constantia_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

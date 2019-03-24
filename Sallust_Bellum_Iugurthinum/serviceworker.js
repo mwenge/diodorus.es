@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Sallust_Bellum Iugurthinum';
+var CACHE_NAME = 'Sallust_Bellum_Iugurthinum';
 var urlsToCache = [
-  'Sallust_Bellum Iugurthinum.html',
+  'Sallust_Bellum_Iugurthinum.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 114; i++) {
-  urlsToCache.push("Sallust_Bellum Iugurthinum_" + i + ".html");
+  urlsToCache.push("Sallust_Bellum_Iugurthinum_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {

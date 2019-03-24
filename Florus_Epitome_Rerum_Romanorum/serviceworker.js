@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'Florus_Epitome Rerum Romanorum';
+var CACHE_NAME = 'Florus_Epitome_Rerum_Romanorum';
 var urlsToCache = [
-  'Florus_Epitome Rerum Romanorum.html',
+  'Florus_Epitome_Rerum_Romanorum.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -12,10 +12,12 @@ var urlsToCache = [
   'OpenSans.ttf',
   'Cinzel.css',
   'Cinzel.ttf',
+  'CormorantGaramond.css',
+  'CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 2; i++) {
-  urlsToCache.push("Florus_Epitome Rerum Romanorum_" + i + ".html");
+  urlsToCache.push("Florus_Epitome_Rerum_Romanorum_" + i + ".html");
 }
 
 self.addEventListener('install', function(event) {
