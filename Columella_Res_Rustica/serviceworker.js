@@ -16,7 +16,7 @@ var urlsToCache = [
   'CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 9; i++) {
+for (var i = 2; i <= 4; i++) {
   urlsToCache.push("Columella_Res_Rustica_" + i + ".html");
 }
 
