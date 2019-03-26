@@ -1,0 +1,21 @@
+{
+    "short_name": "De Rerum Natura",
+    "name": "Lucretius : De Rerum Natura",
+    "icons": [
+        {
+            "src": "images/icons-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+            },
+        {
+            "src": "images/icons-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+            }
+        ],
+    "start_url": "Lucretius_De_Rerum_Natura.html",
+    "background_color": "ivory",
+    "display": "standalone",
+    "scope": ".",
+    "theme_color": "ivory"
+}

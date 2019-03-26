@@ -1,0 +1,21 @@
+{
+    "short_name": "Argonautica",
+    "name": "C. Valerius Flaccus : Argonautica",
+    "icons": [
+        {
+            "src": "images/icons-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+            },
+        {
+            "src": "images/icons-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+            }
+        ],
+    "start_url": "C._Valerius_Flaccus_Argonautica.html",
+    "background_color": "ivory",
+    "display": "standalone",
+    "scope": ".",
+    "theme_color": "ivory"
+}

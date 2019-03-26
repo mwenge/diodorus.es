@@ -1,0 +1,21 @@
+{
+    "short_name": "Apotheosis",
+    "name": "Prudentius : Apotheosis",
+    "icons": [
+        {
+            "src": "images/icons-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+            },
+        {
+            "src": "images/icons-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+            }
+        ],
+    "start_url": "Prudentius_Apotheosis.html",
+    "background_color": "ivory",
+    "display": "standalone",
+    "scope": ".",
+    "theme_color": "ivory"
+}
