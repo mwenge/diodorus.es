@@ -29,6 +29,17 @@ quote > l {
   display: block;
   font-style: italic;
 }
+speaker {
+  display: block;
+}
+castlist {
+  display: block;
+  text-align: center;
+}
+castitem {
+  text-transform: uppercase;
+  display: inline;
+}
 quote[lang="greek"]::before, quote[lang="greek"]::after {
   content: "'";
 }
@@ -151,4 +162,3 @@ span {
 .helper {
   font-size: 5vw !important;
 }
-<!--- Translation: ../perseus/processedtext/texts/1999.01/1999.01.0244.xml -->

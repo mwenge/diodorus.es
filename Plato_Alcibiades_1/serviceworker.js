@@ -6,19 +6,15 @@ var urlsToCache = [
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
-  'GFSDidot.css',
-  'GFSDidot.ttf',
-  'OpenSans.css',
-  'OpenSans.ttf',
-  'Cinzel.css',
-  'Cinzel.ttf',
+  '../GFSDidot.css',
+  '../GFSDidot.ttf',
+  '../OpenSans.css',
+  '../OpenSans.ttf',
+  '../Cinzel.css',
+  '../Cinzel.ttf',
   'CormorantGaramond.css',
   'CormorantGaramond.ttf',
 ];
-
-for (var i = 2; i <= ; i++) {
-  urlsToCache.push("Plato_Alcibiades_1_" + i + ".html");
-}
 
 self.addEventListener('install', function(event) {
   // Perform install steps
