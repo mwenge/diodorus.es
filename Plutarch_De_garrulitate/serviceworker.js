@@ -17,10 +17,6 @@ var urlsToCache = [
   '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 23; i++) {
-  urlsToCache.push("Plutarch_De_garrulitate_" + i + ".html");
-}
-
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
@@ -45,3 +41,26 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Plutarch_De_garrulitate.html");
+urlsToCache.push("Plutarch_De_garrulitate_2.html");
+urlsToCache.push("Plutarch_De_garrulitate_3.html");
+urlsToCache.push("Plutarch_De_garrulitate_4.html");
+urlsToCache.push("Plutarch_De_garrulitate_5.html");
+urlsToCache.push("Plutarch_De_garrulitate_6.html");
+urlsToCache.push("Plutarch_De_garrulitate_7.html");
+urlsToCache.push("Plutarch_De_garrulitate_8.html");
+urlsToCache.push("Plutarch_De_garrulitate_9.html");
+urlsToCache.push("Plutarch_De_garrulitate_10.html");
+urlsToCache.push("Plutarch_De_garrulitate_11.html");
+urlsToCache.push("Plutarch_De_garrulitate_12.html");
+urlsToCache.push("Plutarch_De_garrulitate_13.html");
+urlsToCache.push("Plutarch_De_garrulitate_14.html");
+urlsToCache.push("Plutarch_De_garrulitate_15.html");
+urlsToCache.push("Plutarch_De_garrulitate_16.html");
+urlsToCache.push("Plutarch_De_garrulitate_17.html");
+urlsToCache.push("Plutarch_De_garrulitate_18.html");
+urlsToCache.push("Plutarch_De_garrulitate_19.html");
+urlsToCache.push("Plutarch_De_garrulitate_20.html");
+urlsToCache.push("Plutarch_De_garrulitate_21.html");
+urlsToCache.push("Plutarch_De_garrulitate_22.html");
+urlsToCache.push("Plutarch_De_garrulitate_23.html");

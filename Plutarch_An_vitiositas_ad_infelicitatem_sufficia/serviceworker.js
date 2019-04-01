@@ -17,10 +17,6 @@ var urlsToCache = [
   '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 5; i++) {
-  urlsToCache.push("Plutarch_An_vitiositas_ad_infelicitatem_sufficia_" + i + ".html");
-}
-
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
@@ -45,3 +41,8 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Plutarch_An_vitiositas_ad_infelicitatem_sufficia.html");
+urlsToCache.push("Plutarch_An_vitiositas_ad_infelicitatem_sufficia_2.html");
+urlsToCache.push("Plutarch_An_vitiositas_ad_infelicitatem_sufficia_3.html");
+urlsToCache.push("Plutarch_An_vitiositas_ad_infelicitatem_sufficia_4.html");
+urlsToCache.push("Plutarch_An_vitiositas_ad_infelicitatem_sufficia_5.html");

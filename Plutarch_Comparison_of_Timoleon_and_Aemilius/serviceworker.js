@@ -17,10 +17,6 @@ var urlsToCache = [
   '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 2; i++) {
-  urlsToCache.push("Plutarch_Comparison_of_Timoleon_and_Aemilius_" + i + ".html");
-}
-
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
@@ -45,3 +41,5 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Plutarch_Comparison_of_Timoleon_and_Aemilius.html");
+urlsToCache.push("Plutarch_Comparison_of_Timoleon_and_Aemilius_2.html");

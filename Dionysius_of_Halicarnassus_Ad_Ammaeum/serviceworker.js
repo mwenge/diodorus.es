@@ -17,10 +17,6 @@ var urlsToCache = [
   '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 12; i++) {
-  urlsToCache.push("Dionysius_of_Halicarnassus_Ad_Ammaeum_" + i + ".html");
-}
-
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
@@ -45,3 +41,15 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Dionysius_of_Halicarnassus_Ad_Ammaeum.html");
+urlsToCache.push("Dionysius_of_Halicarnassus_Ad_Ammaeum_2.html");
+urlsToCache.push("Dionysius_of_Halicarnassus_Ad_Ammaeum_3.html");
+urlsToCache.push("Dionysius_of_Halicarnassus_Ad_Ammaeum_4.html");
+urlsToCache.push("Dionysius_of_Halicarnassus_Ad_Ammaeum_5.html");
+urlsToCache.push("Dionysius_of_Halicarnassus_Ad_Ammaeum_6.html");
+urlsToCache.push("Dionysius_of_Halicarnassus_Ad_Ammaeum_7.html");
+urlsToCache.push("Dionysius_of_Halicarnassus_Ad_Ammaeum_8.html");
+urlsToCache.push("Dionysius_of_Halicarnassus_Ad_Ammaeum_9.html");
+urlsToCache.push("Dionysius_of_Halicarnassus_Ad_Ammaeum_10.html");
+urlsToCache.push("Dionysius_of_Halicarnassus_Ad_Ammaeum_11.html");
+urlsToCache.push("Dionysius_of_Halicarnassus_Ad_Ammaeum_12.html");

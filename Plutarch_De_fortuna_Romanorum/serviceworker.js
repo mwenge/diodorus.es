@@ -17,10 +17,6 @@ var urlsToCache = [
   '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 13; i++) {
-  urlsToCache.push("Plutarch_De_fortuna_Romanorum_" + i + ".html");
-}
-
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
@@ -45,3 +41,16 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Plutarch_De_fortuna_Romanorum.html");
+urlsToCache.push("Plutarch_De_fortuna_Romanorum_2.html");
+urlsToCache.push("Plutarch_De_fortuna_Romanorum_3.html");
+urlsToCache.push("Plutarch_De_fortuna_Romanorum_4.html");
+urlsToCache.push("Plutarch_De_fortuna_Romanorum_5.html");
+urlsToCache.push("Plutarch_De_fortuna_Romanorum_6.html");
+urlsToCache.push("Plutarch_De_fortuna_Romanorum_7.html");
+urlsToCache.push("Plutarch_De_fortuna_Romanorum_8.html");
+urlsToCache.push("Plutarch_De_fortuna_Romanorum_9.html");
+urlsToCache.push("Plutarch_De_fortuna_Romanorum_10.html");
+urlsToCache.push("Plutarch_De_fortuna_Romanorum_11.html");
+urlsToCache.push("Plutarch_De_fortuna_Romanorum_12.html");
+urlsToCache.push("Plutarch_De_fortuna_Romanorum_13.html");

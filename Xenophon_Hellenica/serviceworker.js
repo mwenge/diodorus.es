@@ -17,10 +17,6 @@ var urlsToCache = [
   '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 7; i++) {
-  urlsToCache.push("Xenophon_Hellenica_" + i + ".html");
-}
-
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
@@ -45,3 +41,10 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Xenophon_Hellenica.html");
+urlsToCache.push("Xenophon_Hellenica_2.html");
+urlsToCache.push("Xenophon_Hellenica_3.html");
+urlsToCache.push("Xenophon_Hellenica_4.html");
+urlsToCache.push("Xenophon_Hellenica_5.html");
+urlsToCache.push("Xenophon_Hellenica_6.html");
+urlsToCache.push("Xenophon_Hellenica_7.html");

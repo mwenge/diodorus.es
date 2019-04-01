@@ -45,3 +45,5 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Hesiod_Works_and_Days_WD.html");
+urlsToCache.push("commentaryWD.js");

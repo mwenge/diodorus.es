@@ -17,10 +17,6 @@ var urlsToCache = [
   '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 7; i++) {
-  urlsToCache.push("Plutarch_An_Recte_Dictum_Sit_Latenter_Esse_Vivendum_" + i + ".html");
-}
-
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
@@ -45,3 +41,10 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Plutarch_An_Recte_Dictum_Sit_Latenter_Esse_Vivendum.html");
+urlsToCache.push("Plutarch_An_Recte_Dictum_Sit_Latenter_Esse_Vivendum_2.html");
+urlsToCache.push("Plutarch_An_Recte_Dictum_Sit_Latenter_Esse_Vivendum_3.html");
+urlsToCache.push("Plutarch_An_Recte_Dictum_Sit_Latenter_Esse_Vivendum_4.html");
+urlsToCache.push("Plutarch_An_Recte_Dictum_Sit_Latenter_Esse_Vivendum_5.html");
+urlsToCache.push("Plutarch_An_Recte_Dictum_Sit_Latenter_Esse_Vivendum_6.html");
+urlsToCache.push("Plutarch_An_Recte_Dictum_Sit_Latenter_Esse_Vivendum_7.html");

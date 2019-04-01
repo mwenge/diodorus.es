@@ -17,10 +17,6 @@ var urlsToCache = [
   '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 7; i++) {
-  urlsToCache.push("Plutarch_De_esu_carnium_II_" + i + ".html");
-}
-
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
@@ -45,3 +41,10 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Plutarch_De_esu_carnium_II.html");
+urlsToCache.push("Plutarch_De_esu_carnium_II_2.html");
+urlsToCache.push("Plutarch_De_esu_carnium_II_3.html");
+urlsToCache.push("Plutarch_De_esu_carnium_II_4.html");
+urlsToCache.push("Plutarch_De_esu_carnium_II_5.html");
+urlsToCache.push("Plutarch_De_esu_carnium_II_6.html");
+urlsToCache.push("Plutarch_De_esu_carnium_II_7.html");

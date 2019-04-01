@@ -17,10 +17,6 @@ var urlsToCache = [
   '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 10; i++) {
-  urlsToCache.push("Plutarch_Platonicae_quaestiones_" + i + ".html");
-}
-
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
@@ -45,3 +41,13 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Plutarch_Platonicae_quaestiones.html");
+urlsToCache.push("Plutarch_Platonicae_quaestiones_2.html");
+urlsToCache.push("Plutarch_Platonicae_quaestiones_3.html");
+urlsToCache.push("Plutarch_Platonicae_quaestiones_4.html");
+urlsToCache.push("Plutarch_Platonicae_quaestiones_5.html");
+urlsToCache.push("Plutarch_Platonicae_quaestiones_6.html");
+urlsToCache.push("Plutarch_Platonicae_quaestiones_7.html");
+urlsToCache.push("Plutarch_Platonicae_quaestiones_8.html");
+urlsToCache.push("Plutarch_Platonicae_quaestiones_9.html");
+urlsToCache.push("Plutarch_Platonicae_quaestiones_10.html");

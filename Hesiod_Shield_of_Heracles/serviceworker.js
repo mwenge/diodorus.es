@@ -45,3 +45,5 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Hesiod_Shield_of_Heracles_Sh..html");
+urlsToCache.push("commentarySh..js");

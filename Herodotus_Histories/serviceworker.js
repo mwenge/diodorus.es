@@ -17,10 +17,6 @@ var urlsToCache = [
   '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 9; i++) {
-  urlsToCache.push("Herodotus_Histories_" + i + ".html");
-}
-
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
@@ -45,3 +41,12 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Herodotus_Histories.html");
+urlsToCache.push("Herodotus_Histories_2.html");
+urlsToCache.push("Herodotus_Histories_3.html");
+urlsToCache.push("Herodotus_Histories_4.html");
+urlsToCache.push("Herodotus_Histories_5.html");
+urlsToCache.push("Herodotus_Histories_6.html");
+urlsToCache.push("Herodotus_Histories_7.html");
+urlsToCache.push("Herodotus_Histories_8.html");
+urlsToCache.push("Herodotus_Histories_9.html");

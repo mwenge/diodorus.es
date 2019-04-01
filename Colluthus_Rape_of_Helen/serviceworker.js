@@ -45,3 +45,5 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Colluthus_Rape_of_Helen_1.html");
+urlsToCache.push("commentary1.js");

@@ -45,3 +45,5 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Tryphiodorus_Taking_of_Ilios_1.html");
+urlsToCache.push("commentary1.js");

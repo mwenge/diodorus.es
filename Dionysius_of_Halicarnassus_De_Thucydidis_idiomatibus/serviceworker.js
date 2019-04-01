@@ -17,10 +17,6 @@ var urlsToCache = [
   '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 17; i++) {
-  urlsToCache.push("Dionysius_of_Halicarnassus_De_Thucydidis_idiomatibus_" + i + ".html");
-}
-
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
@@ -45,3 +41,20 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Dionysius_of_Halicarnassus_De_Thucydidis_idiomatibus.html");
+urlsToCache.push("Dionysius_of_Halicarnassus_De_Thucydidis_idiomatibus_2.html");
+urlsToCache.push("Dionysius_of_Halicarnassus_De_Thucydidis_idiomatibus_3.html");
+urlsToCache.push("Dionysius_of_Halicarnassus_De_Thucydidis_idiomatibus_4.html");
+urlsToCache.push("Dionysius_of_Halicarnassus_De_Thucydidis_idiomatibus_5.html");
+urlsToCache.push("Dionysius_of_Halicarnassus_De_Thucydidis_idiomatibus_6.html");
+urlsToCache.push("Dionysius_of_Halicarnassus_De_Thucydidis_idiomatibus_7.html");
+urlsToCache.push("Dionysius_of_Halicarnassus_De_Thucydidis_idiomatibus_8.html");
+urlsToCache.push("Dionysius_of_Halicarnassus_De_Thucydidis_idiomatibus_9.html");
+urlsToCache.push("Dionysius_of_Halicarnassus_De_Thucydidis_idiomatibus_10.html");
+urlsToCache.push("Dionysius_of_Halicarnassus_De_Thucydidis_idiomatibus_11.html");
+urlsToCache.push("Dionysius_of_Halicarnassus_De_Thucydidis_idiomatibus_12.html");
+urlsToCache.push("Dionysius_of_Halicarnassus_De_Thucydidis_idiomatibus_13.html");
+urlsToCache.push("Dionysius_of_Halicarnassus_De_Thucydidis_idiomatibus_14.html");
+urlsToCache.push("Dionysius_of_Halicarnassus_De_Thucydidis_idiomatibus_15.html");
+urlsToCache.push("Dionysius_of_Halicarnassus_De_Thucydidis_idiomatibus_16.html");
+urlsToCache.push("Dionysius_of_Halicarnassus_De_Thucydidis_idiomatibus_17.html");

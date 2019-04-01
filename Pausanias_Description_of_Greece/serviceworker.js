@@ -17,10 +17,6 @@ var urlsToCache = [
   '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 10; i++) {
-  urlsToCache.push("Pausanias_Description_of_Greece_" + i + ".html");
-}
-
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
@@ -45,3 +41,13 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Pausanias_Description_of_Greece.html");
+urlsToCache.push("Pausanias_Description_of_Greece_2.html");
+urlsToCache.push("Pausanias_Description_of_Greece_3.html");
+urlsToCache.push("Pausanias_Description_of_Greece_4.html");
+urlsToCache.push("Pausanias_Description_of_Greece_5.html");
+urlsToCache.push("Pausanias_Description_of_Greece_6.html");
+urlsToCache.push("Pausanias_Description_of_Greece_7.html");
+urlsToCache.push("Pausanias_Description_of_Greece_8.html");
+urlsToCache.push("Pausanias_Description_of_Greece_9.html");
+urlsToCache.push("Pausanias_Description_of_Greece_10.html");

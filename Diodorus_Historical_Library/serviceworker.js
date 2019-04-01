@@ -17,10 +17,6 @@ var urlsToCache = [
   '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 20; i++) {
-  urlsToCache.push("Diodorus_Historical_Library_" + i + ".html");
-}
-
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
@@ -45,3 +41,6 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Diodorus_Historical_Library_18.html");
+urlsToCache.push("Diodorus_Historical_Library_19.html");
+urlsToCache.push("Diodorus_Historical_Library_20.html");

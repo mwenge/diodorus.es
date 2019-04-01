@@ -17,10 +17,6 @@ var urlsToCache = [
   '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 10; i++) {
-  urlsToCache.push("Plato_Republic_" + i + ".html");
-}
-
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
@@ -45,3 +41,13 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Plato_Republic.html");
+urlsToCache.push("Plato_Republic_2.html");
+urlsToCache.push("Plato_Republic_3.html");
+urlsToCache.push("Plato_Republic_4.html");
+urlsToCache.push("Plato_Republic_5.html");
+urlsToCache.push("Plato_Republic_6.html");
+urlsToCache.push("Plato_Republic_7.html");
+urlsToCache.push("Plato_Republic_8.html");
+urlsToCache.push("Plato_Republic_9.html");
+urlsToCache.push("Plato_Republic_10.html");

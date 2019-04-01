@@ -17,10 +17,6 @@ var urlsToCache = [
   '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 4; i++) {
-  urlsToCache.push("Plutarch_Animine_an_corporis_affectiones_sint_peiores_" + i + ".html");
-}
-
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
@@ -45,3 +41,7 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Plutarch_Animine_an_corporis_affectiones_sint_peiores.html");
+urlsToCache.push("Plutarch_Animine_an_corporis_affectiones_sint_peiores_2.html");
+urlsToCache.push("Plutarch_Animine_an_corporis_affectiones_sint_peiores_3.html");
+urlsToCache.push("Plutarch_Animine_an_corporis_affectiones_sint_peiores_4.html");

@@ -17,10 +17,6 @@ var urlsToCache = [
   '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 3; i++) {
-  urlsToCache.push("Plutarch_Comparison_of_Philopoemen_and_Titus_" + i + ".html");
-}
-
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
@@ -45,3 +41,6 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Plutarch_Comparison_of_Philopoemen_and_Titus.html");
+urlsToCache.push("Plutarch_Comparison_of_Philopoemen_and_Titus_2.html");
+urlsToCache.push("Plutarch_Comparison_of_Philopoemen_and_Titus_3.html");

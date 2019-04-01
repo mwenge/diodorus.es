@@ -17,10 +17,6 @@ var urlsToCache = [
   '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 39; i++) {
-  urlsToCache.push("Plutarch_Cleomenes_" + i + ".html");
-}
-
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
@@ -45,3 +41,42 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Plutarch_Cleomenes.html");
+urlsToCache.push("Plutarch_Cleomenes_2.html");
+urlsToCache.push("Plutarch_Cleomenes_3.html");
+urlsToCache.push("Plutarch_Cleomenes_4.html");
+urlsToCache.push("Plutarch_Cleomenes_5.html");
+urlsToCache.push("Plutarch_Cleomenes_6.html");
+urlsToCache.push("Plutarch_Cleomenes_7.html");
+urlsToCache.push("Plutarch_Cleomenes_8.html");
+urlsToCache.push("Plutarch_Cleomenes_9.html");
+urlsToCache.push("Plutarch_Cleomenes_10.html");
+urlsToCache.push("Plutarch_Cleomenes_11.html");
+urlsToCache.push("Plutarch_Cleomenes_12.html");
+urlsToCache.push("Plutarch_Cleomenes_13.html");
+urlsToCache.push("Plutarch_Cleomenes_14.html");
+urlsToCache.push("Plutarch_Cleomenes_15.html");
+urlsToCache.push("Plutarch_Cleomenes_16.html");
+urlsToCache.push("Plutarch_Cleomenes_17.html");
+urlsToCache.push("Plutarch_Cleomenes_18.html");
+urlsToCache.push("Plutarch_Cleomenes_19.html");
+urlsToCache.push("Plutarch_Cleomenes_20.html");
+urlsToCache.push("Plutarch_Cleomenes_21.html");
+urlsToCache.push("Plutarch_Cleomenes_22.html");
+urlsToCache.push("Plutarch_Cleomenes_23.html");
+urlsToCache.push("Plutarch_Cleomenes_24.html");
+urlsToCache.push("Plutarch_Cleomenes_25.html");
+urlsToCache.push("Plutarch_Cleomenes_26.html");
+urlsToCache.push("Plutarch_Cleomenes_27.html");
+urlsToCache.push("Plutarch_Cleomenes_28.html");
+urlsToCache.push("Plutarch_Cleomenes_29.html");
+urlsToCache.push("Plutarch_Cleomenes_30.html");
+urlsToCache.push("Plutarch_Cleomenes_31.html");
+urlsToCache.push("Plutarch_Cleomenes_32.html");
+urlsToCache.push("Plutarch_Cleomenes_33.html");
+urlsToCache.push("Plutarch_Cleomenes_34.html");
+urlsToCache.push("Plutarch_Cleomenes_35.html");
+urlsToCache.push("Plutarch_Cleomenes_36.html");
+urlsToCache.push("Plutarch_Cleomenes_37.html");
+urlsToCache.push("Plutarch_Cleomenes_38.html");
+urlsToCache.push("Plutarch_Cleomenes_39.html");

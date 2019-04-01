@@ -17,10 +17,6 @@ var urlsToCache = [
   '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 25; i++) {
-  urlsToCache.push("Arrian_Periplus_Ponti_Euxini_" + i + ".html");
-}
-
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
@@ -45,3 +41,28 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Arrian_Periplus_Ponti_Euxini.html");
+urlsToCache.push("Arrian_Periplus_Ponti_Euxini_2.html");
+urlsToCache.push("Arrian_Periplus_Ponti_Euxini_3.html");
+urlsToCache.push("Arrian_Periplus_Ponti_Euxini_4.html");
+urlsToCache.push("Arrian_Periplus_Ponti_Euxini_5.html");
+urlsToCache.push("Arrian_Periplus_Ponti_Euxini_6.html");
+urlsToCache.push("Arrian_Periplus_Ponti_Euxini_7.html");
+urlsToCache.push("Arrian_Periplus_Ponti_Euxini_8.html");
+urlsToCache.push("Arrian_Periplus_Ponti_Euxini_9.html");
+urlsToCache.push("Arrian_Periplus_Ponti_Euxini_10.html");
+urlsToCache.push("Arrian_Periplus_Ponti_Euxini_11.html");
+urlsToCache.push("Arrian_Periplus_Ponti_Euxini_12.html");
+urlsToCache.push("Arrian_Periplus_Ponti_Euxini_13.html");
+urlsToCache.push("Arrian_Periplus_Ponti_Euxini_14.html");
+urlsToCache.push("Arrian_Periplus_Ponti_Euxini_15.html");
+urlsToCache.push("Arrian_Periplus_Ponti_Euxini_16.html");
+urlsToCache.push("Arrian_Periplus_Ponti_Euxini_17.html");
+urlsToCache.push("Arrian_Periplus_Ponti_Euxini_18.html");
+urlsToCache.push("Arrian_Periplus_Ponti_Euxini_19.html");
+urlsToCache.push("Arrian_Periplus_Ponti_Euxini_20.html");
+urlsToCache.push("Arrian_Periplus_Ponti_Euxini_21.html");
+urlsToCache.push("Arrian_Periplus_Ponti_Euxini_22.html");
+urlsToCache.push("Arrian_Periplus_Ponti_Euxini_23.html");
+urlsToCache.push("Arrian_Periplus_Ponti_Euxini_24.html");
+urlsToCache.push("Arrian_Periplus_Ponti_Euxini_25.html");

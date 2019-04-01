@@ -17,10 +17,6 @@ var urlsToCache = [
   '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 13; i++) {
-  urlsToCache.push("Plato_Letters_" + i + ".html");
-}
-
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
@@ -45,3 +41,16 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Plato_Letters.html");
+urlsToCache.push("Plato_Letters_2.html");
+urlsToCache.push("Plato_Letters_3.html");
+urlsToCache.push("Plato_Letters_4.html");
+urlsToCache.push("Plato_Letters_5.html");
+urlsToCache.push("Plato_Letters_6.html");
+urlsToCache.push("Plato_Letters_7.html");
+urlsToCache.push("Plato_Letters_8.html");
+urlsToCache.push("Plato_Letters_9.html");
+urlsToCache.push("Plato_Letters_10.html");
+urlsToCache.push("Plato_Letters_11.html");
+urlsToCache.push("Plato_Letters_12.html");
+urlsToCache.push("Plato_Letters_13.html");

@@ -45,3 +45,5 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Aratus_Phaenomena_1.html");
+urlsToCache.push("commentary1.js");

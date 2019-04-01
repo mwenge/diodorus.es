@@ -17,10 +17,6 @@ var urlsToCache = [
   '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 14; i++) {
-  urlsToCache.push("Plutarch_De_superstitione_" + i + ".html");
-}
-
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
@@ -45,3 +41,17 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Plutarch_De_superstitione.html");
+urlsToCache.push("Plutarch_De_superstitione_2.html");
+urlsToCache.push("Plutarch_De_superstitione_3.html");
+urlsToCache.push("Plutarch_De_superstitione_4.html");
+urlsToCache.push("Plutarch_De_superstitione_5.html");
+urlsToCache.push("Plutarch_De_superstitione_6.html");
+urlsToCache.push("Plutarch_De_superstitione_7.html");
+urlsToCache.push("Plutarch_De_superstitione_8.html");
+urlsToCache.push("Plutarch_De_superstitione_9.html");
+urlsToCache.push("Plutarch_De_superstitione_10.html");
+urlsToCache.push("Plutarch_De_superstitione_11.html");
+urlsToCache.push("Plutarch_De_superstitione_12.html");
+urlsToCache.push("Plutarch_De_superstitione_13.html");
+urlsToCache.push("Plutarch_De_superstitione_14.html");

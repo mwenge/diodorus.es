@@ -17,10 +17,6 @@ var urlsToCache = [
   '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 12; i++) {
-  urlsToCache.push("Plato_Laws_" + i + ".html");
-}
-
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
@@ -45,3 +41,15 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Plato_Laws.html");
+urlsToCache.push("Plato_Laws_2.html");
+urlsToCache.push("Plato_Laws_3.html");
+urlsToCache.push("Plato_Laws_4.html");
+urlsToCache.push("Plato_Laws_5.html");
+urlsToCache.push("Plato_Laws_6.html");
+urlsToCache.push("Plato_Laws_7.html");
+urlsToCache.push("Plato_Laws_8.html");
+urlsToCache.push("Plato_Laws_9.html");
+urlsToCache.push("Plato_Laws_10.html");
+urlsToCache.push("Plato_Laws_11.html");
+urlsToCache.push("Plato_Laws_12.html");

@@ -17,10 +17,6 @@ var urlsToCache = [
   '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 8; i++) {
-  urlsToCache.push("Plutarch_De_invidia_et_odio_" + i + ".html");
-}
-
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
@@ -45,3 +41,11 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Plutarch_De_invidia_et_odio.html");
+urlsToCache.push("Plutarch_De_invidia_et_odio_2.html");
+urlsToCache.push("Plutarch_De_invidia_et_odio_3.html");
+urlsToCache.push("Plutarch_De_invidia_et_odio_4.html");
+urlsToCache.push("Plutarch_De_invidia_et_odio_5.html");
+urlsToCache.push("Plutarch_De_invidia_et_odio_6.html");
+urlsToCache.push("Plutarch_De_invidia_et_odio_7.html");
+urlsToCache.push("Plutarch_De_invidia_et_odio_8.html");

@@ -45,3 +45,5 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Hesiod_Theogony_Th..html");
+urlsToCache.push("commentaryTh..js");

@@ -17,10 +17,6 @@ var urlsToCache = [
   '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 18; i++) {
-  urlsToCache.push("Plutarch_Otho_" + i + ".html");
-}
-
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
@@ -45,3 +41,21 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Plutarch_Otho.html");
+urlsToCache.push("Plutarch_Otho_2.html");
+urlsToCache.push("Plutarch_Otho_3.html");
+urlsToCache.push("Plutarch_Otho_4.html");
+urlsToCache.push("Plutarch_Otho_5.html");
+urlsToCache.push("Plutarch_Otho_6.html");
+urlsToCache.push("Plutarch_Otho_7.html");
+urlsToCache.push("Plutarch_Otho_8.html");
+urlsToCache.push("Plutarch_Otho_9.html");
+urlsToCache.push("Plutarch_Otho_10.html");
+urlsToCache.push("Plutarch_Otho_11.html");
+urlsToCache.push("Plutarch_Otho_12.html");
+urlsToCache.push("Plutarch_Otho_13.html");
+urlsToCache.push("Plutarch_Otho_14.html");
+urlsToCache.push("Plutarch_Otho_15.html");
+urlsToCache.push("Plutarch_Otho_16.html");
+urlsToCache.push("Plutarch_Otho_17.html");
+urlsToCache.push("Plutarch_Otho_18.html");

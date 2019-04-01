@@ -17,10 +17,6 @@ var urlsToCache = [
   '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 8; i++) {
-  urlsToCache.push("Plutarch_De_gloria_Atheniensium_" + i + ".html");
-}
-
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
@@ -45,3 +41,11 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Plutarch_De_gloria_Atheniensium.html");
+urlsToCache.push("Plutarch_De_gloria_Atheniensium_2.html");
+urlsToCache.push("Plutarch_De_gloria_Atheniensium_3.html");
+urlsToCache.push("Plutarch_De_gloria_Atheniensium_4.html");
+urlsToCache.push("Plutarch_De_gloria_Atheniensium_5.html");
+urlsToCache.push("Plutarch_De_gloria_Atheniensium_6.html");
+urlsToCache.push("Plutarch_De_gloria_Atheniensium_7.html");
+urlsToCache.push("Plutarch_De_gloria_Atheniensium_8.html");

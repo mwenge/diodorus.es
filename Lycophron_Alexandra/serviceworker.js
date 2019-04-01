@@ -45,3 +45,5 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Lycophron_Alexandra_1.html");
+urlsToCache.push("commentary1.js");

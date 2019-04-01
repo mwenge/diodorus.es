@@ -17,10 +17,6 @@ var urlsToCache = [
   '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 20; i++) {
-  urlsToCache.push("Plutarch_De_liberis_educandis_" + i + ".html");
-}
-
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
@@ -45,3 +41,23 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Plutarch_De_liberis_educandis.html");
+urlsToCache.push("Plutarch_De_liberis_educandis_2.html");
+urlsToCache.push("Plutarch_De_liberis_educandis_3.html");
+urlsToCache.push("Plutarch_De_liberis_educandis_4.html");
+urlsToCache.push("Plutarch_De_liberis_educandis_5.html");
+urlsToCache.push("Plutarch_De_liberis_educandis_6.html");
+urlsToCache.push("Plutarch_De_liberis_educandis_7.html");
+urlsToCache.push("Plutarch_De_liberis_educandis_8.html");
+urlsToCache.push("Plutarch_De_liberis_educandis_9.html");
+urlsToCache.push("Plutarch_De_liberis_educandis_10.html");
+urlsToCache.push("Plutarch_De_liberis_educandis_11.html");
+urlsToCache.push("Plutarch_De_liberis_educandis_12.html");
+urlsToCache.push("Plutarch_De_liberis_educandis_13.html");
+urlsToCache.push("Plutarch_De_liberis_educandis_14.html");
+urlsToCache.push("Plutarch_De_liberis_educandis_15.html");
+urlsToCache.push("Plutarch_De_liberis_educandis_16.html");
+urlsToCache.push("Plutarch_De_liberis_educandis_17.html");
+urlsToCache.push("Plutarch_De_liberis_educandis_18.html");
+urlsToCache.push("Plutarch_De_liberis_educandis_19.html");
+urlsToCache.push("Plutarch_De_liberis_educandis_20.html");

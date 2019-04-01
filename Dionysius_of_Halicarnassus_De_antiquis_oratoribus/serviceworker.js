@@ -17,10 +17,6 @@ var urlsToCache = [
   '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 4; i++) {
-  urlsToCache.push("Dionysius_of_Halicarnassus_De_antiquis_oratoribus_" + i + ".html");
-}
-
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
@@ -45,3 +41,7 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Dionysius_of_Halicarnassus_De_antiquis_oratoribus.html");
+urlsToCache.push("Dionysius_of_Halicarnassus_De_antiquis_oratoribus_2.html");
+urlsToCache.push("Dionysius_of_Halicarnassus_De_antiquis_oratoribus_3.html");
+urlsToCache.push("Dionysius_of_Halicarnassus_De_antiquis_oratoribus_4.html");

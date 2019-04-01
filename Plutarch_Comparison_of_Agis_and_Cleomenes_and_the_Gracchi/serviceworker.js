@@ -17,10 +17,6 @@ var urlsToCache = [
   '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 5; i++) {
-  urlsToCache.push("Plutarch_Comparison_of_Agis_and_Cleomenes_and_the_Gracchi_" + i + ".html");
-}
-
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
@@ -45,3 +41,8 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Plutarch_Comparison_of_Agis_and_Cleomenes_and_the_Gracchi.html");
+urlsToCache.push("Plutarch_Comparison_of_Agis_and_Cleomenes_and_the_Gracchi_2.html");
+urlsToCache.push("Plutarch_Comparison_of_Agis_and_Cleomenes_and_the_Gracchi_3.html");
+urlsToCache.push("Plutarch_Comparison_of_Agis_and_Cleomenes_and_the_Gracchi_4.html");
+urlsToCache.push("Plutarch_Comparison_of_Agis_and_Cleomenes_and_the_Gracchi_5.html");

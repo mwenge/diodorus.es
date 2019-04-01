@@ -17,10 +17,6 @@ var urlsToCache = [
   '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 21; i++) {
-  urlsToCache.push("Plutarch_De_E_apud_Delphos_" + i + ".html");
-}
-
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
@@ -45,3 +41,24 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Plutarch_De_E_apud_Delphos.html");
+urlsToCache.push("Plutarch_De_E_apud_Delphos_2.html");
+urlsToCache.push("Plutarch_De_E_apud_Delphos_3.html");
+urlsToCache.push("Plutarch_De_E_apud_Delphos_4.html");
+urlsToCache.push("Plutarch_De_E_apud_Delphos_5.html");
+urlsToCache.push("Plutarch_De_E_apud_Delphos_6.html");
+urlsToCache.push("Plutarch_De_E_apud_Delphos_7.html");
+urlsToCache.push("Plutarch_De_E_apud_Delphos_8.html");
+urlsToCache.push("Plutarch_De_E_apud_Delphos_9.html");
+urlsToCache.push("Plutarch_De_E_apud_Delphos_10.html");
+urlsToCache.push("Plutarch_De_E_apud_Delphos_11.html");
+urlsToCache.push("Plutarch_De_E_apud_Delphos_12.html");
+urlsToCache.push("Plutarch_De_E_apud_Delphos_13.html");
+urlsToCache.push("Plutarch_De_E_apud_Delphos_14.html");
+urlsToCache.push("Plutarch_De_E_apud_Delphos_15.html");
+urlsToCache.push("Plutarch_De_E_apud_Delphos_16.html");
+urlsToCache.push("Plutarch_De_E_apud_Delphos_17.html");
+urlsToCache.push("Plutarch_De_E_apud_Delphos_18.html");
+urlsToCache.push("Plutarch_De_E_apud_Delphos_19.html");
+urlsToCache.push("Plutarch_De_E_apud_Delphos_20.html");
+urlsToCache.push("Plutarch_De_E_apud_Delphos_21.html");

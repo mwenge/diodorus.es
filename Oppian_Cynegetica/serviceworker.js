@@ -45,3 +45,11 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Oppian_Cynegetica_1.html");
+urlsToCache.push("commentary1.js");
+urlsToCache.push("Oppian_Cynegetica_2.html");
+urlsToCache.push("commentary2.js");
+urlsToCache.push("Oppian_Cynegetica_3.html");
+urlsToCache.push("commentary3.js");
+urlsToCache.push("Oppian_Cynegetica_4.html");
+urlsToCache.push("commentary4.js");

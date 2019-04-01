@@ -17,10 +17,6 @@ var urlsToCache = [
   '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 22; i++) {
-  urlsToCache.push("Plutarch_Numa_" + i + ".html");
-}
-
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
@@ -45,3 +41,25 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Plutarch_Numa.html");
+urlsToCache.push("Plutarch_Numa_2.html");
+urlsToCache.push("Plutarch_Numa_3.html");
+urlsToCache.push("Plutarch_Numa_4.html");
+urlsToCache.push("Plutarch_Numa_5.html");
+urlsToCache.push("Plutarch_Numa_6.html");
+urlsToCache.push("Plutarch_Numa_7.html");
+urlsToCache.push("Plutarch_Numa_8.html");
+urlsToCache.push("Plutarch_Numa_9.html");
+urlsToCache.push("Plutarch_Numa_10.html");
+urlsToCache.push("Plutarch_Numa_11.html");
+urlsToCache.push("Plutarch_Numa_12.html");
+urlsToCache.push("Plutarch_Numa_13.html");
+urlsToCache.push("Plutarch_Numa_14.html");
+urlsToCache.push("Plutarch_Numa_15.html");
+urlsToCache.push("Plutarch_Numa_16.html");
+urlsToCache.push("Plutarch_Numa_17.html");
+urlsToCache.push("Plutarch_Numa_18.html");
+urlsToCache.push("Plutarch_Numa_19.html");
+urlsToCache.push("Plutarch_Numa_20.html");
+urlsToCache.push("Plutarch_Numa_21.html");
+urlsToCache.push("Plutarch_Numa_22.html");

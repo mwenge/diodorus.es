@@ -17,10 +17,6 @@ var urlsToCache = [
   '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 2; i++) {
-  urlsToCache.push("Plutarch_Quomodo_quis_suos_in_virtute_sentiat_profectus_" + i + ".html");
-}
-
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
@@ -45,3 +41,4 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Plutarch_Quomodo_quis_suos_in_virtute_sentiat_profectus.html");

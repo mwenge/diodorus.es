@@ -17,10 +17,6 @@ var urlsToCache = [
   '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 12; i++) {
-  urlsToCache.push("Plutarch_De_virtute_morali_" + i + ".html");
-}
-
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
@@ -45,3 +41,15 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Plutarch_De_virtute_morali.html");
+urlsToCache.push("Plutarch_De_virtute_morali_2.html");
+urlsToCache.push("Plutarch_De_virtute_morali_3.html");
+urlsToCache.push("Plutarch_De_virtute_morali_4.html");
+urlsToCache.push("Plutarch_De_virtute_morali_5.html");
+urlsToCache.push("Plutarch_De_virtute_morali_6.html");
+urlsToCache.push("Plutarch_De_virtute_morali_7.html");
+urlsToCache.push("Plutarch_De_virtute_morali_8.html");
+urlsToCache.push("Plutarch_De_virtute_morali_9.html");
+urlsToCache.push("Plutarch_De_virtute_morali_10.html");
+urlsToCache.push("Plutarch_De_virtute_morali_11.html");
+urlsToCache.push("Plutarch_De_virtute_morali_12.html");

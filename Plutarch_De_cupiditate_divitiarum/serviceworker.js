@@ -17,10 +17,6 @@ var urlsToCache = [
   '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 10; i++) {
-  urlsToCache.push("Plutarch_De_cupiditate_divitiarum_" + i + ".html");
-}
-
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
@@ -45,3 +41,13 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Plutarch_De_cupiditate_divitiarum.html");
+urlsToCache.push("Plutarch_De_cupiditate_divitiarum_2.html");
+urlsToCache.push("Plutarch_De_cupiditate_divitiarum_3.html");
+urlsToCache.push("Plutarch_De_cupiditate_divitiarum_4.html");
+urlsToCache.push("Plutarch_De_cupiditate_divitiarum_5.html");
+urlsToCache.push("Plutarch_De_cupiditate_divitiarum_6.html");
+urlsToCache.push("Plutarch_De_cupiditate_divitiarum_7.html");
+urlsToCache.push("Plutarch_De_cupiditate_divitiarum_8.html");
+urlsToCache.push("Plutarch_De_cupiditate_divitiarum_9.html");
+urlsToCache.push("Plutarch_De_cupiditate_divitiarum_10.html");

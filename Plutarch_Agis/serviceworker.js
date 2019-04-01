@@ -17,10 +17,6 @@ var urlsToCache = [
   '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 21; i++) {
-  urlsToCache.push("Plutarch_Agis_" + i + ".html");
-}
-
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
@@ -45,3 +41,24 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Plutarch_Agis.html");
+urlsToCache.push("Plutarch_Agis_2.html");
+urlsToCache.push("Plutarch_Agis_3.html");
+urlsToCache.push("Plutarch_Agis_4.html");
+urlsToCache.push("Plutarch_Agis_5.html");
+urlsToCache.push("Plutarch_Agis_6.html");
+urlsToCache.push("Plutarch_Agis_7.html");
+urlsToCache.push("Plutarch_Agis_8.html");
+urlsToCache.push("Plutarch_Agis_9.html");
+urlsToCache.push("Plutarch_Agis_10.html");
+urlsToCache.push("Plutarch_Agis_11.html");
+urlsToCache.push("Plutarch_Agis_12.html");
+urlsToCache.push("Plutarch_Agis_13.html");
+urlsToCache.push("Plutarch_Agis_14.html");
+urlsToCache.push("Plutarch_Agis_15.html");
+urlsToCache.push("Plutarch_Agis_16.html");
+urlsToCache.push("Plutarch_Agis_17.html");
+urlsToCache.push("Plutarch_Agis_18.html");
+urlsToCache.push("Plutarch_Agis_19.html");
+urlsToCache.push("Plutarch_Agis_20.html");
+urlsToCache.push("Plutarch_Agis_21.html");

@@ -45,3 +45,13 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Oppian_Halieutica_1.html");
+urlsToCache.push("commentary1.js");
+urlsToCache.push("Oppian_Halieutica_2.html");
+urlsToCache.push("commentary2.js");
+urlsToCache.push("Oppian_Halieutica_3.html");
+urlsToCache.push("commentary3.js");
+urlsToCache.push("Oppian_Halieutica_4.html");
+urlsToCache.push("commentary4.js");
+urlsToCache.push("Oppian_Halieutica_5.html");
+urlsToCache.push("commentary5.js");

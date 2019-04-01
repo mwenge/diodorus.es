@@ -17,10 +17,6 @@ var urlsToCache = [
   '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 2; i++) {
-  urlsToCache.push("Plutarch_De_Alexandri_magni_fortuna_aut_virtute_" + i + ".html");
-}
-
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
@@ -45,3 +41,5 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Plutarch_De_Alexandri_magni_fortuna_aut_virtute.html");
+urlsToCache.push("Plutarch_De_Alexandri_magni_fortuna_aut_virtute_2.html");

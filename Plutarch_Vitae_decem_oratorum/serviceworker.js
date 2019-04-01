@@ -17,10 +17,6 @@ var urlsToCache = [
   '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 11; i++) {
-  urlsToCache.push("Plutarch_Vitae_decem_oratorum_" + i + ".html");
-}
-
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
@@ -45,3 +41,14 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Plutarch_Vitae_decem_oratorum.html");
+urlsToCache.push("Plutarch_Vitae_decem_oratorum_2.html");
+urlsToCache.push("Plutarch_Vitae_decem_oratorum_3.html");
+urlsToCache.push("Plutarch_Vitae_decem_oratorum_4.html");
+urlsToCache.push("Plutarch_Vitae_decem_oratorum_5.html");
+urlsToCache.push("Plutarch_Vitae_decem_oratorum_6.html");
+urlsToCache.push("Plutarch_Vitae_decem_oratorum_7.html");
+urlsToCache.push("Plutarch_Vitae_decem_oratorum_8.html");
+urlsToCache.push("Plutarch_Vitae_decem_oratorum_9.html");
+urlsToCache.push("Plutarch_Vitae_decem_oratorum_10.html");
+urlsToCache.push("Plutarch_Vitae_decem_oratorum_11.html");

@@ -45,3 +45,11 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Pindar_Odes_O..html");
+urlsToCache.push("commentaryO..js");
+urlsToCache.push("Pindar_Odes_P..html");
+urlsToCache.push("commentaryP..js");
+urlsToCache.push("Pindar_Odes_N..html");
+urlsToCache.push("commentaryN..js");
+urlsToCache.push("Pindar_Odes_I..html");
+urlsToCache.push("commentaryI..js");

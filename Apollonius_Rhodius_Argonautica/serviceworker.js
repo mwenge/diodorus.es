@@ -45,3 +45,11 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Apollonius_Rhodius_Argonautica_1.html");
+urlsToCache.push("commentary1.js");
+urlsToCache.push("Apollonius_Rhodius_Argonautica_2.html");
+urlsToCache.push("commentary2.js");
+urlsToCache.push("Apollonius_Rhodius_Argonautica_3.html");
+urlsToCache.push("commentary3.js");
+urlsToCache.push("Apollonius_Rhodius_Argonautica_4.html");
+urlsToCache.push("commentary4.js");

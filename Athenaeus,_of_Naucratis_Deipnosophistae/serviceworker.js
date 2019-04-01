@@ -17,10 +17,6 @@ var urlsToCache = [
   '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 5; i++) {
-  urlsToCache.push("Athenaeus,_of_Naucratis_Deipnosophistae_" + i + ".html");
-}
-
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
@@ -45,3 +41,4 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Athenaeus,_of_Naucratis_Deipnosophistae_5.html");

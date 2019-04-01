@@ -17,10 +17,6 @@ var urlsToCache = [
   '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 38; i++) {
-  urlsToCache.push("Plutarch_Phocion_" + i + ".html");
-}
-
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
@@ -45,3 +41,41 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Plutarch_Phocion.html");
+urlsToCache.push("Plutarch_Phocion_2.html");
+urlsToCache.push("Plutarch_Phocion_3.html");
+urlsToCache.push("Plutarch_Phocion_4.html");
+urlsToCache.push("Plutarch_Phocion_5.html");
+urlsToCache.push("Plutarch_Phocion_6.html");
+urlsToCache.push("Plutarch_Phocion_7.html");
+urlsToCache.push("Plutarch_Phocion_8.html");
+urlsToCache.push("Plutarch_Phocion_9.html");
+urlsToCache.push("Plutarch_Phocion_10.html");
+urlsToCache.push("Plutarch_Phocion_11.html");
+urlsToCache.push("Plutarch_Phocion_12.html");
+urlsToCache.push("Plutarch_Phocion_13.html");
+urlsToCache.push("Plutarch_Phocion_14.html");
+urlsToCache.push("Plutarch_Phocion_15.html");
+urlsToCache.push("Plutarch_Phocion_16.html");
+urlsToCache.push("Plutarch_Phocion_17.html");
+urlsToCache.push("Plutarch_Phocion_18.html");
+urlsToCache.push("Plutarch_Phocion_19.html");
+urlsToCache.push("Plutarch_Phocion_20.html");
+urlsToCache.push("Plutarch_Phocion_21.html");
+urlsToCache.push("Plutarch_Phocion_22.html");
+urlsToCache.push("Plutarch_Phocion_23.html");
+urlsToCache.push("Plutarch_Phocion_24.html");
+urlsToCache.push("Plutarch_Phocion_25.html");
+urlsToCache.push("Plutarch_Phocion_26.html");
+urlsToCache.push("Plutarch_Phocion_27.html");
+urlsToCache.push("Plutarch_Phocion_28.html");
+urlsToCache.push("Plutarch_Phocion_29.html");
+urlsToCache.push("Plutarch_Phocion_30.html");
+urlsToCache.push("Plutarch_Phocion_31.html");
+urlsToCache.push("Plutarch_Phocion_32.html");
+urlsToCache.push("Plutarch_Phocion_33.html");
+urlsToCache.push("Plutarch_Phocion_34.html");
+urlsToCache.push("Plutarch_Phocion_35.html");
+urlsToCache.push("Plutarch_Phocion_36.html");
+urlsToCache.push("Plutarch_Phocion_37.html");
+urlsToCache.push("Plutarch_Phocion_38.html");

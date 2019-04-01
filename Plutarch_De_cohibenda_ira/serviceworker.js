@@ -17,10 +17,6 @@ var urlsToCache = [
   '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 16; i++) {
-  urlsToCache.push("Plutarch_De_cohibenda_ira_" + i + ".html");
-}
-
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
@@ -45,3 +41,19 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Plutarch_De_cohibenda_ira.html");
+urlsToCache.push("Plutarch_De_cohibenda_ira_2.html");
+urlsToCache.push("Plutarch_De_cohibenda_ira_3.html");
+urlsToCache.push("Plutarch_De_cohibenda_ira_4.html");
+urlsToCache.push("Plutarch_De_cohibenda_ira_5.html");
+urlsToCache.push("Plutarch_De_cohibenda_ira_6.html");
+urlsToCache.push("Plutarch_De_cohibenda_ira_7.html");
+urlsToCache.push("Plutarch_De_cohibenda_ira_8.html");
+urlsToCache.push("Plutarch_De_cohibenda_ira_9.html");
+urlsToCache.push("Plutarch_De_cohibenda_ira_10.html");
+urlsToCache.push("Plutarch_De_cohibenda_ira_11.html");
+urlsToCache.push("Plutarch_De_cohibenda_ira_12.html");
+urlsToCache.push("Plutarch_De_cohibenda_ira_13.html");
+urlsToCache.push("Plutarch_De_cohibenda_ira_14.html");
+urlsToCache.push("Plutarch_De_cohibenda_ira_15.html");
+urlsToCache.push("Plutarch_De_cohibenda_ira_16.html");

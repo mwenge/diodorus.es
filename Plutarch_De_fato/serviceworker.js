@@ -17,10 +17,6 @@ var urlsToCache = [
   '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 11; i++) {
-  urlsToCache.push("Plutarch_De_fato_" + i + ".html");
-}
-
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
@@ -45,3 +41,15 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Plutarch_De_fato_0.html");
+urlsToCache.push("Plutarch_De_fato.html");
+urlsToCache.push("Plutarch_De_fato_2.html");
+urlsToCache.push("Plutarch_De_fato_3.html");
+urlsToCache.push("Plutarch_De_fato_4.html");
+urlsToCache.push("Plutarch_De_fato_5.html");
+urlsToCache.push("Plutarch_De_fato_6.html");
+urlsToCache.push("Plutarch_De_fato_7.html");
+urlsToCache.push("Plutarch_De_fato_8.html");
+urlsToCache.push("Plutarch_De_fato_9.html");
+urlsToCache.push("Plutarch_De_fato_10.html");
+urlsToCache.push("Plutarch_De_fato_11.html");

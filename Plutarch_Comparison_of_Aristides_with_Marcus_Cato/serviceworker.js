@@ -17,10 +17,6 @@ var urlsToCache = [
   '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 6; i++) {
-  urlsToCache.push("Plutarch_Comparison_of_Aristides_with_Marcus_Cato_" + i + ".html");
-}
-
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
@@ -45,3 +41,9 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Plutarch_Comparison_of_Aristides_with_Marcus_Cato.html");
+urlsToCache.push("Plutarch_Comparison_of_Aristides_with_Marcus_Cato_2.html");
+urlsToCache.push("Plutarch_Comparison_of_Aristides_with_Marcus_Cato_3.html");
+urlsToCache.push("Plutarch_Comparison_of_Aristides_with_Marcus_Cato_4.html");
+urlsToCache.push("Plutarch_Comparison_of_Aristides_with_Marcus_Cato_5.html");
+urlsToCache.push("Plutarch_Comparison_of_Aristides_with_Marcus_Cato_6.html");

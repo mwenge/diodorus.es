@@ -17,10 +17,6 @@ var urlsToCache = [
   '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 19; i++) {
-  urlsToCache.push("Plutarch_Gaius_Gracchus_" + i + ".html");
-}
-
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
@@ -45,3 +41,22 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Plutarch_Gaius_Gracchus.html");
+urlsToCache.push("Plutarch_Gaius_Gracchus_2.html");
+urlsToCache.push("Plutarch_Gaius_Gracchus_3.html");
+urlsToCache.push("Plutarch_Gaius_Gracchus_4.html");
+urlsToCache.push("Plutarch_Gaius_Gracchus_5.html");
+urlsToCache.push("Plutarch_Gaius_Gracchus_6.html");
+urlsToCache.push("Plutarch_Gaius_Gracchus_7.html");
+urlsToCache.push("Plutarch_Gaius_Gracchus_8.html");
+urlsToCache.push("Plutarch_Gaius_Gracchus_9.html");
+urlsToCache.push("Plutarch_Gaius_Gracchus_10.html");
+urlsToCache.push("Plutarch_Gaius_Gracchus_11.html");
+urlsToCache.push("Plutarch_Gaius_Gracchus_12.html");
+urlsToCache.push("Plutarch_Gaius_Gracchus_13.html");
+urlsToCache.push("Plutarch_Gaius_Gracchus_14.html");
+urlsToCache.push("Plutarch_Gaius_Gracchus_15.html");
+urlsToCache.push("Plutarch_Gaius_Gracchus_16.html");
+urlsToCache.push("Plutarch_Gaius_Gracchus_17.html");
+urlsToCache.push("Plutarch_Gaius_Gracchus_18.html");
+urlsToCache.push("Plutarch_Gaius_Gracchus_19.html");

@@ -17,10 +17,6 @@ var urlsToCache = [
   '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 7; i++) {
-  urlsToCache.push("Arrian_Anabasis_" + i + ".html");
-}
-
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
@@ -45,3 +41,10 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Arrian_Anabasis.html");
+urlsToCache.push("Arrian_Anabasis_2.html");
+urlsToCache.push("Arrian_Anabasis_3.html");
+urlsToCache.push("Arrian_Anabasis_4.html");
+urlsToCache.push("Arrian_Anabasis_5.html");
+urlsToCache.push("Arrian_Anabasis_6.html");
+urlsToCache.push("Arrian_Anabasis_7.html");

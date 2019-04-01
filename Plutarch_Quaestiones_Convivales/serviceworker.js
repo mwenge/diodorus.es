@@ -17,10 +17,6 @@ var urlsToCache = [
   '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 2; i++) {
-  urlsToCache.push("Plutarch_Quaestiones_Convivales_" + i + ".html");
-}
-
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
@@ -45,3 +41,12 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Plutarch_Quaestiones_Convivales.html");
+urlsToCache.push("Plutarch_Quaestiones_Convivales_2.html");
+urlsToCache.push("Plutarch_Quaestiones_Convivales_3.html");
+urlsToCache.push("Plutarch_Quaestiones_Convivales_4.html");
+urlsToCache.push("Plutarch_Quaestiones_Convivales_5.html");
+urlsToCache.push("Plutarch_Quaestiones_Convivales_6.html");
+urlsToCache.push("Plutarch_Quaestiones_Convivales_7.html");
+urlsToCache.push("Plutarch_Quaestiones_Convivales_8.html");
+urlsToCache.push("Plutarch_Quaestiones_Convivales.html");

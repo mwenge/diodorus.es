@@ -17,10 +17,6 @@ var urlsToCache = [
   '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 4; i++) {
-  urlsToCache.push("Xenophon_Memorabilia_" + i + ".html");
-}
-
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
@@ -45,3 +41,7 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Xenophon_Memorabilia.html");
+urlsToCache.push("Xenophon_Memorabilia_2.html");
+urlsToCache.push("Xenophon_Memorabilia_3.html");
+urlsToCache.push("Xenophon_Memorabilia_4.html");
