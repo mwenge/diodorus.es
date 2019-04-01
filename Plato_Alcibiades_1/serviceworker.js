@@ -12,8 +12,6 @@ var urlsToCache = [
   '../OpenSans.ttf',
   '../Cinzel.css',
   '../Cinzel.ttf',
-  'CormorantGaramond.css',
-  'CormorantGaramond.ttf',
 ];
 
 self.addEventListener('install', function(event) {
