@@ -3,20 +3,21 @@
 var CACHE_NAME = 'Plutarch_De_vitando_aere_alieno';
 var urlsToCache = [
   'Plutarch_De_vitando_aere_alieno.html',
-  'book.css',
-  'book.js',
-  'atobAndBtoaTogether.min.js',
-  'GFSDidot.css',
-  'GFSDidot.ttf',
-  'OpenSans.css',
-  'OpenSans.ttf',
-  'Cinzel.css',
-  'Cinzel.ttf',
-  'CormorantGaramond.css',
-  'CormorantGaramond.ttf',
+  'translation.js',
+  '../book.css',
+  '../book.js',
+  '../atobAndBtoaTogether.min.js',
+  '../GFSDidot.css',
+  '../GFSDidot.ttf',
+  '../OpenSans.css',
+  '../OpenSans.ttf',
+  '../Cinzel.css',
+  '../Cinzel.ttf',
+  '../CormorantGaramond.css',
+  '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= ; i++) {
+for (var i = 2; i <= 2; i++) {
   urlsToCache.push("Plutarch_De_vitando_aere_alieno_" + i + ".html");
 }
 

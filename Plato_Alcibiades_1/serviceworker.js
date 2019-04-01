@@ -3,16 +3,23 @@
 var CACHE_NAME = 'Plato_Alcibiades_1';
 var urlsToCache = [
   'Plato_Alcibiades_1.html',
-  'book.css',
-  'book.js',
-  'atobAndBtoaTogether.min.js',
+  'translation.js',
+  '../book.css',
+  '../book.js',
+  '../atobAndBtoaTogether.min.js',
   '../GFSDidot.css',
   '../GFSDidot.ttf',
   '../OpenSans.css',
   '../OpenSans.ttf',
   '../Cinzel.css',
   '../Cinzel.ttf',
+  '../CormorantGaramond.css',
+  '../CormorantGaramond.ttf',
 ];
+
+for (var i = 2; i <= 2; i++) {
+  urlsToCache.push("Plato_Alcibiades_1_" + i + ".html");
+}
 
 self.addEventListener('install', function(event) {
   // Perform install steps

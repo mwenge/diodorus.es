@@ -3,17 +3,18 @@
 var CACHE_NAME = 'Plutarch_De_liberis_educandis';
 var urlsToCache = [
   'Plutarch_De_liberis_educandis.html',
-  'book.css',
-  'book.js',
-  'atobAndBtoaTogether.min.js',
-  'GFSDidot.css',
-  'GFSDidot.ttf',
-  'OpenSans.css',
-  'OpenSans.ttf',
-  'Cinzel.css',
-  'Cinzel.ttf',
-  'CormorantGaramond.css',
-  'CormorantGaramond.ttf',
+  'translation.js',
+  '../book.css',
+  '../book.js',
+  '../atobAndBtoaTogether.min.js',
+  '../GFSDidot.css',
+  '../GFSDidot.ttf',
+  '../OpenSans.css',
+  '../OpenSans.ttf',
+  '../Cinzel.css',
+  '../Cinzel.ttf',
+  '../CormorantGaramond.css',
+  '../CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 20; i++) {

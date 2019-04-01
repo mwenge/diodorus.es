@@ -3,17 +3,18 @@
 var CACHE_NAME = 'Plutarch_Pelopidas';
 var urlsToCache = [
   'Plutarch_Pelopidas.html',
-  'book.css',
-  'book.js',
-  'atobAndBtoaTogether.min.js',
-  'GFSDidot.css',
-  'GFSDidot.ttf',
-  'OpenSans.css',
-  'OpenSans.ttf',
-  'Cinzel.css',
-  'Cinzel.ttf',
-  'CormorantGaramond.css',
-  'CormorantGaramond.ttf',
+  'translation.js',
+  '../book.css',
+  '../book.js',
+  '../atobAndBtoaTogether.min.js',
+  '../GFSDidot.css',
+  '../GFSDidot.ttf',
+  '../OpenSans.css',
+  '../OpenSans.ttf',
+  '../Cinzel.css',
+  '../Cinzel.ttf',
+  '../CormorantGaramond.css',
+  '../CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 35; i++) {

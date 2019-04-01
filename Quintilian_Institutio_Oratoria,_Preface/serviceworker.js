@@ -3,17 +3,18 @@
 var CACHE_NAME = 'Quintilian_Institutio_Oratoria,_Preface';
 var urlsToCache = [
   'Quintilian_Institutio_Oratoria,_Preface.html',
-  'book.css',
-  'book.js',
-  'atobAndBtoaTogether.min.js',
-  'GFSDidot.css',
-  'GFSDidot.ttf',
-  'OpenSans.css',
-  'OpenSans.ttf',
-  'Cinzel.css',
-  'Cinzel.ttf',
-  'CormorantGaramond.css',
-  'CormorantGaramond.ttf',
+  'translation.js',
+  '../book.css',
+  '../book.js',
+  '../atobAndBtoaTogether.min.js',
+  '../GFSDidot.css',
+  '../GFSDidot.ttf',
+  '../OpenSans.css',
+  '../OpenSans.ttf',
+  '../Cinzel.css',
+  '../Cinzel.ttf',
+  '../CormorantGaramond.css',
+  '../CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= epTryph; i++) {

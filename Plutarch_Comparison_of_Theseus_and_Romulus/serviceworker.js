@@ -3,17 +3,18 @@
 var CACHE_NAME = 'Plutarch_Comparison_of_Theseus_and_Romulus';
 var urlsToCache = [
   'Plutarch_Comparison_of_Theseus_and_Romulus.html',
-  'book.css',
-  'book.js',
-  'atobAndBtoaTogether.min.js',
-  'GFSDidot.css',
-  'GFSDidot.ttf',
-  'OpenSans.css',
-  'OpenSans.ttf',
-  'Cinzel.css',
-  'Cinzel.ttf',
-  'CormorantGaramond.css',
-  'CormorantGaramond.ttf',
+  'translation.js',
+  '../book.css',
+  '../book.js',
+  '../atobAndBtoaTogether.min.js',
+  '../GFSDidot.css',
+  '../GFSDidot.ttf',
+  '../OpenSans.css',
+  '../OpenSans.ttf',
+  '../Cinzel.css',
+  '../Cinzel.ttf',
+  '../CormorantGaramond.css',
+  '../CormorantGaramond.ttf',
 ];
 
 for (var i = 2; i <= 6; i++) {

@@ -3,20 +3,21 @@
 var CACHE_NAME = 'Xenophon_On_the_Art_of_Horsemanship';
 var urlsToCache = [
   'Xenophon_On_the_Art_of_Horsemanship.html',
-  'book.css',
-  'book.js',
-  'atobAndBtoaTogether.min.js',
-  'GFSDidot.css',
-  'GFSDidot.ttf',
-  'OpenSans.css',
-  'OpenSans.ttf',
-  'Cinzel.css',
-  'Cinzel.ttf',
-  'CormorantGaramond.css',
-  'CormorantGaramond.ttf',
+  'translation.js',
+  '../book.css',
+  '../book.js',
+  '../atobAndBtoaTogether.min.js',
+  '../GFSDidot.css',
+  '../GFSDidot.ttf',
+  '../OpenSans.css',
+  '../OpenSans.ttf',
+  '../Cinzel.css',
+  '../Cinzel.ttf',
+  '../CormorantGaramond.css',
+  '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= ; i++) {
+for (var i = 2; i <= 2; i++) {
   urlsToCache.push("Xenophon_On_the_Art_of_Horsemanship_" + i + ".html");
 }
 

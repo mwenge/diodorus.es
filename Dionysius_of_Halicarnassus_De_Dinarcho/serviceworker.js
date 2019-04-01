@@ -3,20 +3,21 @@
 var CACHE_NAME = 'Dionysius_of_Halicarnassus_De_Dinarcho';
 var urlsToCache = [
   'Dionysius_of_Halicarnassus_De_Dinarcho.html',
-  'book.css',
-  'book.js',
-  'atobAndBtoaTogether.min.js',
-  'GFSDidot.css',
-  'GFSDidot.ttf',
-  'OpenSans.css',
-  'OpenSans.ttf',
-  'Cinzel.css',
-  'Cinzel.ttf',
-  'CormorantGaramond.css',
-  'CormorantGaramond.ttf',
+  'translation.js',
+  '../book.css',
+  '../book.js',
+  '../atobAndBtoaTogether.min.js',
+  '../GFSDidot.css',
+  '../GFSDidot.ttf',
+  '../OpenSans.css',
+  '../OpenSans.ttf',
+  '../Cinzel.css',
+  '../Cinzel.ttf',
+  '../CormorantGaramond.css',
+  '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= ; i++) {
+for (var i = 2; i <= 2; i++) {
   urlsToCache.push("Dionysius_of_Halicarnassus_De_Dinarcho_" + i + ".html");
 }
 

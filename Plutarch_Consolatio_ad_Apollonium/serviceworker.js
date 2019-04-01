@@ -3,20 +3,21 @@
 var CACHE_NAME = 'Plutarch_Consolatio_ad_Apollonium';
 var urlsToCache = [
   'Plutarch_Consolatio_ad_Apollonium.html',
-  'book.css',
-  'book.js',
-  'atobAndBtoaTogether.min.js',
-  'GFSDidot.css',
-  'GFSDidot.ttf',
-  'OpenSans.css',
-  'OpenSans.ttf',
-  'Cinzel.css',
-  'Cinzel.ttf',
-  'CormorantGaramond.css',
-  'CormorantGaramond.ttf',
+  'translation.js',
+  '../book.css',
+  '../book.js',
+  '../atobAndBtoaTogether.min.js',
+  '../GFSDidot.css',
+  '../GFSDidot.ttf',
+  '../OpenSans.css',
+  '../OpenSans.ttf',
+  '../Cinzel.css',
+  '../Cinzel.ttf',
+  '../CormorantGaramond.css',
+  '../CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= ; i++) {
+for (var i = 2; i <= 2; i++) {
   urlsToCache.push("Plutarch_Consolatio_ad_Apollonium_" + i + ".html");
 }
 
