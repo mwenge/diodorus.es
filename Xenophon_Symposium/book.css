@@ -1,0 +1,154 @@
+.greek-body {
+  font-family: 'GFS Didot', serif;
+  background-color: ivory;
+}
+.latin-body {
+  font-family: 'Cormorant Garamond', serif;
+  background-color: ivory;
+}
+note {
+  display: none;
+}
+lemma, foreign, quote {
+  font-style: italic;
+}
+lemma[lang="greek"], foreign[lang="greek"], quote[lang="greek"] {
+  font-family: 'GFS Didot', serif;
+}
+lemma {
+  font-weight: bold;
+}
+emph, bibl {
+  font-style: italic;
+}
+bibl > title {
+  display: inline;
+}
+quote > l {
+  margin-left: 10px;
+  display: block;
+  font-style: italic;
+}
+quote[lang="greek"]::before, quote[lang="greek"]::after {
+  content: "'";
+}
+.line-ref {
+  font-weight: bold;
+}
+translation {
+  margin-left: 5px;
+  margin-right: 5px; 
+  display: block;
+}
+.parallel_translation, .comment {
+  display: none;
+  position:fixed;
+  z-index: 250;
+  bottom: 0;
+  left: 1px;
+  right: 1px;
+  width: 100%;
+  max-height: 50%;
+  overflow-y: scroll;
+  background-color: ivory;
+  border-top: 1px black solid;
+  font-size: 4.2vw !important;
+  font-family: 'Open Sans', sans-serif;
+}
+.navigator {
+  font-style: normal !important;
+  font-weight: bold;
+  z-index: 200;
+  font-size: 8vw;
+}
+.comment-indicator {
+  font-style: normal !important;
+  font-weight: bold;
+  float: right;
+  display: none;
+  z-index: 200;
+  font-size: 8vw;
+}
+.masthead-container {
+  top: -1px;
+  left: 0px;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+}
+.masthead, .helper {
+  z-index: 100;
+  width: 100%;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  background-color: ivory;
+}
+.masthead {
+  box-shadow: 0px 1px 0.5px 0px rgba(194, 191, 201, 0.92);
+  background-color: black;
+}
+.helper {
+  border-bottom: 1px black solid;
+}
+.firstspeaker {
+  margin-left: 6vw;
+  user-select: none;
+  font-size: 5vw;
+}
+.hexameter-line {
+  margin-left: 2vw;
+  margin-right: 2vw;
+  user-select: none;
+}
+.prose-line {
+  font-size: 5vw;
+}
+head, .heading {
+  font-size: 6vw;
+}
+.para {
+  display: inline-block;
+}
+.line, .para, .heading {
+  margin-left: 5vw;
+  user-select: none;
+}
+.line {
+  font-size: 4.2vw;
+}
+.milestone[unit="chapter"], .speaker, .chapter {
+  margin-top: 0.4vh;
+  position: absolute;
+  left: 2px;
+  font-size: 3.6vw;
+}
+.milestone {
+  font-size: 2.2vw;
+  vertical-align: super;
+}
+.chapter {
+  font-size: 2.5vw;
+}
+.line-number {
+  float: right;
+  font-size: 3vw;
+  vertical-align: bottom;
+}
+.title {
+  text-transform: uppercase;
+  font-size: 8vw;
+  font-family: 'Cinzel', serif;
+  color: ivory;
+}
+span {
+  font-style: italic;
+}
+#transCount {
+  position: absolute;
+  right: 0;
+  font-size: 3vw;
+}
+.helper {
+  font-size: 5vw !important;
+}
+<!--- Translation: ../perseus/processedtext/texts/1999.01/1999.01.0212.xml -->

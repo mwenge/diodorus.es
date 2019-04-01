@@ -1,0 +1,21 @@
+{
+    "short_name": "Quomodo quis suos in virtute sentiat profectus",
+    "name": "Plutarch : Quomodo quis suos in virtute sentiat profectus",
+    "icons": [
+        {
+            "src": "images/icons-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+            },
+        {
+            "src": "images/icons-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+            }
+        ],
+    "start_url": "Plutarch_Quomodo_quis_suos_in_virtute_sentiat_profectus.html",
+    "background_color": "ivory",
+    "display": "standalone",
+    "scope": ".",
+    "theme_color": "ivory"
+}

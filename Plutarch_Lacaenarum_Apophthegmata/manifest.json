@@ -1,0 +1,21 @@
+{
+    "short_name": "Lacaenarum Apophthegmata",
+    "name": "Plutarch : Lacaenarum Apophthegmata",
+    "icons": [
+        {
+            "src": "images/icons-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+            },
+        {
+            "src": "images/icons-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+            }
+        ],
+    "start_url": "Plutarch_Lacaenarum_Apophthegmata.html",
+    "background_color": "ivory",
+    "display": "standalone",
+    "scope": ".",
+    "theme_color": "ivory"
+}

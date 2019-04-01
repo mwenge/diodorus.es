@@ -1,0 +1,21 @@
+{
+    "short_name": "An seni respublica gerenda sit",
+    "name": "Plutarch : An seni respublica gerenda sit",
+    "icons": [
+        {
+            "src": "images/icons-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+            },
+        {
+            "src": "images/icons-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+            }
+        ],
+    "start_url": "Plutarch_An_seni_respublica_gerenda_sit.html",
+    "background_color": "ivory",
+    "display": "standalone",
+    "scope": ".",
+    "theme_color": "ivory"
+}

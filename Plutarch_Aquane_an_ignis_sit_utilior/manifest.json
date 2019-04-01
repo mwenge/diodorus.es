@@ -1,0 +1,21 @@
+{
+    "short_name": "Aquane an ignis sit utilior",
+    "name": "Plutarch : Aquane an ignis sit utilior",
+    "icons": [
+        {
+            "src": "images/icons-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+            },
+        {
+            "src": "images/icons-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+            }
+        ],
+    "start_url": "Plutarch_Aquane_an_ignis_sit_utilior.html",
+    "background_color": "ivory",
+    "display": "standalone",
+    "scope": ".",
+    "theme_color": "ivory"
+}
