@@ -92,6 +92,9 @@
   </div>
   <script>
     document.getElementById('search').oninput = updateSearch;
+    window.onload = function() {
+      document.getElementById('search').dispatchEvent(new InputEvent("input"));
+    };
   </script>
 <br><br><br>
 <div id="container">
