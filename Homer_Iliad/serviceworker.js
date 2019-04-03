@@ -2,7 +2,7 @@
 
 var CACHE_NAME = 'Homer_Iliad';
 var urlsToCache = [
-  'Homer_Iliad.html',
+  'Homer_Iliad_1.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
