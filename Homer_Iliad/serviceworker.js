@@ -2,7 +2,6 @@
 
 var CACHE_NAME = 'Homer_Iliad';
 var urlsToCache = [
-  'Homer_Iliad_1.html',
   'book.css',
   'book.js',
   'atobAndBtoaTogether.min.js',
@@ -16,34 +15,6 @@ var urlsToCache = [
   'CormorantGaramond.ttf',
 ];
 
-for (var i = 2; i <= 1; i++) {
-  urlsToCache.push("Homer_Iliad_" + i + ".html");
-}
-
-self.addEventListener('install', function(event) {
-  // Perform install steps
-  event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then(function(cache) {
-        console.log('Opened cache');
-        return cache.addAll(urlsToCache);
-      })
-  );
-});
-
-self.addEventListener('fetch', function(event) {
-  event.respondWith(
-    caches.match(event.request)
-      .then(function(response) {
-        // Cache hit - return response
-        if (response) {
-          return response;
-        }
-        return fetch(event.request);
-      }
-    )
-  );
-});
 urlsToCache.push("Homer_Iliad_1.html");
 urlsToCache.push("commentary1.js");
 urlsToCache.push("Homer_Iliad_2.html");
@@ -92,3 +63,27 @@ urlsToCache.push("Homer_Iliad_23.html");
 urlsToCache.push("commentary23.js");
 urlsToCache.push("Homer_Iliad_24.html");
 urlsToCache.push("commentary24.js");
+self.addEventListener('install', function(event) {
+  // Perform install steps
+  event.waitUntil(
+    caches.open(CACHE_NAME)
+      .then(function(cache) {
+        console.log('Opened cache');
+        return cache.addAll(urlsToCache);
+      })
+  );
+});
+
+self.addEventListener('fetch', function(event) {
+  event.respondWith(
+    caches.match(event.request)
+      .then(function(response) {
+        // Cache hit - return response
+        if (response) {
+          return response;
+        }
+        return fetch(event.request);
+      }
+    )
+  );
+});
