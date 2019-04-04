@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Hesiod_Shield_of_Heracles';
 var urlsToCache = [
-  'Hesiod_Shield_of_Heracles.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -16,10 +14,6 @@ var urlsToCache = [
   '../CormorantGaramond.css',
   '../CormorantGaramond.ttf',
 ];
-
-for (var i = 2; i <= 1; i++) {
-  urlsToCache.push("Hesiod_Shield_of_Heracles_" + i + ".html");
-}
 
 self.addEventListener('install', function(event) {
   // Perform install steps
@@ -46,4 +40,3 @@ self.addEventListener('fetch', function(event) {
   );
 });
 urlsToCache.push("Hesiod_Shield_of_Heracles_Sh..html");
-urlsToCache.push("commentarySh..js");

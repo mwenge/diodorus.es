@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Arrian_Tactica';
 var urlsToCache = [
-  'Arrian_Tactica.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Pliny_the_Elder_Naturalis_Historia';
 var urlsToCache = [
-  'Pliny_the_Elder_Naturalis_Historia.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -16,10 +14,6 @@ var urlsToCache = [
   '../CormorantGaramond.css',
   '../CormorantGaramond.ttf',
 ];
-
-for (var i = 2; i <= 78; i++) {
-  urlsToCache.push("Pliny_the_Elder_Naturalis_Historia_" + i + ".html");
-}
 
 self.addEventListener('install', function(event) {
   // Perform install steps

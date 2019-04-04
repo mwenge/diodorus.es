@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Tacitus_Germania';
 var urlsToCache = [
-  'Tacitus_Germania.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -16,10 +14,6 @@ var urlsToCache = [
   '../CormorantGaramond.css',
   '../CormorantGaramond.ttf',
 ];
-
-for (var i = 2; i <= 46; i++) {
-  urlsToCache.push("Tacitus_Germania_" + i + ".html");
-}
 
 self.addEventListener('install', function(event) {
   // Perform install steps

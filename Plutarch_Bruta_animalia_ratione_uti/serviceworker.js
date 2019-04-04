@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Bruta_animalia_ratione_uti';
 var urlsToCache = [
-  'Plutarch_Bruta_animalia_ratione_uti.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

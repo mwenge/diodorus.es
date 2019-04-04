@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Septem_sapientium_convivium';
 var urlsToCache = [
-  'Plutarch_Septem_sapientium_convivium.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

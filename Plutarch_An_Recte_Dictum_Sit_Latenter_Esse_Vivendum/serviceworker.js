@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_An_Recte_Dictum_Sit_Latenter_Esse_Vivendum';
 var urlsToCache = [
-  'Plutarch_An_Recte_Dictum_Sit_Latenter_Esse_Vivendum.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

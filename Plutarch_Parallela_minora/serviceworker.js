@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Parallela_minora';
 var urlsToCache = [
-  'Plutarch_Parallela_minora.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

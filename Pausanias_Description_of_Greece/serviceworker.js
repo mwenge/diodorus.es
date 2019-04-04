@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Pausanias_Description_of_Greece';
 var urlsToCache = [
-  'Pausanias_Description_of_Greece.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -51,3 +49,4 @@ urlsToCache.push("Pausanias_Description_of_Greece_7.html");
 urlsToCache.push("Pausanias_Description_of_Greece_8.html");
 urlsToCache.push("Pausanias_Description_of_Greece_9.html");
 urlsToCache.push("Pausanias_Description_of_Greece_10.html");
+urlsToCache.push("translation.js");

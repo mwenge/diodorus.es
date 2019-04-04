@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Arrian_Indica';
 var urlsToCache = [
-  'Arrian_Indica.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

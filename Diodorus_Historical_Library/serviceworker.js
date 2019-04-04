@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Diodorus_Historical_Library';
 var urlsToCache = [
-  'Diodorus_Historical_Library.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

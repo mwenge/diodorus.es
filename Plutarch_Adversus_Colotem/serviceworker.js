@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Adversus_Colotem';
 var urlsToCache = [
-  'Plutarch_Adversus_Colotem.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

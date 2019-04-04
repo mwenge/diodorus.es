@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Xenophon_Ways_and_Means';
 var urlsToCache = [
-  'Xenophon_Ways_and_Means.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -42,3 +40,4 @@ self.addEventListener('fetch', function(event) {
   );
 });
 urlsToCache.push("Xenophon_Ways_and_Means.html");
+urlsToCache.push("translation.js");

@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Aratus_Phaenomena';
 var urlsToCache = [
-  'Aratus_Phaenomena.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -16,10 +14,6 @@ var urlsToCache = [
   '../CormorantGaramond.css',
   '../CormorantGaramond.ttf',
 ];
-
-for (var i = 2; i <= 1; i++) {
-  urlsToCache.push("Aratus_Phaenomena_" + i + ".html");
-}
 
 self.addEventListener('install', function(event) {
   // Perform install steps
@@ -46,4 +40,3 @@ self.addEventListener('fetch', function(event) {
   );
 });
 urlsToCache.push("Aratus_Phaenomena_1.html");
-urlsToCache.push("commentary1.js");

@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Oppian_Halieutica';
 var urlsToCache = [
-  'Oppian_Halieutica.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -16,10 +14,6 @@ var urlsToCache = [
   '../CormorantGaramond.css',
   '../CormorantGaramond.ttf',
 ];
-
-for (var i = 2; i <= 1; i++) {
-  urlsToCache.push("Oppian_Halieutica_" + i + ".html");
-}
 
 self.addEventListener('install', function(event) {
   // Perform install steps
@@ -46,12 +40,7 @@ self.addEventListener('fetch', function(event) {
   );
 });
 urlsToCache.push("Oppian_Halieutica_1.html");
-urlsToCache.push("commentary1.js");
 urlsToCache.push("Oppian_Halieutica_2.html");
-urlsToCache.push("commentary2.js");
 urlsToCache.push("Oppian_Halieutica_3.html");
-urlsToCache.push("commentary3.js");
 urlsToCache.push("Oppian_Halieutica_4.html");
-urlsToCache.push("commentary4.js");
 urlsToCache.push("Oppian_Halieutica_5.html");
-urlsToCache.push("commentary5.js");

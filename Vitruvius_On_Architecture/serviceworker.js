@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Vitruvius_On_Architecture';
 var urlsToCache = [
-  'Vitruvius_On_Architecture.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -16,10 +14,6 @@ var urlsToCache = [
   '../CormorantGaramond.css',
   '../CormorantGaramond.ttf',
 ];
-
-for (var i = 2; i <= 10; i++) {
-  urlsToCache.push("Vitruvius_On_Architecture_" + i + ".html");
-}
 
 self.addEventListener('install', function(event) {
   // Perform install steps

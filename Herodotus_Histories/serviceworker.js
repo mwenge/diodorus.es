@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Herodotus_Histories';
 var urlsToCache = [
-  'Herodotus_Histories.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -50,3 +48,4 @@ urlsToCache.push("Herodotus_Histories_6.html");
 urlsToCache.push("Herodotus_Histories_7.html");
 urlsToCache.push("Herodotus_Histories_8.html");
 urlsToCache.push("Herodotus_Histories_9.html");
+urlsToCache.push("translation.js");

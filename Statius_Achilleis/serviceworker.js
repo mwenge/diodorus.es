@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Statius_Achilleis';
 var urlsToCache = [
-  'Statius_Achilleis.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -16,10 +14,6 @@ var urlsToCache = [
   '../CormorantGaramond.css',
   '../CormorantGaramond.ttf',
 ];
-
-for (var i = 2; i <= 2; i++) {
-  urlsToCache.push("Statius_Achilleis_" + i + ".html");
-}
 
 self.addEventListener('install', function(event) {
   // Perform install steps

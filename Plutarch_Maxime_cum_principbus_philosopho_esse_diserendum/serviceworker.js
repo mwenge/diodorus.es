@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Maxime_cum_principbus_philosopho_esse_diserendum';
 var urlsToCache = [
-  'Plutarch_Maxime_cum_principbus_philosopho_esse_diserendum.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

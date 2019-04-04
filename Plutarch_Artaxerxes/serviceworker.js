@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Artaxerxes';
 var urlsToCache = [
-  'Plutarch_Artaxerxes.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -71,3 +69,4 @@ urlsToCache.push("Plutarch_Artaxerxes_27.html");
 urlsToCache.push("Plutarch_Artaxerxes_28.html");
 urlsToCache.push("Plutarch_Artaxerxes_29.html");
 urlsToCache.push("Plutarch_Artaxerxes_30.html");
+urlsToCache.push("translation.js");

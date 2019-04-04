@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_An_seni_respublica_gerenda_sit';
 var urlsToCache = [
-  'Plutarch_An_seni_respublica_gerenda_sit.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

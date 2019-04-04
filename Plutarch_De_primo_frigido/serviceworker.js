@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_De_primo_frigido';
 var urlsToCache = [
-  'Plutarch_De_primo_frigido.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

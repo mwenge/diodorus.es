@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Epictetus_Enchiridion';
 var urlsToCache = [
-  'Epictetus_Enchiridion.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

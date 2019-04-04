@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_De_fraterno_amore';
 var urlsToCache = [
-  'Plutarch_De_fraterno_amore.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

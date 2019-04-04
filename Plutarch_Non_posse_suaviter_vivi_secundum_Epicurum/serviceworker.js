@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Non_posse_suaviter_vivi_secundum_Epicurum';
 var urlsToCache = [
-  'Plutarch_Non_posse_suaviter_vivi_secundum_Epicurum.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

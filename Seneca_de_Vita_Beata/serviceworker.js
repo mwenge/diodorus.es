@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Seneca_de_Vita_Beata';
 var urlsToCache = [
-  'Seneca_de_Vita_Beata.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -16,10 +14,6 @@ var urlsToCache = [
   '../CormorantGaramond.css',
   '../CormorantGaramond.ttf',
 ];
-
-for (var i = 2; i <= 7; i++) {
-  urlsToCache.push("Seneca_de_Vita_Beata_" + i + ".html");
-}
 
 self.addEventListener('install', function(event) {
   // Perform install steps

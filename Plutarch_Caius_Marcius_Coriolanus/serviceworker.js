@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Caius_Marcius_Coriolanus';
 var urlsToCache = [
-  'Plutarch_Caius_Marcius_Coriolanus.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -80,3 +78,4 @@ urlsToCache.push("Plutarch_Caius_Marcius_Coriolanus_36.html");
 urlsToCache.push("Plutarch_Caius_Marcius_Coriolanus_37.html");
 urlsToCache.push("Plutarch_Caius_Marcius_Coriolanus_38.html");
 urlsToCache.push("Plutarch_Caius_Marcius_Coriolanus_39.html");
+urlsToCache.push("translation.js");

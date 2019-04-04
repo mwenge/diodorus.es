@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Tacitus_Annales';
 var urlsToCache = [
-  'Tacitus_Annales.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -16,10 +14,6 @@ var urlsToCache = [
   '../CormorantGaramond.css',
   '../CormorantGaramond.ttf',
 ];
-
-for (var i = 2; i <= 16; i++) {
-  urlsToCache.push("Tacitus_Annales_" + i + ".html");
-}
 
 self.addEventListener('install', function(event) {
   // Perform install steps

@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_De_esu_carnium_II';
 var urlsToCache = [
-  'Plutarch_De_esu_carnium_II.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Cicero_De_Republica';
 var urlsToCache = [
-  'Cicero_De_Republica.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -16,10 +14,6 @@ var urlsToCache = [
   '../CormorantGaramond.css',
   '../CormorantGaramond.ttf',
 ];
-
-for (var i = 2; i <= fr; i++) {
-  urlsToCache.push("Cicero_De_Republica_" + i + ".html");
-}
 
 self.addEventListener('install', function(event) {
   // Perform install steps

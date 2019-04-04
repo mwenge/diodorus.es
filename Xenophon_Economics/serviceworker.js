@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Xenophon_Economics';
 var urlsToCache = [
-  'Xenophon_Economics.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -42,3 +40,4 @@ self.addEventListener('fetch', function(event) {
   );
 });
 urlsToCache.push("Xenophon_Economics.html");
+urlsToCache.push("translation.js");

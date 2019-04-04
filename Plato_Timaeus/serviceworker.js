@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plato_Timaeus';
 var urlsToCache = [
-  'Plato_Timaeus.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -42,3 +40,4 @@ self.addEventListener('fetch', function(event) {
   );
 });
 urlsToCache.push("Plato_Timaeus.html");
+urlsToCache.push("translation.js");

@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Dionysius_of_Halicarnassus_De_antiquis_oratoribus_reliquiae';
 var urlsToCache = [
-  'Dionysius_of_Halicarnassus_De_antiquis_oratoribus_reliquiae.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

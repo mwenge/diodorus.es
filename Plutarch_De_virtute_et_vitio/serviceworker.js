@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_De_virtute_et_vitio';
 var urlsToCache = [
-  'Plutarch_De_virtute_et_vitio.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

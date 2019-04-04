@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Comparison_of_Lysander_and_Sulla';
 var urlsToCache = [
-  'Plutarch_Comparison_of_Lysander_and_Sulla.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -46,3 +44,4 @@ urlsToCache.push("Plutarch_Comparison_of_Lysander_and_Sulla_2.html");
 urlsToCache.push("Plutarch_Comparison_of_Lysander_and_Sulla_3.html");
 urlsToCache.push("Plutarch_Comparison_of_Lysander_and_Sulla_4.html");
 urlsToCache.push("Plutarch_Comparison_of_Lysander_and_Sulla_5.html");
+urlsToCache.push("translation.js");

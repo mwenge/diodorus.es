@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plato_Letters';
 var urlsToCache = [
-  'Plato_Letters.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

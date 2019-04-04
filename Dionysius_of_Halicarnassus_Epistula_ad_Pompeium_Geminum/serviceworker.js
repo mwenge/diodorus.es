@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Dionysius_of_Halicarnassus_Epistula_ad_Pompeium_Geminum';
 var urlsToCache = [
-  'Dionysius_of_Halicarnassus_Epistula_ad_Pompeium_Geminum.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

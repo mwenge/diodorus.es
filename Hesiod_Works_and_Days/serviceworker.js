@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Hesiod_Works_and_Days';
 var urlsToCache = [
-  'Hesiod_Works_and_Days.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -16,10 +14,6 @@ var urlsToCache = [
   '../CormorantGaramond.css',
   '../CormorantGaramond.ttf',
 ];
-
-for (var i = 2; i <= 1; i++) {
-  urlsToCache.push("Hesiod_Works_and_Days_" + i + ".html");
-}
 
 self.addEventListener('install', function(event) {
   // Perform install steps
@@ -46,4 +40,3 @@ self.addEventListener('fetch', function(event) {
   );
 });
 urlsToCache.push("Hesiod_Works_and_Days_WD.html");
-urlsToCache.push("commentaryWD.js");

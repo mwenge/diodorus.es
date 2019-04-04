@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plato_Phaedrus';
 var urlsToCache = [
-  'Plato_Phaedrus.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -42,3 +40,4 @@ self.addEventListener('fetch', function(event) {
   );
 });
 urlsToCache.push("Plato_Phaedrus.html");
+urlsToCache.push("translation.js");

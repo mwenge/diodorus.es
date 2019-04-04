@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_De_Alexandri_magni_fortuna_aut_virtute';
 var urlsToCache = [
-  'Plutarch_De_Alexandri_magni_fortuna_aut_virtute.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

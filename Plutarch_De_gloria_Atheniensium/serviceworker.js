@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_De_gloria_Atheniensium';
 var urlsToCache = [
-  'Plutarch_De_gloria_Atheniensium.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

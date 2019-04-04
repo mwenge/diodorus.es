@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Apollonius_Rhodius_Argonautica';
 var urlsToCache = [
-  'Apollonius_Rhodius_Argonautica.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -16,10 +14,6 @@ var urlsToCache = [
   '../CormorantGaramond.css',
   '../CormorantGaramond.ttf',
 ];
-
-for (var i = 2; i <= 1; i++) {
-  urlsToCache.push("Apollonius_Rhodius_Argonautica_" + i + ".html");
-}
 
 self.addEventListener('install', function(event) {
   // Perform install steps
@@ -46,10 +40,6 @@ self.addEventListener('fetch', function(event) {
   );
 });
 urlsToCache.push("Apollonius_Rhodius_Argonautica_1.html");
-urlsToCache.push("commentary1.js");
 urlsToCache.push("Apollonius_Rhodius_Argonautica_2.html");
-urlsToCache.push("commentary2.js");
 urlsToCache.push("Apollonius_Rhodius_Argonautica_3.html");
-urlsToCache.push("commentary3.js");
 urlsToCache.push("Apollonius_Rhodius_Argonautica_4.html");
-urlsToCache.push("commentary4.js");

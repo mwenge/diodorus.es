@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_De_genio_Socratis';
 var urlsToCache = [
-  'Plutarch_De_genio_Socratis.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

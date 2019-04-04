@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Xenophon_Agesilaus';
 var urlsToCache = [
-  'Xenophon_Agesilaus.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -42,3 +40,4 @@ self.addEventListener('fetch', function(event) {
   );
 });
 urlsToCache.push("Xenophon_Agesilaus.html");
+urlsToCache.push("translation.js");

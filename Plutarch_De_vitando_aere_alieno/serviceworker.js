@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_De_vitando_aere_alieno';
 var urlsToCache = [
-  'Plutarch_De_vitando_aere_alieno.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Cleomenes';
 var urlsToCache = [
-  'Plutarch_Cleomenes.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -80,3 +78,4 @@ urlsToCache.push("Plutarch_Cleomenes_36.html");
 urlsToCache.push("Plutarch_Cleomenes_37.html");
 urlsToCache.push("Plutarch_Cleomenes_38.html");
 urlsToCache.push("Plutarch_Cleomenes_39.html");
+urlsToCache.push("translation.js");

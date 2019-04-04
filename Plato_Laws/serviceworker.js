@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plato_Laws';
 var urlsToCache = [
-  'Plato_Laws.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -53,3 +51,4 @@ urlsToCache.push("Plato_Laws_9.html");
 urlsToCache.push("Plato_Laws_10.html");
 urlsToCache.push("Plato_Laws_11.html");
 urlsToCache.push("Plato_Laws_12.html");
+urlsToCache.push("translation.js");

@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Agis';
 var urlsToCache = [
-  'Plutarch_Agis.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -62,3 +60,4 @@ urlsToCache.push("Plutarch_Agis_18.html");
 urlsToCache.push("Plutarch_Agis_19.html");
 urlsToCache.push("Plutarch_Agis_20.html");
 urlsToCache.push("Plutarch_Agis_21.html");
+urlsToCache.push("translation.js");

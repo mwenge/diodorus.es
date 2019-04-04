@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Xenophon_Memorabilia';
 var urlsToCache = [
-  'Xenophon_Memorabilia.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -45,3 +43,4 @@ urlsToCache.push("Xenophon_Memorabilia.html");
 urlsToCache.push("Xenophon_Memorabilia_2.html");
 urlsToCache.push("Xenophon_Memorabilia_3.html");
 urlsToCache.push("Xenophon_Memorabilia_4.html");
+urlsToCache.push("translation.js");

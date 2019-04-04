@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Comparison_of_Sertorius_and_Eumenes';
 var urlsToCache = [
-  'Plutarch_Comparison_of_Sertorius_and_Eumenes.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -43,3 +41,4 @@ self.addEventListener('fetch', function(event) {
 });
 urlsToCache.push("Plutarch_Comparison_of_Sertorius_and_Eumenes.html");
 urlsToCache.push("Plutarch_Comparison_of_Sertorius_and_Eumenes_2.html");
+urlsToCache.push("translation.js");

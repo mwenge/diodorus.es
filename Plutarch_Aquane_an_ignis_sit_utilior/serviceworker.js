@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Aquane_an_ignis_sit_utilior';
 var urlsToCache = [
-  'Plutarch_Aquane_an_ignis_sit_utilior.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

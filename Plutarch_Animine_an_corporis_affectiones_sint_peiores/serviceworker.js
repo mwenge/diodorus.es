@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Animine_an_corporis_affectiones_sint_peiores';
 var urlsToCache = [
-  'Plutarch_Animine_an_corporis_affectiones_sint_peiores.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

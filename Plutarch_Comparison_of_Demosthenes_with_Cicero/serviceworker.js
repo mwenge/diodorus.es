@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Comparison_of_Demosthenes_with_Cicero';
 var urlsToCache = [
-  'Plutarch_Comparison_of_Demosthenes_with_Cicero.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -46,3 +44,4 @@ urlsToCache.push("Plutarch_Comparison_of_Demosthenes_with_Cicero_2.html");
 urlsToCache.push("Plutarch_Comparison_of_Demosthenes_with_Cicero_3.html");
 urlsToCache.push("Plutarch_Comparison_of_Demosthenes_with_Cicero_4.html");
 urlsToCache.push("Plutarch_Comparison_of_Demosthenes_with_Cicero_5.html");
+urlsToCache.push("translation.js");

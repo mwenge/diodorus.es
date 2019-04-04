@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Aeschylus_Seven_Against_Thebes';
 var urlsToCache = [
-  'Aeschylus_Seven_Against_Thebes.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -16,10 +14,6 @@ var urlsToCache = [
   '../CormorantGaramond.css',
   '../CormorantGaramond.ttf',
 ];
-
-for (var i = 2; i <= 1; i++) {
-  urlsToCache.push("Aeschylus_Seven_Against_Thebes_" + i + ".html");
-}
 
 self.addEventListener('install', function(event) {
   // Perform install steps

@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Seneca_de_Ira';
 var urlsToCache = [
-  'Seneca_de_Ira.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -16,10 +14,6 @@ var urlsToCache = [
   '../CormorantGaramond.css',
   '../CormorantGaramond.ttf',
 ];
-
-for (var i = 2; i <= 3; i++) {
-  urlsToCache.push("Seneca_de_Ira_" + i + ".html");
-}
 
 self.addEventListener('install', function(event) {
   // Perform install steps

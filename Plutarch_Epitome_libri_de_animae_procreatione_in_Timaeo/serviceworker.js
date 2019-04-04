@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Epitome_libri_de_animae_procreatione_in_Timaeo';
 var urlsToCache = [
-  'Plutarch_Epitome_libri_de_animae_procreatione_in_Timaeo.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

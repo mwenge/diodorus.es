@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Ad_principem_ineruditum';
 var urlsToCache = [
-  'Plutarch_Ad_principem_ineruditum.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

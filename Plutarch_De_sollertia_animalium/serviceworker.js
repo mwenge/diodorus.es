@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_De_sollertia_animalium';
 var urlsToCache = [
-  'Plutarch_De_sollertia_animalium.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Consolatio_ad_uxorem';
 var urlsToCache = [
-  'Plutarch_Consolatio_ad_uxorem.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

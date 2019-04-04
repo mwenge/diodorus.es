@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Praecepta_gerendae_reipublicae';
 var urlsToCache = [
-  'Plutarch_Praecepta_gerendae_reipublicae.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

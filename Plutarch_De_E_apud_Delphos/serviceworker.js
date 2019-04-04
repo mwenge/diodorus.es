@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_De_E_apud_Delphos';
 var urlsToCache = [
-  'Plutarch_De_E_apud_Delphos.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

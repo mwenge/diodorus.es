@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Tertullian_De_Spectaculis';
 var urlsToCache = [
-  'Tertullian_De_Spectaculis.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -16,10 +14,6 @@ var urlsToCache = [
   '../CormorantGaramond.css',
   '../CormorantGaramond.ttf',
 ];
-
-for (var i = 2; i <= 30; i++) {
-  urlsToCache.push("Tertullian_De_Spectaculis_" + i + ".html");
-}
 
 self.addEventListener('install', function(event) {
   // Perform install steps

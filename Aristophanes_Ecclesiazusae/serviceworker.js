@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Aristophanes_Ecclesiazusae';
 var urlsToCache = [
-  'Aristophanes_Ecclesiazusae.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -16,10 +14,6 @@ var urlsToCache = [
   '../CormorantGaramond.css',
   '../CormorantGaramond.ttf',
 ];
-
-for (var i = 2; i <= 1; i++) {
-  urlsToCache.push("Aristophanes_Ecclesiazusae_" + i + ".html");
-}
 
 self.addEventListener('install', function(event) {
   // Perform install steps

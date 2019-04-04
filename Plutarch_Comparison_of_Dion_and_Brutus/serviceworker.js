@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Comparison_of_Dion_and_Brutus';
 var urlsToCache = [
-  'Plutarch_Comparison_of_Dion_and_Brutus.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -46,3 +44,4 @@ urlsToCache.push("Plutarch_Comparison_of_Dion_and_Brutus_2.html");
 urlsToCache.push("Plutarch_Comparison_of_Dion_and_Brutus_3.html");
 urlsToCache.push("Plutarch_Comparison_of_Dion_and_Brutus_4.html");
 urlsToCache.push("Plutarch_Comparison_of_Dion_and_Brutus_5.html");
+urlsToCache.push("translation.js");

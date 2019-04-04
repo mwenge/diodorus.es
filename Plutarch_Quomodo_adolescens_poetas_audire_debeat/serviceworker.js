@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Quomodo_adolescens_poetas_audire_debeat';
 var urlsToCache = [
-  'Plutarch_Quomodo_adolescens_poetas_audire_debeat.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

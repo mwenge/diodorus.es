@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Tryphiodorus_Taking_of_Ilios';
 var urlsToCache = [
-  'Tryphiodorus_Taking_of_Ilios.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -16,10 +14,6 @@ var urlsToCache = [
   '../CormorantGaramond.css',
   '../CormorantGaramond.ttf',
 ];
-
-for (var i = 2; i <= 1; i++) {
-  urlsToCache.push("Tryphiodorus_Taking_of_Ilios_" + i + ".html");
-}
 
 self.addEventListener('install', function(event) {
   // Perform install steps
@@ -46,4 +40,3 @@ self.addEventListener('fetch', function(event) {
   );
 });
 urlsToCache.push("Tryphiodorus_Taking_of_Ilios_1.html");
-urlsToCache.push("commentary1.js");

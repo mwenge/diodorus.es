@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Arrian_Anabasis';
 var urlsToCache = [
-  'Arrian_Anabasis.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

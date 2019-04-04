@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Xenophon_Cyropaedia';
 var urlsToCache = [
-  'Xenophon_Cyropaedia.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -49,3 +47,4 @@ urlsToCache.push("Xenophon_Cyropaedia_5.html");
 urlsToCache.push("Xenophon_Cyropaedia_6.html");
 urlsToCache.push("Xenophon_Cyropaedia_7.html");
 urlsToCache.push("Xenophon_Cyropaedia_8.html");
+urlsToCache.push("translation.js");

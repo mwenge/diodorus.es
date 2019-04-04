@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Lacaenarum_Apophthegmata';
 var urlsToCache = [
-  'Plutarch_Lacaenarum_Apophthegmata.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

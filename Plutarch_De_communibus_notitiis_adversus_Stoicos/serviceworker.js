@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_De_communibus_notitiis_adversus_Stoicos';
 var urlsToCache = [
-  'Plutarch_De_communibus_notitiis_adversus_Stoicos.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

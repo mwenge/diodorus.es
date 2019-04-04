@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Conjugalia_Praecepta';
 var urlsToCache = [
-  'Plutarch_Conjugalia_Praecepta.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

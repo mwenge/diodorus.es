@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Mulierum_virtutes';
 var urlsToCache = [
-  'Plutarch_Mulierum_virtutes.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

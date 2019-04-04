@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Compendium_Argumenti_Stoicos_absurdiora_poetis_dicere';
 var urlsToCache = [
-  'Plutarch_Compendium_Argumenti_Stoicos_absurdiora_poetis_dicere.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

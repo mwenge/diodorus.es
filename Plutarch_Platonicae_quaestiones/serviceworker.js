@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Platonicae_quaestiones';
 var urlsToCache = [
-  'Plutarch_Platonicae_quaestiones.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plato_Crito';
 var urlsToCache = [
-  'Plato_Crito.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -42,3 +40,4 @@ self.addEventListener('fetch', function(event) {
   );
 });
 urlsToCache.push("Plato_Crito.html");
+urlsToCache.push("translation.js");

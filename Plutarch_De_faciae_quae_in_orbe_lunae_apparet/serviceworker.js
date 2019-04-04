@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_De_faciae_quae_in_orbe_lunae_apparet';
 var urlsToCache = [
-  'Plutarch_De_faciae_quae_in_orbe_lunae_apparet.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

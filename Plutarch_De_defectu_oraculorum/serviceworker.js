@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_De_defectu_oraculorum';
 var urlsToCache = [
-  'Plutarch_De_defectu_oraculorum.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

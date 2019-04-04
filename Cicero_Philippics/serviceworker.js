@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Cicero_Philippics';
 var urlsToCache = [
-  'Cicero_Philippics.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -16,10 +14,6 @@ var urlsToCache = [
   '../CormorantGaramond.css',
   '../CormorantGaramond.ttf',
 ];
-
-for (var i = 2; i <= 14; i++) {
-  urlsToCache.push("Cicero_Philippics_" + i + ".html");
-}
 
 self.addEventListener('install', function(event) {
   // Perform install steps
@@ -45,3 +39,4 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("translation.js");

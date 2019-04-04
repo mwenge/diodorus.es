@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Cicero_Tusculanae_Disputationes';
 var urlsToCache = [
-  'Cicero_Tusculanae_Disputationes.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -16,10 +14,6 @@ var urlsToCache = [
   '../CormorantGaramond.css',
   '../CormorantGaramond.ttf',
 ];
-
-for (var i = 2; i <= index; i++) {
-  urlsToCache.push("Cicero_Tusculanae_Disputationes_" + i + ".html");
-}
 
 self.addEventListener('install', function(event) {
   // Perform install steps

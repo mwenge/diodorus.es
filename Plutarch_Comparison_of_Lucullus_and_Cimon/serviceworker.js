@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Comparison_of_Lucullus_and_Cimon';
 var urlsToCache = [
-  'Plutarch_Comparison_of_Lucullus_and_Cimon.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -44,3 +42,4 @@ self.addEventListener('fetch', function(event) {
 urlsToCache.push("Plutarch_Comparison_of_Lucullus_and_Cimon.html");
 urlsToCache.push("Plutarch_Comparison_of_Lucullus_and_Cimon_2.html");
 urlsToCache.push("Plutarch_Comparison_of_Lucullus_and_Cimon_3.html");
+urlsToCache.push("translation.js");

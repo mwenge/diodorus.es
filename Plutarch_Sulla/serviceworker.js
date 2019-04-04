@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Sulla';
 var urlsToCache = [
-  'Plutarch_Sulla.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -79,3 +77,4 @@ urlsToCache.push("Plutarch_Sulla_35.html");
 urlsToCache.push("Plutarch_Sulla_36.html");
 urlsToCache.push("Plutarch_Sulla_37.html");
 urlsToCache.push("Plutarch_Sulla_38.html");
+urlsToCache.push("translation.js");

@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Vitae_decem_oratorum';
 var urlsToCache = [
-  'Plutarch_Vitae_decem_oratorum.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

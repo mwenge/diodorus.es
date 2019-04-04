@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Phocion';
 var urlsToCache = [
-  'Plutarch_Phocion.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -79,3 +77,4 @@ urlsToCache.push("Plutarch_Phocion_35.html");
 urlsToCache.push("Plutarch_Phocion_36.html");
 urlsToCache.push("Plutarch_Phocion_37.html");
 urlsToCache.push("Plutarch_Phocion_38.html");
+urlsToCache.push("translation.js");

@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Quomodo_adulator_ab_amico_internoscatur';
 var urlsToCache = [
-  'Plutarch_Quomodo_adulator_ab_amico_internoscatur.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

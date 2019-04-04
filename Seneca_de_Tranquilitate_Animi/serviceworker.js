@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Seneca_de_Tranquilitate_Animi';
 var urlsToCache = [
-  'Seneca_de_Tranquilitate_Animi.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -16,10 +14,6 @@ var urlsToCache = [
   '../CormorantGaramond.css',
   '../CormorantGaramond.ttf',
 ];
-
-for (var i = 2; i <= 9; i++) {
-  urlsToCache.push("Seneca_de_Tranquilitate_Animi_" + i + ".html");
-}
 
 self.addEventListener('install', function(event) {
   // Perform install steps

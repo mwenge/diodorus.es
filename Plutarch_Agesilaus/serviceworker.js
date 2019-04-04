@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Agesilaus';
 var urlsToCache = [
-  'Plutarch_Agesilaus.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -81,3 +79,4 @@ urlsToCache.push("Plutarch_Agesilaus_37.html");
 urlsToCache.push("Plutarch_Agesilaus_38.html");
 urlsToCache.push("Plutarch_Agesilaus_39.html");
 urlsToCache.push("Plutarch_Agesilaus_40.html");
+urlsToCache.push("translation.js");

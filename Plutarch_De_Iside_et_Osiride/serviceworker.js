@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_De_Iside_et_Osiride';
 var urlsToCache = [
-  'Plutarch_De_Iside_et_Osiride.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

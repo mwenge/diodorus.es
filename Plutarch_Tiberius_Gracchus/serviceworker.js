@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Tiberius_Gracchus';
 var urlsToCache = [
-  'Plutarch_Tiberius_Gracchus.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -62,3 +60,4 @@ urlsToCache.push("Plutarch_Tiberius_Gracchus_18.html");
 urlsToCache.push("Plutarch_Tiberius_Gracchus_19.html");
 urlsToCache.push("Plutarch_Tiberius_Gracchus_20.html");
 urlsToCache.push("Plutarch_Tiberius_Gracchus_21.html");
+urlsToCache.push("translation.js");

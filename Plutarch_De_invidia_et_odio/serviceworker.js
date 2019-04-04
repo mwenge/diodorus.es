@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_De_invidia_et_odio';
 var urlsToCache = [
-  'Plutarch_De_invidia_et_odio.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

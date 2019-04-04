@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Aemilius_Paullus';
 var urlsToCache = [
-  'Plutarch_Aemilius_Paullus.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -80,3 +78,4 @@ urlsToCache.push("Plutarch_Aemilius_Paullus_36.html");
 urlsToCache.push("Plutarch_Aemilius_Paullus_37.html");
 urlsToCache.push("Plutarch_Aemilius_Paullus_38.html");
 urlsToCache.push("Plutarch_Aemilius_Paullus_39.html");
+urlsToCache.push("translation.js");

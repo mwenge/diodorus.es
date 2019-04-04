@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Xenophon_Constitution_of_the_Lacedaimonians';
 var urlsToCache = [
-  'Xenophon_Constitution_of_the_Lacedaimonians.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -42,3 +40,4 @@ self.addEventListener('fetch', function(event) {
   );
 });
 urlsToCache.push("Xenophon_Constitution_of_the_Lacedaimonians.html");
+urlsToCache.push("translation.js");

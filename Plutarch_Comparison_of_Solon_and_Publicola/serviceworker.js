@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Comparison_of_Solon_and_Publicola';
 var urlsToCache = [
-  'Plutarch_Comparison_of_Solon_and_Publicola.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -45,3 +43,4 @@ urlsToCache.push("Plutarch_Comparison_of_Solon_and_Publicola.html");
 urlsToCache.push("Plutarch_Comparison_of_Solon_and_Publicola_2.html");
 urlsToCache.push("Plutarch_Comparison_of_Solon_and_Publicola_3.html");
 urlsToCache.push("Plutarch_Comparison_of_Solon_and_Publicola_4.html");
+urlsToCache.push("translation.js");

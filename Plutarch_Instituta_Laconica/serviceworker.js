@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Instituta_Laconica';
 var urlsToCache = [
-  'Plutarch_Instituta_Laconica.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

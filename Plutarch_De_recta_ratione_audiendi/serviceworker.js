@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_De_recta_ratione_audiendi';
 var urlsToCache = [
-  'Plutarch_De_recta_ratione_audiendi.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

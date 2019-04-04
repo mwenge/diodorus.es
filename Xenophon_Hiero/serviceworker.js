@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Xenophon_Hiero';
 var urlsToCache = [
-  'Xenophon_Hiero.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -42,3 +40,4 @@ self.addEventListener('fetch', function(event) {
   );
 });
 urlsToCache.push("Xenophon_Hiero.html");
+urlsToCache.push("translation.js");

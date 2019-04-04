@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plato_Republic';
 var urlsToCache = [
-  'Plato_Republic.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -51,3 +49,4 @@ urlsToCache.push("Plato_Republic_7.html");
 urlsToCache.push("Plato_Republic_8.html");
 urlsToCache.push("Plato_Republic_9.html");
 urlsToCache.push("Plato_Republic_10.html");
+urlsToCache.push("translation.js");

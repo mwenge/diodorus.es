@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Comparison_of_Alcibiades_and_Coriolanus';
 var urlsToCache = [
-  'Plutarch_Comparison_of_Alcibiades_and_Coriolanus.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -46,3 +44,4 @@ urlsToCache.push("Plutarch_Comparison_of_Alcibiades_and_Coriolanus_2.html");
 urlsToCache.push("Plutarch_Comparison_of_Alcibiades_and_Coriolanus_3.html");
 urlsToCache.push("Plutarch_Comparison_of_Alcibiades_and_Coriolanus_4.html");
 urlsToCache.push("Plutarch_Comparison_of_Alcibiades_and_Coriolanus_5.html");
+urlsToCache.push("translation.js");

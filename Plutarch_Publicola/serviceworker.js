@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Publicola';
 var urlsToCache = [
-  'Plutarch_Publicola.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -64,3 +62,4 @@ urlsToCache.push("Plutarch_Publicola_20.html");
 urlsToCache.push("Plutarch_Publicola_21.html");
 urlsToCache.push("Plutarch_Publicola_22.html");
 urlsToCache.push("Plutarch_Publicola_23.html");
+urlsToCache.push("translation.js");

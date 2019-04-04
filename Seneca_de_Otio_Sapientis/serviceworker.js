@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Seneca_de_Otio_Sapientis';
 var urlsToCache = [
-  'Seneca_de_Otio_Sapientis.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -16,10 +14,6 @@ var urlsToCache = [
   '../CormorantGaramond.css',
   '../CormorantGaramond.ttf',
 ];
-
-for (var i = 2; i <= 8; i++) {
-  urlsToCache.push("Seneca_de_Otio_Sapientis_" + i + ".html");
-}
 
 self.addEventListener('install', function(event) {
   // Perform install steps

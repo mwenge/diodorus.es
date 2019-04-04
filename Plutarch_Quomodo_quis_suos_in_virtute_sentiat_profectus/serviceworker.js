@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Quomodo_quis_suos_in_virtute_sentiat_profectus';
 var urlsToCache = [
-  'Plutarch_Quomodo_quis_suos_in_virtute_sentiat_profectus.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Comparison_of_Aristides_with_Marcus_Cato';
 var urlsToCache = [
-  'Plutarch_Comparison_of_Aristides_with_Marcus_Cato.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -47,3 +45,4 @@ urlsToCache.push("Plutarch_Comparison_of_Aristides_with_Marcus_Cato_3.html");
 urlsToCache.push("Plutarch_Comparison_of_Aristides_with_Marcus_Cato_4.html");
 urlsToCache.push("Plutarch_Comparison_of_Aristides_with_Marcus_Cato_5.html");
 urlsToCache.push("Plutarch_Comparison_of_Aristides_with_Marcus_Cato_6.html");
+urlsToCache.push("translation.js");

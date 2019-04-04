@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Theophrastus_Characters';
 var urlsToCache = [
-  'Theophrastus_Characters.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

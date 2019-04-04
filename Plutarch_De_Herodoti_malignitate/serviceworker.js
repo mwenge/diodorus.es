@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_De_Herodoti_malignitate';
 var urlsToCache = [
-  'Plutarch_De_Herodoti_malignitate.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

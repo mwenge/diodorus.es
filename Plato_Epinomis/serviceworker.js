@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plato_Epinomis';
 var urlsToCache = [
-  'Plato_Epinomis.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -42,3 +40,4 @@ self.addEventListener('fetch', function(event) {
   );
 });
 urlsToCache.push("Plato_Epinomis.html");
+urlsToCache.push("translation.js");

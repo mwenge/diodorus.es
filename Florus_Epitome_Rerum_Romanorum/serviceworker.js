@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Florus_Epitome_Rerum_Romanorum';
 var urlsToCache = [
-  'Florus_Epitome_Rerum_Romanorum.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -16,10 +14,6 @@ var urlsToCache = [
   '../CormorantGaramond.css',
   '../CormorantGaramond.ttf',
 ];
-
-for (var i = 2; i <= 2; i++) {
-  urlsToCache.push("Florus_Epitome_Rerum_Romanorum_" + i + ".html");
-}
 
 self.addEventListener('install', function(event) {
   // Perform install steps

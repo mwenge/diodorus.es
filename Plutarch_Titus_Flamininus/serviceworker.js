@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Titus_Flamininus';
 var urlsToCache = [
-  'Plutarch_Titus_Flamininus.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -62,3 +60,4 @@ urlsToCache.push("Plutarch_Titus_Flamininus_18.html");
 urlsToCache.push("Plutarch_Titus_Flamininus_19.html");
 urlsToCache.push("Plutarch_Titus_Flamininus_20.html");
 urlsToCache.push("Plutarch_Titus_Flamininus_21.html");
+urlsToCache.push("translation.js");

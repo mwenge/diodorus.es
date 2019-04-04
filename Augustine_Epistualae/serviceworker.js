@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Augustine_Epistualae';
 var urlsToCache = [
-  'Augustine_Epistualae.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -16,10 +14,6 @@ var urlsToCache = [
   '../CormorantGaramond.css',
   '../CormorantGaramond.ttf',
 ];
-
-for (var i = 2; i <= 1; i++) {
-  urlsToCache.push("Augustine_Epistualae_" + i + ".html");
-}
 
 self.addEventListener('install', function(event) {
   // Perform install steps

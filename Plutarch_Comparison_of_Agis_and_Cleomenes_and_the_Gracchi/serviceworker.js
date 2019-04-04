@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Comparison_of_Agis_and_Cleomenes_and_the_Gracchi';
 var urlsToCache = [
-  'Plutarch_Comparison_of_Agis_and_Cleomenes_and_the_Gracchi.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -46,3 +44,4 @@ urlsToCache.push("Plutarch_Comparison_of_Agis_and_Cleomenes_and_the_Gracchi_2.ht
 urlsToCache.push("Plutarch_Comparison_of_Agis_and_Cleomenes_and_the_Gracchi_3.html");
 urlsToCache.push("Plutarch_Comparison_of_Agis_and_Cleomenes_and_the_Gracchi_4.html");
 urlsToCache.push("Plutarch_Comparison_of_Agis_and_Cleomenes_and_the_Gracchi_5.html");
+urlsToCache.push("translation.js");

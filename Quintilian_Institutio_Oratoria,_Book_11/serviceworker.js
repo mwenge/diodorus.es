@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Quintilian_Institutio_Oratoria,_Book_11';
 var urlsToCache = [
-  'Quintilian_Institutio_Oratoria,_Book_11.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -16,10 +14,6 @@ var urlsToCache = [
   '../CormorantGaramond.css',
   '../CormorantGaramond.ttf',
 ];
-
-for (var i = 2; i <= 11; i++) {
-  urlsToCache.push("Quintilian_Institutio_Oratoria,_Book_11_" + i + ".html");
-}
 
 self.addEventListener('install', function(event) {
   // Perform install steps
@@ -45,3 +39,4 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("translation.js");

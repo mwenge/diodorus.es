@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plato_Lovers';
 var urlsToCache = [
-  'Plato_Lovers.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -42,3 +40,4 @@ self.addEventListener('fetch', function(event) {
   );
 });
 urlsToCache.push("Plato_Lovers.html");
+urlsToCache.push("translation.js");

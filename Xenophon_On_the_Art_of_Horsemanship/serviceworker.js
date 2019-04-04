@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Xenophon_On_the_Art_of_Horsemanship';
 var urlsToCache = [
-  'Xenophon_On_the_Art_of_Horsemanship.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -42,3 +40,4 @@ self.addEventListener('fetch', function(event) {
   );
 });
 urlsToCache.push("Xenophon_On_the_Art_of_Horsemanship.html");
+urlsToCache.push("translation.js");

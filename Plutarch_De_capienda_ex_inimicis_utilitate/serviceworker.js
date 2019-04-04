@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_De_capienda_ex_inimicis_utilitate';
 var urlsToCache = [
-  'Plutarch_De_capienda_ex_inimicis_utilitate.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

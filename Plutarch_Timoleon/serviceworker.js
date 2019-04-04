@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Timoleon';
 var urlsToCache = [
-  'Plutarch_Timoleon.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -81,3 +79,4 @@ urlsToCache.push("Plutarch_Timoleon_36.html");
 urlsToCache.push("Plutarch_Timoleon_37.html");
 urlsToCache.push("Plutarch_Timoleon_38.html");
 urlsToCache.push("Plutarch_Timoleon_39.html");
+urlsToCache.push("translation.js");

@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Gaius_Gracchus';
 var urlsToCache = [
-  'Plutarch_Gaius_Gracchus.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -60,3 +58,4 @@ urlsToCache.push("Plutarch_Gaius_Gracchus_16.html");
 urlsToCache.push("Plutarch_Gaius_Gracchus_17.html");
 urlsToCache.push("Plutarch_Gaius_Gracchus_18.html");
 urlsToCache.push("Plutarch_Gaius_Gracchus_19.html");
+urlsToCache.push("translation.js");

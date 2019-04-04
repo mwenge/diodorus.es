@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Arrian_Periplus_Ponti_Euxini';
 var urlsToCache = [
-  'Arrian_Periplus_Ponti_Euxini.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

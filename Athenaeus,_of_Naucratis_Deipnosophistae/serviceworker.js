@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Athenaeus,_of_Naucratis_Deipnosophistae';
 var urlsToCache = [
-  'Athenaeus,_of_Naucratis_Deipnosophistae.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -41,4 +39,5 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("Athenaeus,_of_Naucratis_Deipnosophistae_12.html");
 urlsToCache.push("Athenaeus,_of_Naucratis_Deipnosophistae_5.html");

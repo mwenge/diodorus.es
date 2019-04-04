@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Dionysius_of_Halicarnassus_De_Compositione_Verborum';
 var urlsToCache = [
-  'Dionysius_of_Halicarnassus_De_Compositione_Verborum.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

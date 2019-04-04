@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Polybius_Histories';
 var urlsToCache = [
-  'Polybius_Histories.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

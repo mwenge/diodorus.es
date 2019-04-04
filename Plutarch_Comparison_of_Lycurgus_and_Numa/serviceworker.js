@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Comparison_of_Lycurgus_and_Numa';
 var urlsToCache = [
-  'Plutarch_Comparison_of_Lycurgus_and_Numa.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -45,3 +43,4 @@ urlsToCache.push("Plutarch_Comparison_of_Lycurgus_and_Numa.html");
 urlsToCache.push("Plutarch_Comparison_of_Lycurgus_and_Numa_2.html");
 urlsToCache.push("Plutarch_Comparison_of_Lycurgus_and_Numa_3.html");
 urlsToCache.push("Plutarch_Comparison_of_Lycurgus_and_Numa_4.html");
+urlsToCache.push("translation.js");

@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Minucius_Felix_Ocatavius';
 var urlsToCache = [
-  'Minucius_Felix_Ocatavius.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -16,10 +14,6 @@ var urlsToCache = [
   '../CormorantGaramond.css',
   '../CormorantGaramond.ttf',
 ];
-
-for (var i = 2; i <= 40; i++) {
-  urlsToCache.push("Minucius_Felix_Ocatavius_" + i + ".html");
-}
 
 self.addEventListener('install', function(event) {
   // Perform install steps

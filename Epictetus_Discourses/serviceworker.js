@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Epictetus_Discourses';
 var urlsToCache = [
-  'Epictetus_Discourses.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

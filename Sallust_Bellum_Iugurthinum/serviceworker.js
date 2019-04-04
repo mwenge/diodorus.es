@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Sallust_Bellum_Iugurthinum';
 var urlsToCache = [
-  'Sallust_Bellum_Iugurthinum.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -16,10 +14,6 @@ var urlsToCache = [
   '../CormorantGaramond.css',
   '../CormorantGaramond.ttf',
 ];
-
-for (var i = 2; i <= 114; i++) {
-  urlsToCache.push("Sallust_Bellum_Iugurthinum_" + i + ".html");
-}
 
 self.addEventListener('install', function(event) {
   // Perform install steps

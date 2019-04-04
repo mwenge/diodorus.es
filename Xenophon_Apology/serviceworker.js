@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Xenophon_Apology';
 var urlsToCache = [
-  'Xenophon_Apology.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -42,3 +40,4 @@ self.addEventListener('fetch', function(event) {
   );
 });
 urlsToCache.push("Xenophon_Apology.html");
+urlsToCache.push("translation.js");

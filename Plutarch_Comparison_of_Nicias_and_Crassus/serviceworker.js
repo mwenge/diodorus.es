@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Comparison_of_Nicias_and_Crassus';
 var urlsToCache = [
-  'Plutarch_Comparison_of_Nicias_and_Crassus.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -46,3 +44,4 @@ urlsToCache.push("Plutarch_Comparison_of_Nicias_and_Crassus_2.html");
 urlsToCache.push("Plutarch_Comparison_of_Nicias_and_Crassus_3.html");
 urlsToCache.push("Plutarch_Comparison_of_Nicias_and_Crassus_4.html");
 urlsToCache.push("Plutarch_Comparison_of_Nicias_and_Crassus_5.html");
+urlsToCache.push("translation.js");

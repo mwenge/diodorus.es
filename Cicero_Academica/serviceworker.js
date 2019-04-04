@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Cicero_Academica';
 var urlsToCache = [
-  'Cicero_Academica.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -16,10 +14,6 @@ var urlsToCache = [
   '../CormorantGaramond.css',
   '../CormorantGaramond.ttf',
 ];
-
-for (var i = 2; i <= advert; i++) {
-  urlsToCache.push("Cicero_Academica_" + i + ".html");
-}
 
 self.addEventListener('install', function(event) {
   // Perform install steps

@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Comparison_of_Theseus_and_Romulus';
 var urlsToCache = [
-  'Plutarch_Comparison_of_Theseus_and_Romulus.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -47,3 +45,4 @@ urlsToCache.push("Plutarch_Comparison_of_Theseus_and_Romulus_3.html");
 urlsToCache.push("Plutarch_Comparison_of_Theseus_and_Romulus_4.html");
 urlsToCache.push("Plutarch_Comparison_of_Theseus_and_Romulus_5.html");
 urlsToCache.push("Plutarch_Comparison_of_Theseus_and_Romulus_6.html");
+urlsToCache.push("translation.js");

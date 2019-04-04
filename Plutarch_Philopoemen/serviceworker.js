@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Philopoemen';
 var urlsToCache = [
-  'Plutarch_Philopoemen.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -62,3 +60,4 @@ urlsToCache.push("Plutarch_Philopoemen_18.html");
 urlsToCache.push("Plutarch_Philopoemen_19.html");
 urlsToCache.push("Plutarch_Philopoemen_20.html");
 urlsToCache.push("Plutarch_Philopoemen_21.html");
+urlsToCache.push("translation.js");

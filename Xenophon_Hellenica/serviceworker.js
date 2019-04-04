@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Xenophon_Hellenica';
 var urlsToCache = [
-  'Xenophon_Hellenica.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -48,3 +46,4 @@ urlsToCache.push("Xenophon_Hellenica_4.html");
 urlsToCache.push("Xenophon_Hellenica_5.html");
 urlsToCache.push("Xenophon_Hellenica_6.html");
 urlsToCache.push("Xenophon_Hellenica_7.html");
+urlsToCache.push("translation.js");

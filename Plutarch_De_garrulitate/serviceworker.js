@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_De_garrulitate';
 var urlsToCache = [
-  'Plutarch_De_garrulitate.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

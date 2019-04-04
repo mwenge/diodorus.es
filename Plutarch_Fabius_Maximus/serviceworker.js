@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Fabius_Maximus';
 var urlsToCache = [
-  'Plutarch_Fabius_Maximus.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -68,3 +66,4 @@ urlsToCache.push("Plutarch_Fabius_Maximus_24.html");
 urlsToCache.push("Plutarch_Fabius_Maximus_25.html");
 urlsToCache.push("Plutarch_Fabius_Maximus_26.html");
 urlsToCache.push("Plutarch_Fabius_Maximus_27.html");
+urlsToCache.push("translation.js");

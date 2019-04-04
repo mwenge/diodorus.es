@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Arrian_Cynegeticus';
 var urlsToCache = [
-  'Arrian_Cynegeticus.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

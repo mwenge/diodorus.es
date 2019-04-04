@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Pelopidas';
 var urlsToCache = [
-  'Plutarch_Pelopidas.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -76,3 +74,4 @@ urlsToCache.push("Plutarch_Pelopidas_32.html");
 urlsToCache.push("Plutarch_Pelopidas_33.html");
 urlsToCache.push("Plutarch_Pelopidas_34.html");
 urlsToCache.push("Plutarch_Pelopidas_35.html");
+urlsToCache.push("translation.js");

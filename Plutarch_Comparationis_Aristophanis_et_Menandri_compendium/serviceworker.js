@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Comparationis_Aristophanis_et_Menandri_compendium';
 var urlsToCache = [
-  'Plutarch_Comparationis_Aristophanis_et_Menandri_compendium.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

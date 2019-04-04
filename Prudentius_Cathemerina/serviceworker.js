@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Prudentius_Cathemerina';
 var urlsToCache = [
-  'Prudentius_Cathemerina.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
@@ -16,10 +14,6 @@ var urlsToCache = [
   '../CormorantGaramond.css',
   '../CormorantGaramond.ttf',
 ];
-
-for (var i = 2; i <= 1; i++) {
-  urlsToCache.push("Prudentius_Cathemerina_" + i + ".html");
-}
 
 self.addEventListener('install', function(event) {
   // Perform install steps

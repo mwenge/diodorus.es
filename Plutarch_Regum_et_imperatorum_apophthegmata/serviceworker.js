@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_Regum_et_imperatorum_apophthegmata';
 var urlsToCache = [
-  'Plutarch_Regum_et_imperatorum_apophthegmata.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',

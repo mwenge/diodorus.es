@@ -2,8 +2,6 @@
 
 var CACHE_NAME = 'Plutarch_De_unius_in_republica_dominatione';
 var urlsToCache = [
-  'Plutarch_De_unius_in_republica_dominatione.html',
-  'translation.js',
   '../book.css',
   '../book.js',
   '../atobAndBtoaTogether.min.js',
