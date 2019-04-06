@@ -39,5 +39,4 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
-urlsToCache.push("Athenaeus,_of_Naucratis_Deipnosophistae_12.html");
 urlsToCache.push("Athenaeus,_of_Naucratis_Deipnosophistae_5.html");
