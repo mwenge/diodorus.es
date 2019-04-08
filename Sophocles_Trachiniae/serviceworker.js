@@ -39,3 +39,4 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+urlsToCache.push("commentary.js");
