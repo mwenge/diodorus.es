@@ -1,0 +1,21 @@
+{
+    "short_name": "On the Liberty of the Rhodians",
+    "name": "Demosthenes : On the Liberty of the Rhodians",
+    "icons": [
+        {
+            "src": "images/icons-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+            },
+        {
+            "src": "images/icons-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+            }
+        ],
+    "start_url": "Demosthenes_On_the_Liberty_of_the_Rhodians.html",
+    "background_color": "ivory",
+    "display": "standalone",
+    "scope": ".",
+    "theme_color": "ivory"
+}

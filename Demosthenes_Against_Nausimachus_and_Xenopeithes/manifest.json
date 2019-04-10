@@ -1,0 +1,21 @@
+{
+    "short_name": "Against Nausimachus and Xenopeithes",
+    "name": "Demosthenes : Against Nausimachus and Xenopeithes",
+    "icons": [
+        {
+            "src": "images/icons-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+            },
+        {
+            "src": "images/icons-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+            }
+        ],
+    "start_url": "Demosthenes_Against_Nausimachus_and_Xenopeithes.html",
+    "background_color": "ivory",
+    "display": "standalone",
+    "scope": ".",
+    "theme_color": "ivory"
+}
