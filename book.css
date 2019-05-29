@@ -1,10 +1,16 @@
 .greek-body {
   font-family: 'GFS Didot', serif;
   background-color: ivory;
+  text-rendering: optimizeLegibility;
+  color: #222222;
+  -webkit-font-smoothing: antialiased;
 }
 .latin-body {
   font-family: 'Cormorant Garamond', serif;
   background-color: ivory;
+  text-rendering: optimizeLegibility;
+  color: #222222;
+  -webkit-font-smoothing: antialiased;
 }
 note {
   display: none;
