@@ -66,22 +66,13 @@ function updateHelper(evt, lineNumber, translationsForWord) {
   }
   
   if (evt.target == updateHelper.currentWord) {
-    displayTranslation(lineNumber);
-    return;
+    if (displayTranslation(lineNumber) || displayComment(lineNumber)) {
+      return;
+    }
   }
 
   evt.target.style.textDecoration = "underline red";
   updateHelper.currentWord = evt.target;
-
-  if (typeof updateHelper.previousCommentBubble === 'object' 
-      && updateHelper.previousCommentBubble != null) {
-    updateHelper.previousCommentBubble.style.display = "none";
-  }
-  var commentBubble = document.getElementById("indicator-" + lineNumber);
-  if (commentBubble != null) {
-    commentBubble.style.display = "inline";
-  }
-  updateHelper.previousCommentBubble = commentBubble;
 
   showTitle(lineNumber);
 
@@ -118,6 +109,9 @@ function showTitle(lineNumber) {
   masthead.innerHTML = innerHTML;
 }
 
+// Gets overwritten by actual translations
+var translation = {}
+var commentary = {}
 function displayTranslation(refs) {
   if (translatedSection) {
     for (var i = 0; i < translatedSection.length; i++) {
@@ -132,16 +126,17 @@ function displayTranslation(refs) {
       break;
   }
   if (!translatedSection) {
-    return;
+    return false;
   }
   if (!translation.hasOwnProperty(ref)) {
-    return;
+    return false;
   }
   for (var i = 0; i < translatedSection.length; i++) {
       translatedSection[i].style.backgroundColor = "yellow";
   }
   parallel_translation.innerHTML = atobUTF8(translation[ref]);
   parallel_translation.style.display = "block";
+  return true;
 }
 
 function hideTranslation() {
@@ -151,10 +146,13 @@ function hideTranslation() {
   parallel_translation.style.display = "none";
 }
 
-
 function displayComment(line) {
+  if (!commentary[line]) {
+    return false;
+  }
   comment.innerHTML = atobUTF8(commentary[line]);
   comment.style.display = "block";
+  return true;
 }
 
 function hideComment() {
