@@ -92,20 +92,23 @@ translation {
   position: fixed;
   z-index: 100;
   width: 100%;
+  box-shadow: 0 1px 10px 0px lightgray;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .masthead, .helper {
   z-index: 100;
   width: 100%;
-  text-align: center;
   font-family: 'Open Sans', sans-serif;
   background-color: ivory;
 }
 .masthead {
-  box-shadow: 0px 1px 0.5px 0px rgba(194, 191, 201, 0.92);
-  background-color: black;
+  background-color: ivory;
 }
 .helper {
-  border-bottom: 1px black solid;
+  z-index: 200;
+  text-align: center;
 }
 .firstspeaker {
   margin-left: 6vw;
@@ -151,11 +154,21 @@ head, .heading {
   font-size: 3vw;
   vertical-align: bottom;
 }
+.author {
+  text-transform: uppercase;
+  font-size: 6vw;
+  font-family: 'Cinzel', serif;
+  color: black;
+  font-style: normal;
+  font-weight: bold;
+  margin-left: 6vw;
+}
 .title {
   text-transform: uppercase;
-  font-size: 8vw;
+  font-size: 5vw;
   font-family: 'Cinzel', serif;
-  color: ivory;
+  color: gray;
+  text-overflow: ellipsis;
 }
 span {
   font-style: italic;
@@ -166,5 +179,5 @@ span {
   font-size: 3vw;
 }
 .helper {
-  font-size: 5vw !important;
+  font-size: 4vw !important;
 }

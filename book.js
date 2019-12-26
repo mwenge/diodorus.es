@@ -74,8 +74,6 @@ function updateHelper(evt, lineNumber, translationsForWord) {
   evt.target.style.textDecoration = "underline red";
   updateHelper.currentWord = evt.target;
 
-  showTitle(lineNumber);
-
   translations = translationsForWord;
   var translation = translations[0];
   var innerHTML = "<span><span style='font-weight: bold; font-family:\"GFS Didot\"'>"
@@ -93,19 +91,11 @@ function updateHelper(evt, lineNumber, translationsForWord) {
   storeScrollPosition();
 }
 
-function showTitle(lineNumber) {
-  if (Array.isArray(lineNumber)) {
-    lineNumber = lineNumber[0];
-  }
-  lineNumber = lineNumber.replace(/\./g, '');
-  var page = parseInt(parseInt(lineNumber, 10) / 100, 10);
-  if (isNaN(page)) {
-    return;
-  }
-  var result = page % 2;
-  
-  var titleToShow = titleElements[result];
-  var innerHTML = "<span class=\"title\">" + titleToShow + "</span>";
+function showTitle(ignore) {
+  var author = titleElements[0];
+  var title = titleElements[1];
+  var innerHTML = "<span class=\"author\">" + author + "&nbsp;</span>";
+  innerHTML += "<span class=\"title\">" + title + "</span>";
   masthead.innerHTML = innerHTML;
 }
 
