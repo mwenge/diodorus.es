@@ -93,9 +93,6 @@ translation {
   z-index: 100;
   width: 100%;
   box-shadow: 0 1px 10px 0px lightgray;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
 }
 .masthead, .helper {
   z-index: 100;
@@ -105,6 +102,9 @@ translation {
 }
 .masthead {
   background-color: ivory;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .helper {
   z-index: 200;
