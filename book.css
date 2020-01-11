@@ -130,6 +130,18 @@ head, .heading {
 .para {
   display: inline-block;
 }
+milestone[ed="P"] {
+  display: inline-block;
+}
+milestone[ed="P"]:first-letter {
+  float: left;
+  font-size: 65px;
+  line-height: 40px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+  text-transform: uppercase;
+}
 .line, .para, .heading {
   margin-left: 5vw;
   user-select: none;
