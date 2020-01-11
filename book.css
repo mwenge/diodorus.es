@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
 .greek-body {
   font-family: 'GFS Didot', serif;
   background-color: ivory;
@@ -53,8 +54,8 @@ quote[lang="greek"]::before, quote[lang="greek"]::after {
   font-weight: bold;
 }
 translation {
-  margin-left: 5px;
-  margin-right: 5px; 
+  margin-left: 5vw;
+  margin-right: 1vw;
   display: block;
 }
 .parallel_translation, .comment {
@@ -70,7 +71,7 @@ translation {
   background-color: ivory;
   border-top: 1px black solid;
   font-size: 4.2vw !important;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 .navigator {
   font-style: normal !important;
