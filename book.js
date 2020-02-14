@@ -62,7 +62,7 @@ function showNextOnHelper(evt) {
 
 function updateHelper(evt, lineNumber, translationsForWord) {
   if (typeof updateHelper.currentWord === 'object') {
-    updateHelper.currentWord.style.textDecoration = "none";
+    updateHelper.currentWord.style.backgroundColor = "transparent";
   }
   
   if (evt.target == updateHelper.currentWord) {
@@ -71,7 +71,7 @@ function updateHelper(evt, lineNumber, translationsForWord) {
     }
   }
 
-  evt.target.style.textDecoration = "underline red";
+  evt.target.style.backgroundColor = "rgba(218,112,214, 0.5)";
   updateHelper.currentWord = evt.target;
 
   translations = translationsForWord;
